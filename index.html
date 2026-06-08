@@ -284,6 +284,45 @@
   .ractions{display:none;}
 }
 </style>
+<style id="br-landing-v2">
+.herochips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;padding:0;list-style:none}
+.herochips li{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line-soft);border-radius:100px;padding:7px 13px 7px 9px;box-shadow:var(--shadow)}
+.herochips li::before{content:"\2713";color:#fff;background:var(--grad);width:17px;height:17px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex:0 0 auto}
+.catprev{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cpt{display:flex;flex-direction:column;gap:9px;padding:16px 16px 15px;border-radius:16px;background:var(--surface);border:1px solid var(--line-soft);box-shadow:var(--shadow);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.cpt:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 12px 26px rgba(108,92,255,.18)}
+.cpt-ic{width:40px;height:40px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center}
+.cpt-ic svg{width:21px;height:21px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.cpt-ic.g{background:var(--grad);box-shadow:0 6px 16px rgba(108,92,255,.32)}
+.cpt-ic.g svg{stroke:#fff}
+.cpt-nm{font-weight:700;font-size:15px;color:var(--ink);line-height:1.1}
+.cpt-meta{font-size:12px;font-weight:700;color:var(--ink-faint);display:inline-flex;align-items:center;gap:6px}
+.cpt.live .cpt-meta{color:#10b981}
+.cpt.live .cpt-meta::before{content:"";width:6px;height:6px;border-radius:50%;background:#10b981;animation:cptpulse 2s infinite}
+@keyframes cptpulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.45)}70%{box-shadow:0 0 0 6px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+.cpt.more{align-items:center;justify-content:center;text-align:center;background:transparent;border-style:dashed}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.path{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:11px;padding:30px;border-radius:22px;text-decoration:none;transition:transform .22s,box-shadow .22s}
+.path-go{background:var(--grad);box-shadow:var(--shadow-lg)}
+.path-list{background:var(--surface);border:1px solid var(--line-soft);box-shadow:var(--shadow)}
+.path:hover{transform:translateY(-4px)}
+.path-go:hover{box-shadow:0 22px 50px rgba(108,92,255,.45)}
+.path-ic{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.path-ic svg{width:24px;height:24px;fill:none;stroke-width:1.9}
+.path-go .path-ic{background:rgba(255,255,255,.2)}
+.path-go .path-ic svg{stroke:#fff}
+.path-list .path-ic{background:var(--accent-soft)}
+.path-list .path-ic svg{stroke:var(--accent)}
+.path h3{font-family:var(--display);font-size:23px;font-weight:600;letter-spacing:-.01em}
+.path-go h3{color:#fff}.path-list h3{color:var(--ink)}
+.path p{font-size:15px;line-height:1.55;margin:0}
+.path-go p{color:rgba(255,255,255,.92)}.path-list p{color:var(--ink-soft)}
+.path-cta{margin-top:5px;font-weight:800;font-size:14.5px}
+.path-go .path-cta{color:#fff}.path-list .path-cta{color:var(--accent)}
+.path-go::after{content:"";position:absolute;right:-50px;bottom:-50px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 70%);pointer-events:none}
+@media(max-width:640px){.paths{grid-template-columns:1fr}.path{padding:26px}}
+@media(prefers-reduced-motion:reduce){.cpt.live .cpt-meta::before{animation:none}}
+</style>
 </head>
 <body>
 <div class="bgfx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span><div class="bgfx-grid"></div></div>
@@ -306,12 +345,12 @@
     <div class="reveal">
       <span class="eyebrow"><span class="dot"></span> Updated every week</span>
       <h1>The best AI tools,<span class="g">ranked algorithmically.</span></h1>
-      <p class="sub">blipradar is building the definitive, independently-scored index of every AI tool worth using &mdash; each one ranked on a single transparent rubric and re-scored <b>every week</b>. The fastest way to find the best tool for any job: zero guesswork, zero SEO spam, and <b>no pay-for-rank, ever</b>.</p>
+      <p class="sub">Every AI tool worth using, scored <b>0&ndash;10</b> on one public rubric and re-ranked <b>every week</b>. No guesswork, no SEO spam, <b>no pay-for-rank</b> &mdash; just the best tool for the job.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="categories.html">View all AI categories &rarr;</a>
         <a class="btn btn-ghost" href="about.html">How we rank</a>
       </div>
-      <div class="trust">20 categories and growing &middot; re-scored every week &middot; 100% merit-based &middot; fiercely independent</div>
+      <ul class="herochips"><li>Re-scored weekly</li><li>6 public criteria</li><li>100% merit-based</li><li>Fiercely independent</li></ul>
     </div>
     <div class="lb reveal" id="heroShow"><div class="lb-stack"><div class="lb-slide is-active"><div class="lb-h"><span class="lb-t">Best for Coding</span><span class="lb-tag">This week</span></div><div class="lb-row"><span class="lb-rank">1</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=cursor.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Cursor</div><div class="lb-bar"><i style="width:89%"></i></div></div><div class="lb-right"><span class="lb-sc">8.9</span><a class="lb-open" href="cursor.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">2</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=claude.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Claude Code</div><div class="lb-bar"><i style="width:88%"></i></div></div><div class="lb-right"><span class="lb-sc">8.8</span><a class="lb-open" href="claude-code.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">3</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">GitHub Copilot</div><div class="lb-bar"><i style="width:83%"></i></div></div><div class="lb-right"><span class="lb-sc">8.3</span><a class="lb-open" href="github-copilot.html">Open page</a></div></div><a class="lb-foot" href="coding.html">View all &rarr;</a></div><div class="lb-slide"><div class="lb-h"><span class="lb-t">Best for Image</span><span class="lb-tag">This week</span></div><div class="lb-row"><span class="lb-rank">1</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Midjourney</div><div class="lb-bar"><i style="width:88%"></i></div></div><div class="lb-right"><span class="lb-sc">8.8</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">2</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=blackforestlabs.ai&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">FLUX</div><div class="lb-bar"><i style="width:85%"></i></div></div><div class="lb-right"><span class="lb-sc">8.5</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">3</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=ideogram.ai&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Ideogram</div><div class="lb-bar"><i style="width:81%"></i></div></div><div class="lb-right"><span class="lb-sc">8.1</span><a class="lb-open" href="coding.html">Open page</a></div></div><span class="lb-foot soon">Full ranking coming soon</span></div><div class="lb-slide"><div class="lb-h"><span class="lb-t">Best for Video</span><span class="lb-tag">This week</span></div><div class="lb-row"><span class="lb-rank">1</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Runway</div><div class="lb-bar"><i style="width:87%"></i></div></div><div class="lb-right"><span class="lb-sc">8.7</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">2</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=deepmind.google&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Google Veo</div><div class="lb-bar"><i style="width:86%"></i></div></div><div class="lb-right"><span class="lb-sc">8.6</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">3</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=klingai.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Kling</div><div class="lb-bar"><i style="width:82%"></i></div></div><div class="lb-right"><span class="lb-sc">8.2</span><a class="lb-open" href="coding.html">Open page</a></div></div><span class="lb-foot soon">Full ranking coming soon</span></div><div class="lb-slide"><div class="lb-h"><span class="lb-t">Best for Speech</span><span class="lb-tag">This week</span></div><div class="lb-row"><span class="lb-rank">1</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">ElevenLabs</div><div class="lb-bar"><i style="width:90%"></i></div></div><div class="lb-right"><span class="lb-sc">9.0</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">2</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=openai.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">OpenAI</div><div class="lb-bar"><i style="width:84%"></i></div></div><div class="lb-right"><span class="lb-sc">8.4</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">3</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=cartesia.ai&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Cartesia</div><div class="lb-bar"><i style="width:81%"></i></div></div><div class="lb-right"><span class="lb-sc">8.1</span><a class="lb-open" href="coding.html">Open page</a></div></div><span class="lb-foot soon">Full ranking coming soon</span></div><div class="lb-slide"><div class="lb-h"><span class="lb-t">Best for Writing</span><span class="lb-tag">This week</span></div><div class="lb-row"><span class="lb-rank">1</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=claude.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Claude</div><div class="lb-bar"><i style="width:87%"></i></div></div><div class="lb-right"><span class="lb-sc">8.7</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">2</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=openai.com&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">ChatGPT</div><div class="lb-bar"><i style="width:86%"></i></div></div><div class="lb-right"><span class="lb-sc">8.6</span><a class="lb-open" href="coding.html">Open page</a></div></div><div class="lb-row"><span class="lb-rank">3</span><img class="lb-logo" src="https://www.google.com/s2/favicons?domain=jasper.ai&sz=128" alt=""><div class="lb-mid"><div class="lb-nm">Jasper</div><div class="lb-bar"><i style="width:79%"></i></div></div><div class="lb-right"><span class="lb-sc">7.9</span><a class="lb-open" href="coding.html">Open page</a></div></div><span class="lb-foot soon">Full ranking coming soon</span></div></div><div class="lb-dots"><button class="lb-dot on" aria-label="Slide 1"></button><button class="lb-dot" aria-label="Slide 2"></button><button class="lb-dot" aria-label="Slide 3"></button><button class="lb-dot" aria-label="Slide 4"></button><button class="lb-dot" aria-label="Slide 5"></button></div></div>
   </section>
@@ -338,18 +377,35 @@
       <div class="ct-left">
         <span class="eyebrow">20 categories</span>
         <h2>Find the best tool for any job</h2>
-        <p>From coding to video to voice &mdash; browse every category, each ranked on the same rubric.</p>
+        <p>From coding to video to voice &mdash; every category ranked on the same transparent rubric. Five are live now, more land every week.</p>
         <a class="btn btn-primary" href="categories.html">Explore all categories &rarr;</a>
       </div>
-      <div class="ct-icons"><div class="cticon g"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2v10l-5-2"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></div><div class="cticon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M21 7v5h-5"/></svg></div></div>
+      <div class="catprev">
+        <a class="cpt live" href="coding.html"><span class="cpt-ic g"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></span><span class="cpt-nm">Coding</span><span class="cpt-meta">25 tools</span></a>
+        <a class="cpt live" href="writing.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z"/></svg></span><span class="cpt-nm">Writing</span><span class="cpt-meta">25 tools</span></a>
+        <a class="cpt live" href="image.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></span><span class="cpt-nm">Image</span><span class="cpt-meta">25 tools</span></a>
+        <a class="cpt live" href="video.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2v10l-5-2"/></svg></span><span class="cpt-nm">Video</span><span class="cpt-meta">25 tools</span></a>
+        <a class="cpt live" href="voice.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></span><span class="cpt-nm">Voice</span><span class="cpt-meta">25 tools</span></a>
+        <a class="cpt more" href="categories.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span class="cpt-nm">+15 more</span><span class="cpt-meta">View all</span></a>
+      </div>
     </div>
   </section>
 
   <section class="sec">
-    <div class="ctaband reveal">
-      <h2>Find your next tool</h2>
-      <p>Start with the coding rankings, or get your own tool listed and scored on the same rubric as everyone else.</p>
-      <div class="row"><a class="btn btn-white" href="coding.html">Browse rankings</a><a class="btn btn-outline" href="list-your-tool.html">List your tool</a></div>
+    <div class="sec-head reveal"><span class="eyebrow">Get started</span><h2>Two ways in</h2><p>Find the right tool for the job, or get yours scored and seen.</p></div>
+    <div class="paths reveal">
+      <a class="path path-go" href="coding.html">
+        <span class="path-ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 7 4-14 3 7h4"/></svg></span>
+        <h3>Browse the rankings</h3>
+        <p>Jump into the live leaderboards and see which tools score highest this week &mdash; with the full scorecard behind every pick.</p>
+        <span class="path-cta">Explore rankings &rarr;</span>
+      </a>
+      <a class="path path-list" href="list-your-tool.html">
+        <span class="path-ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        <h3>List your tool</h3>
+        <p>Get scored on the exact same rubric as everyone else &mdash; a permanent page and a real ranking. One-time <b>$250</b>, never pay-for-rank.</p>
+        <span class="path-cta">Submit your tool &rarr;</span>
+      </a>
     </div>
   </section>
 
