@@ -357,6 +357,15 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 .cmppick-go:not(:disabled):hover{transform:translateY(-1px)}
 @media(max-width:560px){.cmpcard{padding:26px 14px 20px}.cmpT tbody td,.cmpT tfoot td{padding:10px 6px}.cmphd .nm{font-size:11.5px}.cmphd .lg{width:34px;height:34px}}
 </style>
+<style id="br-sndef">
+.sub{grid-template-columns:108px 1fr 30px}
+.sndef{display:inline-flex;align-items:center;gap:4px;cursor:help;border-bottom:1px dotted var(--ink-faint);line-height:1.3}
+.sndef .mi{width:13px;height:13px;border-radius:50%;border:1.3px solid currentColor;font-style:normal;font-size:9px;font-weight:800;line-height:1;display:inline-flex;align-items:center;justify-content:center;opacity:.42;flex:0 0 auto}
+.sndef:hover .mi,.sndef:focus .mi{opacity:.85}
+.sndef:focus{outline:none}
+.br-tip{position:fixed;z-index:200;background:#1b1830;color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;padding:10px 12px;border-radius:11px;border:1px solid rgba(255,255,255,.08);box-shadow:0 14px 38px rgba(20,16,40,.4);opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:none}
+.br-tip.on{opacity:1;visibility:visible;transform:none}
+</style>
 </head>
 <body>
 
@@ -474,7 +483,7 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
     var SN=['Output','Value','Ease of use','Reliability','Ecosystem','Momentum'];
     var SD=['35% of the score · How good the results actually are: accuracy, polish, and how often output is usable without heavy fixing.','15% of the score · What you get for the price (free tier included) — worth, not just how cheap it is.','15% of the score · How fast a new user gets productive: setup, learning curve, everyday friction.','10% of the score · Consistency — uptime, stable results, how rarely it breaks or shifts under you.','10% of the score · Everything around it — integrations, docs, community, extensions, platform support.','15% of the score · Trajectory right now — how fast it is shipping real improvements and gaining ground.'];
     var SCO=['#6c5cff','#11c5d4','#ff5d8f','#ff9f1c','#10b981','#b14dff'];
-    var subs=t.s.map(function(v,j){return '<div class="sub"><span class="sn" title="'+SD[j]+'">'+SN[j]+'</span><span class="sb"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span><span class="sv">'+v.toFixed(1)+'</span></div>';}).join('');
+    var subs=t.s.map(function(v,j){return '<div class="sub"><span class="sn sndef" tabindex="0" data-tip="'+SD[j]+'">'+SN[j]+'<i class="mi" aria-hidden="true">i</i></span><span class="sb"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span><span class="sv">'+v.toFixed(1)+'</span></div>';}).join('');
     var site=siteOf(t);
     return '<div class="row spot reveal" data-cats="'+t.cats.join(' ')+'" style="--glow:'+glow+'">'
       +'<div class="rsummary">'
@@ -647,6 +656,22 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
   if(clearBtn)clearBtn.addEventListener('click',function(){sel=[];sync();tray_();});
   if(goBtn)goBtn.addEventListener('click',function(){if(sel.length>=2&&window.BR_openCompare)window.BR_openCompare(sel.map(function(ti){return TOOLS[ti];}));});
   sync();
+})();
+</script>
+<script>
+(function(){
+  var listEl=document.getElementById('list'); if(!listEl)return;
+  var tip=document.createElement('div'); tip.className='br-tip'; document.body.appendChild(tip);
+  var cur=null;
+  function show(el){var t=el.getAttribute('data-tip'); if(!t)return; tip.textContent=t; tip.style.maxWidth=Math.min(260,window.innerWidth-24)+'px'; tip.classList.add('on'); var r=el.getBoundingClientRect(); var tr=tip.getBoundingClientRect(); var left=Math.max(8,Math.min(r.left,window.innerWidth-tr.width-8)); var top=r.top-tr.height-8; if(top<8)top=r.bottom+8; tip.style.left=left+'px'; tip.style.top=top+'px'; cur=el;}
+  function hide(){tip.classList.remove('on'); cur=null;}
+  listEl.addEventListener('mouseover',function(e){var el=e.target.closest('.sndef'); if(el)show(el);});
+  listEl.addEventListener('mouseout',function(e){var el=e.target.closest('.sndef'); if(el&&!el.contains(e.relatedTarget))hide();});
+  listEl.addEventListener('focusin',function(e){var el=e.target.closest('.sndef'); if(el)show(el);});
+  listEl.addEventListener('focusout',function(e){var el=e.target.closest('.sndef'); if(el)hide();});
+  listEl.addEventListener('click',function(e){var el=e.target.closest('.sndef'); if(el){e.stopPropagation(); if(cur===el)hide(); else show(el);}},true);
+  window.addEventListener('scroll',function(){if(cur)hide();},true);
+  document.addEventListener('click',function(e){if(cur&&!e.target.closest('.sndef'))hide();});
 })();
 </script>
 </body>
