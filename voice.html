@@ -366,6 +366,30 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 .br-tip{position:fixed;z-index:200;background:#1b1830;color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;padding:10px 12px;border-radius:11px;border:1px solid rgba(255,255,255,.08);box-shadow:0 14px 38px rgba(20,16,40,.4);opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:none}
 .br-tip.on{opacity:1;visibility:visible;transform:none}
 </style>
+<style id="br-views">
+.listed{font-size:11.5px;font-weight:700;color:var(--ink-faint);background:var(--line-soft);border-radius:100px;padding:3px 11px;white-space:nowrap}
+.sortwrap{flex-wrap:wrap}
+@media(max-width:560px){#sort button{padding-left:11px;padding-right:11px;font-size:12px}}
+</style>
+<style id="br-filterdrop">
+.filterdrop{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--ink-faint);font-weight:600;min-width:0}
+.filterdrop>label{white-space:nowrap}
+.fsel{position:relative;display:inline-block;min-width:0}
+.fsel::after{content:"";position:absolute;right:15px;top:50%;width:7px;height:7px;border-right:2px solid var(--ink-soft);border-bottom:2px solid var(--ink-soft);transform:translateY(-65%) rotate(45deg);pointer-events:none}
+.fsel select{font-family:var(--body);font-size:13.5px;font-weight:700;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:100px;padding:9px 40px 9px 17px;cursor:pointer;box-shadow:var(--shadow);-webkit-appearance:none;-moz-appearance:none;appearance:none;transition:.18s;max-width:100%}
+.fsel select:hover{border-color:var(--accent);color:var(--accent)}
+.fsel select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.fsel option{color:var(--ink);background:var(--surface);font-weight:600}
+@media(max-width:560px){.filterdrop{width:100%}.fsel{flex:1 1 auto;display:block}.fsel select{width:100%}}
+</style>
+<style id="br-rated">
+.rank.na{font-size:12.5px;font-weight:800;color:var(--ink-faint);letter-spacing:.04em}
+.rscore .sc.na{color:var(--ink-faint)}
+.sclbl-na{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);margin-top:3px;text-align:center}
+.chip.prov{background:var(--accent-soft);color:var(--accent);font-weight:700}
+.sub.na .sv{color:var(--ink-faint)}
+.sub.na .sb>span{opacity:.2}
+</style>
 </head>
 <body>
 
@@ -397,17 +421,15 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
   </section>
 
   <div class="controls">
-    <div class="chips" id="filters">
-      <button class="chip-f on" data-cat="all">All</button>
-      <button class="chip-f" data-cat="tts">Text-to-speech</button>
-      <button class="chip-f" data-cat="cloning">Voice cloning</button>
-      <button class="chip-f" data-cat="realtime">Real-time</button>
-      <button class="chip-f" data-cat="dubbing">Dubbing</button>
+    <div class="filterdrop">
+      <label for="filterSel">Show</label>
+      <span class="fsel"><select id="filterSel" aria-label="Filter tools"><option value="all" selected>All</option><option value="tts">Best for Text-to-speech</option><option value="cloning">Best for Voice cloning</option><option value="realtime">Best for Real-time</option><option value="dubbing">Best for Dubbing</option></select></span>
     </div>
     <div class="sortwrap">Sort
       <span class="seg" id="sort">
-        <button class="on" data-sort="score">Top rated</button>
-        <button data-sort="mom">Trending</button>
+        <button class="on" data-sort="score">Top</button>
+        <button data-sort="mom">Rising</button>
+        <button data-sort="new">New listings</button>
       </span>
     </div>
   </div>
@@ -452,7 +474,7 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 
 <script>
   // ---------- data: 25 coding tools, rubric-scored ----------
-  var TOOLS=[{"rank": 1, "name": "ElevenLabs", "score": 9, "mom": 9, "type": "TTS + cloning", "cats": ["tts", "cloning", "dubbing"], "price": "Free · from $5/mo", "domain": "elevenlabs.io", "letter": "E", "link": "#", "desc": "The realism leader for narration, cloning and dubbing.", "s": [9.4, 8.4, 9, 8.8, 8.8, 9], "bestFor": "the most natural narration and cloning."}, {"rank": 2, "name": "OpenAI Voice", "score": 8.5, "mom": 8.4, "type": "Realtime + TTS", "cats": ["tts", "realtime"], "price": "API · in ChatGPT", "domain": "openai.com", "letter": "O", "link": "#", "desc": "Realtime and TTS voices with contextual intelligence.", "s": [8.6, 8.4, 8.6, 8.4, 8.8, 8.4], "bestFor": "voice agents and app integration."}, {"rank": 3, "name": "Cartesia", "score": 8.4, "mom": 8.6, "type": "Real-time TTS", "cats": ["tts", "realtime"], "price": "Free · usage", "domain": "cartesia.ai", "letter": "C", "link": "#", "desc": "Sonic's ~90ms latency leads for voice agents.", "s": [8.6, 8.4, 8, 8.6, 7.8, 8.6], "bestFor": "real-time conversational agents."}, {"rank": 4, "name": "Hume AI", "score": 8.4, "mom": 8.6, "type": "Expressive TTS", "cats": ["tts", "realtime"], "price": "Free · usage", "domain": "hume.ai", "letter": "H", "link": "#", "desc": "Octave steers emotion from plain-English instructions.", "s": [8.8, 8, 8.2, 8.2, 7.8, 8.6], "bestFor": "emotionally expressive speech."}, {"rank": 5, "name": "Google Cloud TTS", "score": 8.3, "mom": 7.8, "type": "TTS API", "cats": ["tts", "realtime"], "price": "API · usage", "domain": "cloud.google.com", "letter": "G", "link": "#", "desc": "Chirp 3 HD: many styles at low per-character cost.", "s": [8.3, 8.8, 7.8, 8.8, 8.4, 7.8], "bestFor": "TTS at scale on a budget."}, {"rank": 6, "name": "Murf AI", "score": 8.2, "mom": 8, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $29/mo", "domain": "murf.ai", "letter": "M", "link": "#", "desc": "The best all-in-one studio for video voiceovers.", "s": [8.2, 7.8, 9, 8.6, 8, 8], "bestFor": "polished video voiceovers."}, {"rank": 7, "name": "Microsoft Azure TTS", "score": 8.1, "mom": 7.6, "type": "TTS API", "cats": ["tts"], "price": "API · usage", "domain": "azure.microsoft.com", "letter": "A", "link": "#", "desc": "Neural voices with enterprise governance and SLAs.", "s": [8.1, 8.4, 7.8, 8.8, 8.2, 7.6], "bestFor": "enterprise TTS in the cloud."}, {"rank": 8, "name": "Resemble AI", "score": 8, "mom": 8, "type": "Cloning", "cats": ["cloning", "dubbing"], "price": "Free · usage", "domain": "resemble.ai", "letter": "R", "link": "#", "desc": "Professional cloning, speech-to-speech and dubbing.", "s": [8.2, 7.8, 8, 8.2, 7.8, 8], "bestFor": "brand voice cloning and dubbing."}, {"rank": 9, "name": "WellSaid Labs", "score": 8, "mom": 7.6, "type": "Enterprise TTS", "cats": ["tts"], "price": "From $44/mo", "domain": "wellsaidlabs.com", "letter": "W", "link": "#", "desc": "Enterprise-grade, consent-based studio voices.", "s": [8.2, 7.4, 8.4, 8.6, 7.8, 7.6], "bestFor": "compliant corporate narration."}, {"rank": 10, "name": "Speechify", "score": 8, "mom": 7.6, "type": "Listening", "cats": ["tts"], "price": "Free · Premium $11/mo", "domain": "speechify.com", "letter": "S", "link": "#", "desc": "Turns articles and docs into natural speech.", "s": [7.7, 8.2, 9, 8, 7.8, 7.6], "bestFor": "listening to text on the go."}, {"rank": 11, "name": "Fish Audio", "score": 8, "mom": 8.2, "type": "Cloning", "cats": ["cloning", "tts"], "price": "Free · usage", "domain": "fish.audio", "letter": "F", "link": "#", "desc": "Fast, low-cost cloning and open-leaning models.", "s": [7.9, 8.6, 7.8, 7.8, 7.4, 8.2], "bestFor": "affordable voice cloning."}, {"rank": 12, "name": "Amazon Polly", "score": 8, "mom": 7.2, "type": "TTS API", "cats": ["tts"], "price": "API · usage", "domain": "aws.amazon.com", "letter": "A", "link": "#", "desc": "Reliable, cheap TTS deep in the AWS stack.", "s": [7.9, 8.6, 7.6, 8.8, 8, 7.2], "bestFor": "AWS-native voice at scale."}, {"rank": 13, "name": "Descript", "score": 7.9, "mom": 7.6, "type": "Editing + Overdub", "cats": ["tts", "cloning"], "price": "Free · from $24/mo", "domain": "descript.com", "letter": "D", "link": "#", "desc": "Edit audio like a doc, with voice cloning.", "s": [7.8, 7.8, 8.6, 8, 8, 7.6], "bestFor": "podcast and video voice editing."}, {"rank": 14, "name": "MiniMax Audio", "score": 7.8, "mom": 8, "type": "TTS + cloning", "cats": ["tts", "cloning"], "price": "API · usage", "domain": "minimax.io", "letter": "M", "link": "#", "desc": "High-quality multilingual TTS and cloning.", "s": [7.9, 8.2, 7.8, 7.6, 7.2, 8], "bestFor": "multilingual TTS at low cost."}, {"rank": 15, "name": "Inworld", "score": 7.8, "mom": 8, "type": "Real-time", "cats": ["realtime", "tts"], "price": "API · usage", "domain": "inworld.ai", "letter": "I", "link": "#", "desc": "Low-latency voices for games and agents.", "s": [7.8, 7.8, 7.6, 7.8, 7.4, 8], "bestFor": "interactive game and agent voice."}, {"rank": 16, "name": "LOVO", "score": 7.8, "mom": 7.4, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $24/mo", "domain": "lovo.ai", "letter": "L", "link": "#", "desc": "Genny studio with many voices and editing.", "s": [7.6, 8, 8.4, 7.8, 7.4, 7.4], "bestFor": "creator voiceovers."}, {"rank": 17, "name": "Camb.ai", "score": 7.7, "mom": 7.8, "type": "Dubbing", "cats": ["dubbing", "tts"], "price": "Free · usage", "domain": "camb.ai", "letter": "C", "link": "#", "desc": "Dubbing and translation across many languages.", "s": [7.7, 7.8, 7.8, 7.6, 7, 7.8], "bestFor": "video dubbing and localization."}, {"rank": 18, "name": "Typecast", "score": 7.6, "mom": 7.4, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $10/mo", "domain": "typecast.ai", "letter": "T", "link": "#", "desc": "Emotive character voices for content.", "s": [7.5, 7.8, 8.2, 7.6, 7, 7.4], "bestFor": "expressive character voiceovers."}, {"rank": 19, "name": "NaturalReader", "score": 7.6, "mom": 6.8, "type": "Listening", "cats": ["tts"], "price": "Free · from $10/mo", "domain": "naturalreaders.com", "letter": "N", "link": "#", "desc": "Long-standing read-aloud TTS for documents.", "s": [7.3, 8.2, 8.6, 7.8, 7, 6.8], "bestFor": "reading documents aloud."}, {"rank": 20, "name": "Podcastle", "score": 7.5, "mom": 7.2, "type": "Audio studio", "cats": ["tts", "cloning"], "price": "Free · from $12/mo", "domain": "podcastle.ai", "letter": "P", "link": "#", "desc": "Recording, editing and AI voices for podcasts.", "s": [7.3, 7.8, 8.4, 7.6, 7, 7.2], "bestFor": "end-to-end podcast production."}, {"rank": 21, "name": "Unreal Speech", "score": 7.5, "mom": 7.2, "type": "TTS API", "cats": ["tts"], "price": "API · usage", "domain": "unrealspeech.com", "letter": "U", "link": "#", "desc": "Low-cost TTS API built for high volume.", "s": [7.3, 8.6, 7.6, 7.6, 6.8, 7.2], "bestFor": "cheap TTS at scale via API."}, {"rank": 22, "name": "Replica Studios", "score": 7.4, "mom": 7.2, "type": "Game voices", "cats": ["tts"], "price": "Free · from $18/mo", "domain": "replicastudios.com", "letter": "R", "link": "#", "desc": "Voices for games and real-time experiences.", "s": [7.4, 7.6, 7.8, 7.4, 7, 7.2], "bestFor": "game and metaverse voices."}, {"rank": 23, "name": "Voice.ai", "score": 7.4, "mom": 7.2, "type": "Voice changer", "cats": ["cloning"], "price": "Free · Pro", "domain": "voice.ai", "letter": "V", "link": "#", "desc": "Real-time voice changing and TTS.", "s": [7.2, 8, 8, 7.2, 7, 7.2], "bestFor": "live voice changing."}, {"rank": 24, "name": "Speechki", "score": 7.4, "mom": 7, "type": "Audiobooks", "cats": ["tts"], "price": "From $13/mo", "domain": "speechki.org", "letter": "S", "link": "#", "desc": "Audiobook production with many voices.", "s": [7.3, 7.8, 8, 7.4, 6.8, 7], "bestFor": "turning text into audiobooks."}, {"rank": 25, "name": "Listnr", "score": 7.4, "mom": 7, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $19/mo", "domain": "listnr.ai", "letter": "L", "link": "#", "desc": "Voiceovers and podcast hosting in one.", "s": [7.2, 7.8, 8.2, 7.4, 6.8, 7], "bestFor": "podcast voice and hosting."}];
+  var TOOLS=[{"rank": 1, "name": "ElevenLabs", "score": 9, "mom": 9, "type": "TTS + cloning", "cats": ["tts", "cloning", "dubbing"], "price": "Free · from $5/mo", "domain": "elevenlabs.io", "letter": "E", "link": "#", "desc": "The realism leader for narration, cloning and dubbing.", "s": [9.4, 8.4, 9, 8.8, 8.8, 9], "bestFor": "the most natural narration and cloning.", "added": "2026-06-08T10:00:00Z"}, {"rank": 2, "name": "OpenAI Voice", "score": 8.5, "mom": 8.4, "type": "Realtime + TTS", "cats": ["tts", "realtime"], "price": "API · in ChatGPT", "domain": "openai.com", "letter": "O", "link": "#", "desc": "Realtime and TTS voices with contextual intelligence.", "s": [8.6, 8.4, 8.6, 8.4, 8.8, 8.4], "bestFor": "voice agents and app integration.", "added": "2026-06-08T10:00:00Z"}, {"rank": 3, "name": "Cartesia", "score": 8.4, "mom": 8.6, "type": "Real-time TTS", "cats": ["tts", "realtime"], "price": "Free · usage", "domain": "cartesia.ai", "letter": "C", "link": "#", "desc": "Sonic's ~90ms latency leads for voice agents.", "s": [8.6, 8.4, 8, 8.6, 7.8, 8.6], "bestFor": "real-time conversational agents.", "added": "2026-06-08T10:00:00Z"}, {"rank": 4, "name": "Hume AI", "score": 8.4, "mom": 8.6, "type": "Expressive TTS", "cats": ["tts", "realtime"], "price": "Free · usage", "domain": "hume.ai", "letter": "H", "link": "#", "desc": "Octave steers emotion from plain-English instructions.", "s": [8.8, 8, 8.2, 8.2, 7.8, 8.6], "bestFor": "emotionally expressive speech.", "added": "2026-06-08T10:00:00Z"}, {"rank": 5, "name": "Google Cloud TTS", "score": 8.3, "mom": 7.8, "type": "TTS API", "cats": ["tts", "realtime"], "price": "API · usage", "domain": "cloud.google.com", "letter": "G", "link": "#", "desc": "Chirp 3 HD: many styles at low per-character cost.", "s": [8.3, 8.8, 7.8, 8.8, 8.4, 7.8], "bestFor": "TTS at scale on a budget.", "added": "2026-06-08T10:00:00Z"}, {"rank": 6, "name": "Murf AI", "score": 8.2, "mom": 8, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $29/mo", "domain": "murf.ai", "letter": "M", "link": "#", "desc": "The best all-in-one studio for video voiceovers.", "s": [8.2, 7.8, 9, 8.6, 8, 8], "bestFor": "polished video voiceovers.", "added": "2026-06-08T10:00:00Z"}, {"rank": 7, "name": "Microsoft Azure TTS", "score": 8.1, "mom": 7.6, "type": "TTS API", "cats": ["tts"], "price": "API · usage", "domain": "azure.microsoft.com", "letter": "A", "link": "#", "desc": "Neural voices with enterprise governance and SLAs.", "s": [8.1, 8.4, 7.8, 8.8, 8.2, 7.6], "bestFor": "enterprise TTS in the cloud.", "added": "2026-06-08T10:00:00Z"}, {"rank": 8, "name": "Resemble AI", "score": 8, "mom": 8, "type": "Cloning", "cats": ["cloning", "dubbing"], "price": "Free · usage", "domain": "resemble.ai", "letter": "R", "link": "#", "desc": "Professional cloning, speech-to-speech and dubbing.", "s": [8.2, 7.8, 8, 8.2, 7.8, 8], "bestFor": "brand voice cloning and dubbing.", "added": "2026-06-08T10:00:00Z"}, {"rank": 9, "name": "WellSaid Labs", "score": 8, "mom": 7.6, "type": "Enterprise TTS", "cats": ["tts"], "price": "From $44/mo", "domain": "wellsaidlabs.com", "letter": "W", "link": "#", "desc": "Enterprise-grade, consent-based studio voices.", "s": [8.2, 7.4, 8.4, 8.6, 7.8, 7.6], "bestFor": "compliant corporate narration.", "added": "2026-06-08T10:00:00Z"}, {"rank": 10, "name": "Speechify", "score": 8, "mom": 7.6, "type": "Listening", "cats": ["tts"], "price": "Free · Premium $11/mo", "domain": "speechify.com", "letter": "S", "link": "#", "desc": "Turns articles and docs into natural speech.", "s": [7.7, 8.2, 9, 8, 7.8, 7.6], "bestFor": "listening to text on the go.", "added": "2026-06-08T10:00:00Z"}, {"rank": 11, "name": "Fish Audio", "score": 8, "mom": 8.2, "type": "Cloning", "cats": ["cloning", "tts"], "price": "Free · usage", "domain": "fish.audio", "letter": "F", "link": "#", "desc": "Fast, low-cost cloning and open-leaning models.", "s": [7.9, 8.6, 7.8, 7.8, 7.4, 8.2], "bestFor": "affordable voice cloning.", "added": "2026-06-08T10:00:00Z"}, {"rank": 12, "name": "Amazon Polly", "score": 8, "mom": 7.2, "type": "TTS API", "cats": ["tts"], "price": "API · usage", "domain": "aws.amazon.com", "letter": "A", "link": "#", "desc": "Reliable, cheap TTS deep in the AWS stack.", "s": [7.9, 8.6, 7.6, 8.8, 8, 7.2], "bestFor": "AWS-native voice at scale.", "added": "2026-06-08T10:00:00Z"}, {"rank": 13, "name": "Descript", "score": 7.9, "mom": 7.6, "type": "Editing + Overdub", "cats": ["tts", "cloning"], "price": "Free · from $24/mo", "domain": "descript.com", "letter": "D", "link": "#", "desc": "Edit audio like a doc, with voice cloning.", "s": [7.8, 7.8, 8.6, 8, 8, 7.6], "bestFor": "podcast and video voice editing.", "added": "2026-06-08T10:00:00Z"}, {"rank": 14, "name": "MiniMax Audio", "score": 7.8, "mom": 8, "type": "TTS + cloning", "cats": ["tts", "cloning"], "price": "API · usage", "domain": "minimax.io", "letter": "M", "link": "#", "desc": "High-quality multilingual TTS and cloning.", "s": [7.9, 8.2, 7.8, 7.6, 7.2, 8], "bestFor": "multilingual TTS at low cost.", "added": "2026-06-08T10:00:00Z"}, {"rank": 15, "name": "Inworld", "score": 7.8, "mom": 8, "type": "Real-time", "cats": ["realtime", "tts"], "price": "API · usage", "domain": "inworld.ai", "letter": "I", "link": "#", "desc": "Low-latency voices for games and agents.", "s": [7.8, 7.8, 7.6, 7.8, 7.4, 8], "bestFor": "interactive game and agent voice.", "added": "2026-06-08T10:00:00Z"}, {"rank": 16, "name": "LOVO", "score": 7.8, "mom": 7.4, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $24/mo", "domain": "lovo.ai", "letter": "L", "link": "#", "desc": "Genny studio with many voices and editing.", "s": [7.6, 8, 8.4, 7.8, 7.4, 7.4], "bestFor": "creator voiceovers.", "added": "2026-06-08T10:00:00Z"}, {"rank": 17, "name": "Camb.ai", "score": 7.7, "mom": 7.8, "type": "Dubbing", "cats": ["dubbing", "tts"], "price": "Free · usage", "domain": "camb.ai", "letter": "C", "link": "#", "desc": "Dubbing and translation across many languages.", "s": [7.7, 7.8, 7.8, 7.6, 7, 7.8], "bestFor": "video dubbing and localization.", "added": "2026-06-08T10:00:00Z"}, {"rank": 18, "name": "Typecast", "score": 7.6, "mom": 7.4, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $10/mo", "domain": "typecast.ai", "letter": "T", "link": "#", "desc": "Emotive character voices for content.", "s": [7.5, 7.8, 8.2, 7.6, 7, 7.4], "bestFor": "expressive character voiceovers.", "added": "2026-06-08T10:00:00Z"}, {"rank": 19, "name": "NaturalReader", "score": 7.6, "mom": 6.8, "type": "Listening", "cats": ["tts"], "price": "Free · from $10/mo", "domain": "naturalreaders.com", "letter": "N", "link": "#", "desc": "Long-standing read-aloud TTS for documents.", "s": [7.3, 8.2, 8.6, 7.8, 7, 6.8], "bestFor": "reading documents aloud.", "added": "2026-06-08T10:00:00Z"}, {"rank": 20, "name": "Podcastle", "score": 7.5, "mom": 7.2, "type": "Audio studio", "cats": ["tts", "cloning"], "price": "Free · from $12/mo", "domain": "podcastle.ai", "letter": "P", "link": "#", "desc": "Recording, editing and AI voices for podcasts.", "s": [7.3, 7.8, 8.4, 7.6, 7, 7.2], "bestFor": "end-to-end podcast production.", "added": "2026-06-08T10:00:00Z"}, {"rank": 21, "name": "Unreal Speech", "score": 7.5, "mom": 7.2, "type": "TTS API", "cats": ["tts"], "price": "API · usage", "domain": "unrealspeech.com", "letter": "U", "link": "#", "desc": "Low-cost TTS API built for high volume.", "s": [7.3, 8.6, 7.6, 7.6, 6.8, 7.2], "bestFor": "cheap TTS at scale via API.", "added": "2026-06-08T10:00:00Z"}, {"rank": 22, "name": "Replica Studios", "score": 7.4, "mom": 7.2, "type": "Game voices", "cats": ["tts"], "price": "Free · from $18/mo", "domain": "replicastudios.com", "letter": "R", "link": "#", "desc": "Voices for games and real-time experiences.", "s": [7.4, 7.6, 7.8, 7.4, 7, 7.2], "bestFor": "game and metaverse voices.", "added": "2026-06-08T10:00:00Z"}, {"rank": 23, "name": "Voice.ai", "score": 7.4, "mom": 7.2, "type": "Voice changer", "cats": ["cloning"], "price": "Free · Pro", "domain": "voice.ai", "letter": "V", "link": "#", "desc": "Real-time voice changing and TTS.", "s": [7.2, 8, 8, 7.2, 7, 7.2], "bestFor": "live voice changing.", "added": "2026-06-08T10:00:00Z"}, {"rank": 24, "name": "Speechki", "score": 7.4, "mom": 7, "type": "Audiobooks", "cats": ["tts"], "price": "From $13/mo", "domain": "speechki.org", "letter": "S", "link": "#", "desc": "Audiobook production with many voices.", "s": [7.3, 7.8, 8, 7.4, 6.8, 7], "bestFor": "turning text into audiobooks.", "added": "2026-06-08T10:00:00Z"}, {"rank": 25, "name": "Listnr", "score": 7.4, "mom": 7, "type": "Voiceover studio", "cats": ["tts"], "price": "Free · from $19/mo", "domain": "listnr.ai", "letter": "L", "link": "#", "desc": "Voiceovers and podcast hosting in one.", "s": [7.2, 7.8, 8.2, 7.4, 6.8, 7], "bestFor": "podcast voice and hosting.", "added": "2026-06-08T10:00:00Z"}];
   var GLOWS=['rgba(108,92,255,.18)','rgba(17,197,212,.18)','rgba(255,93,143,.18)'];
 
   var listEl=document.getElementById('list');
@@ -474,27 +496,36 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
       +'<path class="sp-area" d="'+area+'"/><path class="sp-line" d="'+line+'"/>'
       +'<circle class="sp-dot" cx="'+p[N-1][0].toFixed(1)+'" cy="'+p[N-1][1].toFixed(1)+'" r="2.4"/></svg>';
   }
+  function BR_added(t){var x=t.added?Date.parse(t.added):0;return isNaN(x)?0:x;}
+  function BR_rel(iso){var t=Date.parse(iso);if(isNaN(t))return '';var s=Math.max(0,(Date.now()-t)/1000);
+    if(s<60)return 'just now';var m=Math.floor(s/60);if(m<60)return m+' minute'+(m>1?'s':'')+' ago';
+    var h=Math.floor(m/60);if(h<24)return h+' hour'+(h>1?'s':'')+' ago';
+    var d=Math.floor(h/24);if(d<7)return d+' day'+(d>1?'s':'')+' ago';
+    var w=Math.floor(d/7);if(w<5)return w+' week'+(w>1?'s':'')+' ago';
+    var mo=Math.floor(d/30.4);if(mo<12)return mo+' month'+(mo>1?'s':'')+' ago';
+    var y=Math.floor(d/365);return y+' year'+(y>1?'s':'')+' ago';}
   function rowHTML(t,i){
-    var pct=(t.score*10).toFixed(0);
-    var medal=t.rank<=3?(' m'+t.rank):'';
+    var rated=t.score!=null;
+    var pct=rated?(t.score*10).toFixed(0):0;
+    var medal=(rated&&t.rank<=3)?(' m'+t.rank):'';
     var glow=GLOWS[i%3];
     var SN=['Output','Value','Ease of use','Reliability','Ecosystem','Momentum'];
     var SD=['35% of the score · How good the results actually are: accuracy, polish, and how often output is usable without heavy fixing.','15% of the score · What you get for the price (free tier included) — worth, not just how cheap it is.','15% of the score · How fast a new user gets productive: setup, learning curve, everyday friction.','10% of the score · Consistency — uptime, stable results, how rarely it breaks or shifts under you.','10% of the score · Everything around it — integrations, docs, community, extensions, platform support.','15% of the score · Trajectory right now — how fast it is shipping real improvements and gaining ground.'];
     var SCO=['#6c5cff','#11c5d4','#ff5d8f','#ff9f1c','#10b981','#b14dff'];
-    var subs=t.s.map(function(v,j){return '<div class="sub"><span class="sn sndef" tabindex="0" data-tip="'+SD[j]+'">'+SN[j]+'<i class="mi" aria-hidden="true">i</i></span><span class="sb"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span><span class="sv">'+v.toFixed(1)+'</span></div>';}).join('');
+    var subs=SN.map(function(nm,j){var v=(t.s&&t.s[j]!=null)?t.s[j]:null;var w=v!=null?(v*10):0;var disp=v!=null?v.toFixed(1):'—';return '<div class="sub'+(v==null?' na':'')+'"><span class="sn sndef" tabindex="0" data-tip="'+SD[j]+'">'+nm+'<i class="mi" aria-hidden="true">i</i></span><span class="sb"><span style="width:'+w+'%;background:'+SCO[j]+'"></span></span><span class="sv">'+disp+'</span></div>';}).join('');
     var site=siteOf(t);
     return '<div class="row spot reveal" data-cats="'+t.cats.join(' ')+'" style="--glow:'+glow+'">'
       +'<div class="rsummary">'
-        +'<div class="rank'+medal+'">'+t.rank+'</div>'
+        +'<div class="rank'+medal+(rated?'':' na')+'">'+(rated?t.rank:'NA')+'</div>'
         +'<div class="logo sm" data-letter="'+t.letter+'"><img alt="'+t.name+' logo" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></div>'
         +'<div class="rmain">'
-          +'<div class="rname">'+t.name+(t.rank===1?' <span class="toppick">Top pick</span>':'')+'</div>'
+          +'<div class="rname">'+t.name+(rated&&t.rank===1?' <span class="toppick">Top pick</span>':'')+'</div>'
           +'<div class="rdesc">'+t.desc+'</div>'
-          +'<div class="rtags"><span class="chip cat">'+t.type+'</span><span class="chip price">'+t.price+'</span><button type="button" class="chip cmpchip" data-ti="'+TOOLS.indexOf(t)+'" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13M14 6l3 3-3 3M20 15H7M10 12l-3 3 3 3"/></svg>Compare</button></div>'
+          +'<div class="rtags">'+(rated?'':'<span class="chip prov">Not yet rated</span>')+'<span class="chip cat">'+t.type+'</span><span class="chip price">'+t.price+'</span><button type="button" class="chip cmpchip" data-ti="'+TOOLS.indexOf(t)+'" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13M14 6l3 3-3 3M20 15H7M10 12l-3 3 3 3"/></svg>Compare</button>'+(activeSort==='new'&&t.added?'<span class="listed">listed '+BR_rel(t.added)+'</span>':'')+'</div>'
         +'</div>'
-        +'<div class="rscore"><span class="sc">'+t.score.toFixed(1)+'</span><span class="scbar"><span style="width:'+pct+'%"></span></span>'
-          +'<span class="rstars" role="img" aria-label="'+(t.score/2).toFixed(1)+' out of 5 stars"><span class="rs-bg">\u2605\u2605\u2605\u2605\u2605</span><span class="rs-fg" style="width:'+pct+'%">\u2605\u2605\u2605\u2605\u2605</span></span>'
-          +'<span class="mom"><span class="momhead"><span class="momlabel">Momentum</span><b class="momval">'+t.mom.toFixed(1)+'</b></span>'+sparkSVG(t.mom)+'</span>'
+        +'<div class="rscore">'
+          +(rated?'<span class="sc">'+t.score.toFixed(1)+'</span><span class="scbar"><span style="width:'+pct+'%"></span></span><span class="rstars" role="img" aria-label="'+(t.score/2).toFixed(1)+' out of 5 stars"><span class="rs-bg">\u2605\u2605\u2605\u2605\u2605</span><span class="rs-fg" style="width:'+pct+'%">\u2605\u2605\u2605\u2605\u2605</span></span>':'<span class="sc na">—</span><span class="sclbl-na">Not yet rated</span>')
+          +(t.mom!=null?'<span class="mom"><span class="momhead"><span class="momlabel">Momentum</span><b class="momval">'+t.mom.toFixed(1)+'</b></span>'+sparkSVG(t.mom)+'</span>':'')
         +'</div>'
         +'<div class="ractions">'
           +'<span class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>'
@@ -518,22 +549,22 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 
   function render(animate){
     var rows=TOOLS.filter(function(t){return activeCat==='all'||t.cats.indexOf(activeCat)>-1;});
-    rows.sort(function(a,b){ return activeSort==='mom' ? b.mom-a.mom || b.score-a.score : a.rank-b.rank; });
+    rows.sort(function(a,b){
+      if(activeSort==='new') return (BR_added(b)-BR_added(a)) || ((a.rank||1e9)-(b.rank||1e9));
+      var ar=a.score!=null,br2=b.score!=null; if(ar!==br2) return ar?-1:1;
+      if(activeSort==='mom') return (b.mom||0)-(a.mom||0) || ((b.score||0)-(a.score||0));
+      return (a.rank||1e9)-(b.rank||1e9);
+    });
+    if(activeSort==='new') rows=rows.slice(0,25);
     if(!rows.length){ listEl.innerHTML='<div class="empty">No tools in this category yet.</div>'; if(pagerEl)pagerEl.innerHTML=''; return; }
     var total=rows.length, pages=Math.max(1,Math.ceil(total/PER));
     if(curPage>pages)curPage=pages; if(curPage<1)curPage=1;
     var pgStart=(curPage-1)*PER;
     listEl.innerHTML=rows.slice(pgStart,pgStart+PER).map(rowHTML).join('');
-    renderPager(total,pages,pgStart);
+    if(activeSort==='new'){ if(pagerEl)pagerEl.innerHTML=''; } else { renderPager(total,pages,pgStart); }
     listEl.classList.toggle('trending', activeSort==='mom');
+    listEl.classList.toggle('newest', activeSort==='new');
     listEl.querySelectorAll('.rsummary').forEach(function(su){ su.addEventListener('click',function(){ su.parentNode.classList.toggle('open'); }); });
-    // ad after the 8th visible row
-    var rowEls=listEl.querySelectorAll('.row');
-    if(rowEls.length>8){
-      var ad=document.createElement('div'); ad.className='ad';
-      ad.innerHTML='<span>Advertisement</span><small>responsive · 970 × 90</small>';
-      rowEls[8].parentNode.insertBefore(ad, rowEls[8]);
-    }
     // logo fallback
     listEl.querySelectorAll('.logo img').forEach(function(im){
       im.addEventListener('error',function(){ var w=im.parentNode; w.innerHTML='<span class="fb">'+w.getAttribute('data-letter')+'</span>'; });
@@ -570,11 +601,8 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
   });
 
   // filters
-  document.getElementById('filters').addEventListener('click',function(e){
-    var b=e.target.closest('.chip-f'); if(!b) return;
-    this.querySelectorAll('.chip-f').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
-    activeCat=b.dataset.cat; curPage=1; render(false);
-  });
+  (function(){var fs=document.getElementById('filterSel');
+    if(fs)fs.addEventListener('change',function(){activeCat=this.value;curPage=1;render(false);});})();
   // sort
   document.getElementById('sort').addEventListener('click',function(e){
     var b=e.target.closest('button'); if(!b) return;

@@ -578,6 +578,18 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 .fslide p{font-size:clamp(15px,1.45vw,18px);line-height:1.55;color:var(--ink-soft);margin:0;max-width:48ch}
 @media(max-width:600px){.fslide{min-height:0;padding:26px 24px;gap:15px}.fslide h4{font-size:26px;margin-bottom:9px}.fslide p{font-size:16px}.fslide .fnum{font-size:120px;top:-22px}}
 </style>
+<style id="br-trend">
+.br-trendcard .trend-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:4px}
+.trend-sub{font-size:13px;color:var(--ink-faint);margin:0 0 14px}
+.trend-pill{font-size:12px;font-weight:800;padding:5px 11px;border-radius:100px;white-space:nowrap}
+.trend-pill.up{color:var(--green);background:rgba(16,185,129,.14)}
+.trend-pill.down{color:#ff5d8f;background:rgba(255,93,143,.14)}
+.trend-pill.flat{color:var(--ink-soft);background:var(--line-soft)}
+.trend-svg{display:block;width:100%;height:150px}
+.trend-x{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-faint);font-weight:600;margin-top:6px}
+.trend-empty{display:flex;align-items:center;gap:13px;padding:22px 18px;border:1.5px dashed var(--line);border-radius:14px;color:var(--ink-soft);font-size:14px;line-height:1.5}
+.trend-empty svg{width:26px;height:26px;flex:none;fill:none;stroke:var(--ink-faint);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+</style>
 </head>
 <body>
 
@@ -647,6 +659,12 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
       <div class="scorerows"><div class="row"><div class="name metric" tabindex="0" data-tip="35% of the score · How good the results actually are: accuracy, polish, and how often output is usable without heavy fixing.">Output quality<i class="mi" aria-hidden="true">i</i></div><div class="bar"><div class="fill" data-w="97%" style="background:#6c5cff"></div></div><div class="val">9.7</div></div><div class="row"><div class="name metric" tabindex="0" data-tip="15% of the score · What you get for the price (free tier included) — worth, not just how cheap it is.">Value for money<i class="mi" aria-hidden="true">i</i></div><div class="bar"><div class="fill" data-w="80%" style="background:#11c5d4"></div></div><div class="val">8.0</div></div><div class="row"><div class="name metric" tabindex="0" data-tip="15% of the score · How fast a new user gets productive: setup, learning curve, everyday friction.">Ease of use<i class="mi" aria-hidden="true">i</i></div><div class="bar"><div class="fill" data-w="80%" style="background:#ff5d8f"></div></div><div class="val">8.0</div></div><div class="row"><div class="name metric" tabindex="0" data-tip="10% of the score · Consistency — uptime, stable results, how rarely it breaks or shifts under you.">Reliability<i class="mi" aria-hidden="true">i</i></div><div class="bar"><div class="fill" data-w="85%" style="background:#ff9f1c"></div></div><div class="val">8.5</div></div><div class="row"><div class="name metric" tabindex="0" data-tip="10% of the score · Everything around it — integrations, docs, community, extensions, platform support.">Ecosystem<i class="mi" aria-hidden="true">i</i></div><div class="bar"><div class="fill" data-w="80%" style="background:#10b981"></div></div><div class="val">8.0</div></div><div class="row"><div class="name metric" tabindex="0" data-tip="15% of the score · Trajectory right now — how fast it is shipping real improvements and gaining ground.">Momentum<i class="mi" aria-hidden="true">i</i></div><div class="bar"><div class="fill" data-w="92%" style="background:#b14dff"></div></div><div class="val">9.2</div></div></div>
       <div class="method">Weighted total <b style="color:var(--ink)">8.8 / 10</b> &middot; scored on blipradar's public rubric. <a href="#" id="howScore">How we score &rarr;</a></div>
     </div>
+    <div class="card reveal spot br-trendcard">
+      <div class="trend-head"><div class="h" style="margin:0">Interest over time</div><span class="trend-pill" id="trendPill"></span></div>
+      <p class="trend-sub">blipradar momentum index, tracked monthly.</p>
+      <div id="trendBody"></div>
+      <script type="application/json" id="brTrendData">[]</script>
+    </div>
     <div class="h reveal">The verdict</div>
     <div class="vtabs reveal">
       <button class="vtab on" data-v="v0"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg> What it is</button>
@@ -688,7 +706,6 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
     <p class="facts-note">Company figures are drawn from public disclosures and reputable trackers (gathered Jun 2026). User and revenue numbers are estimates and move fast.</p>
   </div>
 
-  <div class="ad reveal"><span>Advertisement</span><small>in-content &middot; 728 &times; 90</small></div>
 
   <div class="h reveal">Compare with another tool</div>
   <p class="prose reveal" style="margin:-6px 0 16px">Pick up to two other coding tools to see them head-to-head on the same rubric.</p>
@@ -945,6 +962,32 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
  if(prev)prev.addEventListener('click',function(){go(Math.max(0,cur()-1));});
  if(next)next.addEventListener('click',function(){go(Math.min(slides.length-1,cur()+1));});
  strip.addEventListener('scroll',function(){var b=cur();dots.forEach(function(d,i){d.classList.toggle('on',i===b);});},{passive:true});
+})();
+</script>
+<script>
+(function(){var el=document.getElementById('brTrendData');if(!el)return;
+var body=document.getElementById('trendBody'),pill=document.getElementById('trendPill');
+var data=[];try{data=JSON.parse(el.textContent)||[];}catch(e){}
+if(!data||data.length<3){body.innerHTML='<div class="trend-empty"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/><path d="M16 8h5v5"/></svg><span>Building trend history \u2014 check back as we track this tool month over month.</span></div>';return;}
+var W=560,H=150,pad=16,n=data.length,vs=data.map(function(d){return +d.v;});
+var mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs);
+var lo=Math.max(0,Math.floor((mn-5)/10)*10),hi=Math.min(100,Math.ceil((mx+5)/10)*10);if(hi<=lo)hi=lo+10;
+function X(i){return pad+i/(n-1)*(W-2*pad);}function Y(v){return pad+(1-(v-lo)/(hi-lo))*(H-2*pad);}
+var pts=data.map(function(d,i){return [X(i),Y(+d.v)];});
+var line=pts.map(function(p,i){return (i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1);}).join(' ');
+var area=line+' L'+X(n-1).toFixed(1)+' '+(H-pad)+' L'+X(0).toFixed(1)+' '+(H-pad)+' Z';
+var lp=pts[n-1];
+var svg='<svg class="trend-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" role="img" aria-label="Interest over time">'
++'<defs><linearGradient id="tgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6c5cff"/><stop offset=".5" stop-color="#b14dff"/><stop offset="1" stop-color="#ff5d8f"/></linearGradient>'
++'<linearGradient id="tfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b14dff" stop-opacity=".28"/><stop offset="1" stop-color="#b14dff" stop-opacity="0"/></linearGradient></defs>'
++'<path d="'+area+'" fill="url(#tfill)"/>'
++'<path d="'+line+'" fill="none" stroke="url(#tgrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>'
++'<circle cx="'+lp[0].toFixed(1)+'" cy="'+lp[1].toFixed(1)+'" r="3.5" fill="#ff5d8f"/></svg>';
+function fmt(m){var p=(''+(m||'')).split('-');var mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return p.length===2?(mo[(+p[1])-1]+" '"+p[0].slice(2)):m;}
+body.innerHTML=svg+'<div class="trend-x"><span>'+fmt(data[0].m)+'</span><span>'+fmt(data[n-1].m)+'</span></div>';
+var delta=vs[n-1]-vs[0],cls,txt;
+if(delta>=6){cls='up';txt='\u2191 Rising interest';}else if(delta<=-6){cls='down';txt='\u2193 Cooling off';}else{cls='flat';txt='\u2192 Holding steady';}
+if(pill){pill.className='trend-pill '+cls;pill.textContent=txt;}
 })();
 </script>
 </body>
