@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """blipradar build step: data.json -> category pages.
-Run after editing data.json (the admin panel does this for you on save).
-Rewrites each category page's `var TOOLS=[...]` and `var SITES={...}` from data.json."""
+data.json is grouped: { "categories":[{slug,label,live}], "coding":[...tools], "writing":[...], ... }
+(Also still works with the older flat shape { "categories":[...], "tools":[...] }.)
+The admin panel edits data.json; this regenerates each category page's TOOLS + SITES."""
 import json, re
 
 data = json.load(open("data.json"))
-by_cat = {}
-for t in data["tools"]:
-    by_cat.setdefault(t["category"], []).append(t)
+cats = data.get("categories", [])
+
+def rows_for(slug):
+    if slug in data and isinstance(data[slug], list):      # new grouped shape
+        return data[slug]
+    return [t for t in data.get("tools", []) if t.get("category") == slug]  # old flat shape
 
 FIELDS = ["rank","name","score","mom","type","cats","price","domain","letter","link","desc","s","bestFor"]
 changed = []
-for cat in data["categories"]:
+for cat in cats:
     slug = cat["slug"]; page = slug + ".html"
-    rows = sorted(by_cat.get(slug, []), key=lambda r: r.get("rank", 999))
+    rows = sorted(rows_for(slug), key=lambda r: r.get("rank", 999))
     if not rows: continue
     tools = [{k: r.get(k) for k in FIELDS} for r in rows]
-    sites = {r["name"]: r["url"] for r in rows}        # the visit / affiliate link behind each button
+    sites = {r["name"]: r.get("url", "https://" + r.get("domain","")) for r in rows}
     try:
         s = open(page).read()
     except FileNotFoundError:

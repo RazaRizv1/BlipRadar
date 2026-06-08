@@ -26,9 +26,8 @@
       "live": true
     }
   ],
-  "tools": [
+  "coding": [
     {
-      "category": "coding",
       "rank": 1,
       "name": "Cursor",
       "score": 8.9,
@@ -55,7 +54,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 2,
       "name": "Claude Code",
       "score": 8.8,
@@ -83,7 +81,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 3,
       "name": "GitHub Copilot",
       "score": 8.3,
@@ -111,7 +108,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 4,
       "name": "OpenAI Codex",
       "score": 8.1,
@@ -139,7 +135,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 5,
       "name": "Windsurf",
       "score": 8,
@@ -166,7 +161,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 6,
       "name": "OpenCode",
       "score": 8,
@@ -195,7 +189,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 7,
       "name": "Zed",
       "score": 7.9,
@@ -222,7 +215,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 8,
       "name": "Google Antigravity",
       "score": 7.8,
@@ -250,7 +242,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 9,
       "name": "Cline",
       "score": 7.8,
@@ -279,7 +270,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 10,
       "name": "JetBrains Junie",
       "score": 7.8,
@@ -307,7 +297,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 11,
       "name": "Kilo Code",
       "score": 7.8,
@@ -336,7 +325,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 12,
       "name": "Devin",
       "score": 7.7,
@@ -363,7 +351,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 13,
       "name": "Aider",
       "score": 7.7,
@@ -391,7 +378,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 14,
       "name": "CodeRabbit",
       "score": 7.7,
@@ -418,7 +404,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 15,
       "name": "Replit Agent",
       "score": 7.7,
@@ -446,7 +431,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 16,
       "name": "Amazon Q Developer",
       "score": 7.6,
@@ -473,7 +457,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 17,
       "name": "OpenHands",
       "score": 7.6,
@@ -501,7 +484,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 18,
       "name": "Augment Code",
       "score": 7.5,
@@ -529,7 +511,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 19,
       "name": "Trae",
       "score": 7.5,
@@ -556,7 +537,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 20,
       "name": "Gemini Code Assist",
       "score": 7.4,
@@ -584,7 +564,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 21,
       "name": "Qodo",
       "score": 7.4,
@@ -611,7 +590,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 22,
       "name": "Goose",
       "score": 7.4,
@@ -639,7 +617,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 23,
       "name": "Continue",
       "score": 7.3,
@@ -668,7 +645,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 24,
       "name": "Greptile",
       "score": 7.3,
@@ -695,7 +671,6 @@
       "affiliate": false
     },
     {
-      "category": "coding",
       "rank": 25,
       "name": "Tabnine",
       "score": 7.2,
@@ -720,9 +695,10 @@
       ],
       "url": "https://tabnine.com",
       "affiliate": false
-    },
+    }
+  ],
+  "writing": [
     {
-      "category": "writing",
       "rank": 1,
       "name": "ChatGPT",
       "score": 9.1,
@@ -750,7 +726,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 2,
       "name": "Claude",
       "score": 9.1,
@@ -778,7 +753,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 3,
       "name": "Gemini",
       "score": 8.8,
@@ -805,7 +779,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 4,
       "name": "Grammarly",
       "score": 8.6,
@@ -832,7 +805,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 5,
       "name": "QuillBot",
       "score": 8.4,
@@ -859,7 +831,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 6,
       "name": "Sudowrite",
       "score": 8.3,
@@ -886,7 +857,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 7,
       "name": "Notion AI",
       "score": 8.2,
@@ -913,7 +883,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 8,
       "name": "Jasper",
       "score": 8.2,
@@ -941,7 +910,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 9,
       "name": "Wordtune",
       "score": 8.1,
@@ -968,7 +936,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 10,
       "name": "Copy.ai",
       "score": 8.1,
@@ -995,7 +962,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 11,
       "name": "Writesonic",
       "score": 8,
@@ -1023,7 +989,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 12,
       "name": "ProWritingAid",
       "score": 8,
@@ -1051,7 +1016,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 13,
       "name": "Rytr",
       "score": 7.9,
@@ -1078,7 +1042,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 14,
       "name": "Writer",
       "score": 7.8,
@@ -1105,7 +1068,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 15,
       "name": "Lex",
       "score": 7.8,
@@ -1133,7 +1095,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 16,
       "name": "Anyword",
       "score": 7.8,
@@ -1160,7 +1121,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 17,
       "name": "HyperWrite",
       "score": 7.8,
@@ -1187,7 +1147,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 18,
       "name": "Hemingway Editor",
       "score": 7.7,
@@ -1214,7 +1173,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 19,
       "name": "Scalenut",
       "score": 7.7,
@@ -1242,7 +1200,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 20,
       "name": "Jenni AI",
       "score": 7.6,
@@ -1270,7 +1227,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 21,
       "name": "Frase",
       "score": 7.6,
@@ -1297,7 +1253,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 22,
       "name": "Type",
       "score": 7.5,
@@ -1324,7 +1279,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 23,
       "name": "NovelAI",
       "score": 7.5,
@@ -1351,7 +1305,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 24,
       "name": "Hoppy Copy",
       "score": 7.4,
@@ -1378,7 +1331,6 @@
       "affiliate": false
     },
     {
-      "category": "writing",
       "rank": 25,
       "name": "Copysmith",
       "score": 7.3,
@@ -1403,9 +1355,10 @@
       ],
       "url": "https://copysmith.ai",
       "affiliate": false
-    },
+    }
+  ],
+  "image": [
     {
-      "category": "image",
       "rank": 1,
       "name": "GPT Image",
       "score": 9,
@@ -1433,7 +1386,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 2,
       "name": "Google Imagen",
       "score": 8.9,
@@ -1461,7 +1413,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 3,
       "name": "Midjourney",
       "score": 8.8,
@@ -1488,7 +1439,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 4,
       "name": "FLUX",
       "score": 8.7,
@@ -1516,7 +1466,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 5,
       "name": "Adobe Firefly",
       "score": 8.4,
@@ -1544,7 +1493,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 6,
       "name": "Ideogram",
       "score": 8.4,
@@ -1571,7 +1519,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 7,
       "name": "Stable Diffusion",
       "score": 8.2,
@@ -1598,7 +1545,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 8,
       "name": "Recraft",
       "score": 8.2,
@@ -1625,7 +1571,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 9,
       "name": "Leonardo AI",
       "score": 8.2,
@@ -1653,7 +1598,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 10,
       "name": "Grok Imagine",
       "score": 8.1,
@@ -1681,7 +1625,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 11,
       "name": "Canva Magic Media",
       "score": 8.1,
@@ -1709,7 +1652,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 12,
       "name": "Freepik AI",
       "score": 8,
@@ -1737,7 +1679,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 13,
       "name": "Krea",
       "score": 8,
@@ -1765,7 +1706,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 14,
       "name": "Reve",
       "score": 8,
@@ -1793,7 +1733,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 15,
       "name": "Microsoft Designer",
       "score": 8,
@@ -1820,7 +1759,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 16,
       "name": "Seedream",
       "score": 8,
@@ -1848,7 +1786,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 17,
       "name": "Photoroom",
       "score": 7.8,
@@ -1876,7 +1813,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 18,
       "name": "Playground",
       "score": 7.8,
@@ -1904,7 +1840,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 19,
       "name": "Luma Photon",
       "score": 7.8,
@@ -1931,7 +1866,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 20,
       "name": "Magnific",
       "score": 7.6,
@@ -1958,7 +1892,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 21,
       "name": "Picsart",
       "score": 7.6,
@@ -1986,7 +1919,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 22,
       "name": "Fotor",
       "score": 7.5,
@@ -2014,7 +1946,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 23,
       "name": "Getimg",
       "score": 7.5,
@@ -2042,7 +1973,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 24,
       "name": "NightCafe",
       "score": 7.5,
@@ -2069,7 +1999,6 @@
       "affiliate": false
     },
     {
-      "category": "image",
       "rank": 25,
       "name": "Dream by WOMBO",
       "score": 7.4,
@@ -2094,9 +2023,10 @@
       ],
       "url": "https://dream.ai",
       "affiliate": false
-    },
+    }
+  ],
+  "video": [
     {
-      "category": "video",
       "rank": 1,
       "name": "Google Veo",
       "score": 8.8,
@@ -2123,7 +2053,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 2,
       "name": "Kling",
       "score": 8.7,
@@ -2150,7 +2079,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 3,
       "name": "Seedance",
       "score": 8.5,
@@ -2177,7 +2105,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 4,
       "name": "Runway",
       "score": 8.4,
@@ -2205,7 +2132,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 5,
       "name": "HeyGen",
       "score": 8.3,
@@ -2232,7 +2158,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 6,
       "name": "Hailuo",
       "score": 8.3,
@@ -2259,7 +2184,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 7,
       "name": "Synthesia",
       "score": 8.2,
@@ -2286,7 +2210,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 8,
       "name": "Wan",
       "score": 8.1,
@@ -2314,7 +2237,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 9,
       "name": "Luma Dream Machine",
       "score": 8.1,
@@ -2341,7 +2263,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 10,
       "name": "Sora",
       "score": 8.1,
@@ -2368,7 +2289,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 11,
       "name": "Adobe Firefly Video",
       "score": 8.1,
@@ -2396,7 +2316,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 12,
       "name": "Midjourney Video",
       "score": 8,
@@ -2423,7 +2342,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 13,
       "name": "Pika",
       "score": 8,
@@ -2451,7 +2369,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 14,
       "name": "Higgsfield",
       "score": 7.9,
@@ -2478,7 +2395,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 15,
       "name": "Hedra",
       "score": 7.9,
@@ -2506,7 +2422,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 16,
       "name": "Grok Imagine",
       "score": 7.8,
@@ -2533,7 +2448,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 17,
       "name": "PixVerse",
       "score": 7.8,
@@ -2560,7 +2474,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 18,
       "name": "CapCut Dreamina",
       "score": 7.8,
@@ -2588,7 +2501,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 19,
       "name": "Krea",
       "score": 7.8,
@@ -2616,7 +2528,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 20,
       "name": "LTX Studio",
       "score": 7.7,
@@ -2644,7 +2555,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 21,
       "name": "Vidu",
       "score": 7.6,
@@ -2671,7 +2581,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 22,
       "name": "Genmo",
       "score": 7.6,
@@ -2699,7 +2608,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 23,
       "name": "InVideo AI",
       "score": 7.5,
@@ -2726,7 +2634,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 24,
       "name": "Haiper",
       "score": 7.5,
@@ -2753,7 +2660,6 @@
       "affiliate": false
     },
     {
-      "category": "video",
       "rank": 25,
       "name": "Kaiber",
       "score": 7.5,
@@ -2778,9 +2684,10 @@
       ],
       "url": "https://kaiber.ai",
       "affiliate": false
-    },
+    }
+  ],
+  "voice": [
     {
-      "category": "voice",
       "rank": 1,
       "name": "ElevenLabs",
       "score": 9,
@@ -2809,7 +2716,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 2,
       "name": "OpenAI Voice",
       "score": 8.5,
@@ -2837,7 +2743,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 3,
       "name": "Cartesia",
       "score": 8.4,
@@ -2865,7 +2770,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 4,
       "name": "Hume AI",
       "score": 8.4,
@@ -2893,7 +2797,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 5,
       "name": "Google Cloud TTS",
       "score": 8.3,
@@ -2921,7 +2824,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 6,
       "name": "Murf AI",
       "score": 8.2,
@@ -2948,7 +2850,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 7,
       "name": "Microsoft Azure TTS",
       "score": 8.1,
@@ -2975,7 +2876,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 8,
       "name": "Resemble AI",
       "score": 8,
@@ -3003,7 +2903,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 9,
       "name": "WellSaid Labs",
       "score": 8,
@@ -3030,7 +2929,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 10,
       "name": "Speechify",
       "score": 8,
@@ -3057,7 +2955,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 11,
       "name": "Fish Audio",
       "score": 8,
@@ -3085,7 +2982,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 12,
       "name": "Amazon Polly",
       "score": 8,
@@ -3112,7 +3008,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 13,
       "name": "Descript",
       "score": 7.9,
@@ -3140,7 +3035,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 14,
       "name": "MiniMax Audio",
       "score": 7.8,
@@ -3168,7 +3062,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 15,
       "name": "Inworld",
       "score": 7.8,
@@ -3196,7 +3089,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 16,
       "name": "LOVO",
       "score": 7.8,
@@ -3223,7 +3115,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 17,
       "name": "Camb.ai",
       "score": 7.7,
@@ -3251,7 +3142,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 18,
       "name": "Typecast",
       "score": 7.6,
@@ -3278,7 +3168,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 19,
       "name": "NaturalReader",
       "score": 7.6,
@@ -3305,7 +3194,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 20,
       "name": "Podcastle",
       "score": 7.5,
@@ -3333,7 +3221,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 21,
       "name": "Unreal Speech",
       "score": 7.5,
@@ -3360,7 +3247,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 22,
       "name": "Replica Studios",
       "score": 7.4,
@@ -3387,7 +3273,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 23,
       "name": "Voice.ai",
       "score": 7.4,
@@ -3414,7 +3299,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 24,
       "name": "Speechki",
       "score": 7.4,
@@ -3441,7 +3325,6 @@
       "affiliate": false
     },
     {
-      "category": "voice",
       "rank": 25,
       "name": "Listnr",
       "score": 7.4,
