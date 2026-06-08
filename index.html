@@ -288,7 +288,8 @@
 .herochips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;padding:0;list-style:none}
 .herochips li{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line-soft);border-radius:100px;padding:7px 13px 7px 9px;box-shadow:var(--shadow)}
 .herochips li::before{content:"\2713";color:#fff;background:var(--grad);width:17px;height:17px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex:0 0 auto}
-.catprev{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.catprev{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:780px;margin:0 auto}
+.catprev-cta{text-align:center;margin-top:26px}
 .cpt{display:flex;flex-direction:column;gap:9px;padding:16px 16px 15px;border-radius:16px;background:var(--surface);border:1px solid var(--line-soft);box-shadow:var(--shadow);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
 .cpt:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 12px 26px rgba(108,92,255,.18)}
 .cpt-ic{width:40px;height:40px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center}
@@ -320,7 +321,7 @@
 .path-cta{margin-top:5px;font-weight:800;font-size:14.5px}
 .path-go .path-cta{color:#fff}.path-list .path-cta{color:var(--accent)}
 .path-go::after{content:"";position:absolute;right:-50px;bottom:-50px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.28),transparent 70%);pointer-events:none}
-@media(max-width:640px){.paths{grid-template-columns:1fr}.path{padding:26px}}
+@media(max-width:640px){.paths{grid-template-columns:1fr}.path{padding:26px}.catprev{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){.cpt.live .cpt-meta::before{animation:none}}
 </style>
 </head>
@@ -373,22 +374,16 @@
   </section>
 
   <section class="sec">
-    <div class="catteaser reveal">
-      <div class="ct-left">
-        <span class="eyebrow">20 categories</span>
-        <h2>Find the best tool for any job</h2>
-        <p>From coding to video to voice &mdash; every category ranked on the same transparent rubric. Five are live now, more land every week.</p>
-        <a class="btn btn-primary" href="categories.html">Explore all categories &rarr;</a>
-      </div>
-      <div class="catprev">
+    <div class="sec-head reveal"><span class="eyebrow">20 categories</span><h2>Find the best tool for any job</h2><p>From coding to video to voice &mdash; every category ranked on the same transparent rubric. Five are live now, more land every week.</p></div>
+    <div class="catprev reveal">
         <a class="cpt live" href="coding.html"><span class="cpt-ic g"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></span><span class="cpt-nm">Coding</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="writing.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z"/></svg></span><span class="cpt-nm">Writing</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="image.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></span><span class="cpt-nm">Image</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="video.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2v10l-5-2"/></svg></span><span class="cpt-nm">Video</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="voice.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></span><span class="cpt-nm">Voice</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt more" href="categories.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span class="cpt-nm">+15 more</span><span class="cpt-meta">View all</span></a>
-      </div>
     </div>
+    <div class="catprev-cta reveal"><a class="btn btn-primary" href="categories.html">Explore all categories &rarr;</a></div>
   </section>
 
   <section class="sec">
