@@ -25,6 +25,16 @@ collections:
               - {label: Slug, name: slug, widget: string}
               - {label: Label, name: label, widget: string}
               - {label: Live, name: live, widget: boolean, default: true}
+          - label: 'Payment addresses (where listing payments are received)'
+            name: payments
+            widget: object
+            collapsed: true
+            fields:
+              - {label: 'Bitcoin (BTC) address', name: Bitcoin, widget: string, required: false}
+              - {label: 'Ethereum (ETH) address  — your 0x... wallet', name: Ethereum, widget: string, required: false}
+              - {label: 'Solana (SOL) address', name: Solana, widget: string, required: false}
+              - {label: 'USDC on Base address  — same 0x... wallet works', name: Base, widget: string, required: false}
+              - {label: 'USDC on Stellar address', name: Stellar, widget: string, required: false}
           - label: 'Coding tools'
             name: coding
             widget: list
