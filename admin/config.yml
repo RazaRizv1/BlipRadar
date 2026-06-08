@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: Lumos-Core/BlipRadar
+  branch: main
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: site
+    label: blipradar
+    files:
+      - name: data
+        label: Tools, categories & affiliate links
+        file: data.json
+        editor:
+          preview: false
+        fields:
+          - label: Categories
+            name: categories
+            widget: list
+            summary: '{{fields.label}}'
+            fields:
+              - {label: Slug, name: slug, widget: string}
+              - {label: Label, name: label, widget: string}
+              - {label: Live, name: live, widget: boolean, default: true}
+          - label: Tools
+            name: tools
+            widget: list
+            summary: '{{fields.name}}  ·  {{fields.category}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Category, name: category, widget: string, hint: 'must match a category slug, e.g. coding'}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: Score, name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10}
+              - {label: Rank, name: rank, widget: number, value_type: int}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum)'
+                name: s
+                widget: list
+                field: {label: value, name: v, widget: number, value_type: float, step: 0.1}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: Domain (for the logo), name: domain, widget: string, hint: 'e.g. cursor.com'}
+              - label: Tags
+                name: cats
+                widget: list
+                required: false
+                field: {label: tag, name: t, widget: string}
+              - {label: Letter (logo fallback), name: letter, widget: string, required: false}
+              - {label: Internal page link, name: link, widget: string, required: false, default: '#'}
