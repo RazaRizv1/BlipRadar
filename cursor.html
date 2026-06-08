@@ -493,6 +493,31 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
   .metric .mi{margin-top:1px}
 }
 </style>
+<style id="br-herofix">
+.top{display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:"logo main score" "logo main cta";column-gap:26px;row-gap:14px;align-items:center;padding:22px 0}
+.top>.logo.big{grid-area:logo;align-self:center}
+.top>.id{grid-area:main;display:block;align-self:center}
+.top>.scorebox{grid-area:score;justify-self:end;text-align:center}
+.top>.cta{grid-area:cta;justify-self:end;margin-top:0}
+.top>.logo.big{animation:heroIn .7s .04s both cubic-bezier(.2,.7,.2,1)}
+.top>.id{animation:heroIn .7s .12s both cubic-bezier(.2,.7,.2,1)}
+.top>.scorebox{animation:heroIn .7s .2s both cubic-bezier(.2,.7,.2,1)}
+.top>.cta{animation:heroIn .7s .26s both cubic-bezier(.2,.7,.2,1)}
+@media(max-width:600px){
+  .top{grid-template-columns:auto 1fr;grid-template-areas:"logo score" "main main" "cta cta";column-gap:14px;row-gap:13px;align-items:center;padding:14px 0 16px}
+  .top>.logo.big{width:60px;height:60px;border-radius:16px;padding:11px}
+  .top>.logo.big .fb{font-size:26px}
+  .top>.scorebox{justify-self:end;text-align:right;align-self:center}
+  .top>.scorebox .big{font-size:48px}
+  .top>.scorebox .stars{font-size:17px;margin:3px 0 1px;letter-spacing:2px}
+  .top>.scorebox .lbl{font-size:11px}
+  .top>.cta{justify-self:stretch;text-align:center;padding:13px 24px}
+  .id h1{font-size:31px}
+  .id p{font-size:15px;margin-top:6px;max-width:none}
+  .tags{margin-bottom:10px;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){.top>*{animation:none}}
+</style>
 </head>
 <body>
 
@@ -514,20 +539,18 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
   <div class="crumb"><a href="/">Home</a> &rsaquo; <a href="coding.html">Best for Coding</a> &rsaquo; <span>Cursor</span></div>
 
   <div class="top">
-    <div class="id">
-      <div class="logo big" data-letter="C"><img alt="Cursor logo" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=cursor.com&sz=128"></div>
-      <div>
+    <div class="logo big" data-letter="C"><img alt="Cursor logo" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=cursor.com&sz=128"></div>
+      <div class="id">
         <div class="tags"><span class="tag rank">Ranked #1 &middot; Best for Coding</span><span class="price"><span class="free">Free tier</span><span class="pro">Pro <b>$20</b>/mo</span></span></div>
         <h1>Cursor</h1>
         <p>The most polished agentic IDE and the daily-driver favorite.</p>
       </div>
-    </div>
     <div class="scorebox">
       <div class="big">8.9</div>
       <div class="stars" role="img" aria-label="4.5 out of 5 stars"><span class="stars-bg">★★★★★</span><span class="stars-fg" style="width:89%">★★★★★</span></div>
       <div class="lbl">BlipRadar Score</div>
-      <a class="cta" href="https://cursor.com/?ref=blipradar" target="_blank" rel="noopener">Visit Cursor &rarr;</a>
     </div>
+      <a class="cta" href="https://cursor.com/?ref=blipradar" target="_blank" rel="noopener">Visit Cursor &rarr;</a>
   </div>
 
   <div class="reacts reveal">
