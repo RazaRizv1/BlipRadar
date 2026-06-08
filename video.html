@@ -281,6 +281,19 @@
   .ractions{display:none;}
 }
 </style>
+<style id="br-crit-defs">
+.crit-item{display:flex;flex-direction:column;gap:5px}
+.crit .cd{font-size:12.5px;font-weight:500;color:var(--ink-faint);line-height:1.5;margin:0}
+.sub .sn[title]{text-decoration:underline dotted;text-decoration-color:var(--line);text-underline-offset:3px;text-decoration-thickness:1px;cursor:help}
+.metric{position:relative;display:inline-flex;align-items:center;gap:5px;cursor:help}
+.metric .mi{width:14px;height:14px;border-radius:50%;border:1.4px solid currentColor;font-style:normal;font-size:9.5px;font-weight:800;line-height:1;display:inline-flex;align-items:center;justify-content:center;opacity:.4;transition:opacity .15s;flex:0 0 auto}
+.metric:hover .mi,.metric:focus .mi{opacity:.9}
+.metric:focus{outline:none}
+.metric::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 10px);width:max-content;max-width:250px;background:#1b1830;color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;text-align:left;padding:10px 12px;border-radius:11px;border:1px solid rgba(255,255,255,.08);box-shadow:0 14px 38px rgba(20,16,40,.4);opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .16s,transform .16s;pointer-events:none;z-index:80;white-space:normal}
+.metric::before{content:"";position:absolute;left:15px;bottom:calc(100% + 4px);border:6px solid transparent;border-top-color:#1b1830;opacity:0;visibility:hidden;transition:opacity .16s;pointer-events:none;z-index:80}
+.metric:hover::after,.metric:hover::before,.metric:focus::after,.metric:focus::before{opacity:1;visibility:visible;transform:translateY(0)}
+@media(max-width:560px){.metric::after{max-width:210px}}
+</style>
 </head>
 <body>
 
@@ -337,12 +350,12 @@
     <h2>How we score</h2>
     <p>Every tool is rated 0&ndash;10 on a transparent scorecard across six weighted criteria. We add them up into one number &mdash; the blipradar score &mdash; and that score alone decides the ranking.</p>
     <div class="crit">
-      <div class="crit-row"><span class="cn">Output quality</span><span class="cbar"><span style="width:35%"></span></span><span class="cw">35%</span></div>
-      <div class="crit-row"><span class="cn">Value for money</span><span class="cbar"><span style="width:15%"></span></span><span class="cw">15%</span></div>
-      <div class="crit-row"><span class="cn">Ease of use</span><span class="cbar"><span style="width:15%"></span></span><span class="cw">15%</span></div>
-      <div class="crit-row"><span class="cn">Momentum</span><span class="cbar"><span style="width:15%"></span></span><span class="cw">15%</span></div>
-      <div class="crit-row"><span class="cn">Reliability</span><span class="cbar"><span style="width:10%"></span></span><span class="cw">10%</span></div>
-      <div class="crit-row"><span class="cn">Ecosystem</span><span class="cbar"><span style="width:10%"></span></span><span class="cw">10%</span></div>
+      <div class="crit-item"><div class="crit-row"><span class="cn">Output quality</span><span class="cbar"><span style="width:35%"></span></span><span class="cw">35%</span></div><p class="cd">How good the results actually are &mdash; accuracy, polish, and how often the output is usable without heavy fixing. Our single heaviest factor.</p></div>
+      <div class="crit-item"><div class="crit-row"><span class="cn">Value for money</span><span class="cbar"><span style="width:15%"></span></span><span class="cw">15%</span></div><p class="cd">What you get for the price, free tier included &mdash; whether it is worth it, not simply how cheap it is.</p></div>
+      <div class="crit-item"><div class="crit-row"><span class="cn">Ease of use</span><span class="cbar"><span style="width:15%"></span></span><span class="cw">15%</span></div><p class="cd">How quickly a new user gets productive &mdash; setup, learning curve, and everyday friction.</p></div>
+      <div class="crit-item"><div class="crit-row"><span class="cn">Momentum</span><span class="cbar"><span style="width:15%"></span></span><span class="cw">15%</span></div><p class="cd">Its trajectory right now &mdash; how fast it is shipping real improvements and gaining ground.</p></div>
+      <div class="crit-item"><div class="crit-row"><span class="cn">Reliability</span><span class="cbar"><span style="width:10%"></span></span><span class="cw">10%</span></div><p class="cd">Consistency you can count on &mdash; uptime, stable results, and how rarely it breaks or shifts under you.</p></div>
+      <div class="crit-item"><div class="crit-row"><span class="cn">Ecosystem</span><span class="cbar"><span style="width:10%"></span></span><span class="cw">10%</span></div><p class="cd">Everything around the tool &mdash; integrations, docs, community, extensions, and platform support.</p></div>
     </div>
     <p class="fineprint">Scores are re-checked every week and only change when something real changes. Rankings are merit-only &mdash; paid listings and affiliate links never affect a tool's position.</p>
   </div>
@@ -394,8 +407,9 @@
     var medal=t.rank<=3?(' m'+t.rank):'';
     var glow=GLOWS[i%3];
     var SN=['Output','Value','Ease of use','Reliability','Ecosystem','Momentum'];
+    var SD=['35% of the score · How good the results actually are: accuracy, polish, and how often output is usable without heavy fixing.','15% of the score · What you get for the price (free tier included) — worth, not just how cheap it is.','15% of the score · How fast a new user gets productive: setup, learning curve, everyday friction.','10% of the score · Consistency — uptime, stable results, how rarely it breaks or shifts under you.','10% of the score · Everything around it — integrations, docs, community, extensions, platform support.','15% of the score · Trajectory right now — how fast it is shipping real improvements and gaining ground.'];
     var SCO=['#6c5cff','#11c5d4','#ff5d8f','#ff9f1c','#10b981','#b14dff'];
-    var subs=t.s.map(function(v,j){return '<div class="sub"><span class="sn">'+SN[j]+'</span><span class="sb"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span><span class="sv">'+v.toFixed(1)+'</span></div>';}).join('');
+    var subs=t.s.map(function(v,j){return '<div class="sub"><span class="sn" title="'+SD[j]+'">'+SN[j]+'</span><span class="sb"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span><span class="sv">'+v.toFixed(1)+'</span></div>';}).join('');
     var site=siteOf(t);
     return '<div class="row spot reveal" data-cats="'+t.cats.join(' ')+'" style="--glow:'+glow+'">'
       +'<div class="rsummary">'
