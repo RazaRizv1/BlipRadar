@@ -27,28 +27,20 @@
     }
   ],
   "payments": {
-    "Bitcoin": "",
-    "Ethereum": "",
-    "Solana": "",
-    "Base": "",
-    "Stellar": ""
+    "Bitcoin": "19HwhVgRrdQB4NBxA6nVUb5L7MEZ2P1oFj",
+    "Ethereum": "0x7F1e827Df95630b80772dE899F1662B1F06F7E86",
+    "Solana": "HNdKYxsgpCD7VV8LC4jJTZmbRSJnKKc7iPvvgqrV3t82",
+    "Base": "0x7F1e827Df95630b80772dE899F1662B1F06F7E86",
+    "Stellar": "GCEZONWEOWWU33HWFOEYGBSJW5VXMD2EFQCSVEIT26TPDJQ7PLIQP3GR"
   },
   "coding": [
     {
-      "rank": 1,
       "name": "Cursor",
+      "url": "https://cursor.com",
+      "affiliate": false,
       "score": 8.9,
+      "rank": 1,
       "mom": 9.5,
-      "type": "IDE",
-      "cats": [
-        "ide"
-      ],
-      "price": "Free · Pro $20/mo",
-      "domain": "cursor.com",
-      "letter": "C",
-      "link": "cursor.html",
-      "desc": "The most polished agentic IDE and daily-driver favorite.",
-      "bestFor": "developers who want the most polished all-round AI editor.",
       "s": [
         9,
         8,
@@ -57,25 +49,24 @@
         8.5,
         9.5
       ],
-      "url": "https://cursor.com",
-      "affiliate": false
+      "desc": "The most polished agentic IDE and daily-driver favorite.",
+      "bestFor": "developers who want the most polished all-round AI editor.",
+      "price": "Free · Pro $20/mo",
+      "type": "IDE",
+      "domain": "cursor.com",
+      "cats": [
+        "ide"
+      ],
+      "letter": "C",
+      "link": "cursor.html"
     },
     {
-      "rank": 2,
       "name": "Claude Code",
+      "url": "https://claude.com/product/claude-code",
+      "affiliate": false,
       "score": 8.8,
+      "rank": 2,
       "mom": 9.2,
-      "type": "Terminal agent",
-      "cats": [
-        "terminal",
-        "agent"
-      ],
-      "price": "$20–200/mo",
-      "domain": "claude.ai",
-      "letter": "C",
-      "link": "claude-code.html",
-      "desc": "Anthropic's terminal agent — strongest on deep, multi-step reasoning.",
-      "bestFor": "hard, multi-step work driven from the terminal.",
       "s": [
         9.7,
         8,
@@ -84,25 +75,25 @@
         8,
         9.2
       ],
-      "url": "https://claude.com/product/claude-code",
-      "affiliate": false
+      "desc": "Anthropic's terminal agent — strongest on deep, multi-step reasoning.",
+      "bestFor": "hard, multi-step work driven from the terminal.",
+      "price": "$20–200/mo",
+      "type": "Terminal agent",
+      "domain": "claude.ai",
+      "cats": [
+        "terminal",
+        "agent"
+      ],
+      "letter": "C",
+      "link": "claude-code.html"
     },
     {
-      "rank": 3,
       "name": "GitHub Copilot",
+      "url": "https://github.com/features/copilot",
+      "affiliate": false,
       "score": 8.3,
+      "rank": 3,
       "mom": 7,
-      "type": "IDE",
-      "cats": [
-        "ide",
-        "autocomplete"
-      ],
-      "price": "Free · Pro $10/mo",
-      "domain": "github.com",
-      "letter": "G",
-      "link": "github-copilot.html",
-      "desc": "The ubiquitous assistant, now agentic and woven deep into GitHub.",
-      "bestFor": "teams already living in GitHub and VS Code.",
       "s": [
         8,
         8.5,
@@ -111,25 +102,25 @@
         9.5,
         7
       ],
-      "url": "https://github.com/features/copilot",
-      "affiliate": false
+      "desc": "The ubiquitous assistant, now agentic and woven deep into GitHub.",
+      "bestFor": "teams already living in GitHub and VS Code.",
+      "price": "Free · Pro $10/mo",
+      "type": "IDE",
+      "domain": "github.com",
+      "cats": [
+        "ide",
+        "autocomplete"
+      ],
+      "letter": "G",
+      "link": "github-copilot.html"
     },
     {
-      "rank": 4,
       "name": "OpenAI Codex",
+      "url": "https://openai.com/codex",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 4,
       "mom": 8.5,
-      "type": "Cloud agent",
-      "cats": [
-        "agent",
-        "terminal"
-      ],
-      "price": "$20–200/mo",
-      "domain": "openai.com",
-      "letter": "O",
-      "link": "openai-codex.html",
-      "desc": "OpenAI's cloud + CLI agent that ships whole tasks and PRs autonomously.",
-      "bestFor": "handing whole tasks to a cloud agent.",
       "s": [
         8.8,
         7.5,
@@ -138,24 +129,25 @@
         8,
         8.5
       ],
-      "url": "https://openai.com/codex",
-      "affiliate": false
+      "desc": "OpenAI's cloud + CLI agent that ships whole tasks and PRs autonomously.",
+      "bestFor": "handing whole tasks to a cloud agent.",
+      "price": "$20–200/mo",
+      "type": "Cloud agent",
+      "domain": "openai.com",
+      "cats": [
+        "agent",
+        "terminal"
+      ],
+      "letter": "O",
+      "link": "openai-codex.html"
     },
     {
-      "rank": 5,
       "name": "Windsurf",
+      "url": "https://windsurf.com",
+      "affiliate": false,
       "score": 8,
+      "rank": 5,
       "mom": 7,
-      "type": "IDE",
-      "cats": [
-        "ide"
-      ],
-      "price": "Free · Pro $15/mo",
-      "domain": "windsurf.com",
-      "letter": "W",
-      "link": "#",
-      "desc": "A clean, flow-focused AI IDE (formerly Codeium) with strong multi-file edits.",
-      "bestFor": "a calm, flow-focused editor experience.",
       "s": [
         8.3,
         8,
@@ -164,26 +156,24 @@
         7.5,
         7
       ],
-      "url": "https://windsurf.com",
-      "affiliate": false
+      "desc": "A clean, flow-focused AI IDE (formerly Codeium) with strong multi-file edits.",
+      "bestFor": "a calm, flow-focused editor experience.",
+      "price": "Free · Pro $15/mo",
+      "type": "IDE",
+      "domain": "windsurf.com",
+      "cats": [
+        "ide"
+      ],
+      "letter": "W",
+      "link": "#"
     },
     {
-      "rank": 6,
       "name": "OpenCode",
+      "url": "https://opencode.ai",
+      "affiliate": false,
       "score": 8,
+      "rank": 6,
       "mom": 9.5,
-      "type": "Open-source CLI",
-      "cats": [
-        "oss",
-        "terminal",
-        "agent"
-      ],
-      "price": "Open source · BYO key",
-      "domain": "opencode.ai",
-      "letter": "O",
-      "link": "#",
-      "desc": "Provider-agnostic open-source terminal agent — the runaway community leader.",
-      "bestFor": "power users who want any model and zero lock-in.",
       "s": [
         7.6,
         9.5,
@@ -192,24 +182,26 @@
         8.5,
         9.5
       ],
-      "url": "https://opencode.ai",
-      "affiliate": false
+      "desc": "Provider-agnostic open-source terminal agent — the runaway community leader.",
+      "bestFor": "power users who want any model and zero lock-in.",
+      "price": "Open source · BYO key",
+      "type": "Open-source CLI",
+      "domain": "opencode.ai",
+      "cats": [
+        "oss",
+        "terminal",
+        "agent"
+      ],
+      "letter": "O",
+      "link": "#"
     },
     {
-      "rank": 7,
       "name": "Zed",
+      "url": "https://zed.dev",
+      "affiliate": false,
       "score": 7.9,
+      "rank": 7,
       "mom": 7.5,
-      "type": "IDE",
-      "cats": [
-        "ide"
-      ],
-      "price": "Free · Pro $20/mo",
-      "domain": "zed.dev",
-      "letter": "Z",
-      "link": "#",
-      "desc": "Blazing-fast Rust editor with collaborative AI built in.",
-      "bestFor": "speed lovers who want a fast, native editor.",
       "s": [
         7.5,
         9,
@@ -218,25 +210,24 @@
         6.5,
         7.5
       ],
-      "url": "https://zed.dev",
-      "affiliate": false
+      "desc": "Blazing-fast Rust editor with collaborative AI built in.",
+      "bestFor": "speed lovers who want a fast, native editor.",
+      "price": "Free · Pro $20/mo",
+      "type": "IDE",
+      "domain": "zed.dev",
+      "cats": [
+        "ide"
+      ],
+      "letter": "Z",
+      "link": "#"
     },
     {
-      "rank": 8,
       "name": "Google Antigravity",
+      "url": "https://antigravity.google",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 8,
       "mom": 9,
-      "type": "Agentic IDE",
-      "cats": [
-        "ide",
-        "agent"
-      ],
-      "price": "Free in preview",
-      "domain": "antigravity.google",
-      "letter": "A",
-      "link": "#",
-      "desc": "Gemini-powered agentic IDE that runs tasks across editor and browser.",
-      "bestFor": "trying Google's agent-first IDE early.",
       "s": [
         8,
         8,
@@ -245,26 +236,25 @@
         6.5,
         9
       ],
-      "url": "https://antigravity.google",
-      "affiliate": false
-    },
-    {
-      "rank": 9,
-      "name": "Cline",
-      "score": 7.8,
-      "mom": 7.5,
-      "type": "Open-source IDE agent",
+      "desc": "Gemini-powered agentic IDE that runs tasks across editor and browser.",
+      "bestFor": "trying Google's agent-first IDE early.",
+      "price": "Free in preview",
+      "type": "Agentic IDE",
+      "domain": "antigravity.google",
       "cats": [
-        "oss",
         "ide",
         "agent"
       ],
-      "price": "Open source · BYO key",
-      "domain": "cline.bot",
-      "letter": "C",
-      "link": "#",
-      "desc": "Open-source VS Code agent with approval on every step — the OSS pioneer.",
-      "bestFor": "open-source control with human approval on every step.",
+      "letter": "A",
+      "link": "#"
+    },
+    {
+      "name": "Cline",
+      "url": "https://cline.bot",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 9,
+      "mom": 7.5,
       "s": [
         7.5,
         9,
@@ -273,25 +263,26 @@
         8,
         7.5
       ],
-      "url": "https://cline.bot",
-      "affiliate": false
-    },
-    {
-      "rank": 10,
-      "name": "JetBrains Junie",
-      "score": 7.8,
-      "mom": 7,
-      "type": "IDE",
+      "desc": "Open-source VS Code agent with approval on every step — the OSS pioneer.",
+      "bestFor": "open-source control with human approval on every step.",
+      "price": "Open source · BYO key",
+      "type": "Open-source IDE agent",
+      "domain": "cline.bot",
       "cats": [
+        "oss",
         "ide",
         "agent"
       ],
-      "price": "In JetBrains AI plans",
-      "domain": "jetbrains.com",
-      "letter": "J",
-      "link": "#",
-      "desc": "JetBrains' agent, deeply native to IntelliJ, PyCharm and the rest.",
-      "bestFor": "JetBrains IDE loyalists.",
+      "letter": "C",
+      "link": "#"
+    },
+    {
+      "name": "JetBrains Junie",
+      "url": "https://www.jetbrains.com/junie/",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 10,
+      "mom": 7,
       "s": [
         7.8,
         7.5,
@@ -300,26 +291,25 @@
         8.5,
         7
       ],
-      "url": "https://www.jetbrains.com/junie/",
-      "affiliate": false
+      "desc": "JetBrains' agent, deeply native to IntelliJ, PyCharm and the rest.",
+      "bestFor": "JetBrains IDE loyalists.",
+      "price": "In JetBrains AI plans",
+      "type": "IDE",
+      "domain": "jetbrains.com",
+      "cats": [
+        "ide",
+        "agent"
+      ],
+      "letter": "J",
+      "link": "#"
     },
     {
-      "rank": 11,
       "name": "Kilo Code",
+      "url": "https://kilocode.ai",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 11,
       "mom": 8,
-      "type": "Open-source agent",
-      "cats": [
-        "oss",
-        "agent",
-        "ide"
-      ],
-      "price": "Open source · BYO key",
-      "domain": "kilocode.ai",
-      "letter": "K",
-      "link": "#",
-      "desc": "Open-source platform agent: 500+ models, parallel agents, one-click deploy.",
-      "bestFor": "an all-in-one open-source agent platform.",
       "s": [
         7.5,
         9,
@@ -328,24 +318,26 @@
         7.5,
         8
       ],
-      "url": "https://kilocode.ai",
-      "affiliate": false
+      "desc": "Open-source platform agent: 500+ models, parallel agents, one-click deploy.",
+      "bestFor": "an all-in-one open-source agent platform.",
+      "price": "Open source · BYO key",
+      "type": "Open-source agent",
+      "domain": "kilocode.ai",
+      "cats": [
+        "oss",
+        "agent",
+        "ide"
+      ],
+      "letter": "K",
+      "link": "#"
     },
     {
-      "rank": 12,
       "name": "Devin",
+      "url": "https://devin.ai",
+      "affiliate": false,
       "score": 7.7,
+      "rank": 12,
       "mom": 8,
-      "type": "Cloud agent",
-      "cats": [
-        "agent"
-      ],
-      "price": "From $20/mo",
-      "domain": "devin.ai",
-      "letter": "D",
-      "link": "#",
-      "desc": "Cognition's autonomous agent that takes whole tickets end-to-end.",
-      "bestFor": "handing off entire tickets autonomously.",
       "s": [
         8.2,
         6.5,
@@ -354,25 +346,24 @@
         7,
         8
       ],
-      "url": "https://devin.ai",
-      "affiliate": false
+      "desc": "Cognition's autonomous agent that takes whole tickets end-to-end.",
+      "bestFor": "handing off entire tickets autonomously.",
+      "price": "From $20/mo",
+      "type": "Cloud agent",
+      "domain": "devin.ai",
+      "cats": [
+        "agent"
+      ],
+      "letter": "D",
+      "link": "#"
     },
     {
-      "rank": 13,
       "name": "Aider",
+      "url": "https://aider.chat",
+      "affiliate": false,
       "score": 7.7,
+      "rank": 13,
       "mom": 7,
-      "type": "Open-source CLI",
-      "cats": [
-        "oss",
-        "terminal"
-      ],
-      "price": "Open source · BYO key",
-      "domain": "aider.chat",
-      "letter": "A",
-      "link": "#",
-      "desc": "Git-native open-source pair programmer for the terminal.",
-      "bestFor": "git-native terminal pair programming.",
       "s": [
         7.6,
         9.5,
@@ -381,24 +372,25 @@
         7.5,
         7
       ],
-      "url": "https://aider.chat",
-      "affiliate": false
+      "desc": "Git-native open-source pair programmer for the terminal.",
+      "bestFor": "git-native terminal pair programming.",
+      "price": "Open source · BYO key",
+      "type": "Open-source CLI",
+      "domain": "aider.chat",
+      "cats": [
+        "oss",
+        "terminal"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 14,
       "name": "CodeRabbit",
+      "url": "https://coderabbit.ai",
+      "affiliate": false,
       "score": 7.7,
+      "rank": 14,
       "mom": 7.5,
-      "type": "Code review",
-      "cats": [
-        "review"
-      ],
-      "price": "Free · Pro $24/mo",
-      "domain": "coderabbit.ai",
-      "letter": "C",
-      "link": "#",
-      "desc": "AI pull-request reviewer that comments like a thorough senior dev.",
-      "bestFor": "automated, thorough pull-request reviews.",
       "s": [
         7.6,
         7.5,
@@ -407,25 +399,24 @@
         7.5,
         7.5
       ],
-      "url": "https://coderabbit.ai",
-      "affiliate": false
+      "desc": "AI pull-request reviewer that comments like a thorough senior dev.",
+      "bestFor": "automated, thorough pull-request reviews.",
+      "price": "Free · Pro $24/mo",
+      "type": "Code review",
+      "domain": "coderabbit.ai",
+      "cats": [
+        "review"
+      ],
+      "letter": "C",
+      "link": "#"
     },
     {
-      "rank": 15,
       "name": "Replit Agent",
+      "url": "https://replit.com",
+      "affiliate": false,
       "score": 7.7,
+      "rank": 15,
       "mom": 7.5,
-      "type": "Cloud agent",
-      "cats": [
-        "agent",
-        "ide"
-      ],
-      "price": "Free · Core $20/mo",
-      "domain": "replit.com",
-      "letter": "R",
-      "link": "#",
-      "desc": "Cloud IDE agent that builds and deploys a working app from a prompt.",
-      "bestFor": "building and shipping straight from the browser.",
       "s": [
         7.5,
         7.5,
@@ -434,24 +425,25 @@
         7.5,
         7.5
       ],
-      "url": "https://replit.com",
-      "affiliate": false
-    },
-    {
-      "rank": 16,
-      "name": "Amazon Q Developer",
-      "score": 7.6,
-      "mom": 6.5,
-      "type": "IDE",
+      "desc": "Cloud IDE agent that builds and deploys a working app from a prompt.",
+      "bestFor": "building and shipping straight from the browser.",
+      "price": "Free · Core $20/mo",
+      "type": "Cloud agent",
+      "domain": "replit.com",
       "cats": [
+        "agent",
         "ide"
       ],
-      "price": "Free · Pro $19/mo",
-      "domain": "aws.amazon.com",
-      "letter": "Q",
-      "link": "#",
-      "desc": "AWS-native assistant, strong on cloud workflows and security scanning.",
-      "bestFor": "AWS-heavy teams.",
+      "letter": "R",
+      "link": "#"
+    },
+    {
+      "name": "Amazon Q Developer",
+      "url": "https://aws.amazon.com/q/developer/",
+      "affiliate": false,
+      "score": 7.6,
+      "rank": 16,
+      "mom": 6.5,
       "s": [
         7.5,
         8.5,
@@ -460,25 +452,24 @@
         8,
         6.5
       ],
-      "url": "https://aws.amazon.com/q/developer/",
-      "affiliate": false
+      "desc": "AWS-native assistant, strong on cloud workflows and security scanning.",
+      "bestFor": "AWS-heavy teams.",
+      "price": "Free · Pro $19/mo",
+      "type": "IDE",
+      "domain": "aws.amazon.com",
+      "cats": [
+        "ide"
+      ],
+      "letter": "Q",
+      "link": "#"
     },
     {
-      "rank": 17,
       "name": "OpenHands",
+      "url": "https://all-hands.dev",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 17,
       "mom": 7.5,
-      "type": "Open-source agent",
-      "cats": [
-        "oss",
-        "agent"
-      ],
-      "price": "Open source · cloud option",
-      "domain": "all-hands.dev",
-      "letter": "O",
-      "link": "#",
-      "desc": "Autonomous open-source agent that resolves real GitHub issues.",
-      "bestFor": "autonomous issue-solving at scale.",
       "s": [
         7.8,
         8.5,
@@ -487,25 +478,25 @@
         7.5,
         7.5
       ],
-      "url": "https://all-hands.dev",
-      "affiliate": false
-    },
-    {
-      "rank": 18,
-      "name": "Augment Code",
-      "score": 7.5,
-      "mom": 7,
-      "type": "IDE",
+      "desc": "Autonomous open-source agent that resolves real GitHub issues.",
+      "bestFor": "autonomous issue-solving at scale.",
+      "price": "Open source · cloud option",
+      "type": "Open-source agent",
+      "domain": "all-hands.dev",
       "cats": [
-        "ide",
+        "oss",
         "agent"
       ],
-      "price": "From $50/mo",
-      "domain": "augmentcode.com",
-      "letter": "A",
-      "link": "#",
-      "desc": "Enterprise agent tuned for very large, complex codebases.",
-      "bestFor": "very large, complex enterprise codebases.",
+      "letter": "O",
+      "link": "#"
+    },
+    {
+      "name": "Augment Code",
+      "url": "https://augmentcode.com",
+      "affiliate": false,
+      "score": 7.5,
+      "rank": 18,
+      "mom": 7,
       "s": [
         8,
         6.5,
@@ -514,24 +505,25 @@
         7,
         7
       ],
-      "url": "https://augmentcode.com",
-      "affiliate": false
+      "desc": "Enterprise agent tuned for very large, complex codebases.",
+      "bestFor": "very large, complex enterprise codebases.",
+      "price": "From $50/mo",
+      "type": "IDE",
+      "domain": "augmentcode.com",
+      "cats": [
+        "ide",
+        "agent"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 19,
       "name": "Trae",
+      "url": "https://trae.ai",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 19,
       "mom": 7,
-      "type": "IDE",
-      "cats": [
-        "ide"
-      ],
-      "price": "Free",
-      "domain": "trae.ai",
-      "letter": "T",
-      "link": "#",
-      "desc": "ByteDance's free AI IDE with frontier models bundled in.",
-      "bestFor": "a genuinely capable free IDE.",
       "s": [
         7.3,
         9,
@@ -540,25 +532,24 @@
         6.5,
         7
       ],
-      "url": "https://trae.ai",
-      "affiliate": false
+      "desc": "ByteDance's free AI IDE with frontier models bundled in.",
+      "bestFor": "a genuinely capable free IDE.",
+      "price": "Free",
+      "type": "IDE",
+      "domain": "trae.ai",
+      "cats": [
+        "ide"
+      ],
+      "letter": "T",
+      "link": "#"
     },
     {
-      "rank": 20,
       "name": "Gemini Code Assist",
+      "url": "https://codeassist.google",
+      "affiliate": false,
       "score": 7.4,
+      "rank": 20,
       "mom": 6,
-      "type": "IDE",
-      "cats": [
-        "ide",
-        "autocomplete"
-      ],
-      "price": "Free tier ending · paid",
-      "domain": "cloud.google.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "Google's IDE assistant across VS Code and JetBrains.",
-      "bestFor": "developers on the Google stack.",
       "s": [
         7.8,
         7,
@@ -567,24 +558,25 @@
         7.5,
         6
       ],
-      "url": "https://codeassist.google",
-      "affiliate": false
+      "desc": "Google's IDE assistant across VS Code and JetBrains.",
+      "bestFor": "developers on the Google stack.",
+      "price": "Free tier ending · paid",
+      "type": "IDE",
+      "domain": "cloud.google.com",
+      "cats": [
+        "ide",
+        "autocomplete"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 21,
       "name": "Qodo",
+      "url": "https://qodo.ai",
+      "affiliate": false,
       "score": 7.4,
+      "rank": 21,
       "mom": 7,
-      "type": "Code review",
-      "cats": [
-        "review"
-      ],
-      "price": "Free · Teams $19/mo",
-      "domain": "qodo.ai",
-      "letter": "Q",
-      "link": "#",
-      "desc": "Code-integrity suite: AI test generation and review (formerly CodiumAI).",
-      "bestFor": "test generation and code integrity.",
       "s": [
         7.4,
         7.5,
@@ -593,25 +585,24 @@
         7,
         7
       ],
-      "url": "https://qodo.ai",
-      "affiliate": false
+      "desc": "Code-integrity suite: AI test generation and review (formerly CodiumAI).",
+      "bestFor": "test generation and code integrity.",
+      "price": "Free · Teams $19/mo",
+      "type": "Code review",
+      "domain": "qodo.ai",
+      "cats": [
+        "review"
+      ],
+      "letter": "Q",
+      "link": "#"
     },
     {
-      "rank": 22,
       "name": "Goose",
+      "url": "https://block.github.io/goose/",
+      "affiliate": false,
       "score": 7.4,
+      "rank": 22,
       "mom": 6.5,
-      "type": "Open-source agent",
-      "cats": [
-        "oss",
-        "agent"
-      ],
-      "price": "Open source · BYO key",
-      "domain": "github.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "Foundation-backed open-source autonomous agent (by Block).",
-      "bestFor": "a neutral, foundation-backed agent.",
       "s": [
         7.3,
         9,
@@ -620,26 +611,25 @@
         7.5,
         6.5
       ],
-      "url": "https://block.github.io/goose/",
-      "affiliate": false
-    },
-    {
-      "rank": 23,
-      "name": "Continue",
-      "score": 7.3,
-      "mom": 6.5,
-      "type": "Open-source assistant",
+      "desc": "Foundation-backed open-source autonomous agent (by Block).",
+      "bestFor": "a neutral, foundation-backed agent.",
+      "price": "Open source · BYO key",
+      "type": "Open-source agent",
+      "domain": "github.com",
       "cats": [
         "oss",
-        "autocomplete",
-        "ide"
+        "agent"
       ],
-      "price": "Open source · BYO key",
-      "domain": "continue.dev",
-      "letter": "C",
-      "link": "#",
-      "desc": "Privacy-first open-source assistant — bring any model you like.",
-      "bestFor": "privacy-first, bring-your-own-model setups.",
+      "letter": "G",
+      "link": "#"
+    },
+    {
+      "name": "Continue",
+      "url": "https://continue.dev",
+      "affiliate": false,
+      "score": 7.3,
+      "rank": 23,
+      "mom": 6.5,
       "s": [
         7,
         9.5,
@@ -648,24 +638,26 @@
         7.5,
         6.5
       ],
-      "url": "https://continue.dev",
-      "affiliate": false
+      "desc": "Privacy-first open-source assistant — bring any model you like.",
+      "bestFor": "privacy-first, bring-your-own-model setups.",
+      "price": "Open source · BYO key",
+      "type": "Open-source assistant",
+      "domain": "continue.dev",
+      "cats": [
+        "oss",
+        "autocomplete",
+        "ide"
+      ],
+      "letter": "C",
+      "link": "#"
     },
     {
-      "rank": 24,
       "name": "Greptile",
+      "url": "https://greptile.com",
+      "affiliate": false,
       "score": 7.3,
+      "rank": 24,
       "mom": 7,
-      "type": "Code review",
-      "cats": [
-        "review"
-      ],
-      "price": "From $30/mo",
-      "domain": "greptile.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "AI code review that reasons over your whole repository.",
-      "bestFor": "repo-wide AI code review.",
       "s": [
         7.5,
         7,
@@ -674,24 +666,24 @@
         6.5,
         7
       ],
-      "url": "https://greptile.com",
-      "affiliate": false
+      "desc": "AI code review that reasons over your whole repository.",
+      "bestFor": "repo-wide AI code review.",
+      "price": "From $30/mo",
+      "type": "Code review",
+      "domain": "greptile.com",
+      "cats": [
+        "review"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 25,
       "name": "Tabnine",
+      "url": "https://tabnine.com",
+      "affiliate": false,
       "score": 7.2,
+      "rank": 25,
       "mom": 6,
-      "type": "Autocomplete",
-      "cats": [
-        "autocomplete"
-      ],
-      "price": "Free · Pro $9/mo",
-      "domain": "tabnine.com",
-      "letter": "T",
-      "link": "#",
-      "desc": "Privacy-first autocomplete built for regulated, security-conscious teams.",
-      "bestFor": "regulated teams that need strict privacy.",
       "s": [
         7,
         7,
@@ -700,27 +692,26 @@
         7.5,
         6
       ],
-      "url": "https://tabnine.com",
-      "affiliate": false
+      "desc": "Privacy-first autocomplete built for regulated, security-conscious teams.",
+      "bestFor": "regulated teams that need strict privacy.",
+      "price": "Free · Pro $9/mo",
+      "type": "Autocomplete",
+      "domain": "tabnine.com",
+      "cats": [
+        "autocomplete"
+      ],
+      "letter": "T",
+      "link": "#"
     }
   ],
   "writing": [
     {
-      "rank": 1,
       "name": "ChatGPT",
+      "url": "https://chatgpt.com",
+      "affiliate": false,
       "score": 9.1,
+      "rank": 1,
       "mom": 8.7,
-      "type": "Assistant",
-      "cats": [
-        "general",
-        "marketing"
-      ],
-      "price": "Free · Plus $20/mo",
-      "domain": "chatgpt.com",
-      "letter": "C",
-      "link": "#",
-      "desc": "The all-round default for drafting, rewriting and ideas.",
-      "bestFor": "everyday general-purpose writing.",
       "s": [
         9.3,
         8.8,
@@ -729,25 +720,25 @@
         9.6,
         8.7
       ],
-      "url": "https://chatgpt.com",
-      "affiliate": false
-    },
-    {
-      "rank": 2,
-      "name": "Claude",
-      "score": 9.1,
-      "mom": 9,
+      "desc": "The all-round default for drafting, rewriting and ideas.",
+      "bestFor": "everyday general-purpose writing.",
+      "price": "Free · Plus $20/mo",
       "type": "Assistant",
+      "domain": "chatgpt.com",
       "cats": [
         "general",
-        "fiction"
+        "marketing"
       ],
-      "price": "Pro $20/mo",
-      "domain": "claude.ai",
       "letter": "C",
-      "link": "#",
-      "desc": "The most natural, human-sounding writer for long-form work.",
-      "bestFor": "long-form drafting and editing that doesn't read as AI.",
+      "link": "#"
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai",
+      "affiliate": false,
+      "score": 9.1,
+      "rank": 2,
+      "mom": 9,
       "s": [
         9.6,
         8.5,
@@ -756,24 +747,25 @@
         8.5,
         9
       ],
-      "url": "https://claude.ai",
-      "affiliate": false
+      "desc": "The most natural, human-sounding writer for long-form work.",
+      "bestFor": "long-form drafting and editing that doesn't read as AI.",
+      "price": "Pro $20/mo",
+      "type": "Assistant",
+      "domain": "claude.ai",
+      "cats": [
+        "general",
+        "fiction"
+      ],
+      "letter": "C",
+      "link": "#"
     },
     {
-      "rank": 3,
       "name": "Gemini",
+      "url": "https://gemini.google.com",
+      "affiliate": false,
       "score": 8.8,
+      "rank": 3,
       "mom": 8.6,
-      "type": "Assistant",
-      "cats": [
-        "general"
-      ],
-      "price": "Free · AI Pro $20/mo",
-      "domain": "gemini.google.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "Google's assistant, strong with long context and Docs.",
-      "bestFor": "writing inside the Google ecosystem.",
       "s": [
         8.8,
         8.6,
@@ -782,24 +774,24 @@
         9,
         8.6
       ],
-      "url": "https://gemini.google.com",
-      "affiliate": false
+      "desc": "Google's assistant, strong with long context and Docs.",
+      "bestFor": "writing inside the Google ecosystem.",
+      "price": "Free · AI Pro $20/mo",
+      "type": "Assistant",
+      "domain": "gemini.google.com",
+      "cats": [
+        "general"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 4,
       "name": "Grammarly",
+      "url": "https://grammarly.com",
+      "affiliate": false,
       "score": 8.6,
+      "rank": 4,
       "mom": 7.9,
-      "type": "Editor",
-      "cats": [
-        "editing"
-      ],
-      "price": "Free · Pro $12/mo",
-      "domain": "grammarly.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "The ubiquitous grammar, clarity and tone assistant.",
-      "bestFor": "polishing anything you write, everywhere.",
       "s": [
         8.3,
         8.6,
@@ -808,24 +800,24 @@
         9.3,
         7.9
       ],
-      "url": "https://grammarly.com",
-      "affiliate": false
-    },
-    {
-      "rank": 5,
-      "name": "QuillBot",
-      "score": 8.4,
-      "mom": 7.9,
-      "type": "Paraphraser",
+      "desc": "The ubiquitous grammar, clarity and tone assistant.",
+      "bestFor": "polishing anything you write, everywhere.",
+      "price": "Free · Pro $12/mo",
+      "type": "Editor",
+      "domain": "grammarly.com",
       "cats": [
         "editing"
       ],
-      "price": "Free · Premium $10/mo",
-      "domain": "quillbot.com",
-      "letter": "Q",
-      "link": "#",
-      "desc": "Best-in-class paraphrasing, summarizing and grammar.",
-      "bestFor": "rewriting and tightening existing text.",
+      "letter": "G",
+      "link": "#"
+    },
+    {
+      "name": "QuillBot",
+      "url": "https://quillbot.com",
+      "affiliate": false,
+      "score": 8.4,
+      "rank": 5,
+      "mom": 7.9,
       "s": [
         8,
         8.8,
@@ -834,24 +826,24 @@
         8.2,
         7.9
       ],
-      "url": "https://quillbot.com",
-      "affiliate": false
+      "desc": "Best-in-class paraphrasing, summarizing and grammar.",
+      "bestFor": "rewriting and tightening existing text.",
+      "price": "Free · Premium $10/mo",
+      "type": "Paraphraser",
+      "domain": "quillbot.com",
+      "cats": [
+        "editing"
+      ],
+      "letter": "Q",
+      "link": "#"
     },
     {
-      "rank": 6,
       "name": "Sudowrite",
+      "url": "https://sudowrite.com",
+      "affiliate": false,
       "score": 8.3,
+      "rank": 6,
       "mom": 8.4,
-      "type": "Fiction",
-      "cats": [
-        "fiction"
-      ],
-      "price": "From $19/mo",
-      "domain": "sudowrite.com",
-      "letter": "S",
-      "link": "#",
-      "desc": "The novelist's tool — Describe, Brainstorm, Story Bible.",
-      "bestFor": "long-form fiction and narrative storytelling.",
       "s": [
         8.6,
         7.8,
@@ -860,24 +852,24 @@
         7.6,
         8.4
       ],
-      "url": "https://sudowrite.com",
-      "affiliate": false
+      "desc": "The novelist's tool — Describe, Brainstorm, Story Bible.",
+      "bestFor": "long-form fiction and narrative storytelling.",
+      "price": "From $19/mo",
+      "type": "Fiction",
+      "domain": "sudowrite.com",
+      "cats": [
+        "fiction"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 7,
       "name": "Notion AI",
+      "url": "https://notion.so",
+      "affiliate": false,
       "score": 8.2,
+      "rank": 7,
       "mom": 8,
-      "type": "In-doc",
-      "cats": [
-        "general"
-      ],
-      "price": "From $10/mo add-on",
-      "domain": "notion.so",
-      "letter": "N",
-      "link": "#",
-      "desc": "AI woven into Notion docs, wikis and notes.",
-      "bestFor": "writing where your docs already live.",
       "s": [
         7.9,
         8.2,
@@ -886,25 +878,24 @@
         8.6,
         8
       ],
-      "url": "https://notion.so",
-      "affiliate": false
+      "desc": "AI woven into Notion docs, wikis and notes.",
+      "bestFor": "writing where your docs already live.",
+      "price": "From $10/mo add-on",
+      "type": "In-doc",
+      "domain": "notion.so",
+      "cats": [
+        "general"
+      ],
+      "letter": "N",
+      "link": "#"
     },
     {
-      "rank": 8,
       "name": "Jasper",
+      "url": "https://jasper.ai",
+      "affiliate": false,
       "score": 8.2,
+      "rank": 8,
       "mom": 7.8,
-      "type": "Marketing suite",
-      "cats": [
-        "marketing",
-        "seo"
-      ],
-      "price": "From $49/mo",
-      "domain": "jasper.ai",
-      "letter": "J",
-      "link": "#",
-      "desc": "Brand-voice marketing copy with team workflows.",
-      "bestFor": "marketing teams needing brand consistency.",
       "s": [
         8.4,
         7.5,
@@ -913,24 +904,25 @@
         8.7,
         7.8
       ],
-      "url": "https://jasper.ai",
-      "affiliate": false
+      "desc": "Brand-voice marketing copy with team workflows.",
+      "bestFor": "marketing teams needing brand consistency.",
+      "price": "From $49/mo",
+      "type": "Marketing suite",
+      "domain": "jasper.ai",
+      "cats": [
+        "marketing",
+        "seo"
+      ],
+      "letter": "J",
+      "link": "#"
     },
     {
-      "rank": 9,
       "name": "Wordtune",
+      "url": "https://wordtune.com",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 9,
       "mom": 7.6,
-      "type": "Rewriter",
-      "cats": [
-        "editing"
-      ],
-      "price": "Free · Plus $7/mo",
-      "domain": "wordtune.com",
-      "letter": "W",
-      "link": "#",
-      "desc": "Rewrites and tightens sentences with tone control.",
-      "bestFor": "polishing and rephrasing as you write.",
       "s": [
         7.8,
         8.4,
@@ -939,24 +931,24 @@
         7.8,
         7.6
       ],
-      "url": "https://wordtune.com",
-      "affiliate": false
+      "desc": "Rewrites and tightens sentences with tone control.",
+      "bestFor": "polishing and rephrasing as you write.",
+      "price": "Free · Plus $7/mo",
+      "type": "Rewriter",
+      "domain": "wordtune.com",
+      "cats": [
+        "editing"
+      ],
+      "letter": "W",
+      "link": "#"
     },
     {
-      "rank": 10,
       "name": "Copy.ai",
+      "url": "https://copy.ai",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 10,
       "mom": 7.8,
-      "type": "Marketing",
-      "cats": [
-        "marketing"
-      ],
-      "price": "Free · Pro $49/mo",
-      "domain": "copy.ai",
-      "letter": "C",
-      "link": "#",
-      "desc": "Go-to-market copy and workflows for sales and marketing.",
-      "bestFor": "sales and marketing short-form at scale.",
       "s": [
         8,
         8,
@@ -965,25 +957,24 @@
         8,
         7.8
       ],
-      "url": "https://copy.ai",
-      "affiliate": false
+      "desc": "Go-to-market copy and workflows for sales and marketing.",
+      "bestFor": "sales and marketing short-form at scale.",
+      "price": "Free · Pro $49/mo",
+      "type": "Marketing",
+      "domain": "copy.ai",
+      "cats": [
+        "marketing"
+      ],
+      "letter": "C",
+      "link": "#"
     },
     {
-      "rank": 11,
       "name": "Writesonic",
+      "url": "https://writesonic.com",
+      "affiliate": false,
       "score": 8,
+      "rank": 11,
       "mom": 7.8,
-      "type": "SEO writer",
-      "cats": [
-        "marketing",
-        "seo"
-      ],
-      "price": "Free · from $20/mo",
-      "domain": "writesonic.com",
-      "letter": "W",
-      "link": "#",
-      "desc": "SEO blog volume with built-in optimization and web search.",
-      "bestFor": "high-volume SEO blog drafts.",
       "s": [
         7.9,
         8.4,
@@ -992,25 +983,25 @@
         7.8,
         7.8
       ],
-      "url": "https://writesonic.com",
-      "affiliate": false
+      "desc": "SEO blog volume with built-in optimization and web search.",
+      "bestFor": "high-volume SEO blog drafts.",
+      "price": "Free · from $20/mo",
+      "type": "SEO writer",
+      "domain": "writesonic.com",
+      "cats": [
+        "marketing",
+        "seo"
+      ],
+      "letter": "W",
+      "link": "#"
     },
     {
-      "rank": 12,
       "name": "ProWritingAid",
+      "url": "https://prowritingaid.com",
+      "affiliate": false,
       "score": 8,
+      "rank": 12,
       "mom": 7.5,
-      "type": "Editor",
-      "cats": [
-        "editing",
-        "fiction"
-      ],
-      "price": "Free · Premium $12/mo",
-      "domain": "prowritingaid.com",
-      "letter": "P",
-      "link": "#",
-      "desc": "Deep style and grammar reports for authors.",
-      "bestFor": "in-depth manuscript editing.",
       "s": [
         7.9,
         8.3,
@@ -1019,24 +1010,25 @@
         7.8,
         7.5
       ],
-      "url": "https://prowritingaid.com",
-      "affiliate": false
+      "desc": "Deep style and grammar reports for authors.",
+      "bestFor": "in-depth manuscript editing.",
+      "price": "Free · Premium $12/mo",
+      "type": "Editor",
+      "domain": "prowritingaid.com",
+      "cats": [
+        "editing",
+        "fiction"
+      ],
+      "letter": "P",
+      "link": "#"
     },
     {
-      "rank": 13,
       "name": "Rytr",
+      "url": "https://rytr.me",
+      "affiliate": false,
       "score": 7.9,
+      "rank": 13,
       "mom": 7.2,
-      "type": "Budget writer",
-      "cats": [
-        "marketing"
-      ],
-      "price": "Free · Unlimited $9/mo",
-      "domain": "rytr.me",
-      "letter": "R",
-      "link": "#",
-      "desc": "Cheap, fast short-form copy across many templates.",
-      "bestFor": "budget-friendly short-form copy.",
       "s": [
         7.5,
         9,
@@ -1045,24 +1037,24 @@
         7.2,
         7.2
       ],
-      "url": "https://rytr.me",
-      "affiliate": false
-    },
-    {
-      "rank": 14,
-      "name": "Writer",
-      "score": 7.8,
-      "mom": 7.7,
-      "type": "Enterprise",
+      "desc": "Cheap, fast short-form copy across many templates.",
+      "bestFor": "budget-friendly short-form copy.",
+      "price": "Free · Unlimited $9/mo",
+      "type": "Budget writer",
+      "domain": "rytr.me",
       "cats": [
         "marketing"
       ],
-      "price": "Enterprise",
-      "domain": "writer.com",
-      "letter": "W",
-      "link": "#",
-      "desc": "Enterprise brand writing with governance and guardrails.",
-      "bestFor": "large teams needing on-brand, governed output.",
+      "letter": "R",
+      "link": "#"
+    },
+    {
+      "name": "Writer",
+      "url": "https://writer.com",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 14,
+      "mom": 7.7,
       "s": [
         8,
         7,
@@ -1071,25 +1063,24 @@
         8,
         7.7
       ],
-      "url": "https://writer.com",
-      "affiliate": false
+      "desc": "Enterprise brand writing with governance and guardrails.",
+      "bestFor": "large teams needing on-brand, governed output.",
+      "price": "Enterprise",
+      "type": "Enterprise",
+      "domain": "writer.com",
+      "cats": [
+        "marketing"
+      ],
+      "letter": "W",
+      "link": "#"
     },
     {
-      "rank": 15,
       "name": "Lex",
+      "url": "https://lex.page",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 15,
       "mom": 7.6,
-      "type": "Editor",
-      "cats": [
-        "general",
-        "fiction"
-      ],
-      "price": "Free · Pro $15/mo",
-      "domain": "lex.page",
-      "letter": "L",
-      "link": "#",
-      "desc": "A clean writing editor with AI built in.",
-      "bestFor": "distraction-free drafting with AI on tap.",
       "s": [
         7.6,
         8,
@@ -1098,24 +1089,25 @@
         7,
         7.6
       ],
-      "url": "https://lex.page",
-      "affiliate": false
+      "desc": "A clean writing editor with AI built in.",
+      "bestFor": "distraction-free drafting with AI on tap.",
+      "price": "Free · Pro $15/mo",
+      "type": "Editor",
+      "domain": "lex.page",
+      "cats": [
+        "general",
+        "fiction"
+      ],
+      "letter": "L",
+      "link": "#"
     },
     {
-      "rank": 16,
       "name": "Anyword",
+      "url": "https://anyword.com",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 16,
       "mom": 7.7,
-      "type": "Performance",
-      "cats": [
-        "marketing"
-      ],
-      "price": "From $39/mo",
-      "domain": "anyword.com",
-      "letter": "A",
-      "link": "#",
-      "desc": "Predictive scoring for performance ad and landing copy.",
-      "bestFor": "data-driven performance marketing copy.",
       "s": [
         7.8,
         7.4,
@@ -1124,24 +1116,24 @@
         7.6,
         7.7
       ],
-      "url": "https://anyword.com",
-      "affiliate": false
+      "desc": "Predictive scoring for performance ad and landing copy.",
+      "bestFor": "data-driven performance marketing copy.",
+      "price": "From $39/mo",
+      "type": "Performance",
+      "domain": "anyword.com",
+      "cats": [
+        "marketing"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 17,
       "name": "HyperWrite",
+      "url": "https://hyperwriteai.com",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 17,
       "mom": 7.6,
-      "type": "Assistant",
-      "cats": [
-        "general"
-      ],
-      "price": "Free · Premium $20/mo",
-      "domain": "hyperwriteai.com",
-      "letter": "H",
-      "link": "#",
-      "desc": "Personal writing assistant with research and agents.",
-      "bestFor": "an everywhere writing companion.",
       "s": [
         7.7,
         7.8,
@@ -1150,24 +1142,24 @@
         7.4,
         7.6
       ],
-      "url": "https://hyperwriteai.com",
-      "affiliate": false
+      "desc": "Personal writing assistant with research and agents.",
+      "bestFor": "an everywhere writing companion.",
+      "price": "Free · Premium $20/mo",
+      "type": "Assistant",
+      "domain": "hyperwriteai.com",
+      "cats": [
+        "general"
+      ],
+      "letter": "H",
+      "link": "#"
     },
     {
-      "rank": 18,
       "name": "Hemingway Editor",
+      "url": "https://hemingwayapp.com",
+      "affiliate": false,
       "score": 7.7,
+      "rank": 18,
       "mom": 7,
-      "type": "Editor",
-      "cats": [
-        "editing"
-      ],
-      "price": "Free · Plus $10/mo",
-      "domain": "hemingwayapp.com",
-      "letter": "H",
-      "link": "#",
-      "desc": "Flags dense, hard-to-read sentences for clarity.",
-      "bestFor": "tightening readability.",
       "s": [
         7.4,
         8.4,
@@ -1176,25 +1168,24 @@
         6.8,
         7
       ],
-      "url": "https://hemingwayapp.com",
-      "affiliate": false
+      "desc": "Flags dense, hard-to-read sentences for clarity.",
+      "bestFor": "tightening readability.",
+      "price": "Free · Plus $10/mo",
+      "type": "Editor",
+      "domain": "hemingwayapp.com",
+      "cats": [
+        "editing"
+      ],
+      "letter": "H",
+      "link": "#"
     },
     {
-      "rank": 19,
       "name": "Scalenut",
+      "url": "https://scalenut.com",
+      "affiliate": false,
       "score": 7.7,
+      "rank": 19,
       "mom": 7.4,
-      "type": "SEO writer",
-      "cats": [
-        "seo",
-        "marketing"
-      ],
-      "price": "From $39/mo",
-      "domain": "scalenut.com",
-      "letter": "S",
-      "link": "#",
-      "desc": "SERP-driven SEO content from brief to draft.",
-      "bestFor": "SEO content planning and writing.",
       "s": [
         7.6,
         7.8,
@@ -1203,25 +1194,25 @@
         7.4,
         7.4
       ],
-      "url": "https://scalenut.com",
-      "affiliate": false
+      "desc": "SERP-driven SEO content from brief to draft.",
+      "bestFor": "SEO content planning and writing.",
+      "price": "From $39/mo",
+      "type": "SEO writer",
+      "domain": "scalenut.com",
+      "cats": [
+        "seo",
+        "marketing"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 20,
       "name": "Jenni AI",
+      "url": "https://jenni.ai",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 20,
       "mom": 7.8,
-      "type": "Academic",
-      "cats": [
-        "editing",
-        "general"
-      ],
-      "price": "Free · Unlimited $20/mo",
-      "domain": "jenni.ai",
-      "letter": "J",
-      "link": "#",
-      "desc": "Academic writing with citations and autocomplete.",
-      "bestFor": "essays, papers and cited writing.",
       "s": [
         7.5,
         7.8,
@@ -1230,24 +1221,25 @@
         7,
         7.8
       ],
-      "url": "https://jenni.ai",
-      "affiliate": false
+      "desc": "Academic writing with citations and autocomplete.",
+      "bestFor": "essays, papers and cited writing.",
+      "price": "Free · Unlimited $20/mo",
+      "type": "Academic",
+      "domain": "jenni.ai",
+      "cats": [
+        "editing",
+        "general"
+      ],
+      "letter": "J",
+      "link": "#"
     },
     {
-      "rank": 21,
       "name": "Frase",
+      "url": "https://frase.io",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 21,
       "mom": 7.3,
-      "type": "SEO writer",
-      "cats": [
-        "seo"
-      ],
-      "price": "From $15/mo",
-      "domain": "frase.io",
-      "letter": "F",
-      "link": "#",
-      "desc": "Research-and-write SEO briefs and content.",
-      "bestFor": "SEO briefs and optimization.",
       "s": [
         7.5,
         7.9,
@@ -1256,24 +1248,24 @@
         7.3,
         7.3
       ],
-      "url": "https://frase.io",
-      "affiliate": false
+      "desc": "Research-and-write SEO briefs and content.",
+      "bestFor": "SEO briefs and optimization.",
+      "price": "From $15/mo",
+      "type": "SEO writer",
+      "domain": "frase.io",
+      "cats": [
+        "seo"
+      ],
+      "letter": "F",
+      "link": "#"
     },
     {
-      "rank": 22,
       "name": "Type",
+      "url": "https://type.ai",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 22,
       "mom": 7.4,
-      "type": "Doc editor",
-      "cats": [
-        "general"
-      ],
-      "price": "From $29/mo",
-      "domain": "type.ai",
-      "letter": "T",
-      "link": "#",
-      "desc": "An AI-first document editor for fast drafts.",
-      "bestFor": "AI-assisted document drafting.",
       "s": [
         7.5,
         7.4,
@@ -1282,24 +1274,24 @@
         6.8,
         7.4
       ],
-      "url": "https://type.ai",
-      "affiliate": false
+      "desc": "An AI-first document editor for fast drafts.",
+      "bestFor": "AI-assisted document drafting.",
+      "price": "From $29/mo",
+      "type": "Doc editor",
+      "domain": "type.ai",
+      "cats": [
+        "general"
+      ],
+      "letter": "T",
+      "link": "#"
     },
     {
-      "rank": 23,
       "name": "NovelAI",
+      "url": "https://novelai.net",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 23,
       "mom": 7.2,
-      "type": "Fiction",
-      "cats": [
-        "fiction"
-      ],
-      "price": "From $10/mo",
-      "domain": "novelai.net",
-      "letter": "N",
-      "link": "#",
-      "desc": "Subscription storyteller for fiction and roleplay.",
-      "bestFor": "open-ended fiction and roleplay.",
       "s": [
         7.5,
         7.8,
@@ -1308,24 +1300,24 @@
         7,
         7.2
       ],
-      "url": "https://novelai.net",
-      "affiliate": false
+      "desc": "Subscription storyteller for fiction and roleplay.",
+      "bestFor": "open-ended fiction and roleplay.",
+      "price": "From $10/mo",
+      "type": "Fiction",
+      "domain": "novelai.net",
+      "cats": [
+        "fiction"
+      ],
+      "letter": "N",
+      "link": "#"
     },
     {
-      "rank": 24,
       "name": "Hoppy Copy",
+      "url": "https://hoppycopy.co",
+      "affiliate": false,
       "score": 7.4,
+      "rank": 24,
       "mom": 7.3,
-      "type": "Email copy",
-      "cats": [
-        "marketing"
-      ],
-      "price": "From $29/mo",
-      "domain": "hoppycopy.co",
-      "letter": "H",
-      "link": "#",
-      "desc": "Email and newsletter copy with campaign tools.",
-      "bestFor": "email marketing campaigns.",
       "s": [
         7.4,
         7.4,
@@ -1334,24 +1326,24 @@
         6.8,
         7.3
       ],
-      "url": "https://hoppycopy.co",
-      "affiliate": false
-    },
-    {
-      "rank": 25,
-      "name": "Copysmith",
-      "score": 7.3,
-      "mom": 6.9,
-      "type": "eCommerce copy",
+      "desc": "Email and newsletter copy with campaign tools.",
+      "bestFor": "email marketing campaigns.",
+      "price": "From $29/mo",
+      "type": "Email copy",
+      "domain": "hoppycopy.co",
       "cats": [
         "marketing"
       ],
-      "price": "From $19/mo",
-      "domain": "copysmith.ai",
-      "letter": "C",
-      "link": "#",
-      "desc": "Bulk product and ecommerce copy generation.",
-      "bestFor": "ecommerce and catalog copy at scale.",
+      "letter": "H",
+      "link": "#"
+    },
+    {
+      "name": "Copysmith",
+      "url": "https://copysmith.ai",
+      "affiliate": false,
+      "score": 7.3,
+      "rank": 25,
+      "mom": 6.9,
       "s": [
         7.2,
         7.6,
@@ -1360,27 +1352,26 @@
         6.8,
         6.9
       ],
-      "url": "https://copysmith.ai",
-      "affiliate": false
+      "desc": "Bulk product and ecommerce copy generation.",
+      "bestFor": "ecommerce and catalog copy at scale.",
+      "price": "From $19/mo",
+      "type": "eCommerce copy",
+      "domain": "copysmith.ai",
+      "cats": [
+        "marketing"
+      ],
+      "letter": "C",
+      "link": "#"
     }
   ],
   "image": [
     {
-      "rank": 1,
       "name": "GPT Image",
+      "url": "https://openai.com",
+      "affiliate": false,
       "score": 9,
+      "rank": 1,
       "mom": 8.7,
-      "type": "Generator",
-      "cats": [
-        "photoreal",
-        "edit"
-      ],
-      "price": "In ChatGPT $20/mo",
-      "domain": "openai.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "Best prompt adherence and conversational editing.",
-      "bestFor": "accurate, easy generation inside chat.",
       "s": [
         9.2,
         8.4,
@@ -1389,25 +1380,25 @@
         9.2,
         8.7
       ],
-      "url": "https://openai.com",
-      "affiliate": false
-    },
-    {
-      "rank": 2,
-      "name": "Google Imagen",
-      "score": 8.9,
-      "mom": 8.8,
+      "desc": "Best prompt adherence and conversational editing.",
+      "bestFor": "accurate, easy generation inside chat.",
+      "price": "In ChatGPT $20/mo",
       "type": "Generator",
+      "domain": "openai.com",
       "cats": [
         "photoreal",
         "edit"
       ],
-      "price": "Free · AI Pro $20/mo",
-      "domain": "gemini.google.com",
       "letter": "G",
-      "link": "#",
-      "desc": "Google's high-fidelity model with strong editing.",
-      "bestFor": "photoreal images and natural-language edits.",
+      "link": "#"
+    },
+    {
+      "name": "Google Imagen",
+      "url": "https://gemini.google.com",
+      "affiliate": false,
+      "score": 8.9,
+      "rank": 2,
+      "mom": 8.8,
       "s": [
         9,
         8.6,
@@ -1416,24 +1407,25 @@
         8.8,
         8.8
       ],
-      "url": "https://gemini.google.com",
-      "affiliate": false
+      "desc": "Google's high-fidelity model with strong editing.",
+      "bestFor": "photoreal images and natural-language edits.",
+      "price": "Free · AI Pro $20/mo",
+      "type": "Generator",
+      "domain": "gemini.google.com",
+      "cats": [
+        "photoreal",
+        "edit"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 3,
       "name": "Midjourney",
+      "url": "https://midjourney.com",
+      "affiliate": false,
       "score": 8.8,
+      "rank": 3,
       "mom": 8.8,
-      "type": "Art generator",
-      "cats": [
-        "art"
-      ],
-      "price": "From $10/mo",
-      "domain": "midjourney.com",
-      "letter": "M",
-      "link": "#",
-      "desc": "The aesthetic leader for cinematic, stylized images.",
-      "bestFor": "the most beautiful, artistic results.",
       "s": [
         9.3,
         8,
@@ -1442,25 +1434,24 @@
         8.6,
         8.8
       ],
-      "url": "https://midjourney.com",
-      "affiliate": false
+      "desc": "The aesthetic leader for cinematic, stylized images.",
+      "bestFor": "the most beautiful, artistic results.",
+      "price": "From $10/mo",
+      "type": "Art generator",
+      "domain": "midjourney.com",
+      "cats": [
+        "art"
+      ],
+      "letter": "M",
+      "link": "#"
     },
     {
-      "rank": 4,
       "name": "FLUX",
+      "url": "https://blackforestlabs.ai",
+      "affiliate": false,
       "score": 8.7,
+      "rank": 4,
       "mom": 9,
-      "type": "Generator",
-      "cats": [
-        "photoreal",
-        "oss"
-      ],
-      "price": "API · usage",
-      "domain": "blackforestlabs.ai",
-      "letter": "F",
-      "link": "#",
-      "desc": "Open-weight frontier model; the API favorite.",
-      "bestFor": "photoreal generation and custom pipelines.",
       "s": [
         9,
         8.6,
@@ -1469,25 +1460,25 @@
         8.6,
         9
       ],
-      "url": "https://blackforestlabs.ai",
-      "affiliate": false
+      "desc": "Open-weight frontier model; the API favorite.",
+      "bestFor": "photoreal generation and custom pipelines.",
+      "price": "API · usage",
+      "type": "Generator",
+      "domain": "blackforestlabs.ai",
+      "cats": [
+        "photoreal",
+        "oss"
+      ],
+      "letter": "F",
+      "link": "#"
     },
     {
-      "rank": 5,
       "name": "Adobe Firefly",
+      "url": "https://adobe.com",
+      "affiliate": false,
       "score": 8.4,
+      "rank": 5,
       "mom": 8,
-      "type": "Generator",
-      "cats": [
-        "design",
-        "edit"
-      ],
-      "price": "In Creative Cloud",
-      "domain": "adobe.com",
-      "letter": "A",
-      "link": "#",
-      "desc": "Commercially safe, IP-indemnified, deep in Creative Cloud.",
-      "bestFor": "brand-safe commercial work.",
       "s": [
         8.5,
         7.8,
@@ -1496,24 +1487,25 @@
         9,
         8
       ],
-      "url": "https://adobe.com",
-      "affiliate": false
+      "desc": "Commercially safe, IP-indemnified, deep in Creative Cloud.",
+      "bestFor": "brand-safe commercial work.",
+      "price": "In Creative Cloud",
+      "type": "Generator",
+      "domain": "adobe.com",
+      "cats": [
+        "design",
+        "edit"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 6,
       "name": "Ideogram",
+      "url": "https://ideogram.ai",
+      "affiliate": false,
       "score": 8.4,
+      "rank": 6,
       "mom": 8.2,
-      "type": "Generator",
-      "cats": [
-        "design"
-      ],
-      "price": "Free · from $8/mo",
-      "domain": "ideogram.ai",
-      "letter": "I",
-      "link": "#",
-      "desc": "The best in-image text and typography rendering.",
-      "bestFor": "posters and designs that depend on words.",
       "s": [
         8.5,
         8.4,
@@ -1522,24 +1514,24 @@
         7.8,
         8.2
       ],
-      "url": "https://ideogram.ai",
-      "affiliate": false
+      "desc": "The best in-image text and typography rendering.",
+      "bestFor": "posters and designs that depend on words.",
+      "price": "Free · from $8/mo",
+      "type": "Generator",
+      "domain": "ideogram.ai",
+      "cats": [
+        "design"
+      ],
+      "letter": "I",
+      "link": "#"
     },
     {
-      "rank": 7,
       "name": "Stable Diffusion",
+      "url": "https://stability.ai",
+      "affiliate": false,
       "score": 8.2,
+      "rank": 7,
       "mom": 8,
-      "type": "Open model",
-      "cats": [
-        "oss"
-      ],
-      "price": "Open source · API",
-      "domain": "stability.ai",
-      "letter": "S",
-      "link": "#",
-      "desc": "Open-source, endlessly customizable with LoRAs and ControlNet.",
-      "bestFor": "full local control and fine-tuning.",
       "s": [
         8.4,
         9,
@@ -1548,24 +1540,24 @@
         8.8,
         8
       ],
-      "url": "https://stability.ai",
-      "affiliate": false
+      "desc": "Open-source, endlessly customizable with LoRAs and ControlNet.",
+      "bestFor": "full local control and fine-tuning.",
+      "price": "Open source · API",
+      "type": "Open model",
+      "domain": "stability.ai",
+      "cats": [
+        "oss"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 8,
       "name": "Recraft",
+      "url": "https://recraft.ai",
+      "affiliate": false,
       "score": 8.2,
+      "rank": 8,
       "mom": 8.2,
-      "type": "Design tool",
-      "cats": [
-        "design"
-      ],
-      "price": "Free · from $12/mo",
-      "domain": "recraft.ai",
-      "letter": "R",
-      "link": "#",
-      "desc": "Designer-focused: vectors, brand sets and legible text.",
-      "bestFor": "logos, icons and brand assets.",
       "s": [
         8.4,
         8,
@@ -1574,25 +1566,24 @@
         7.6,
         8.2
       ],
-      "url": "https://recraft.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 9,
-      "name": "Leonardo AI",
-      "score": 8.2,
-      "mom": 8,
-      "type": "Generator",
+      "desc": "Designer-focused: vectors, brand sets and legible text.",
+      "bestFor": "logos, icons and brand assets.",
+      "price": "Free · from $12/mo",
+      "type": "Design tool",
+      "domain": "recraft.ai",
       "cats": [
-        "art",
         "design"
       ],
-      "price": "Free · from $12/mo",
-      "domain": "leonardo.ai",
-      "letter": "L",
-      "link": "#",
-      "desc": "Creative generation with fine control and game assets.",
-      "bestFor": "game art and controllable creative work.",
+      "letter": "R",
+      "link": "#"
+    },
+    {
+      "name": "Leonardo AI",
+      "url": "https://leonardo.ai",
+      "affiliate": false,
+      "score": 8.2,
+      "rank": 9,
+      "mom": 8,
       "s": [
         8.2,
         8.2,
@@ -1601,25 +1592,25 @@
         8,
         8
       ],
-      "url": "https://leonardo.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 10,
-      "name": "Grok Imagine",
-      "score": 8.1,
-      "mom": 8.6,
+      "desc": "Creative generation with fine control and game assets.",
+      "bestFor": "game art and controllable creative work.",
+      "price": "Free · from $12/mo",
       "type": "Generator",
+      "domain": "leonardo.ai",
       "cats": [
         "art",
-        "photoreal"
+        "design"
       ],
-      "price": "In X Premium",
-      "domain": "x.ai",
-      "letter": "G",
-      "link": "#",
-      "desc": "xAI's fast generator built into X.",
-      "bestFor": "quick generation inside X.",
+      "letter": "L",
+      "link": "#"
+    },
+    {
+      "name": "Grok Imagine",
+      "url": "https://x.ai",
+      "affiliate": false,
+      "score": 8.1,
+      "rank": 10,
+      "mom": 8.6,
       "s": [
         8,
         8,
@@ -1628,25 +1619,25 @@
         7.8,
         8.6
       ],
-      "url": "https://x.ai",
-      "affiliate": false
+      "desc": "xAI's fast generator built into X.",
+      "bestFor": "quick generation inside X.",
+      "price": "In X Premium",
+      "type": "Generator",
+      "domain": "x.ai",
+      "cats": [
+        "art",
+        "photoreal"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 11,
       "name": "Canva Magic Media",
+      "url": "https://canva.com",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 11,
       "mom": 7.6,
-      "type": "In-app",
-      "cats": [
-        "design",
-        "edit"
-      ],
-      "price": "In Canva",
-      "domain": "canva.com",
-      "letter": "C",
-      "link": "#",
-      "desc": "Image generation inside the Canva editor.",
-      "bestFor": "generating art inside Canva designs.",
       "s": [
         7.6,
         8.4,
@@ -1655,25 +1646,25 @@
         8.6,
         7.6
       ],
-      "url": "https://canva.com",
-      "affiliate": false
-    },
-    {
-      "rank": 12,
-      "name": "Freepik AI",
-      "score": 8,
-      "mom": 7.8,
-      "type": "Multi-model",
+      "desc": "Image generation inside the Canva editor.",
+      "bestFor": "generating art inside Canva designs.",
+      "price": "In Canva",
+      "type": "In-app",
+      "domain": "canva.com",
       "cats": [
         "design",
-        "photoreal"
+        "edit"
       ],
-      "price": "Free · from $12/mo",
-      "domain": "freepik.com",
-      "letter": "F",
-      "link": "#",
-      "desc": "Many models plus stock and design assets in one place.",
-      "bestFor": "design teams wanting models and stock.",
+      "letter": "C",
+      "link": "#"
+    },
+    {
+      "name": "Freepik AI",
+      "url": "https://freepik.com",
+      "affiliate": false,
+      "score": 8,
+      "rank": 12,
+      "mom": 7.8,
       "s": [
         7.8,
         8.4,
@@ -1682,25 +1673,25 @@
         8,
         7.8
       ],
-      "url": "https://freepik.com",
-      "affiliate": false
+      "desc": "Many models plus stock and design assets in one place.",
+      "bestFor": "design teams wanting models and stock.",
+      "price": "Free · from $12/mo",
+      "type": "Multi-model",
+      "domain": "freepik.com",
+      "cats": [
+        "design",
+        "photoreal"
+      ],
+      "letter": "F",
+      "link": "#"
     },
     {
-      "rank": 13,
       "name": "Krea",
+      "url": "https://krea.ai",
+      "affiliate": false,
       "score": 8,
+      "rank": 13,
       "mom": 8.2,
-      "type": "Multi-model",
-      "cats": [
-        "art",
-        "edit"
-      ],
-      "price": "Free · from $10/mo",
-      "domain": "krea.ai",
-      "letter": "K",
-      "link": "#",
-      "desc": "Real-time canvas across many image models.",
-      "bestFor": "real-time ideation across models.",
       "s": [
         8,
         8,
@@ -1709,25 +1700,25 @@
         7.6,
         8.2
       ],
-      "url": "https://krea.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 14,
-      "name": "Reve",
-      "score": 8,
-      "mom": 8.2,
-      "type": "Generator",
+      "desc": "Real-time canvas across many image models.",
+      "bestFor": "real-time ideation across models.",
+      "price": "Free · from $10/mo",
+      "type": "Multi-model",
+      "domain": "krea.ai",
       "cats": [
         "art",
-        "design"
+        "edit"
       ],
-      "price": "Free · credits",
-      "domain": "reve.art",
-      "letter": "R",
-      "link": "#",
-      "desc": "Strong prompt adherence and aesthetic balance.",
-      "bestFor": "well-rounded creative generation.",
+      "letter": "K",
+      "link": "#"
+    },
+    {
+      "name": "Reve",
+      "url": "https://reve.art",
+      "affiliate": false,
+      "score": 8,
+      "rank": 14,
+      "mom": 8.2,
       "s": [
         8.1,
         8,
@@ -1736,24 +1727,25 @@
         7,
         8.2
       ],
-      "url": "https://reve.art",
-      "affiliate": false
-    },
-    {
-      "rank": 15,
-      "name": "Microsoft Designer",
-      "score": 8,
-      "mom": 7.4,
-      "type": "In-app",
+      "desc": "Strong prompt adherence and aesthetic balance.",
+      "bestFor": "well-rounded creative generation.",
+      "price": "Free · credits",
+      "type": "Generator",
+      "domain": "reve.art",
       "cats": [
+        "art",
         "design"
       ],
-      "price": "Free",
-      "domain": "designer.microsoft.com",
-      "letter": "M",
-      "link": "#",
-      "desc": "Free generation and design powered by GPT Image.",
-      "bestFor": "quick free designs and graphics.",
+      "letter": "R",
+      "link": "#"
+    },
+    {
+      "name": "Microsoft Designer",
+      "url": "https://designer.microsoft.com",
+      "affiliate": false,
+      "score": 8,
+      "rank": 15,
+      "mom": 7.4,
       "s": [
         7.6,
         8.8,
@@ -1762,25 +1754,24 @@
         8,
         7.4
       ],
-      "url": "https://designer.microsoft.com",
-      "affiliate": false
+      "desc": "Free generation and design powered by GPT Image.",
+      "bestFor": "quick free designs and graphics.",
+      "price": "Free",
+      "type": "In-app",
+      "domain": "designer.microsoft.com",
+      "cats": [
+        "design"
+      ],
+      "letter": "M",
+      "link": "#"
     },
     {
-      "rank": 16,
       "name": "Seedream",
+      "url": "https://bytedance.com",
+      "affiliate": false,
       "score": 8,
+      "rank": 16,
       "mom": 8.2,
-      "type": "Generator",
-      "cats": [
-        "photoreal",
-        "art"
-      ],
-      "price": "API · usage",
-      "domain": "bytedance.com",
-      "letter": "S",
-      "link": "#",
-      "desc": "ByteDance's high-quality model, strong on realism.",
-      "bestFor": "photoreal generate-and-edit workflows.",
       "s": [
         8.2,
         8,
@@ -1789,25 +1780,25 @@
         7.4,
         8.2
       ],
-      "url": "https://bytedance.com",
-      "affiliate": false
+      "desc": "ByteDance's high-quality model, strong on realism.",
+      "bestFor": "photoreal generate-and-edit workflows.",
+      "price": "API · usage",
+      "type": "Generator",
+      "domain": "bytedance.com",
+      "cats": [
+        "photoreal",
+        "art"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 17,
       "name": "Photoroom",
+      "url": "https://photoroom.com",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 17,
       "mom": 7.4,
-      "type": "Editing",
-      "cats": [
-        "edit",
-        "design"
-      ],
-      "price": "Free · Pro $13/mo",
-      "domain": "photoroom.com",
-      "letter": "P",
-      "link": "#",
-      "desc": "Product photos, background removal and edits.",
-      "bestFor": "ecommerce product imagery.",
       "s": [
         7.6,
         8,
@@ -1816,25 +1807,25 @@
         7.6,
         7.4
       ],
-      "url": "https://photoroom.com",
-      "affiliate": false
+      "desc": "Product photos, background removal and edits.",
+      "bestFor": "ecommerce product imagery.",
+      "price": "Free · Pro $13/mo",
+      "type": "Editing",
+      "domain": "photoroom.com",
+      "cats": [
+        "edit",
+        "design"
+      ],
+      "letter": "P",
+      "link": "#"
     },
     {
-      "rank": 18,
       "name": "Playground",
+      "url": "https://playground.com",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 18,
       "mom": 7.4,
-      "type": "Generator",
-      "cats": [
-        "design",
-        "art"
-      ],
-      "price": "Free · from $15/mo",
-      "domain": "playground.com",
-      "letter": "P",
-      "link": "#",
-      "desc": "Graphics and social images with an easy editor.",
-      "bestFor": "social graphics and casual design.",
       "s": [
         7.7,
         8.2,
@@ -1843,24 +1834,25 @@
         7.4,
         7.4
       ],
-      "url": "https://playground.com",
-      "affiliate": false
+      "desc": "Graphics and social images with an easy editor.",
+      "bestFor": "social graphics and casual design.",
+      "price": "Free · from $15/mo",
+      "type": "Generator",
+      "domain": "playground.com",
+      "cats": [
+        "design",
+        "art"
+      ],
+      "letter": "P",
+      "link": "#"
     },
     {
-      "rank": 19,
       "name": "Luma Photon",
+      "url": "https://lumalabs.ai",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 19,
       "mom": 7.6,
-      "type": "Generator",
-      "cats": [
-        "photoreal"
-      ],
-      "price": "Free · credits",
-      "domain": "lumalabs.ai",
-      "letter": "L",
-      "link": "#",
-      "desc": "Luma's well-rounded, efficient image model.",
-      "bestFor": "balanced, affordable generation.",
       "s": [
         7.8,
         8,
@@ -1869,24 +1861,24 @@
         7.2,
         7.6
       ],
-      "url": "https://lumalabs.ai",
-      "affiliate": false
+      "desc": "Luma's well-rounded, efficient image model.",
+      "bestFor": "balanced, affordable generation.",
+      "price": "Free · credits",
+      "type": "Generator",
+      "domain": "lumalabs.ai",
+      "cats": [
+        "photoreal"
+      ],
+      "letter": "L",
+      "link": "#"
     },
     {
-      "rank": 20,
       "name": "Magnific",
+      "url": "https://magnific.ai",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 20,
       "mom": 7.4,
-      "type": "Upscaler",
-      "cats": [
-        "edit"
-      ],
-      "price": "From $39/mo",
-      "domain": "magnific.ai",
-      "letter": "M",
-      "link": "#",
-      "desc": "AI upscaling and enhancement that invents detail.",
-      "bestFor": "upscaling and enriching images.",
       "s": [
         7.9,
         7,
@@ -1895,25 +1887,24 @@
         7.2,
         7.4
       ],
-      "url": "https://magnific.ai",
-      "affiliate": false
+      "desc": "AI upscaling and enhancement that invents detail.",
+      "bestFor": "upscaling and enriching images.",
+      "price": "From $39/mo",
+      "type": "Upscaler",
+      "domain": "magnific.ai",
+      "cats": [
+        "edit"
+      ],
+      "letter": "M",
+      "link": "#"
     },
     {
-      "rank": 21,
       "name": "Picsart",
+      "url": "https://picsart.com",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 21,
       "mom": 7,
-      "type": "Editing",
-      "cats": [
-        "edit",
-        "design"
-      ],
-      "price": "Free · from $5/mo",
-      "domain": "picsart.com",
-      "letter": "P",
-      "link": "#",
-      "desc": "Mobile-first editing with AI image tools.",
-      "bestFor": "mobile image editing and effects.",
       "s": [
         7.3,
         8,
@@ -1922,25 +1913,25 @@
         7.6,
         7
       ],
-      "url": "https://picsart.com",
-      "affiliate": false
-    },
-    {
-      "rank": 22,
-      "name": "Fotor",
-      "score": 7.5,
-      "mom": 7,
+      "desc": "Mobile-first editing with AI image tools.",
+      "bestFor": "mobile image editing and effects.",
+      "price": "Free · from $5/mo",
       "type": "Editing",
+      "domain": "picsart.com",
       "cats": [
         "edit",
         "design"
       ],
-      "price": "Free · from $9/mo",
-      "domain": "fotor.com",
-      "letter": "F",
-      "link": "#",
-      "desc": "Online photo editor with AI generation built in.",
-      "bestFor": "casual photo editing plus AI art.",
+      "letter": "P",
+      "link": "#"
+    },
+    {
+      "name": "Fotor",
+      "url": "https://fotor.com",
+      "affiliate": false,
+      "score": 7.5,
+      "rank": 22,
+      "mom": 7,
       "s": [
         7.3,
         8,
@@ -1949,25 +1940,25 @@
         7.2,
         7
       ],
-      "url": "https://fotor.com",
-      "affiliate": false
+      "desc": "Online photo editor with AI generation built in.",
+      "bestFor": "casual photo editing plus AI art.",
+      "price": "Free · from $9/mo",
+      "type": "Editing",
+      "domain": "fotor.com",
+      "cats": [
+        "edit",
+        "design"
+      ],
+      "letter": "F",
+      "link": "#"
     },
     {
-      "rank": 23,
       "name": "Getimg",
+      "url": "https://getimg.ai",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 23,
       "mom": 7.2,
-      "type": "Multi-model",
-      "cats": [
-        "oss",
-        "photoreal"
-      ],
-      "price": "Free · from $12/mo",
-      "domain": "getimg.ai",
-      "letter": "G",
-      "link": "#",
-      "desc": "Multi-model API and editor for generation.",
-      "bestFor": "API access to many image models.",
       "s": [
         7.4,
         8,
@@ -1976,24 +1967,25 @@
         7.2,
         7.2
       ],
-      "url": "https://getimg.ai",
-      "affiliate": false
+      "desc": "Multi-model API and editor for generation.",
+      "bestFor": "API access to many image models.",
+      "price": "Free · from $12/mo",
+      "type": "Multi-model",
+      "domain": "getimg.ai",
+      "cats": [
+        "oss",
+        "photoreal"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 24,
       "name": "NightCafe",
+      "url": "https://nightcafe.studio",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 24,
       "mom": 7,
-      "type": "Community",
-      "cats": [
-        "art"
-      ],
-      "price": "Free · credits",
-      "domain": "nightcafe.studio",
-      "letter": "N",
-      "link": "#",
-      "desc": "Community generator with many models and challenges.",
-      "bestFor": "exploring styles in a community.",
       "s": [
         7.4,
         8,
@@ -2002,24 +1994,24 @@
         7.2,
         7
       ],
-      "url": "https://nightcafe.studio",
-      "affiliate": false
-    },
-    {
-      "rank": 25,
-      "name": "Dream by WOMBO",
-      "score": 7.4,
-      "mom": 6.8,
-      "type": "Generator",
+      "desc": "Community generator with many models and challenges.",
+      "bestFor": "exploring styles in a community.",
+      "price": "Free · credits",
+      "type": "Community",
+      "domain": "nightcafe.studio",
       "cats": [
         "art"
       ],
-      "price": "Free · Premium $10/mo",
-      "domain": "dream.ai",
-      "letter": "D",
-      "link": "#",
-      "desc": "Easy, fun mobile art generation.",
-      "bestFor": "playful mobile art.",
+      "letter": "N",
+      "link": "#"
+    },
+    {
+      "name": "Dream by WOMBO",
+      "url": "https://dream.ai",
+      "affiliate": false,
+      "score": 7.4,
+      "rank": 25,
+      "mom": 6.8,
       "s": [
         7,
         8.2,
@@ -2028,26 +2020,26 @@
         6.8,
         6.8
       ],
-      "url": "https://dream.ai",
-      "affiliate": false
+      "desc": "Easy, fun mobile art generation.",
+      "bestFor": "playful mobile art.",
+      "price": "Free · Premium $10/mo",
+      "type": "Generator",
+      "domain": "dream.ai",
+      "cats": [
+        "art"
+      ],
+      "letter": "D",
+      "link": "#"
     }
   ],
   "video": [
     {
-      "rank": 1,
       "name": "Google Veo",
+      "url": "https://deepmind.google",
+      "affiliate": false,
       "score": 8.8,
+      "rank": 1,
       "mom": 9,
-      "type": "Generator",
-      "cats": [
-        "gen"
-      ],
-      "price": "In Gemini · API",
-      "domain": "deepmind.google",
-      "letter": "V",
-      "link": "#",
-      "desc": "The strongest all-round model — realism plus native audio.",
-      "bestFor": "best overall quality with sound.",
       "s": [
         9.2,
         8,
@@ -2056,24 +2048,24 @@
         8.8,
         9
       ],
-      "url": "https://deepmind.google",
-      "affiliate": false
-    },
-    {
-      "rank": 2,
-      "name": "Kling",
-      "score": 8.7,
-      "mom": 9,
+      "desc": "The strongest all-round model — realism plus native audio.",
+      "bestFor": "best overall quality with sound.",
+      "price": "In Gemini · API",
       "type": "Generator",
+      "domain": "deepmind.google",
       "cats": [
         "gen"
       ],
-      "price": "Free · from $10/mo",
-      "domain": "klingai.com",
-      "letter": "K",
-      "link": "#",
-      "desc": "Top motion and value, with native audio and lip-sync.",
-      "bestFor": "high-quality video on a budget.",
+      "letter": "V",
+      "link": "#"
+    },
+    {
+      "name": "Kling",
+      "url": "https://klingai.com",
+      "affiliate": false,
+      "score": 8.7,
+      "rank": 2,
+      "mom": 9,
       "s": [
         9,
         8.6,
@@ -2082,24 +2074,24 @@
         8.2,
         9
       ],
-      "url": "https://klingai.com",
-      "affiliate": false
-    },
-    {
-      "rank": 3,
-      "name": "Seedance",
-      "score": 8.5,
-      "mom": 9.2,
+      "desc": "Top motion and value, with native audio and lip-sync.",
+      "bestFor": "high-quality video on a budget.",
+      "price": "Free · from $10/mo",
       "type": "Generator",
+      "domain": "klingai.com",
       "cats": [
         "gen"
       ],
-      "price": "API · usage",
-      "domain": "bytedance.com",
-      "letter": "S",
-      "link": "#",
-      "desc": "ByteDance's hot image-to-video model, tops blind tests.",
-      "bestFor": "image-to-video with strong realism.",
+      "letter": "K",
+      "link": "#"
+    },
+    {
+      "name": "Seedance",
+      "url": "https://bytedance.com",
+      "affiliate": false,
+      "score": 8.5,
+      "rank": 3,
+      "mom": 9.2,
       "s": [
         8.9,
         8.2,
@@ -2108,25 +2100,24 @@
         7.8,
         9.2
       ],
-      "url": "https://bytedance.com",
-      "affiliate": false
+      "desc": "ByteDance's hot image-to-video model, tops blind tests.",
+      "bestFor": "image-to-video with strong realism.",
+      "price": "API · usage",
+      "type": "Generator",
+      "domain": "bytedance.com",
+      "cats": [
+        "gen"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 4,
       "name": "Runway",
+      "url": "https://runwayml.com",
+      "affiliate": false,
       "score": 8.4,
+      "rank": 4,
       "mom": 8.4,
-      "type": "Studio",
-      "cats": [
-        "gen",
-        "edit"
-      ],
-      "price": "Free · from $15/mo",
-      "domain": "runwayml.com",
-      "letter": "R",
-      "link": "#",
-      "desc": "The pro creative studio for directed, controllable shots.",
-      "bestFor": "directing precise, pro-grade shots.",
       "s": [
         8.8,
         7.8,
@@ -2135,24 +2126,25 @@
         8.6,
         8.4
       ],
-      "url": "https://runwayml.com",
-      "affiliate": false
+      "desc": "The pro creative studio for directed, controllable shots.",
+      "bestFor": "directing precise, pro-grade shots.",
+      "price": "Free · from $15/mo",
+      "type": "Studio",
+      "domain": "runwayml.com",
+      "cats": [
+        "gen",
+        "edit"
+      ],
+      "letter": "R",
+      "link": "#"
     },
     {
-      "rank": 5,
       "name": "HeyGen",
+      "url": "https://heygen.com",
+      "affiliate": false,
       "score": 8.3,
+      "rank": 5,
       "mom": 8.4,
-      "type": "Avatars",
-      "cats": [
-        "avatar"
-      ],
-      "price": "Free · from $29/mo",
-      "domain": "heygen.com",
-      "letter": "H",
-      "link": "#",
-      "desc": "Lifelike avatars and instant video translation.",
-      "bestFor": "talking-head and localized video.",
       "s": [
         8.3,
         7.8,
@@ -2161,24 +2153,24 @@
         8.2,
         8.4
       ],
-      "url": "https://heygen.com",
-      "affiliate": false
+      "desc": "Lifelike avatars and instant video translation.",
+      "bestFor": "talking-head and localized video.",
+      "price": "Free · from $29/mo",
+      "type": "Avatars",
+      "domain": "heygen.com",
+      "cats": [
+        "avatar"
+      ],
+      "letter": "H",
+      "link": "#"
     },
     {
-      "rank": 6,
       "name": "Hailuo",
+      "url": "https://hailuoai.com",
+      "affiliate": false,
       "score": 8.3,
+      "rank": 6,
       "mom": 8.4,
-      "type": "Generator",
-      "cats": [
-        "gen"
-      ],
-      "price": "Free · from $10/mo",
-      "domain": "hailuoai.com",
-      "letter": "H",
-      "link": "#",
-      "desc": "Expressive motion and native 4K at low cost.",
-      "bestFor": "the most output per dollar.",
       "s": [
         8.4,
         8.6,
@@ -2187,24 +2179,24 @@
         7.6,
         8.4
       ],
-      "url": "https://hailuoai.com",
-      "affiliate": false
+      "desc": "Expressive motion and native 4K at low cost.",
+      "bestFor": "the most output per dollar.",
+      "price": "Free · from $10/mo",
+      "type": "Generator",
+      "domain": "hailuoai.com",
+      "cats": [
+        "gen"
+      ],
+      "letter": "H",
+      "link": "#"
     },
     {
-      "rank": 7,
       "name": "Synthesia",
+      "url": "https://synthesia.io",
+      "affiliate": false,
       "score": 8.2,
+      "rank": 7,
       "mom": 8,
-      "type": "Avatars",
-      "cats": [
-        "avatar"
-      ],
-      "price": "From $29/mo",
-      "domain": "synthesia.io",
-      "letter": "S",
-      "link": "#",
-      "desc": "Enterprise avatar video for training and L&amp;D.",
-      "bestFor": "corporate training and explainers.",
       "s": [
         8.2,
         7.6,
@@ -2213,25 +2205,24 @@
         8.4,
         8
       ],
-      "url": "https://synthesia.io",
-      "affiliate": false
+      "desc": "Enterprise avatar video for training and L&amp;D.",
+      "bestFor": "corporate training and explainers.",
+      "price": "From $29/mo",
+      "type": "Avatars",
+      "domain": "synthesia.io",
+      "cats": [
+        "avatar"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 8,
       "name": "Wan",
+      "url": "https://wan.video",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 8,
       "mom": 8.2,
-      "type": "Open model",
-      "cats": [
-        "gen",
-        "oss"
-      ],
-      "price": "Open source · API",
-      "domain": "wan.video",
-      "letter": "W",
-      "link": "#",
-      "desc": "The serious open-weight model for self-hosting.",
-      "bestFor": "self-hosted, customizable pipelines.",
       "s": [
         8.2,
         9,
@@ -2240,24 +2231,25 @@
         8,
         8.2
       ],
-      "url": "https://wan.video",
-      "affiliate": false
+      "desc": "The serious open-weight model for self-hosting.",
+      "bestFor": "self-hosted, customizable pipelines.",
+      "price": "Open source · API",
+      "type": "Open model",
+      "domain": "wan.video",
+      "cats": [
+        "gen",
+        "oss"
+      ],
+      "letter": "W",
+      "link": "#"
     },
     {
-      "rank": 9,
       "name": "Luma Dream Machine",
+      "url": "https://lumalabs.ai",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 9,
       "mom": 8,
-      "type": "Generator",
-      "cats": [
-        "gen"
-      ],
-      "price": "Free · from $10/mo",
-      "domain": "lumalabs.ai",
-      "letter": "L",
-      "link": "#",
-      "desc": "Fast, cinematic image-to-video clips.",
-      "bestFor": "quick cinematic shots.",
       "s": [
         8.2,
         8.2,
@@ -2266,24 +2258,24 @@
         7.6,
         8
       ],
-      "url": "https://lumalabs.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 10,
-      "name": "Sora",
-      "score": 8.1,
-      "mom": 7.4,
+      "desc": "Fast, cinematic image-to-video clips.",
+      "bestFor": "quick cinematic shots.",
+      "price": "Free · from $10/mo",
       "type": "Generator",
+      "domain": "lumalabs.ai",
       "cats": [
         "gen"
       ],
-      "price": "In ChatGPT $20/mo",
-      "domain": "openai.com",
-      "letter": "S",
-      "link": "#",
-      "desc": "Broad creative range; the standalone app is winding down.",
-      "bestFor": "stylized, surreal creative clips.",
+      "letter": "L",
+      "link": "#"
+    },
+    {
+      "name": "Sora",
+      "url": "https://openai.com",
+      "affiliate": false,
+      "score": 8.1,
+      "rank": 10,
+      "mom": 7.4,
       "s": [
         8.6,
         7.6,
@@ -2292,25 +2284,24 @@
         8.2,
         7.4
       ],
-      "url": "https://openai.com",
-      "affiliate": false
+      "desc": "Broad creative range; the standalone app is winding down.",
+      "bestFor": "stylized, surreal creative clips.",
+      "price": "In ChatGPT $20/mo",
+      "type": "Generator",
+      "domain": "openai.com",
+      "cats": [
+        "gen"
+      ],
+      "letter": "S",
+      "link": "#"
     },
     {
-      "rank": 11,
       "name": "Adobe Firefly Video",
+      "url": "https://adobe.com",
+      "affiliate": false,
       "score": 8.1,
+      "rank": 11,
       "mom": 7.8,
-      "type": "Generator",
-      "cats": [
-        "gen",
-        "edit"
-      ],
-      "price": "In Creative Cloud",
-      "domain": "adobe.com",
-      "letter": "A",
-      "link": "#",
-      "desc": "Commercially safe, IP-indemnified video in Premiere.",
-      "bestFor": "brand-safe commercial video.",
       "s": [
         8,
         7.6,
@@ -2319,24 +2310,25 @@
         8.6,
         7.8
       ],
-      "url": "https://adobe.com",
-      "affiliate": false
+      "desc": "Commercially safe, IP-indemnified video in Premiere.",
+      "bestFor": "brand-safe commercial video.",
+      "price": "In Creative Cloud",
+      "type": "Generator",
+      "domain": "adobe.com",
+      "cats": [
+        "gen",
+        "edit"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 12,
       "name": "Midjourney Video",
+      "url": "https://midjourney.com",
+      "affiliate": false,
       "score": 8,
+      "rank": 12,
       "mom": 8,
-      "type": "Generator",
-      "cats": [
-        "gen"
-      ],
-      "price": "From $10/mo",
-      "domain": "midjourney.com",
-      "letter": "M",
-      "link": "#",
-      "desc": "Midjourney's signature aesthetic, now in motion.",
-      "bestFor": "stylized, artistic motion.",
       "s": [
         8.2,
         7.8,
@@ -2345,25 +2337,24 @@
         8,
         8
       ],
-      "url": "https://midjourney.com",
-      "affiliate": false
+      "desc": "Midjourney's signature aesthetic, now in motion.",
+      "bestFor": "stylized, artistic motion.",
+      "price": "From $10/mo",
+      "type": "Generator",
+      "domain": "midjourney.com",
+      "cats": [
+        "gen"
+      ],
+      "letter": "M",
+      "link": "#"
     },
     {
-      "rank": 13,
       "name": "Pika",
+      "url": "https://pika.art",
+      "affiliate": false,
       "score": 8,
+      "rank": 13,
       "mom": 7.8,
-      "type": "Generator",
-      "cats": [
-        "gen",
-        "edit"
-      ],
-      "price": "Free · from $10/mo",
-      "domain": "pika.art",
-      "letter": "P",
-      "link": "#",
-      "desc": "Playful effects, swaps and real-time streaming.",
-      "bestFor": "fast, fun social video.",
       "s": [
         8,
         8.2,
@@ -2372,24 +2363,25 @@
         7.6,
         7.8
       ],
-      "url": "https://pika.art",
-      "affiliate": false
+      "desc": "Playful effects, swaps and real-time streaming.",
+      "bestFor": "fast, fun social video.",
+      "price": "Free · from $10/mo",
+      "type": "Generator",
+      "domain": "pika.art",
+      "cats": [
+        "gen",
+        "edit"
+      ],
+      "letter": "P",
+      "link": "#"
     },
     {
-      "rank": 14,
       "name": "Higgsfield",
+      "url": "https://higgsfield.ai",
+      "affiliate": false,
       "score": 7.9,
+      "rank": 14,
       "mom": 8.4,
-      "type": "Studio",
-      "cats": [
-        "gen"
-      ],
-      "price": "From $9/mo",
-      "domain": "higgsfield.ai",
-      "letter": "H",
-      "link": "#",
-      "desc": "Cinematic camera controls and a multi-model studio.",
-      "bestFor": "stylized camera-driven shots.",
       "s": [
         7.9,
         7.8,
@@ -2398,25 +2390,24 @@
         7.4,
         8.4
       ],
-      "url": "https://higgsfield.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 15,
-      "name": "Hedra",
-      "score": 7.9,
-      "mom": 8.2,
-      "type": "Avatars",
+      "desc": "Cinematic camera controls and a multi-model studio.",
+      "bestFor": "stylized camera-driven shots.",
+      "price": "From $9/mo",
+      "type": "Studio",
+      "domain": "higgsfield.ai",
       "cats": [
-        "avatar",
         "gen"
       ],
-      "price": "Free · from $10/mo",
-      "domain": "hedra.com",
       "letter": "H",
-      "link": "#",
-      "desc": "Expressive talking characters from a photo and audio.",
-      "bestFor": "character and talking-image video.",
+      "link": "#"
+    },
+    {
+      "name": "Hedra",
+      "url": "https://hedra.com",
+      "affiliate": false,
+      "score": 7.9,
+      "rank": 15,
+      "mom": 8.2,
       "s": [
         7.9,
         7.8,
@@ -2425,24 +2416,25 @@
         7.4,
         8.2
       ],
-      "url": "https://hedra.com",
-      "affiliate": false
-    },
-    {
-      "rank": 16,
-      "name": "Grok Imagine",
-      "score": 7.8,
-      "mom": 8.2,
-      "type": "Generator",
+      "desc": "Expressive talking characters from a photo and audio.",
+      "bestFor": "character and talking-image video.",
+      "price": "Free · from $10/mo",
+      "type": "Avatars",
+      "domain": "hedra.com",
       "cats": [
+        "avatar",
         "gen"
       ],
-      "price": "In X Premium",
-      "domain": "x.ai",
-      "letter": "G",
-      "link": "#",
-      "desc": "xAI's fast text-and-image-to-video in X.",
-      "bestFor": "fast video inside X.",
+      "letter": "H",
+      "link": "#"
+    },
+    {
+      "name": "Grok Imagine",
+      "url": "https://x.ai",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 16,
+      "mom": 8.2,
       "s": [
         7.7,
         7.8,
@@ -2451,24 +2443,24 @@
         7.6,
         8.2
       ],
-      "url": "https://x.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 17,
-      "name": "PixVerse",
-      "score": 7.8,
-      "mom": 7.8,
+      "desc": "xAI's fast text-and-image-to-video in X.",
+      "bestFor": "fast video inside X.",
+      "price": "In X Premium",
       "type": "Generator",
+      "domain": "x.ai",
       "cats": [
         "gen"
       ],
-      "price": "Free · from $10/mo",
-      "domain": "pixverse.ai",
-      "letter": "P",
-      "link": "#",
-      "desc": "Fast, affordable social clips with effects.",
-      "bestFor": "quick social-ready video.",
+      "letter": "G",
+      "link": "#"
+    },
+    {
+      "name": "PixVerse",
+      "url": "https://pixverse.ai",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 17,
+      "mom": 7.8,
       "s": [
         7.7,
         8.2,
@@ -2477,25 +2469,24 @@
         7.4,
         7.8
       ],
-      "url": "https://pixverse.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 18,
-      "name": "CapCut Dreamina",
-      "score": 7.8,
-      "mom": 7.6,
-      "type": "Editing",
+      "desc": "Fast, affordable social clips with effects.",
+      "bestFor": "quick social-ready video.",
+      "price": "Free · from $10/mo",
+      "type": "Generator",
+      "domain": "pixverse.ai",
       "cats": [
-        "edit",
         "gen"
       ],
-      "price": "Free · Pro",
-      "domain": "capcut.com",
-      "letter": "C",
-      "link": "#",
-      "desc": "AI generation inside the popular editor.",
-      "bestFor": "editing with AI video built in.",
+      "letter": "P",
+      "link": "#"
+    },
+    {
+      "name": "CapCut Dreamina",
+      "url": "https://capcut.com",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 18,
+      "mom": 7.6,
       "s": [
         7.4,
         8.2,
@@ -2504,25 +2495,25 @@
         8,
         7.6
       ],
-      "url": "https://capcut.com",
-      "affiliate": false
+      "desc": "AI generation inside the popular editor.",
+      "bestFor": "editing with AI video built in.",
+      "price": "Free · Pro",
+      "type": "Editing",
+      "domain": "capcut.com",
+      "cats": [
+        "edit",
+        "gen"
+      ],
+      "letter": "C",
+      "link": "#"
     },
     {
-      "rank": 19,
       "name": "Krea",
+      "url": "https://krea.ai",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 19,
       "mom": 7.8,
-      "type": "Multi-model",
-      "cats": [
-        "gen",
-        "edit"
-      ],
-      "price": "Free · from $10/mo",
-      "domain": "krea.ai",
-      "letter": "K",
-      "link": "#",
-      "desc": "One canvas across many video models.",
-      "bestFor": "comparing models in one place.",
       "s": [
         7.8,
         8,
@@ -2531,25 +2522,25 @@
         7.4,
         7.8
       ],
-      "url": "https://krea.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 20,
-      "name": "LTX Studio",
-      "score": 7.7,
-      "mom": 7.8,
-      "type": "Studio",
+      "desc": "One canvas across many video models.",
+      "bestFor": "comparing models in one place.",
+      "price": "Free · from $10/mo",
+      "type": "Multi-model",
+      "domain": "krea.ai",
       "cats": [
         "gen",
         "edit"
       ],
-      "price": "Free · from $15/mo",
-      "domain": "ltx.studio",
-      "letter": "L",
-      "link": "#",
-      "desc": "Storyboard-to-film studio by Lightricks.",
-      "bestFor": "planning multi-shot stories.",
+      "letter": "K",
+      "link": "#"
+    },
+    {
+      "name": "LTX Studio",
+      "url": "https://ltx.studio",
+      "affiliate": false,
+      "score": 7.7,
+      "rank": 20,
+      "mom": 7.8,
       "s": [
         7.7,
         7.8,
@@ -2558,24 +2549,25 @@
         7.4,
         7.8
       ],
-      "url": "https://ltx.studio",
-      "affiliate": false
+      "desc": "Storyboard-to-film studio by Lightricks.",
+      "bestFor": "planning multi-shot stories.",
+      "price": "Free · from $15/mo",
+      "type": "Studio",
+      "domain": "ltx.studio",
+      "cats": [
+        "gen",
+        "edit"
+      ],
+      "letter": "L",
+      "link": "#"
     },
     {
-      "rank": 21,
       "name": "Vidu",
+      "url": "https://vidu.com",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 21,
       "mom": 7.8,
-      "type": "Generator",
-      "cats": [
-        "gen"
-      ],
-      "price": "Free · from $8/mo",
-      "domain": "vidu.com",
-      "letter": "V",
-      "link": "#",
-      "desc": "Fast, character-consistent clips from Shengshu.",
-      "bestFor": "character-consistent short clips.",
       "s": [
         7.6,
         8,
@@ -2584,25 +2576,24 @@
         7,
         7.8
       ],
-      "url": "https://vidu.com",
-      "affiliate": false
+      "desc": "Fast, character-consistent clips from Shengshu.",
+      "bestFor": "character-consistent short clips.",
+      "price": "Free · from $8/mo",
+      "type": "Generator",
+      "domain": "vidu.com",
+      "cats": [
+        "gen"
+      ],
+      "letter": "V",
+      "link": "#"
     },
     {
-      "rank": 22,
       "name": "Genmo",
+      "url": "https://genmo.ai",
+      "affiliate": false,
       "score": 7.6,
+      "rank": 22,
       "mom": 7.6,
-      "type": "Open model",
-      "cats": [
-        "gen",
-        "oss"
-      ],
-      "price": "Open source · API",
-      "domain": "genmo.ai",
-      "letter": "G",
-      "link": "#",
-      "desc": "Open-weight Mochi model for experimentation.",
-      "bestFor": "open-source video generation.",
       "s": [
         7.5,
         8.6,
@@ -2611,24 +2602,25 @@
         7.4,
         7.6
       ],
-      "url": "https://genmo.ai",
-      "affiliate": false
+      "desc": "Open-weight Mochi model for experimentation.",
+      "bestFor": "open-source video generation.",
+      "price": "Open source · API",
+      "type": "Open model",
+      "domain": "genmo.ai",
+      "cats": [
+        "gen",
+        "oss"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 23,
       "name": "InVideo AI",
+      "url": "https://invideo.io",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 23,
       "mom": 7.2,
-      "type": "Editing",
-      "cats": [
-        "edit"
-      ],
-      "price": "Free · from $20/mo",
-      "domain": "invideo.io",
-      "letter": "I",
-      "link": "#",
-      "desc": "Prompt-to-video for social and marketing edits.",
-      "bestFor": "templated marketing videos.",
       "s": [
         7.2,
         8,
@@ -2637,24 +2629,24 @@
         7.2,
         7.2
       ],
-      "url": "https://invideo.io",
-      "affiliate": false
+      "desc": "Prompt-to-video for social and marketing edits.",
+      "bestFor": "templated marketing videos.",
+      "price": "Free · from $20/mo",
+      "type": "Editing",
+      "domain": "invideo.io",
+      "cats": [
+        "edit"
+      ],
+      "letter": "I",
+      "link": "#"
     },
     {
-      "rank": 24,
       "name": "Haiper",
+      "url": "https://haiper.ai",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 24,
       "mom": 7.2,
-      "type": "Generator",
-      "cats": [
-        "gen"
-      ],
-      "price": "Free · from $10/mo",
-      "domain": "haiper.ai",
-      "letter": "H",
-      "link": "#",
-      "desc": "Efficient, marketer-friendly short clips.",
-      "bestFor": "fast marketing video.",
       "s": [
         7.4,
         8,
@@ -2663,24 +2655,24 @@
         7,
         7.2
       ],
-      "url": "https://haiper.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 25,
-      "name": "Kaiber",
-      "score": 7.5,
-      "mom": 7.2,
+      "desc": "Efficient, marketer-friendly short clips.",
+      "bestFor": "fast marketing video.",
+      "price": "Free · from $10/mo",
       "type": "Generator",
+      "domain": "haiper.ai",
       "cats": [
         "gen"
       ],
-      "price": "From $5/mo",
-      "domain": "kaiber.ai",
-      "letter": "K",
-      "link": "#",
-      "desc": "Music-video and stylized transformation clips.",
-      "bestFor": "music videos and stylized motion.",
+      "letter": "H",
+      "link": "#"
+    },
+    {
+      "name": "Kaiber",
+      "url": "https://kaiber.ai",
+      "affiliate": false,
+      "score": 7.5,
+      "rank": 25,
+      "mom": 7.2,
       "s": [
         7.4,
         7.8,
@@ -2689,28 +2681,26 @@
         7,
         7.2
       ],
-      "url": "https://kaiber.ai",
-      "affiliate": false
+      "desc": "Music-video and stylized transformation clips.",
+      "bestFor": "music videos and stylized motion.",
+      "price": "From $5/mo",
+      "type": "Generator",
+      "domain": "kaiber.ai",
+      "cats": [
+        "gen"
+      ],
+      "letter": "K",
+      "link": "#"
     }
   ],
   "voice": [
     {
-      "rank": 1,
       "name": "ElevenLabs",
+      "url": "https://elevenlabs.io",
+      "affiliate": false,
       "score": 9,
+      "rank": 1,
       "mom": 9,
-      "type": "TTS + cloning",
-      "cats": [
-        "tts",
-        "cloning",
-        "dubbing"
-      ],
-      "price": "Free · from $5/mo",
-      "domain": "elevenlabs.io",
-      "letter": "E",
-      "link": "#",
-      "desc": "The realism leader for narration, cloning and dubbing.",
-      "bestFor": "the most natural narration and cloning.",
       "s": [
         9.4,
         8.4,
@@ -2719,25 +2709,26 @@
         8.8,
         9
       ],
-      "url": "https://elevenlabs.io",
-      "affiliate": false
-    },
-    {
-      "rank": 2,
-      "name": "OpenAI Voice",
-      "score": 8.5,
-      "mom": 8.4,
-      "type": "Realtime + TTS",
+      "desc": "The realism leader for narration, cloning and dubbing.",
+      "bestFor": "the most natural narration and cloning.",
+      "price": "Free · from $5/mo",
+      "type": "TTS + cloning",
+      "domain": "elevenlabs.io",
       "cats": [
         "tts",
-        "realtime"
+        "cloning",
+        "dubbing"
       ],
-      "price": "API · in ChatGPT",
-      "domain": "openai.com",
-      "letter": "O",
-      "link": "#",
-      "desc": "Realtime and TTS voices with contextual intelligence.",
-      "bestFor": "voice agents and app integration.",
+      "letter": "E",
+      "link": "#"
+    },
+    {
+      "name": "OpenAI Voice",
+      "url": "https://openai.com",
+      "affiliate": false,
+      "score": 8.5,
+      "rank": 2,
+      "mom": 8.4,
       "s": [
         8.6,
         8.4,
@@ -2746,25 +2737,25 @@
         8.8,
         8.4
       ],
-      "url": "https://openai.com",
-      "affiliate": false
-    },
-    {
-      "rank": 3,
-      "name": "Cartesia",
-      "score": 8.4,
-      "mom": 8.6,
-      "type": "Real-time TTS",
+      "desc": "Realtime and TTS voices with contextual intelligence.",
+      "bestFor": "voice agents and app integration.",
+      "price": "API · in ChatGPT",
+      "type": "Realtime + TTS",
+      "domain": "openai.com",
       "cats": [
         "tts",
         "realtime"
       ],
-      "price": "Free · usage",
-      "domain": "cartesia.ai",
-      "letter": "C",
-      "link": "#",
-      "desc": "Sonic's ~90ms latency leads for voice agents.",
-      "bestFor": "real-time conversational agents.",
+      "letter": "O",
+      "link": "#"
+    },
+    {
+      "name": "Cartesia",
+      "url": "https://cartesia.ai",
+      "affiliate": false,
+      "score": 8.4,
+      "rank": 3,
+      "mom": 8.6,
       "s": [
         8.6,
         8.4,
@@ -2773,25 +2764,25 @@
         7.8,
         8.6
       ],
-      "url": "https://cartesia.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 4,
-      "name": "Hume AI",
-      "score": 8.4,
-      "mom": 8.6,
-      "type": "Expressive TTS",
+      "desc": "Sonic's ~90ms latency leads for voice agents.",
+      "bestFor": "real-time conversational agents.",
+      "price": "Free · usage",
+      "type": "Real-time TTS",
+      "domain": "cartesia.ai",
       "cats": [
         "tts",
         "realtime"
       ],
-      "price": "Free · usage",
-      "domain": "hume.ai",
-      "letter": "H",
-      "link": "#",
-      "desc": "Octave steers emotion from plain-English instructions.",
-      "bestFor": "emotionally expressive speech.",
+      "letter": "C",
+      "link": "#"
+    },
+    {
+      "name": "Hume AI",
+      "url": "https://hume.ai",
+      "affiliate": false,
+      "score": 8.4,
+      "rank": 4,
+      "mom": 8.6,
       "s": [
         8.8,
         8,
@@ -2800,25 +2791,25 @@
         7.8,
         8.6
       ],
-      "url": "https://hume.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 5,
-      "name": "Google Cloud TTS",
-      "score": 8.3,
-      "mom": 7.8,
-      "type": "TTS API",
+      "desc": "Octave steers emotion from plain-English instructions.",
+      "bestFor": "emotionally expressive speech.",
+      "price": "Free · usage",
+      "type": "Expressive TTS",
+      "domain": "hume.ai",
       "cats": [
         "tts",
         "realtime"
       ],
-      "price": "API · usage",
-      "domain": "cloud.google.com",
-      "letter": "G",
-      "link": "#",
-      "desc": "Chirp 3 HD: many styles at low per-character cost.",
-      "bestFor": "TTS at scale on a budget.",
+      "letter": "H",
+      "link": "#"
+    },
+    {
+      "name": "Google Cloud TTS",
+      "url": "https://cloud.google.com",
+      "affiliate": false,
+      "score": 8.3,
+      "rank": 5,
+      "mom": 7.8,
       "s": [
         8.3,
         8.8,
@@ -2827,24 +2818,25 @@
         8.4,
         7.8
       ],
-      "url": "https://cloud.google.com",
-      "affiliate": false
+      "desc": "Chirp 3 HD: many styles at low per-character cost.",
+      "bestFor": "TTS at scale on a budget.",
+      "price": "API · usage",
+      "type": "TTS API",
+      "domain": "cloud.google.com",
+      "cats": [
+        "tts",
+        "realtime"
+      ],
+      "letter": "G",
+      "link": "#"
     },
     {
-      "rank": 6,
       "name": "Murf AI",
+      "url": "https://murf.ai",
+      "affiliate": false,
       "score": 8.2,
+      "rank": 6,
       "mom": 8,
-      "type": "Voiceover studio",
-      "cats": [
-        "tts"
-      ],
-      "price": "Free · from $29/mo",
-      "domain": "murf.ai",
-      "letter": "M",
-      "link": "#",
-      "desc": "The best all-in-one studio for video voiceovers.",
-      "bestFor": "polished video voiceovers.",
       "s": [
         8.2,
         7.8,
@@ -2853,24 +2845,24 @@
         8,
         8
       ],
-      "url": "https://murf.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 7,
-      "name": "Microsoft Azure TTS",
-      "score": 8.1,
-      "mom": 7.6,
-      "type": "TTS API",
+      "desc": "The best all-in-one studio for video voiceovers.",
+      "bestFor": "polished video voiceovers.",
+      "price": "Free · from $29/mo",
+      "type": "Voiceover studio",
+      "domain": "murf.ai",
       "cats": [
         "tts"
       ],
-      "price": "API · usage",
-      "domain": "azure.microsoft.com",
-      "letter": "A",
-      "link": "#",
-      "desc": "Neural voices with enterprise governance and SLAs.",
-      "bestFor": "enterprise TTS in the cloud.",
+      "letter": "M",
+      "link": "#"
+    },
+    {
+      "name": "Microsoft Azure TTS",
+      "url": "https://azure.microsoft.com",
+      "affiliate": false,
+      "score": 8.1,
+      "rank": 7,
+      "mom": 7.6,
       "s": [
         8.1,
         8.4,
@@ -2879,25 +2871,24 @@
         8.2,
         7.6
       ],
-      "url": "https://azure.microsoft.com",
-      "affiliate": false
+      "desc": "Neural voices with enterprise governance and SLAs.",
+      "bestFor": "enterprise TTS in the cloud.",
+      "price": "API · usage",
+      "type": "TTS API",
+      "domain": "azure.microsoft.com",
+      "cats": [
+        "tts"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 8,
       "name": "Resemble AI",
+      "url": "https://resemble.ai",
+      "affiliate": false,
       "score": 8,
+      "rank": 8,
       "mom": 8,
-      "type": "Cloning",
-      "cats": [
-        "cloning",
-        "dubbing"
-      ],
-      "price": "Free · usage",
-      "domain": "resemble.ai",
-      "letter": "R",
-      "link": "#",
-      "desc": "Professional cloning, speech-to-speech and dubbing.",
-      "bestFor": "brand voice cloning and dubbing.",
       "s": [
         8.2,
         7.8,
@@ -2906,24 +2897,25 @@
         7.8,
         8
       ],
-      "url": "https://resemble.ai",
-      "affiliate": false
+      "desc": "Professional cloning, speech-to-speech and dubbing.",
+      "bestFor": "brand voice cloning and dubbing.",
+      "price": "Free · usage",
+      "type": "Cloning",
+      "domain": "resemble.ai",
+      "cats": [
+        "cloning",
+        "dubbing"
+      ],
+      "letter": "R",
+      "link": "#"
     },
     {
-      "rank": 9,
       "name": "WellSaid Labs",
+      "url": "https://wellsaidlabs.com",
+      "affiliate": false,
       "score": 8,
+      "rank": 9,
       "mom": 7.6,
-      "type": "Enterprise TTS",
-      "cats": [
-        "tts"
-      ],
-      "price": "From $44/mo",
-      "domain": "wellsaidlabs.com",
-      "letter": "W",
-      "link": "#",
-      "desc": "Enterprise-grade, consent-based studio voices.",
-      "bestFor": "compliant corporate narration.",
       "s": [
         8.2,
         7.4,
@@ -2932,24 +2924,24 @@
         7.8,
         7.6
       ],
-      "url": "https://wellsaidlabs.com",
-      "affiliate": false
-    },
-    {
-      "rank": 10,
-      "name": "Speechify",
-      "score": 8,
-      "mom": 7.6,
-      "type": "Listening",
+      "desc": "Enterprise-grade, consent-based studio voices.",
+      "bestFor": "compliant corporate narration.",
+      "price": "From $44/mo",
+      "type": "Enterprise TTS",
+      "domain": "wellsaidlabs.com",
       "cats": [
         "tts"
       ],
-      "price": "Free · Premium $11/mo",
-      "domain": "speechify.com",
-      "letter": "S",
-      "link": "#",
-      "desc": "Turns articles and docs into natural speech.",
-      "bestFor": "listening to text on the go.",
+      "letter": "W",
+      "link": "#"
+    },
+    {
+      "name": "Speechify",
+      "url": "https://speechify.com",
+      "affiliate": false,
+      "score": 8,
+      "rank": 10,
+      "mom": 7.6,
       "s": [
         7.7,
         8.2,
@@ -2958,25 +2950,24 @@
         7.8,
         7.6
       ],
-      "url": "https://speechify.com",
-      "affiliate": false
-    },
-    {
-      "rank": 11,
-      "name": "Fish Audio",
-      "score": 8,
-      "mom": 8.2,
-      "type": "Cloning",
+      "desc": "Turns articles and docs into natural speech.",
+      "bestFor": "listening to text on the go.",
+      "price": "Free · Premium $11/mo",
+      "type": "Listening",
+      "domain": "speechify.com",
       "cats": [
-        "cloning",
         "tts"
       ],
-      "price": "Free · usage",
-      "domain": "fish.audio",
-      "letter": "F",
-      "link": "#",
-      "desc": "Fast, low-cost cloning and open-leaning models.",
-      "bestFor": "affordable voice cloning.",
+      "letter": "S",
+      "link": "#"
+    },
+    {
+      "name": "Fish Audio",
+      "url": "https://fish.audio",
+      "affiliate": false,
+      "score": 8,
+      "rank": 11,
+      "mom": 8.2,
       "s": [
         7.9,
         8.6,
@@ -2985,24 +2976,25 @@
         7.4,
         8.2
       ],
-      "url": "https://fish.audio",
-      "affiliate": false
-    },
-    {
-      "rank": 12,
-      "name": "Amazon Polly",
-      "score": 8,
-      "mom": 7.2,
-      "type": "TTS API",
+      "desc": "Fast, low-cost cloning and open-leaning models.",
+      "bestFor": "affordable voice cloning.",
+      "price": "Free · usage",
+      "type": "Cloning",
+      "domain": "fish.audio",
       "cats": [
+        "cloning",
         "tts"
       ],
-      "price": "API · usage",
-      "domain": "aws.amazon.com",
-      "letter": "A",
-      "link": "#",
-      "desc": "Reliable, cheap TTS deep in the AWS stack.",
-      "bestFor": "AWS-native voice at scale.",
+      "letter": "F",
+      "link": "#"
+    },
+    {
+      "name": "Amazon Polly",
+      "url": "https://aws.amazon.com",
+      "affiliate": false,
+      "score": 8,
+      "rank": 12,
+      "mom": 7.2,
       "s": [
         7.9,
         8.6,
@@ -3011,25 +3003,24 @@
         8,
         7.2
       ],
-      "url": "https://aws.amazon.com",
-      "affiliate": false
+      "desc": "Reliable, cheap TTS deep in the AWS stack.",
+      "bestFor": "AWS-native voice at scale.",
+      "price": "API · usage",
+      "type": "TTS API",
+      "domain": "aws.amazon.com",
+      "cats": [
+        "tts"
+      ],
+      "letter": "A",
+      "link": "#"
     },
     {
-      "rank": 13,
       "name": "Descript",
+      "url": "https://descript.com",
+      "affiliate": false,
       "score": 7.9,
+      "rank": 13,
       "mom": 7.6,
-      "type": "Editing + Overdub",
-      "cats": [
-        "tts",
-        "cloning"
-      ],
-      "price": "Free · from $24/mo",
-      "domain": "descript.com",
-      "letter": "D",
-      "link": "#",
-      "desc": "Edit audio like a doc, with voice cloning.",
-      "bestFor": "podcast and video voice editing.",
       "s": [
         7.8,
         7.8,
@@ -3038,25 +3029,25 @@
         8,
         7.6
       ],
-      "url": "https://descript.com",
-      "affiliate": false
-    },
-    {
-      "rank": 14,
-      "name": "MiniMax Audio",
-      "score": 7.8,
-      "mom": 8,
-      "type": "TTS + cloning",
+      "desc": "Edit audio like a doc, with voice cloning.",
+      "bestFor": "podcast and video voice editing.",
+      "price": "Free · from $24/mo",
+      "type": "Editing + Overdub",
+      "domain": "descript.com",
       "cats": [
         "tts",
         "cloning"
       ],
-      "price": "API · usage",
-      "domain": "minimax.io",
-      "letter": "M",
-      "link": "#",
-      "desc": "High-quality multilingual TTS and cloning.",
-      "bestFor": "multilingual TTS at low cost.",
+      "letter": "D",
+      "link": "#"
+    },
+    {
+      "name": "MiniMax Audio",
+      "url": "https://minimax.io",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 14,
+      "mom": 8,
       "s": [
         7.9,
         8.2,
@@ -3065,25 +3056,25 @@
         7.2,
         8
       ],
-      "url": "https://minimax.io",
-      "affiliate": false
+      "desc": "High-quality multilingual TTS and cloning.",
+      "bestFor": "multilingual TTS at low cost.",
+      "price": "API · usage",
+      "type": "TTS + cloning",
+      "domain": "minimax.io",
+      "cats": [
+        "tts",
+        "cloning"
+      ],
+      "letter": "M",
+      "link": "#"
     },
     {
-      "rank": 15,
       "name": "Inworld",
+      "url": "https://inworld.ai",
+      "affiliate": false,
       "score": 7.8,
+      "rank": 15,
       "mom": 8,
-      "type": "Real-time",
-      "cats": [
-        "realtime",
-        "tts"
-      ],
-      "price": "API · usage",
-      "domain": "inworld.ai",
-      "letter": "I",
-      "link": "#",
-      "desc": "Low-latency voices for games and agents.",
-      "bestFor": "interactive game and agent voice.",
       "s": [
         7.8,
         7.8,
@@ -3092,24 +3083,25 @@
         7.4,
         8
       ],
-      "url": "https://inworld.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 16,
-      "name": "LOVO",
-      "score": 7.8,
-      "mom": 7.4,
-      "type": "Voiceover studio",
+      "desc": "Low-latency voices for games and agents.",
+      "bestFor": "interactive game and agent voice.",
+      "price": "API · usage",
+      "type": "Real-time",
+      "domain": "inworld.ai",
       "cats": [
+        "realtime",
         "tts"
       ],
-      "price": "Free · from $24/mo",
-      "domain": "lovo.ai",
-      "letter": "L",
-      "link": "#",
-      "desc": "Genny studio with many voices and editing.",
-      "bestFor": "creator voiceovers.",
+      "letter": "I",
+      "link": "#"
+    },
+    {
+      "name": "LOVO",
+      "url": "https://lovo.ai",
+      "affiliate": false,
+      "score": 7.8,
+      "rank": 16,
+      "mom": 7.4,
       "s": [
         7.6,
         8,
@@ -3118,25 +3110,24 @@
         7.4,
         7.4
       ],
-      "url": "https://lovo.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 17,
-      "name": "Camb.ai",
-      "score": 7.7,
-      "mom": 7.8,
-      "type": "Dubbing",
+      "desc": "Genny studio with many voices and editing.",
+      "bestFor": "creator voiceovers.",
+      "price": "Free · from $24/mo",
+      "type": "Voiceover studio",
+      "domain": "lovo.ai",
       "cats": [
-        "dubbing",
         "tts"
       ],
-      "price": "Free · usage",
-      "domain": "camb.ai",
-      "letter": "C",
-      "link": "#",
-      "desc": "Dubbing and translation across many languages.",
-      "bestFor": "video dubbing and localization.",
+      "letter": "L",
+      "link": "#"
+    },
+    {
+      "name": "Camb.ai",
+      "url": "https://camb.ai",
+      "affiliate": false,
+      "score": 7.7,
+      "rank": 17,
+      "mom": 7.8,
       "s": [
         7.7,
         7.8,
@@ -3145,24 +3136,25 @@
         7,
         7.8
       ],
-      "url": "https://camb.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 18,
-      "name": "Typecast",
-      "score": 7.6,
-      "mom": 7.4,
-      "type": "Voiceover studio",
+      "desc": "Dubbing and translation across many languages.",
+      "bestFor": "video dubbing and localization.",
+      "price": "Free · usage",
+      "type": "Dubbing",
+      "domain": "camb.ai",
       "cats": [
+        "dubbing",
         "tts"
       ],
-      "price": "Free · from $10/mo",
-      "domain": "typecast.ai",
-      "letter": "T",
-      "link": "#",
-      "desc": "Emotive character voices for content.",
-      "bestFor": "expressive character voiceovers.",
+      "letter": "C",
+      "link": "#"
+    },
+    {
+      "name": "Typecast",
+      "url": "https://typecast.ai",
+      "affiliate": false,
+      "score": 7.6,
+      "rank": 18,
+      "mom": 7.4,
       "s": [
         7.5,
         7.8,
@@ -3171,24 +3163,24 @@
         7,
         7.4
       ],
-      "url": "https://typecast.ai",
-      "affiliate": false
-    },
-    {
-      "rank": 19,
-      "name": "NaturalReader",
-      "score": 7.6,
-      "mom": 6.8,
-      "type": "Listening",
+      "desc": "Emotive character voices for content.",
+      "bestFor": "expressive character voiceovers.",
+      "price": "Free · from $10/mo",
+      "type": "Voiceover studio",
+      "domain": "typecast.ai",
       "cats": [
         "tts"
       ],
-      "price": "Free · from $10/mo",
-      "domain": "naturalreaders.com",
-      "letter": "N",
-      "link": "#",
-      "desc": "Long-standing read-aloud TTS for documents.",
-      "bestFor": "reading documents aloud.",
+      "letter": "T",
+      "link": "#"
+    },
+    {
+      "name": "NaturalReader",
+      "url": "https://naturalreaders.com",
+      "affiliate": false,
+      "score": 7.6,
+      "rank": 19,
+      "mom": 6.8,
       "s": [
         7.3,
         8.2,
@@ -3197,25 +3189,24 @@
         7,
         6.8
       ],
-      "url": "https://naturalreaders.com",
-      "affiliate": false
+      "desc": "Long-standing read-aloud TTS for documents.",
+      "bestFor": "reading documents aloud.",
+      "price": "Free · from $10/mo",
+      "type": "Listening",
+      "domain": "naturalreaders.com",
+      "cats": [
+        "tts"
+      ],
+      "letter": "N",
+      "link": "#"
     },
     {
-      "rank": 20,
       "name": "Podcastle",
+      "url": "https://podcastle.ai",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 20,
       "mom": 7.2,
-      "type": "Audio studio",
-      "cats": [
-        "tts",
-        "cloning"
-      ],
-      "price": "Free · from $12/mo",
-      "domain": "podcastle.ai",
-      "letter": "P",
-      "link": "#",
-      "desc": "Recording, editing and AI voices for podcasts.",
-      "bestFor": "end-to-end podcast production.",
       "s": [
         7.3,
         7.8,
@@ -3224,24 +3215,25 @@
         7,
         7.2
       ],
-      "url": "https://podcastle.ai",
-      "affiliate": false
+      "desc": "Recording, editing and AI voices for podcasts.",
+      "bestFor": "end-to-end podcast production.",
+      "price": "Free · from $12/mo",
+      "type": "Audio studio",
+      "domain": "podcastle.ai",
+      "cats": [
+        "tts",
+        "cloning"
+      ],
+      "letter": "P",
+      "link": "#"
     },
     {
-      "rank": 21,
       "name": "Unreal Speech",
+      "url": "https://unrealspeech.com",
+      "affiliate": false,
       "score": 7.5,
+      "rank": 21,
       "mom": 7.2,
-      "type": "TTS API",
-      "cats": [
-        "tts"
-      ],
-      "price": "API · usage",
-      "domain": "unrealspeech.com",
-      "letter": "U",
-      "link": "#",
-      "desc": "Low-cost TTS API built for high volume.",
-      "bestFor": "cheap TTS at scale via API.",
       "s": [
         7.3,
         8.6,
@@ -3250,24 +3242,24 @@
         6.8,
         7.2
       ],
-      "url": "https://unrealspeech.com",
-      "affiliate": false
-    },
-    {
-      "rank": 22,
-      "name": "Replica Studios",
-      "score": 7.4,
-      "mom": 7.2,
-      "type": "Game voices",
+      "desc": "Low-cost TTS API built for high volume.",
+      "bestFor": "cheap TTS at scale via API.",
+      "price": "API · usage",
+      "type": "TTS API",
+      "domain": "unrealspeech.com",
       "cats": [
         "tts"
       ],
-      "price": "Free · from $18/mo",
-      "domain": "replicastudios.com",
-      "letter": "R",
-      "link": "#",
-      "desc": "Voices for games and real-time experiences.",
-      "bestFor": "game and metaverse voices.",
+      "letter": "U",
+      "link": "#"
+    },
+    {
+      "name": "Replica Studios",
+      "url": "https://replicastudios.com",
+      "affiliate": false,
+      "score": 7.4,
+      "rank": 22,
+      "mom": 7.2,
       "s": [
         7.4,
         7.6,
@@ -3276,24 +3268,24 @@
         7,
         7.2
       ],
-      "url": "https://replicastudios.com",
-      "affiliate": false
+      "desc": "Voices for games and real-time experiences.",
+      "bestFor": "game and metaverse voices.",
+      "price": "Free · from $18/mo",
+      "type": "Game voices",
+      "domain": "replicastudios.com",
+      "cats": [
+        "tts"
+      ],
+      "letter": "R",
+      "link": "#"
     },
     {
-      "rank": 23,
       "name": "Voice.ai",
+      "url": "https://voice.ai",
+      "affiliate": false,
       "score": 7.4,
+      "rank": 23,
       "mom": 7.2,
-      "type": "Voice changer",
-      "cats": [
-        "cloning"
-      ],
-      "price": "Free · Pro",
-      "domain": "voice.ai",
-      "letter": "V",
-      "link": "#",
-      "desc": "Real-time voice changing and TTS.",
-      "bestFor": "live voice changing.",
       "s": [
         7.2,
         8,
@@ -3302,24 +3294,24 @@
         7,
         7.2
       ],
-      "url": "https://voice.ai",
-      "affiliate": false
+      "desc": "Real-time voice changing and TTS.",
+      "bestFor": "live voice changing.",
+      "price": "Free · Pro",
+      "type": "Voice changer",
+      "domain": "voice.ai",
+      "cats": [
+        "cloning"
+      ],
+      "letter": "V",
+      "link": "#"
     },
     {
-      "rank": 24,
       "name": "Speechki",
+      "url": "https://speechki.org",
+      "affiliate": false,
       "score": 7.4,
+      "rank": 24,
       "mom": 7,
-      "type": "Audiobooks",
-      "cats": [
-        "tts"
-      ],
-      "price": "From $13/mo",
-      "domain": "speechki.org",
-      "letter": "S",
-      "link": "#",
-      "desc": "Audiobook production with many voices.",
-      "bestFor": "turning text into audiobooks.",
       "s": [
         7.3,
         7.8,
@@ -3328,24 +3320,24 @@
         6.8,
         7
       ],
-      "url": "https://speechki.org",
-      "affiliate": false
-    },
-    {
-      "rank": 25,
-      "name": "Listnr",
-      "score": 7.4,
-      "mom": 7,
-      "type": "Voiceover studio",
+      "desc": "Audiobook production with many voices.",
+      "bestFor": "turning text into audiobooks.",
+      "price": "From $13/mo",
+      "type": "Audiobooks",
+      "domain": "speechki.org",
       "cats": [
         "tts"
       ],
-      "price": "Free · from $19/mo",
-      "domain": "listnr.ai",
-      "letter": "L",
-      "link": "#",
-      "desc": "Voiceovers and podcast hosting in one.",
-      "bestFor": "podcast voice and hosting.",
+      "letter": "S",
+      "link": "#"
+    },
+    {
+      "name": "Listnr",
+      "url": "https://listnr.ai",
+      "affiliate": false,
+      "score": 7.4,
+      "rank": 25,
+      "mom": 7,
       "s": [
         7.2,
         7.8,
@@ -3354,8 +3346,16 @@
         6.8,
         7
       ],
-      "url": "https://listnr.ai",
-      "affiliate": false
+      "desc": "Voiceovers and podcast hosting in one.",
+      "bestFor": "podcast voice and hosting.",
+      "price": "Free · from $19/mo",
+      "type": "Voiceover studio",
+      "domain": "listnr.ai",
+      "cats": [
+        "tts"
+      ],
+      "letter": "L",
+      "link": "#"
     }
   ]
 }
