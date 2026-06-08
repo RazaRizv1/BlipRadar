@@ -26,6 +26,13 @@
       "live": true
     }
   ],
+  "payments": {
+    "Bitcoin": "",
+    "Ethereum": "",
+    "Solana": "",
+    "Base": "",
+    "Stellar": ""
+  },
   "coding": [
     {
       "rank": 1,

@@ -204,11 +204,11 @@
         </div>
         <div class="fld"><label>Pay with</label>
           <select id="fPay">
-            <option value="Ethereum|USDC">USDC &mdash; Ethereum</option>
-            <option value="Base|USDC">USDC &mdash; Base</option>
-            <option value="Solana|USDC">USDC &mdash; Solana</option>
-            <option value="Tron|USDT">USDT &mdash; Tron</option>
+            <option value="Bitcoin|BTC">BTC &mdash; Bitcoin</option>
             <option value="Ethereum|ETH">ETH &mdash; Ethereum</option>
+            <option value="Solana|SOL">SOL &mdash; Solana</option>
+            <option value="Base|USDC">USDC &mdash; Base</option>
+            <option value="Stellar|USDC">USDC &mdash; Stellar</option>
           </select>
         </div>
         <div class="fld"><label>Contact email</label><input id="fEmail" type="text" placeholder="you@company.com"></div>
@@ -226,23 +226,20 @@
         <div class="timer">Address valid for <b id="cdown">15:00</b></div>
         <button class="cta" id="verifyBtn" style="margin-top:14px">I&rsquo;ve sent the payment</button>
         <div class="paystatus" id="payStatus"></div>
-        <div class="paynote">In production this is confirmed on-chain automatically by a payment provider (Coinbase Commerce / NOWPayments). This demo simulates that step.</div>
+        <div class="paynote">Send the exact amount to the address above from your own wallet. After sending, click below and paste your transaction hash so we can verify it on-chain and publish your listing.</div>
       </div>
 
       <div class="co-step" id="coDone" hidden>
         <div class="done-ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
-        <div class="done-h">Payment received</div>
-        <div class="done-p">Thanks &mdash; your listing is queued for review. A receipt is below.</div>
-        <div class="summary" id="invSummary"></div>
-        <button class="cta" id="dlInvoice">Download invoice</button>
-        <div id="cfWrap" style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft);text-align:left">
-          <div style="font-weight:700;color:var(--ink);font-size:16px;margin-bottom:4px">One last step &mdash; confirm your payment</div>
-          <p class="muted" style="font-size:14px;margin-bottom:13px">Paste the transaction hash from your wallet so we can verify your payment and publish your listing.</p>
-          <div class="fld"><label>Transaction hash</label><input id="cfTxid" type="text" placeholder="Your payment transaction id / hash"></div>
-          <div class="fld"><label>Payment screenshot <span style="color:var(--ink-faint);font-weight:500">(optional)</span></label><input id="cfProof" type="file" accept="image/*"></div>
-          <button class="cta" id="cfSubmit">Send confirmation</button>
+        <div class="done-h">Almost there &mdash; confirm your payment</div>
+        <div class="done-p">Once you&rsquo;ve sent the crypto, paste your transaction hash below so we can verify it and publish your listing.</div>
+        <div id="cfWrap" style="text-align:left">
+          <div class="fld"><label>Transaction hash</label><input id="cfTxid" type="text" placeholder="Paste your payment transaction id / hash"></div>
+          <button class="cta" id="cfSubmit">Send confirmation &amp; publish</button>
           <div class="paystatus" id="cfStatus" style="margin-top:9px"></div>
         </div>
+        <div class="summary" id="invSummary" style="margin-top:22px"></div>
+        <button class="cta" id="dlInvoice" style="background:transparent;border:1px solid var(--line-soft);color:var(--ink-soft)">Download invoice</button>
         <div id="cfDone" hidden style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft);text-align:left">
           <div style="font-weight:700;color:var(--green);font-size:16px;margin-bottom:4px">Confirmation received &#10003;</div>
           <p class="muted" style="font-size:14px">Thanks &mdash; we have your payment details and will verify and publish shortly. A copy has been emailed to our team.</p>
@@ -293,8 +290,10 @@
 <script>
 (function(){
   function $(id){return document.getElementById(id);}
-  var ADDR={Ethereum:'0x7F3aE9c2B45D1e8A0C6f9B2d4E1a7C8b3D2f5A60',Base:'0x7F3aE9c2B45D1e8A0C6f9B2d4E1a7C8b3D2f5A60',Solana:'7Xb3kQp2mNvY9sLdR4hUaWcF6tGzE1nJ8oP0iH2kLmN',Tron:'TJ8mfK2pQ4nR7sVxYzA3bC5dE6fG9hH1iKpLmQ'};
-  var RATE={USDC:1,USDT:1,ETH:3500};
+  var ADDR={"Bitcoin": "", "Ethereum": "", "Solana": "", "Base": "", "Stellar": ""};
+  var STABLE={USDC:1};
+  var CG={BTC:'bitcoin',ETH:'ethereum',SOL:'solana'};
+  var DEC={BTC:6,ETH:5,SOL:3,USDC:2};
   var PRICE=250, state={}, timer=null;
   function rhex(n){var h='0123456789abcdef',o='';for(var i=0;i<n;i++)o+=h[Math.floor(Math.random()*16)];return o;}
   function show(step){['coForm','coPay','coDone'].forEach(function(s){var el=$(s);if(el)el.hidden=(s!==step);});}
@@ -306,25 +305,31 @@
       var m=Math.floor(left/60),sec=left%60; $('cdown').textContent=m+':'+(sec<10?'0':'')+sec;
     },1000);
   }
+  function fmtAmt(tick,amt){var d=DEC[tick]!=null?DEC[tick]:2;return amt.toFixed(d);}
+  function openPay(tool,email,net,tick,addr,amtNum){
+    state={tool:tool,site:($('fSite').value||'').trim()||'\u2014',cat:$('fCat').value,email:email,net:net,tick:tick,
+           amount:fmtAmt(tick,amtNum),addr:addr,txid:'',order:'BR-'+new Date().getFullYear()+'-'+Math.floor(10000+Math.random()*89999),
+           date:new Date().toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})};
+    $('payAmt').innerHTML=state.amount+'<small>'+tick+'</small>';
+    $('payNet').textContent='Send exactly this amount on '+net;
+    $('payAddr').textContent=addr;
+    var qr=$('payQR'), fb=$('qrFb'); qr.style.display=''; fb.style.display='none';
+    qr.onerror=function(){qr.style.display='none';fb.style.display='flex';};
+    qr.src='https://api.qrserver.com/v1/create-qr-code/?size=170x170&margin=0&data='+encodeURIComponent(addr);
+    $('payStatus').textContent=''; show('coPay'); startTimer();
+  }
   $('toPay').addEventListener('click',function(){
     var tool=($('fTool').value||'').trim(), email=($('fEmail').value||'').trim(), err=$('formErr');
-    if(!tool){err.textContent='Please enter your tool name.';$('fTool').focus();return;}
-    if(!/.+@.+\..+/.test(email)){err.textContent='Please enter a valid contact email.';$('fEmail').focus();return;}
-    err.textContent='';
-    var parts=$('fPay').value.split('|'), net=parts[0], tick=parts[1];
-    var amt=PRICE/RATE[tick]; var amtStr=tick==='ETH'?amt.toFixed(4):amt.toFixed(2);
-    state={tool:tool,site:($('fSite').value||'').trim()||'\u2014',cat:$('fCat').value,email:email,net:net,tick:tick,
-           amount:amtStr,addr:ADDR[net],order:'BR-'+new Date().getFullYear()+'-'+Math.floor(10000+Math.random()*89999),
-           date:new Date().toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})};
-    $('payAmt').innerHTML=amtStr+'<small>'+tick+'</small>';
-    $('payNet').textContent='Send the exact amount on '+net;
-    $('payAddr').textContent=state.addr;
-    var qr=$('payQR'), fb=$('qrFb');
-    qr.style.display=''; fb.style.display='none';
-    qr.onerror=function(){qr.style.display='none';fb.style.display='flex';};
-    qr.src='https://api.qrserver.com/v1/create-qr-code/?size=170x170&margin=0&data='+encodeURIComponent(state.addr);
-    $('payStatus').textContent='';
-    show('coPay'); startTimer();
+    if(!tool){err.style.color='var(--accent)';err.textContent='Please enter your tool name.';$('fTool').focus();return;}
+    if(!/.+@.+\..+/.test(email)){err.style.color='var(--accent)';err.textContent='Please enter a valid contact email.';$('fEmail').focus();return;}
+    var parts=$('fPay').value.split('|'), net=parts[0], tick=parts[1], addr=ADDR[net]||'';
+    if(!addr){err.style.color='var(--accent)';err.textContent='Crypto payments are being set up \u2014 please email sales@blipradar.com to list your tool.';return;}
+    if(STABLE[tick]){err.textContent='';openPay(tool,email,net,tick,addr,PRICE/STABLE[tick]);return;}
+    err.style.color='var(--ink-soft)';err.textContent='Fetching live '+tick+' rate\u2026';
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids='+CG[tick]+'&vs_currencies=usd')
+      .then(function(r){return r.json();})
+      .then(function(d){var p=d&&d[CG[tick]]&&d[CG[tick]].usd; if(!p)throw 0; err.textContent=''; openPay(tool,email,net,tick,addr,PRICE/p);})
+      .catch(function(){err.style.color='var(--accent)';err.textContent='Couldn\u2019t fetch the live '+tick+' rate \u2014 please try again, or choose USDC.';});
   });
   $('backForm').addEventListener('click',function(){stopTimer();show('coForm');});
   $('copyAddr').addEventListener('click',function(){
@@ -333,23 +338,27 @@
     else{try{var t=document.createElement('textarea');t.value=state.addr;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done();}catch(e){}}
   });
   function esc(t){return (t||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function renderSummary(){
+    var tx=state.txid?(state.txid.slice(0,12)+'\u2026'):'Pending verification';
+    $('invSummary').innerHTML=
+      '<div class="sr"><span>Invoice</span><b>'+state.order+'</b></div>'+
+      '<div class="sr"><span>Listing</span><b>'+esc(state.tool)+'</b></div>'+
+      '<div class="sr"><span>Amount</span><b>'+state.amount+' '+state.tick+' &middot; $'+PRICE.toFixed(2)+'</b></div>'+
+      '<div class="sr"><span>Network</span><b>'+state.net+'</b></div>'+
+      '<div class="sr"><span>Transaction</span><b>'+tx+'</b></div>'+
+      '<div class="sr"><span>Date</span><b>'+state.date+'</b></div>';
+  }
   $('verifyBtn').addEventListener('click',function(){
     var btn=this; if(btn.disabled)return; btn.disabled=true;
-    btn.innerHTML='<span class="spin"></span>Confirming on-chain&hellip;';
-    $('payStatus').textContent='Watching the address for your transaction&hellip;';
+    btn.innerHTML='<span class="spin"></span>Recording your order&hellip;';
+    $('payStatus').textContent='';
     setTimeout(function(){
-      stopTimer();
-      state.txid=(state.net==='Tron'?'':'0x')+rhex(64);
-      $('invSummary').innerHTML=
-        '<div class="sr"><span>Invoice</span><b>'+state.order+'</b></div>'+
-        '<div class="sr"><span>Listing</span><b>'+esc(state.tool)+'</b></div>'+
-        '<div class="sr"><span>Amount</span><b>'+state.amount+' '+state.tick+' &middot; $'+PRICE.toFixed(2)+'</b></div>'+
-        '<div class="sr"><span>Network</span><b>'+state.net+'</b></div>'+
-        '<div class="sr"><span>Transaction</span><b>'+state.txid.slice(0,10)+'&hellip;'+state.txid.slice(-8)+'</b></div>'+
-        '<div class="sr"><span>Date</span><b>'+state.date+'</b></div>';
+      stopTimer(); renderSummary();
       btn.disabled=false; btn.innerHTML='I&rsquo;ve sent the payment';
       show('coDone');
-    },2200);
+      var c=$('cfTxid'); if(c){try{c.focus();}catch(e){}}
+      var w=$('cfWrap'); if(w)w.scrollIntoView({behavior:'smooth',block:'center'});
+    },600);
   });
   function invoiceHTML(st){
     return '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -373,15 +382,15 @@
     +'@media print{body{background:#fff;padding:0}.doc{border:none;box-shadow:none;border-radius:0}.actions{display:none}}'
     +'</style></head><body>'
     +'<div class="doc"><div class="top"><div class="brand">blip<b>radar</b><span>blipradar.com</span></div>'
-    +'<div class="inv-h"><h1>INVOICE</h1><div style="font-size:13px;color:#928ea8;margin-top:6px">'+st.order+'</div><span class="paid">PAID</span></div></div>'
+    +'<div class="inv-h"><h1>INVOICE</h1><div style="font-size:13px;color:#928ea8;margin-top:6px">'+st.order+'</div><span class="paid">SUBMITTED</span></div></div>'
     +'<div class="meta"><div><div class="lbl">Billed to</div><b>'+esc(st.email)+'</b></div>'
     +'<div><div class="lbl">Date</div><b>'+st.date+'</b></div>'
-    +'<div><div class="lbl">Status</div><b style="color:#0c8a63">Paid in full</b></div></div>'
+    +'<div><div class="lbl">Status</div><b style="color:#0c8a63">Submitted &mdash; pending verification</b></div></div>'
     +'<table><thead><tr><th>Description</th><th class="r">Qty</th><th class="r">Amount</th></tr></thead><tbody>'
     +'<tr><td><b>blipradar premium listing</b><br><span style="color:#928ea8;font-size:13px">'+esc(st.tool)+' &middot; '+esc(st.cat)+' &middot; one-time, permanent</span></td><td class="r">1</td><td class="r">$'+(250).toFixed(2)+'</td></tr>'
     +'</tbody></table>'
     +'<div class="tot"><div class="box"><div class="row"><span>Subtotal</span><span>$250.00</span></div><div class="row"><span>Tax</span><span>$0.00</span></div><div class="row grand"><span>Total</span><span>$250.00</span></div></div></div>'
-    +'<div class="pay-d"><div class="lbl">Payment</div>Paid '+st.amount+' '+st.tick+' on '+st.net+'.<br><div class="lbl" style="margin-top:10px">Transaction</div><code>'+st.txid+'</code><br><div class="lbl" style="margin-top:10px">To address</div><code>'+st.addr+'</code></div>'
+    +'<div class="pay-d"><div class="lbl">Payment</div>Sent '+st.amount+' '+st.tick+' on '+st.net+' (pending verification).<br><div class="lbl" style="margin-top:10px">Transaction</div><code>'+(st.txid||'Pending verification')+'</code><br><div class="lbl" style="margin-top:10px">To address</div><code>'+st.addr+'</code></div>'
     +'<div class="foot">Thank you for listing on blipradar. A listing is a permanent tool page and entry into the rankings &mdash; it does not influence rank position.<br>Questions? sales@blipradar.com</div></div>'
     +'<div class="actions"><button class="prt" onclick="window.print()">Print / Save as PDF</button></div>'
     +'</body></html>';
@@ -432,8 +441,6 @@
     fd.append('Transaction hash',txid);
     fd.append('Order summary',(document.getElementById('invSummary')||{}).textContent||'');
     fd.append('Submitted',new Date().toISOString());
-    var f=document.getElementById('cfProof');
-    if(f&&f.files&&f.files[0])fd.append('attachment',f.files[0]);
     fetch('https://api.web3forms.com/submit',{method:'POST',body:fd})
       .then(function(r){return r.json();})
       .then(function(d){
