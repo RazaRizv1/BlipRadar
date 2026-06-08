@@ -44,10 +44,10 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
               - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
-              - {label: Score, name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10}
-              - {label: Rank, name: rank, widget: number, value_type: int}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
               - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
-              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum)', name: s, widget: list, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
               - {label: Description, name: desc, widget: text}
               - {label: Best for, name: bestFor, widget: string, required: false}
               - {label: Price, name: price, widget: string, required: false}
@@ -56,6 +56,8 @@ collections:
               - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
               - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
               - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
           - label: 'Writing tools'
             name: writing
             widget: list
@@ -65,10 +67,10 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
               - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
-              - {label: Score, name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10}
-              - {label: Rank, name: rank, widget: number, value_type: int}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
               - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
-              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum)', name: s, widget: list, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
               - {label: Description, name: desc, widget: text}
               - {label: Best for, name: bestFor, widget: string, required: false}
               - {label: Price, name: price, widget: string, required: false}
@@ -77,6 +79,8 @@ collections:
               - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
               - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
               - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
           - label: 'Image tools'
             name: image
             widget: list
@@ -86,10 +90,10 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
               - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
-              - {label: Score, name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10}
-              - {label: Rank, name: rank, widget: number, value_type: int}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
               - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
-              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum)', name: s, widget: list, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
               - {label: Description, name: desc, widget: text}
               - {label: Best for, name: bestFor, widget: string, required: false}
               - {label: Price, name: price, widget: string, required: false}
@@ -98,6 +102,8 @@ collections:
               - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
               - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
               - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
           - label: 'Video tools'
             name: video
             widget: list
@@ -107,10 +113,10 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
               - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
-              - {label: Score, name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10}
-              - {label: Rank, name: rank, widget: number, value_type: int}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
               - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
-              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum)', name: s, widget: list, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
               - {label: Description, name: desc, widget: text}
               - {label: Best for, name: bestFor, widget: string, required: false}
               - {label: Price, name: price, widget: string, required: false}
@@ -119,6 +125,8 @@ collections:
               - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
               - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
               - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
           - label: 'Voice tools'
             name: voice
             widget: list
@@ -128,10 +136,10 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
               - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
-              - {label: Score, name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10}
-              - {label: Rank, name: rank, widget: number, value_type: int}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
               - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
-              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum)', name: s, widget: list, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
               - {label: Description, name: desc, widget: text}
               - {label: Best for, name: bestFor, widget: string, required: false}
               - {label: Price, name: price, widget: string, required: false}
@@ -140,3 +148,5 @@ collections:
               - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
               - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
               - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
