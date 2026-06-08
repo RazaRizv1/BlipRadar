@@ -347,6 +347,7 @@
   .ractions{display:none;}
 }
 </style>
+<style id="br-react-lock">.reacts.voted .react{cursor:default}.reacts.voted .react:not(.on){opacity:.45}</style>
 </head>
 <body>
 
@@ -518,15 +519,29 @@
       t.classList.add('on'); document.getElementById(t.dataset.tab).classList.add('on');
     });
   });
-  // Reactions: per-color active state, pop + count bump, floating icon burst
-  document.querySelectorAll('.react').forEach(function(r){
-    var base=parseInt(r.dataset.base,10),on=false,b=r.querySelector('b'),
-        color=r.dataset.c,icon=r.querySelector('svg').outerHTML;
-    r.style.setProperty('--c',color);
-    r.addEventListener('click',function(){
-      on=!on; r.classList.toggle('on',on); b.textContent=base+(on?1:0);
-      r.classList.remove('fire'); void r.offsetWidth; r.classList.add('fire');
-      if(on){
+  // Reactions: one per visitor, mutually exclusive, locked after first tap (no login -> localStorage)
+  (function(){
+    var wrap=document.querySelector('.reacts'); if(!wrap) return;
+    var btns=[].slice.call(wrap.querySelectorAll('.react'));
+    var KEY='br-react:'+location.pathname, saved=null;
+    try{ var v=localStorage.getItem(KEY); if(v!==null) saved=parseInt(v,10); }catch(e){}
+    function paint(){
+      btns.forEach(function(o,j){
+        var bb=o.querySelector('b'), bse=parseInt(o.dataset.base,10), mine=(saved===j);
+        o.classList.toggle('on',mine);
+        if(bb) bb.textContent=bse+(mine?1:0);
+      });
+      wrap.classList.toggle('voted', saved!==null);
+    }
+    btns.forEach(function(r,idx){
+      r.style.setProperty('--c',r.dataset.c);
+      r.addEventListener('click',function(){
+        if(saved!==null) return;                 // already reacted -> locked, one per visitor
+        saved=idx;
+        try{ localStorage.setItem(KEY,String(idx)); }catch(e){}
+        paint();
+        var color=r.dataset.c, icon=r.querySelector('svg').outerHTML;
+        r.classList.remove('fire'); void r.offsetWidth; r.classList.add('fire');
         for(var i=0;i<3;i++){(function(k){
           var fl=document.createElement('span'); fl.className='float'; fl.innerHTML=icon;
           fl.style.setProperty('--fc',color);
@@ -534,9 +549,10 @@
           fl.style.animationDelay=(k*60)+'ms'; r.appendChild(fl);
           setTimeout(function(){fl.remove();},900+k*60);
         })(i);}
-      }
+      });
     });
-  });
+    paint();
+  })();
 
   // Animate score bars from 0 on load
   window.addEventListener('load',function(){
