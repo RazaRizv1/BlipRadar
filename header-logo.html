@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<title>blipradar — dish logo (animated)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--grad:linear-gradient(125deg,#6c5cff,#b14dff 52%,#ff5d8f);--ink:#181528;--soft:#5c5872;--faint:#928ea8;--bg:#f4f4fb;--line:rgba(24,21,40,.10);--body:'Hanken Grotesk',ui-sans-serif,system-ui,sans-serif;--disp:'Fraunces',Georgia,serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--body);background:var(--bg);color:var(--ink);padding:40px 22px 70px}
+  .wrap{max-width:920px;margin:0 auto}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+  h1{font-family:var(--disp);font-weight:600;font-size:30px;letter-spacing:-.015em;margin-bottom:26px}
+  .cap{font-size:13px;color:var(--faint);margin:0 2px 22px}
+  /* logo */
+  .brandlogo{display:inline-flex;align-items:center;gap:.32em;text-decoration:none;font-family:var(--body);font-weight:800;font-size:23px;color:var(--ink)}
+  .brandlogo .mark{height:1.45em;width:.93em;flex:0 0 auto;display:block;overflow:visible}
+  .brandlogo .wm{letter-spacing:-.02em;line-height:1;white-space:nowrap}
+  .brandlogo .wm b{font-weight:800;color:var(--soft)}
+  .brandlogo .mark .pr{transform-box:fill-box;transform-origin:center;animation:bd-ping 1.9s cubic-bezier(.15,.6,.35,1) infinite}
+  .brandlogo .mark .pr.p2{animation-delay:.95s}
+  .brandlogo .mark .core{transform-box:fill-box;transform-origin:center;animation:bd-core 1.9s ease-in-out infinite}
+  @keyframes bd-ping{0%{transform:scale(1);opacity:.95}55%{opacity:.4}100%{transform:scale(3.8);opacity:0}}
+  @keyframes bd-core{0%,100%{transform:scale(1)}45%{transform:scale(1.32)}}
+  @media (prefers-reduced-motion:reduce){.brandlogo .mark .pr{animation:none;opacity:0}.brandlogo .mark .core{animation:none}}
+  /* bars */
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-radius:16px;border:1px solid var(--line);margin-bottom:14px;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 8px 26px rgba(24,21,40,.06)}
+  .nav{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:600;color:var(--soft)}
+  .nav a{color:var(--soft);text-decoration:none}.nav a:hover{color:var(--ink)}
+  .tg{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--soft)}
+  .bar.flip{flex-direction:row-reverse}
+  .bar.dark{background:linear-gradient(160deg,#1c1d2e,#141420);border-color:rgba(255,255,255,.08)}
+  .bar.dark .brandlogo{color:#fff}.bar.dark .brandlogo .wm b{color:#b8b4cf}
+  .bar.dark .nav,.bar.dark .nav a{color:#b8b4cf}.bar.dark .tg{border-color:rgba(255,255,255,.14);color:#cfcbe0}
+  .big{display:flex;align-items:center;gap:30px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;margin-bottom:14px;box-shadow:0 10px 34px rgba(24,21,40,.06)}
+  .note{font-size:13.5px;color:var(--soft);margin-top:8px}
+</style></head>
+<body><div class="wrap">
+  <div class="eyebrow">Logo &mdash; satellite dish + blip</div>
+  <h1>The dish that pings</h1>
+
+  <div class="big">
+    <a class="brandlogo" href="#" style="font-size:44px"><svg class="mark" viewBox="0 0 100 100" aria-label="blipradar logo"><defs><linearGradient id="bdg" gradientUnits="userSpaceOnUse" x1="22" y1="94" x2="84" y2="20"><stop offset="0" stop-color="#6c5cff"/><stop offset=".52" stop-color="#b14dff"/><stop offset="1" stop-color="#ff5d8f"/></linearGradient><radialGradient id="bdgl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#b14dff" stop-opacity=".55"/><stop offset="1" stop-color="#b14dff" stop-opacity="0"/></radialGradient></defs><g fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle class="pr" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle class="pr p2" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle cx="56" cy="27" r="13" fill="url(#bdgl)"/><circle class="core" cx="56" cy="27" r="7" fill="url(#bdg)"/><circle cx="53.5" cy="24.6" r="2" fill="#fff" opacity=".6"/></g></svg><span class="wm">blip<b>radar</b></span></a>
+  </div>
+
+  <p class="cap">In a header &mdash; logo left</p>
+  <div class="bar">
+    <a class="brandlogo" href="#"><svg class="mark" viewBox="0 0 100 100" aria-label="blipradar logo"><g fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle class="pr" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle class="pr p2" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle cx="56" cy="27" r="13" fill="url(#bdgl)"/><circle class="core" cx="56" cy="27" r="7" fill="url(#bdg)"/><circle cx="53.5" cy="24.6" r="2" fill="#fff" opacity=".6"/></g></svg><span class="wm">blip<b>radar</b></span></a>
+    <nav class="nav"><a href="#">Categories</a><a href="#">List your tool</a><a href="#">About</a><span class="tg">&#9789;</span></nav>
+  </div>
+
+  <p class="cap">Logo top-right</p>
+  <div class="bar flip">
+    <a class="brandlogo" href="#"><svg class="mark" viewBox="0 0 100 100" aria-label="blipradar logo"><g fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle class="pr" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle class="pr p2" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle cx="56" cy="27" r="13" fill="url(#bdgl)"/><circle class="core" cx="56" cy="27" r="7" fill="url(#bdg)"/><circle cx="53.5" cy="24.6" r="2" fill="#fff" opacity=".6"/></g></svg><span class="wm">blip<b>radar</b></span></a>
+    <nav class="nav"><a href="#">Categories</a><a href="#">List your tool</a><a href="#">About</a></nav>
+  </div>
+
+  <p class="cap">On a dark header</p>
+  <div class="bar dark">
+    <a class="brandlogo" href="#"><svg class="mark" viewBox="0 0 100 100" aria-label="blipradar logo"><g fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="url(#bdg)" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle class="pr" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle class="pr p2" cx="56" cy="27" r="6" fill="none" stroke="url(#bdg)" stroke-width="4"/><circle cx="56" cy="27" r="13" fill="url(#bdgl)"/><circle class="core" cx="56" cy="27" r="7" fill="url(#bdg)"/><circle cx="53.5" cy="24.6" r="2" fill="#fff" opacity=".6"/></g></svg><span class="wm">blip<b>radar</b></span></a>
+    <nav class="nav"><a href="#">Categories</a><a href="#">List your tool</a><a href="#">About</a><span class="tg">&#9728;</span></nav>
+  </div>
+
+  <p class="note">The dish, feed strut, signal arcs and tripod are line-art in your gradient; the <b style="color:var(--ink)">blip</b> sits at the feed point and pings outward on a loop (the dish&rsquo;s stand stays upright while only the dish tilts). Reduce-motion shows a still mark.</p>
+</div></body></html>
