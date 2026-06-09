@@ -623,6 +623,24 @@ html.dark{--accent:#9b8bff}
   .cmppick-list{max-height:230px}
 }
 </style>
+<style id="br-procon2">
+.pc.pc-tabs{display:block;background:var(--surface);border:1px solid var(--line-soft);border-radius:20px;box-shadow:var(--shadow);padding:7px;margin-top:22px}
+.pctabs{display:flex;gap:6px;padding:6px;background:var(--bg);border-radius:15px}
+.pctab{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 14px;border:none;background:transparent;border-radius:11px;font-family:var(--body);font-weight:800;font-size:15px;color:var(--ink-soft);cursor:pointer;transition:background .18s,color .18s,box-shadow .18s;-webkit-tap-highlight-color:transparent}
+.pctab .pcm{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900}
+.pctab .pcm.pos{background:rgba(16,185,129,.16);color:var(--green)}
+.pctab .pcm.neg{background:rgba(255,93,143,.16);color:var(--accent2)}
+.pctab.on{background:var(--surface);box-shadow:var(--shadow);color:var(--ink)}
+.pcwrap{padding:18px 16px 10px}
+.pclist{list-style:none;display:none;flex-direction:column;gap:15px;margin:0}
+.pclist.on{display:flex;animation:pcfade .24s ease}
+@keyframes pcfade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.pclist li{font-size:16px;color:var(--ink);display:flex;gap:13px;align-items:flex-start;font-weight:500;line-height:1.55}
+.pclist li .m{flex-shrink:0;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;margin-top:1px}
+#pcPros li .m{background:rgba(16,185,129,.16);color:var(--green)}
+#pcCons li .m{background:rgba(255,93,143,.16);color:var(--accent2)}
+@media(max-width:560px){.pctab{font-size:14px;padding:12px 10px;gap:7px}.pcwrap{padding:16px 13px 8px}.pclist li{font-size:15px}}
+</style>
 </head>
 <body>
 
@@ -713,9 +731,15 @@ html.dark{--accent:#9b8bff}
       <div class="vpanel" id="v4"><p class="lead">Claude Code rewards developers comfortable in the terminal who hand off substantial work &mdash; less so people who just want inline autocomplete.</p><div class="vsub">Great fit</div><ul><li class="pos"><span class="b"></span><span>Engineers tackling large refactors, migrations or unfamiliar codebases.</span></li><li class="pos"><span class="b"></span><span>Power users who want an autonomous agent that runs tests and shell commands.</span></li><li class="pos"><span class="b"></span><span>Teams that value an editor-agnostic workflow and deep reasoning over UI polish.</span></li></ul><div class="vsub">Think twice if</div><ul><li class="neg"><span class="b"></span><span>You mainly want fast inline completions in a GUI editor &mdash; an IDE tool fits better.</span></li><li class="neg"><span class="b"></span><span>You&rsquo;re on a tight budget and run long agent sessions all day.</span></li></ul></div>
       <div class="vpanel" id="v5"><p class="lead">No tool is perfect &mdash; the main trade-offs to weigh:</p><ul><li class="neg"><span class="b"></span><span><b>No free tier</b> &mdash; you need at least a $20/mo plan or API credits to start.</span></li><li class="neg"><span class="b"></span><span><b>Usage limits</b> &mdash; Pro&rsquo;s rolling windows can interrupt long sessions; heavy use pushes you to Max.</span></li><li class="neg"><span class="b"></span><span><b>Cost opacity</b> &mdash; token spend from long sessions, MCP overhead and parallel agents can surprise you.</span></li><li class="neg"><span class="b"></span><span><b>Terminal-first</b> &mdash; less visual hand-holding than an IDE for newcomers.</span></li></ul><div class="vkey">Even so &mdash; for the hardest, codebase-spanning work, Claude Code is the agent to beat.</div></div>
     </div>
-    <div class="pc reveal">
-      <div class="col pros spot"><h3>Strengths</h3><ul><li><span class="m">&#10003;</span><span>Deepest reasoning in the category on hard, multi-step tasks</span></li><li><span class="m">&#10003;</span><span>Terminal-native and editor-agnostic &mdash; no IDE lock-in</span></li><li><span class="m">&#10003;</span><span>Huge context window &mdash; holds entire monorepos</span></li><li><span class="m">&#10003;</span><span>True autonomy: plan mode, subagents, runs tests and shell commands</span></li><li><span class="m">&#10003;</span><span>Backed by Anthropic&rsquo;s frontier Claude models</span></li></ul></div>
-      <div class="col cons spot"><h3>Trade-offs</h3><ul><li><span class="m">&#10007;</span><span>No free tier &mdash; paid plan or API credits required</span></li><li><span class="m">&#10007;</span><span>Token usage can climb fast on long or parallel sessions</span></li><li><span class="m">&#10007;</span><span>Rolling usage limits on the entry Pro plan</span></li><li><span class="m">&#10007;</span><span>Terminal-first workflow is less beginner-friendly than a GUI IDE</span></li></ul></div>
+    <div class="pc pc-tabs reveal">
+      <div class="pctabs">
+        <button type="button" class="pctab on" data-pc="pcPros"><span class="pcm pos">✓</span>Strengths</button>
+        <button type="button" class="pctab" data-pc="pcCons"><span class="pcm neg">✕</span>Trade-offs</button>
+      </div>
+      <div class="pcwrap">
+        <ul class="pclist on" id="pcPros"><li><span class="m">&#10003;</span><span>Deepest reasoning in the category on hard, multi-step tasks</span></li><li><span class="m">&#10003;</span><span>Terminal-native and editor-agnostic &mdash; no IDE lock-in</span></li><li><span class="m">&#10003;</span><span>Huge context window &mdash; holds entire monorepos</span></li><li><span class="m">&#10003;</span><span>True autonomy: plan mode, subagents, runs tests and shell commands</span></li><li><span class="m">&#10003;</span><span>Backed by Anthropic&rsquo;s frontier Claude models</span></li></ul>
+        <ul class="pclist" id="pcCons"><li><span class="m">&#10007;</span><span>No free tier &mdash; paid plan or API credits required</span></li><li><span class="m">&#10007;</span><span>Token usage can climb fast on long or parallel sessions</span></li><li><span class="m">&#10007;</span><span>Rolling usage limits on the entry Pro plan</span></li><li><span class="m">&#10007;</span><span>Terminal-first workflow is less beginner-friendly than a GUI IDE</span></li></ul>
+      </div>
     </div>
   </div>
 
@@ -1036,5 +1060,6 @@ if(delta>=6){cls='up';txt='\u2191 Rising interest';}else if(delta<=-6){cls='down
 if(pill){pill.className='trend-pill '+cls;pill.textContent=txt;}
 })();
 </script>
+<script>(function(){var tabs=document.querySelectorAll('.pctab');if(!tabs.length)return;function go(t){var id=t.getAttribute('data-pc');tabs.forEach(function(x){x.classList.toggle('on',x===t);});document.querySelectorAll('.pclist').forEach(function(p){p.classList.toggle('on',p.id===id);});}tabs.forEach(function(t){t.addEventListener('click',function(){go(t);});});})();</script>
 </body>
 </html>

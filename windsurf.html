@@ -623,6 +623,24 @@ html.dark{--accent:#9b8bff}
   .cmppick-list{max-height:230px}
 }
 </style>
+<style id="br-procon2">
+.pc.pc-tabs{display:block;background:var(--surface);border:1px solid var(--line-soft);border-radius:20px;box-shadow:var(--shadow);padding:7px;margin-top:22px}
+.pctabs{display:flex;gap:6px;padding:6px;background:var(--bg);border-radius:15px}
+.pctab{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 14px;border:none;background:transparent;border-radius:11px;font-family:var(--body);font-weight:800;font-size:15px;color:var(--ink-soft);cursor:pointer;transition:background .18s,color .18s,box-shadow .18s;-webkit-tap-highlight-color:transparent}
+.pctab .pcm{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900}
+.pctab .pcm.pos{background:rgba(16,185,129,.16);color:var(--green)}
+.pctab .pcm.neg{background:rgba(255,93,143,.16);color:var(--accent2)}
+.pctab.on{background:var(--surface);box-shadow:var(--shadow);color:var(--ink)}
+.pcwrap{padding:18px 16px 10px}
+.pclist{list-style:none;display:none;flex-direction:column;gap:15px;margin:0}
+.pclist.on{display:flex;animation:pcfade .24s ease}
+@keyframes pcfade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.pclist li{font-size:16px;color:var(--ink);display:flex;gap:13px;align-items:flex-start;font-weight:500;line-height:1.55}
+.pclist li .m{flex-shrink:0;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;margin-top:1px}
+#pcPros li .m{background:rgba(16,185,129,.16);color:var(--green)}
+#pcCons li .m{background:rgba(255,93,143,.16);color:var(--accent2)}
+@media(max-width:560px){.pctab{font-size:14px;padding:12px 10px;gap:7px}.pcwrap{padding:16px 13px 8px}.pclist li{font-size:15px}}
+</style>
 </head>
 <body>
 
@@ -719,9 +737,15 @@ html.dark{--accent:#9b8bff}
       <div class="vpanel" id="v4"><p class="lead">Windsurf suits people who want an agent that stays in their flow — and who can tolerate a product mid-transition.</p><div class="vsub">Great fit</div><ul><li class="pos"><span class="b"></span><span>Beginners — VS Code familiarity plus a gentle, flow-aware agent.</span></li><li class="pos"><span class="b"></span><span>Developers who want a cloud agent inside the editor, not in a separate tab.</span></li><li class="pos"><span class="b"></span><span>Teams on non-VS-Code editors — 40+ plugins reach JetBrains, Vim and Xcode.</span></li></ul><div class="vsub">Think twice if</div><ul><li class="neg"><span class="b"></span><span>You need rock-solid stability today — big projects can strain it and the Devin Desktop switch is fresh.</span></li><li class="neg"><span class="b"></span><span>You depend on Cascade automation — it is end-of-life 1 July 2026 and must move to Devin Local.</span></li></ul></div>
       <div class="vpanel" id="v5"><p class="lead">No tool is perfect — the main trade-offs to weigh:</p><ul><li class="neg"><span class="b"></span><span><b>Brand churn</b> — Codeium → Windsurf → Devin Desktop in two years; the roadmap keeps shifting.</span></li><li class="neg"><span class="b"></span><span><b>Autocomplete &amp; search</b> — trails Cursor in several head-to-heads.</span></li><li class="neg"><span class="b"></span><span><b>Heavy projects</b> — large codebases can be hard on CPU.</span></li><li class="neg"><span class="b"></span><span><b>Moving prices</b> — plans and quotas have changed often.</span></li></ul><div class="vkey">Even so — the in-editor Devin handoff and Codemaps are genuinely ahead of the pack.</div></div>
     </div>
-    <div class="pc reveal">
-      <div class="col pros spot"><h3>Strengths</h3><ul><li><span class="m">✓</span><span>One of the most generous free tiers in the category</span></li><li><span class="m">✓</span><span>Cascade / Devin agent handles multi-file work and hands long tasks to the cloud</span></li><li><span class="m">✓</span><span>SWE-1.5 is fast and cheap to run, easing usage costs</span></li><li><span class="m">✓</span><span>Codemaps give visual codebase navigation rivals don’t have</span></li><li><span class="m">✓</span><span>Reaches 40+ IDEs, not just its own editor</span></li></ul></div>
-      <div class="col cons spot"><h3>Trade-offs</h3><ul><li><span class="m">✕</span><span>Three rebrands in two years — identity still settling</span></li><li><span class="m">✕</span><span>Autocomplete and codebase search behind Cursor in benchmarks</span></li><li><span class="m">✕</span><span>Can be heavy on very large projects</span></li><li><span class="m">✕</span><span>Cascade is end-of-life July 2026, forcing a migration</span></li></ul></div>
+    <div class="pc pc-tabs reveal">
+      <div class="pctabs">
+        <button type="button" class="pctab on" data-pc="pcPros"><span class="pcm pos">✓</span>Strengths</button>
+        <button type="button" class="pctab" data-pc="pcCons"><span class="pcm neg">✕</span>Trade-offs</button>
+      </div>
+      <div class="pcwrap">
+        <ul class="pclist on" id="pcPros"><li><span class="m">✓</span><span>One of the most generous free tiers in the category</span></li><li><span class="m">✓</span><span>Cascade / Devin agent handles multi-file work and hands long tasks to the cloud</span></li><li><span class="m">✓</span><span>SWE-1.5 is fast and cheap to run, easing usage costs</span></li><li><span class="m">✓</span><span>Codemaps give visual codebase navigation rivals don’t have</span></li><li><span class="m">✓</span><span>Reaches 40+ IDEs, not just its own editor</span></li></ul>
+        <ul class="pclist" id="pcCons"><li><span class="m">✕</span><span>Three rebrands in two years — identity still settling</span></li><li><span class="m">✕</span><span>Autocomplete and codebase search behind Cursor in benchmarks</span></li><li><span class="m">✕</span><span>Can be heavy on very large projects</span></li><li><span class="m">✕</span><span>Cascade is end-of-life July 2026, forcing a migration</span></li></ul>
+      </div>
     </div>
   </div>
 
@@ -1037,5 +1061,6 @@ if(delta>=6){cls='up';txt='\u2191 Rising interest';}else if(delta<=-6){cls='down
 if(pill){pill.className='trend-pill '+cls;pill.textContent=txt;}
 })();
 </script>
+<script>(function(){var tabs=document.querySelectorAll('.pctab');if(!tabs.length)return;function go(t){var id=t.getAttribute('data-pc');tabs.forEach(function(x){x.classList.toggle('on',x===t);});document.querySelectorAll('.pclist').forEach(function(p){p.classList.toggle('on',p.id===id);});}tabs.forEach(function(t){t.addEventListener('click',function(){go(t);});});})();</script>
 </body>
 </html>
