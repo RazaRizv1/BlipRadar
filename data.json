@@ -771,7 +771,7 @@
       "price": "Free · Core $20/mo",
       "domain": "replit.com",
       "letter": "R",
-      "link": "#",
+      "link": "replit-agent.html",
       "desc": "Cloud IDE agent that builds and deploys a working app from a prompt.",
       "bestFor": "building and shipping straight from the browser.",
       "s": [
@@ -799,7 +799,7 @@
       "price": "Free · Pro $19/mo",
       "domain": "aws.amazon.com",
       "letter": "Q",
-      "link": "#",
+      "link": "amazon-q-developer.html",
       "desc": "AWS-native assistant, strong on cloud workflows and security scanning.",
       "bestFor": "AWS-heavy teams.",
       "s": [
@@ -828,7 +828,7 @@
       "price": "Open source · cloud option",
       "domain": "all-hands.dev",
       "letter": "O",
-      "link": "#",
+      "link": "openhands.html",
       "desc": "Autonomous open-source agent that resolves real GitHub issues.",
       "bestFor": "autonomous issue-solving at scale.",
       "s": [
@@ -857,7 +857,7 @@
       "price": "From $50/mo",
       "domain": "augmentcode.com",
       "letter": "A",
-      "link": "#",
+      "link": "augment-code.html",
       "desc": "Enterprise agent tuned for very large, complex codebases.",
       "bestFor": "very large, complex enterprise codebases.",
       "s": [
@@ -885,7 +885,7 @@
       "price": "Free",
       "domain": "trae.ai",
       "letter": "T",
-      "link": "#",
+      "link": "trae.html",
       "desc": "ByteDance's free AI IDE with frontier models bundled in.",
       "bestFor": "a genuinely capable free IDE.",
       "s": [
@@ -914,7 +914,7 @@
       "price": "Free tier ending · paid",
       "domain": "cloud.google.com",
       "letter": "G",
-      "link": "#",
+      "link": "gemini-code-assist.html",
       "desc": "Google's IDE assistant across VS Code and JetBrains.",
       "bestFor": "developers on the Google stack.",
       "s": [
@@ -942,7 +942,7 @@
       "price": "Free · Teams $19/mo",
       "domain": "qodo.ai",
       "letter": "Q",
-      "link": "#",
+      "link": "qodo.html",
       "desc": "Code-integrity suite: AI test generation and review (formerly CodiumAI).",
       "bestFor": "test generation and code integrity.",
       "s": [
@@ -971,7 +971,7 @@
       "price": "Open source · BYO key",
       "domain": "github.com",
       "letter": "G",
-      "link": "#",
+      "link": "goose.html",
       "desc": "Foundation-backed open-source autonomous agent (by Block).",
       "bestFor": "a neutral, foundation-backed agent.",
       "s": [
@@ -1001,7 +1001,7 @@
       "price": "Open source · BYO key",
       "domain": "continue.dev",
       "letter": "C",
-      "link": "#",
+      "link": "continue.html",
       "desc": "Privacy-first open-source assistant — bring any model you like.",
       "bestFor": "privacy-first, bring-your-own-model setups.",
       "s": [
@@ -1029,7 +1029,7 @@
       "price": "From $30/mo",
       "domain": "greptile.com",
       "letter": "G",
-      "link": "#",
+      "link": "greptile.html",
       "desc": "AI code review that reasons over your whole repository.",
       "bestFor": "repo-wide AI code review.",
       "s": [
@@ -1057,7 +1057,7 @@
       "price": "Free · Pro $9/mo",
       "domain": "tabnine.com",
       "letter": "T",
-      "link": "#",
+      "link": "tabnine.html",
       "desc": "Privacy-first autocomplete built for regulated, security-conscious teams.",
       "bestFor": "regulated teams that need strict privacy.",
       "s": [
