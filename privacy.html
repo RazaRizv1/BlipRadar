@@ -204,6 +204,19 @@ html.dark{--accent:#9b8bff}
   .nl-form{flex-basis:100%;max-width:none;margin-left:0}
 }
 </style>
+<style id="br-look-a">
+/* Direction A (locked) — refined current: flatter cards, crisper lines, less glow. Identity/gradients/tilt kept. */
+.lb,.tcard,.pcard,.catteaser{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none;border:1px solid var(--line);box-shadow:0 4px 16px rgba(24,21,40,.05)}
+html.dark .lb,html.dark .tcard,html.dark .pcard,html.dark .catteaser{background:var(--surface);border-color:var(--line);box-shadow:0 6px 20px rgba(0,0,0,.38)}
+.lb{box-shadow:0 8px 26px rgba(24,21,40,.07)}
+html.dark .lb{box-shadow:0 10px 30px rgba(0,0,0,.42)}
+/* less glow */
+.orb{opacity:.32;filter:blur(80px)}
+html.dark .orb{opacity:.24}
+.btn-primary{box-shadow:0 6px 18px rgba(108,92,255,.24)}
+.btn-primary:hover{box-shadow:0 10px 26px rgba(108,92,255,.32)}
+.tic,.cticon.g,.cpt-ic.g{box-shadow:0 5px 14px rgba(108,92,255,.20)}
+</style>
 </head>
 <body>
 

@@ -411,6 +411,28 @@ html.dark .lb-tag.soon{background:rgba(243,241,250,.08)}
   .nl-form{flex-basis:100%;max-width:none;margin-left:0}
 }
 </style>
+<style id="br-fix13">
+/* kill the purple glow pooling under the header on load: fade in + mask the top off */
+.hero-canvas{opacity:0;transition:opacity .8s ease;-webkit-mask-image:radial-gradient(ellipse 92% 74% at 50% 60%,#000 38%,transparent 80%);mask-image:radial-gradient(ellipse 92% 74% at 50% 60%,#000 38%,transparent 80%)}
+.hero-canvas.ready{opacity:.78}
+/* secondary gradient numbers -> solid light purple (readability) */
+.lb-sc{background:none;-webkit-text-fill-color:currentColor;color:var(--accent)}
+.tstat b{background:none;-webkit-text-fill-color:currentColor;color:var(--accent)}
+.hs-sc{background:none;-webkit-text-fill-color:currentColor;color:var(--accent)}
+</style>
+<style id="br-look-a">
+/* Direction A (locked) — refined current: flatter cards, crisper lines, less glow. Identity/gradients/tilt kept. */
+.lb,.tcard,.pcard,.catteaser{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none;border:1px solid var(--line);box-shadow:0 4px 16px rgba(24,21,40,.05)}
+html.dark .lb,html.dark .tcard,html.dark .pcard,html.dark .catteaser{background:var(--surface);border-color:var(--line);box-shadow:0 6px 20px rgba(0,0,0,.38)}
+.lb{box-shadow:0 8px 26px rgba(24,21,40,.07)}
+html.dark .lb{box-shadow:0 10px 30px rgba(0,0,0,.42)}
+/* less glow */
+.orb{opacity:.32;filter:blur(80px)}
+html.dark .orb{opacity:.24}
+.btn-primary{box-shadow:0 6px 18px rgba(108,92,255,.24)}
+.btn-primary:hover{box-shadow:0 10px 26px rgba(108,92,255,.32)}
+.tic,.cticon.g,.cpt-ic.g{box-shadow:0 5px 14px rgba(108,92,255,.20)}
+</style>
 </head>
 <body>
 <div class="bgfx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span><div class="bgfx-grid"></div></div>
@@ -583,6 +605,7 @@ html.dark .lb-tag.soon{background:rgba(243,241,250,.08)}
   size();
   if(reduce){ draw(false); }
   else { start(); document.addEventListener('visibilitychange',function(){ document.hidden?stop():start(); }); }
+  requestAnimationFrame(function(){ c.classList.add('ready'); });
   window.addEventListener('load',function(){ size(); if(reduce)draw(false); });
   var rt; window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(function(){ stop(); size(); if(reduce)draw(false); else start(); },200); });
 })();
