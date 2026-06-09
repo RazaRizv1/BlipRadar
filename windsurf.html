@@ -1082,17 +1082,21 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
   if(modal)modal.addEventListener('click',function(e){if(e.target===modal)close();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
   function brLoadH2C(cb){if(window.html2canvas)return cb();var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';s.onload=function(){cb();};s.onerror=function(){alert('Could not load the image tool \u2014 please check your connection and try again.');};document.head.appendChild(s);}
-  function brCapNode(ts){
+  function brIcon(d){return 'https://icons.duckduckgo.com/ip3/'+d+'.ico';}
+  function brFetchIcon(url){return fetch(url,{mode:'cors'}).then(function(r){if(!r.ok)throw 0;return r.blob();}).then(function(b){return new Promise(function(res,rej){var fr=new FileReader();fr.onload=function(){res(fr.result);};fr.onerror=rej;fr.readAsDataURL(b);});}).catch(function(){return null;});}
+  var BR_LOGO='<svg width="30" height="30" viewBox="20 6 60 94" fill="none" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/><g transform="rotate(-32 56 50)"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" stroke-width="5"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle cx="56" cy="27" r="7" fill="#8b5cf6" stroke="none"/></g></svg>';
+  function brCapNode(ts,icons){
     var COLW=212, fS="Fraunces,Georgia,serif", fB="'Hanken Grotesk',Arial,sans-serif";
     var d=new Date(),mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     var date=d.getDate()+' '+mo[d.getMonth()]+' '+d.getFullYear();
-    function col(t){
+    function col(t,i){
       var crits='';
       for(var j=0;j<6;j++){var v=t.s[j];
         crits+='<div style="margin-bottom:9px;"><div style="display:flex;justify-content:space-between;font-family:'+fB+';font-size:11px;color:#5c5872;margin-bottom:3px;"><span>'+LB[j]+'</span><span style="font-weight:800;color:#181528;">'+v.toFixed(1)+'</span></div><div style="height:6px;border-radius:4px;background:#efedf6;overflow:hidden;"><div style="height:100%;width:'+(v*10)+'%;background:'+SCO[j]+';border-radius:4px;"></div></div></div>';}
+      var ic=icons&&icons[i], letter=(t.letter||t.name.charAt(0));
+      var logo='<div style="position:relative;width:44px;height:44px;border-radius:12px;background:#f6f5fb;border:1px solid #ece9f5;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:'+fS+';font-weight:700;color:#6c5cff;font-size:18px;">'+letter+(ic?'<img src="'+ic+'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;">':'')+'</div>';
       return '<div style="flex:0 0 '+COLW+'px;width:'+COLW+'px;box-sizing:border-box;background:#fff;border:1px solid #ece9f5;border-radius:16px;padding:18px 16px;">'
-        +'<div style="display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;margin-bottom:13px;">'
-        +'<div style="position:relative;width:44px;height:44px;border-radius:12px;background:#f6f5fb;border:1px solid #ece9f5;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:'+fS+';font-weight:700;color:#6c5cff;font-size:18px;">'+((t.letter||t.name.charAt(0)))+'<img crossorigin="anonymous" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;" onerror="this.style.display=\'none\'"></div>'
+        +'<div style="display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;margin-bottom:13px;">'+logo
         +'<div style="font-family:'+fS+';font-weight:600;font-size:16px;color:#181528;line-height:1.2;">'+cmpEsc(t.name)+'</div>'
         +'<div style="font-family:'+fS+';font-weight:700;font-size:34px;color:#6c5cff;line-height:1;">'+t.score.toFixed(1)+'</div>'
         +'<div style="font-family:'+fB+';font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#9b97b6;">overall</div></div>'
@@ -1102,15 +1106,12 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
     var W=ts.length, cardW=W*COLW+(W-1)*14+52;
     var wrap=document.createElement('div');
     wrap.style.cssText='position:fixed;left:-99999px;top:0;z-index:-1;';
-    var wm='';for(var r=0;r<10;r++){wm+='<div>blipradar.com &nbsp; blipradar.com &nbsp; blipradar.com &nbsp; blipradar.com</div>';}
-    wrap.innerHTML='<div style="position:relative;overflow:hidden;background:#fff;padding:26px 26px 22px;border-radius:20px;width:'+cardW+'px;box-sizing:border-box;font-family:'+fB+';">'
-      +'<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;position:relative;z-index:1;">'
-        +'<div style="font-family:'+fS+';font-size:27px;font-weight:600;color:#181528;">blip<span style="color:#6c5cff;">radar</span></div>'
-        +'<div style="display:inline-flex;align-items:center;gap:6px;background:#6c5cff;color:#fff;font-size:12px;font-weight:800;padding:6px 13px;border-radius:100px;">&#9733; blipradar.com</div></div>'
-      +'<div style="font-size:12.5px;color:#8b88a0;margin-bottom:18px;position:relative;z-index:1;">Head-to-head &middot; scored on one public six-criteria rubric &middot; '+date+'</div>'
-      +'<div style="display:flex;gap:14px;align-items:stretch;position:relative;z-index:1;">'+ts.map(col).join('')+'</div>'
-      +'<div style="margin-top:16px;font-size:11.5px;color:#9b97b6;position:relative;z-index:1;">Higher is better. Full reviews and live rankings at <b style="color:#6c5cff;">blipradar.com</b></div>'
-      +'<div style="position:absolute;inset:0;pointer-events:none;z-index:5;opacity:.05;transform:rotate(-24deg) scale(1.5);transform-origin:center;font-size:20px;font-weight:800;color:#6c5cff;line-height:3.1;white-space:nowrap;text-align:center;">'+wm+'</div>'
+    wrap.innerHTML='<div style="position:relative;overflow:hidden;background:#fff;padding:24px 26px 22px;border-radius:20px;width:'+cardW+'px;box-sizing:border-box;font-family:'+fB+';">'
+      +'<div style="display:flex;align-items:center;gap:10px;margin-bottom:5px;">'+BR_LOGO
+        +'<span style="font-family:'+fS+';font-size:27px;font-weight:600;color:#181528;">blip<span style="color:#6c5cff;">radar</span></span></div>'
+      +'<div style="font-size:12.5px;color:#8b88a0;margin-bottom:18px;">AI tool comparison &middot; scored on one public six-criteria rubric &middot; '+date+'</div>'
+      +'<div style="display:flex;gap:14px;align-items:stretch;">'+ts.map(col).join('')+'</div>'
+      +'<div style="margin-top:16px;font-size:11.5px;color:#9b97b6;">Higher is better. Full reviews and live rankings at <b style="color:#6c5cff;">blipradar.com</b></div>'
       +'</div>';
     return wrap;
   }
@@ -1119,12 +1120,14 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
     var btn=document.getElementById('cmpSave'),old=btn?btn.textContent:'';
     if(btn){btn.disabled=true;btn.textContent='Rendering\u2026';}
     brLoadH2C(function(){
-      var node=brCapNode(ts); document.body.appendChild(node);
-      window.html2canvas(node.firstChild,{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false}).then(function(cv){
-        node.remove();
-        function done(){if(btn){btn.disabled=false;btn.textContent=old;}}
-        try{cv.toBlob(function(b){if(!b){var u=cv.toDataURL('image/png');var a=document.createElement('a');a.href=u;a.download='blipradar-comparison.png';document.body.appendChild(a);a.click();a.remove();done();return;}var u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='blipradar-comparison.png';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},3000);done();},'image/png');}catch(e){var u=cv.toDataURL('image/png');window.open(u,'_blank');done();}
-      }).catch(function(){node.remove();if(btn){btn.disabled=false;btn.textContent=old;}});
+      Promise.all(ts.map(function(t){return brFetchIcon(brIcon(t.domain));})).then(function(icons){
+        var node=brCapNode(ts,icons); document.body.appendChild(node);
+        window.html2canvas(node.firstChild,{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false}).then(function(cv){
+          node.remove();
+          function done(){if(btn){btn.disabled=false;btn.textContent=old;}}
+          try{cv.toBlob(function(b){if(!b){var u=cv.toDataURL('image/png');var a=document.createElement('a');a.href=u;a.download='blipradar-comparison.png';document.body.appendChild(a);a.click();a.remove();done();return;}var u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='blipradar-comparison.png';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},3000);done();},'image/png');}catch(e){var u=cv.toDataURL('image/png');window.open(u,'_blank');done();}
+        }).catch(function(){node.remove();if(btn){btn.disabled=false;btn.textContent=old;}});
+      });
     });
   }
   var _sv=document.getElementById('cmpSave'); if(_sv)_sv.addEventListener('click',brSaveImg);
