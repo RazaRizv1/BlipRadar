@@ -1229,7 +1229,7 @@
       "price": "From $19/mo",
       "domain": "sudowrite.com",
       "letter": "S",
-      "link": "#",
+      "link": "sudowrite.html",
       "desc": "The novelist's tool — Describe, Brainstorm, Story Bible.",
       "bestFor": "long-form fiction and narrative storytelling.",
       "s": [
@@ -1257,7 +1257,7 @@
       "price": "From $10/mo add-on",
       "domain": "notion.so",
       "letter": "N",
-      "link": "#",
+      "link": "notion-ai-writing.html",
       "desc": "AI woven into Notion docs, wikis and notes.",
       "bestFor": "writing where your docs already live.",
       "s": [
@@ -1286,7 +1286,7 @@
       "price": "From $49/mo",
       "domain": "jasper.ai",
       "letter": "J",
-      "link": "#",
+      "link": "jasper-writing.html",
       "desc": "Brand-voice marketing copy with team workflows.",
       "bestFor": "marketing teams needing brand consistency.",
       "s": [
@@ -1314,7 +1314,7 @@
       "price": "Free · Plus $7/mo",
       "domain": "wordtune.com",
       "letter": "W",
-      "link": "#",
+      "link": "wordtune-writing.html",
       "desc": "Rewrites and tightens sentences with tone control.",
       "bestFor": "polishing and rephrasing as you write.",
       "s": [
@@ -1342,7 +1342,7 @@
       "price": "Free · Pro $49/mo",
       "domain": "copy.ai",
       "letter": "C",
-      "link": "#",
+      "link": "copy-ai-writing.html",
       "desc": "Go-to-market copy and workflows for sales and marketing.",
       "bestFor": "sales and marketing short-form at scale.",
       "s": [
