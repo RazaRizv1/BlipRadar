@@ -1371,7 +1371,7 @@
       "price": "Free · from $20/mo",
       "domain": "writesonic.com",
       "letter": "W",
-      "link": "#",
+      "link": "writesonic-writing.html",
       "desc": "SEO blog volume with built-in optimization and web search.",
       "bestFor": "high-volume SEO blog drafts.",
       "s": [
@@ -1400,7 +1400,7 @@
       "price": "Free · Premium $12/mo",
       "domain": "prowritingaid.com",
       "letter": "P",
-      "link": "#",
+      "link": "prowritingaid.html",
       "desc": "Deep style and grammar reports for authors.",
       "bestFor": "in-depth manuscript editing.",
       "s": [
@@ -1428,7 +1428,7 @@
       "price": "Free · Unlimited $9/mo",
       "domain": "rytr.me",
       "letter": "R",
-      "link": "#",
+      "link": "rytr-writing.html",
       "desc": "Cheap, fast short-form copy across many templates.",
       "bestFor": "budget-friendly short-form copy.",
       "s": [
@@ -1456,7 +1456,7 @@
       "price": "Enterprise",
       "domain": "writer.com",
       "letter": "W",
-      "link": "#",
+      "link": "writer.html",
       "desc": "Enterprise brand writing with governance and guardrails.",
       "bestFor": "large teams needing on-brand, governed output.",
       "s": [
@@ -1485,7 +1485,7 @@
       "price": "Free · Pro $15/mo",
       "domain": "lex.page",
       "letter": "L",
-      "link": "#",
+      "link": "lex.html",
       "desc": "A clean writing editor with AI built in.",
       "bestFor": "distraction-free drafting with AI on tap.",
       "s": [
