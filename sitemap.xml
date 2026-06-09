@@ -37,4 +37,9 @@
   <url><loc>https://blipradar.com/zed.html</loc></url>
   <url><loc>https://blipradar.com/google-antigravity.html</loc></url>
   <url><loc>https://blipradar.com/cline.html</loc></url>
+  <url><loc>https://blipradar.com/jetbrains-junie.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/kilo-code.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/devin.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/aider.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/coderabbit.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

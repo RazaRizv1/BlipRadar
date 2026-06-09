@@ -627,7 +627,7 @@
       "price": "In JetBrains AI plans",
       "domain": "jetbrains.com",
       "letter": "J",
-      "link": "#",
+      "link": "jetbrains-junie.html",
       "desc": "JetBrains' agent, deeply native to IntelliJ, PyCharm and the rest.",
       "bestFor": "JetBrains IDE loyalists.",
       "s": [
@@ -657,7 +657,7 @@
       "price": "Open source · BYO key",
       "domain": "kilocode.ai",
       "letter": "K",
-      "link": "#",
+      "link": "kilo-code.html",
       "desc": "Open-source platform agent: 500+ models, parallel agents, one-click deploy.",
       "bestFor": "an all-in-one open-source agent platform.",
       "s": [
@@ -685,7 +685,7 @@
       "price": "From $20/mo",
       "domain": "devin.ai",
       "letter": "D",
-      "link": "#",
+      "link": "devin.html",
       "desc": "Cognition's autonomous agent that takes whole tickets end-to-end.",
       "bestFor": "handing off entire tickets autonomously.",
       "s": [
@@ -714,7 +714,7 @@
       "price": "Open source · BYO key",
       "domain": "aider.chat",
       "letter": "A",
-      "link": "#",
+      "link": "aider.html",
       "desc": "Git-native open-source pair programmer for the terminal.",
       "bestFor": "git-native terminal pair programming.",
       "s": [
@@ -742,7 +742,7 @@
       "price": "Free · Pro $24/mo",
       "domain": "coderabbit.ai",
       "letter": "C",
-      "link": "#",
+      "link": "coderabbit.html",
       "desc": "AI pull-request reviewer that comments like a thorough senior dev.",
       "bestFor": "automated, thorough pull-request reviews.",
       "s": [
