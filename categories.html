@@ -243,6 +243,24 @@ html.dark header{background:rgba(15,16,24,.9)}
 /* #8 lift the dull purple in dark mode */
 html.dark{--accent:#9b8bff}
 </style>
+<style id="br-cat-v3">
+/* #4 — richer, calmer All-Categories page (no "live now" pulse) */
+.phead h1{font-size:clamp(40px,6vw,60px)}
+.ctiles{gap:16px}
+.ctile{min-height:160px;padding:24px 22px;border-radius:22px}
+.ct-ic{width:52px;height:52px;border-radius:16px}
+.ct-ic svg{width:27px;height:27px}
+.ct-nm{font-size:18px;margin-top:3px}
+.ctile.live{border-color:var(--accent-soft)}
+.ctile.live::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--grad);z-index:2}
+.ctile.live .ct-ct{color:var(--accent)}
+.ctile.live .ct-ct::before{display:none}
+.ct-go{opacity:.34;transform:none}
+.ctile.live:hover .ct-go{opacity:1;transform:scale(1.08)}
+.ctile:not(.live) .ct-ic{opacity:.8}
+.ct-ct.soon{color:var(--ink-faint);background:var(--line-soft);padding:3px 10px;border-radius:100px;font-size:11px}
+@media(max-width:560px){.ctile{min-height:142px;padding:18px 16px}.ct-ic{width:46px;height:46px}}
+</style>
 </head>
 <body>
 <header>
@@ -266,7 +284,7 @@ html.dark{--accent:#9b8bff}
     <div class="cstats">
       <span class="cstat"><b>20</b> categories</span>
       <span class="cstat"><b>25</b> tools ranked</span>
-      <span class="cstat"><span class="lv"></span> 5 live now</span>
+      
     </div>
   </section>
 

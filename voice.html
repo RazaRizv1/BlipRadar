@@ -402,6 +402,27 @@ html.dark header{background:rgba(15,16,24,.9)}
 /* #8 lift the dull purple in dark mode */
 html.dark{--accent:#9b8bff}
 </style>
+<style id="br-fix4">
+/* #3 unified rank badge — same clean shape for EVERY rank; subtle medal tint for the top 3 */
+.row .rsummary>.rank{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;font-family:var(--display);font-weight:700;font-size:18px;line-height:1;background:var(--surface);border:1px solid var(--line);color:var(--ink-soft);box-shadow:var(--shadow)}
+.row .rsummary>.rank.m1,.row .rsummary>.rank.m2,.row .rsummary>.rank.m3{border:none;width:40px;height:40px;border-radius:12px;font-size:18px}
+.row .rsummary>.rank.m1{background:linear-gradient(145deg,#ffd76e,#e7a93e);color:#3a2e00}
+.row .rsummary>.rank.m2{background:linear-gradient(145deg,#e7ebf3,#b9c0cf);color:#2b2f3a}
+.row .rsummary>.rank.m3{background:linear-gradient(145deg,#e9b387,#cd8b5b);color:#3a220e}
+.row .rsummary>.rank.na{font-size:11.5px;font-weight:800;letter-spacing:.03em;color:var(--ink-faint)}
+@media(max-width:720px){
+  .row .rsummary>.rank,.row .rsummary>.rank.m1,.row .rsummary>.rank.m2,.row .rsummary>.rank.m3{width:34px;height:34px;border-radius:10px;font-size:15px}
+}
+@media(max-width:560px){
+  .row .rsummary>.rank,.row .rsummary>.rank.m1,.row .rsummary>.rank.m2,.row .rsummary>.rank.m3{width:32px;height:32px;border-radius:9px;font-size:14px}
+  /* #6 mobile controls: sort tabs span the row evenly; tighter meta chips */
+  .controls .sortwrap{width:100%;gap:8px}
+  .controls .sortwrap .seg{display:flex;flex:1 1 auto;width:100%}
+  .controls .sortwrap .seg button{flex:1 1 0;text-align:center;padding:8px 4px;font-size:12.5px}
+  .meta{gap:8px}
+  .meta .mtag{padding:6px 12px;font-size:12.5px}
+}
+</style>
 </head>
 <body>
 

@@ -641,6 +641,21 @@ html.dark{--accent:#9b8bff}
 #pcCons li .m{background:rgba(255,93,143,.16);color:var(--accent2)}
 @media(max-width:560px){.pctab{font-size:14px;padding:12px 10px;gap:7px}.pcwrap{padding:16px 13px 8px}.pclist li{font-size:15px}}
 </style>
+<style id="br-fix4">
+/* #1 interest-chart hover: vertical guide + dot + value tooltip (mouse & touch) */
+.trend-plot{position:relative;touch-action:pan-y}
+.trend-plot .trend-cur,.trend-plot .trend-dot,.trend-plot .trend-tip{opacity:0;transition:opacity .12s}
+.trend-plot.act .trend-cur,.trend-plot.act .trend-dot,.trend-plot.act .trend-tip{opacity:1}
+.trend-cur{position:absolute;top:0;height:150px;width:1px;background:linear-gradient(to bottom,var(--accent),transparent);transform:translateX(-.5px);pointer-events:none}
+.trend-dot{position:absolute;width:11px;height:11px;border-radius:50%;background:#b14dff;box-shadow:0 0 0 3px rgba(177,77,255,.22),0 0 0 6px rgba(177,77,255,.1);transform:translate(-50%,-50%);pointer-events:none}
+.trend-tip{position:absolute;transform:translate(-50%,calc(-100% - 13px));background:#1b1830;color:#fff;font-size:12px;font-weight:800;padding:5px 10px;border-radius:9px;white-space:nowrap;pointer-events:none;box-shadow:0 8px 22px rgba(20,16,40,.45);z-index:6}
+.trend-tip::after{content:"";position:absolute;left:50%;top:100%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#1b1830}
+.trend-tip.below{transform:translate(-50%,13px)}
+.trend-tip.below::after{top:auto;bottom:100%;border-top-color:transparent;border-bottom-color:#1b1830}
+/* #2 hero: push the Free/Pro price pill to the right to fill the gap */
+.id .tags{align-items:center}
+.id .tags .price{margin-left:auto}
+</style>
 </head>
 <body>
 
@@ -1055,7 +1070,8 @@ var svg='<svg class="trend-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="n
 +'<path d="'+line+'" fill="none" stroke="url(#tgrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>'
 +'<circle cx="'+lp[0].toFixed(1)+'" cy="'+lp[1].toFixed(1)+'" r="3.5" fill="#ff5d8f"/></svg>';
 function fmt(m){var p=(''+(m||'')).split('-');var mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return p.length===2?(mo[(+p[1])-1]+" '"+p[0].slice(2)):m;}
-body.innerHTML=svg+'<div class="trend-x"><span>'+fmt(data[0].m)+'</span><span>'+fmt(data[n-1].m)+'</span></div>';
+body.innerHTML='<div class="trend-plot">'+svg+'<i class="trend-cur"></i><i class="trend-dot"></i><i class="trend-tip"></i></div><div class="trend-x"><span>'+fmt(data[0].m)+'</span><span>'+fmt(data[n-1].m)+'</span></div>';
+(function(){var plot=body.querySelector('.trend-plot');if(!plot)return;var cur=plot.querySelector('.trend-cur'),dt=plot.querySelector('.trend-dot'),tip=plot.querySelector('.trend-tip');var fxs=data.map(function(d,i){return X(i)/W;}),fys=data.map(function(d){return Y(+d.v)/H;});function show(i){var px=fxs[i]*100,py=fys[i]*100;cur.style.left=px+'%';dt.style.left=px+'%';dt.style.top=py+'%';tip.style.left=Math.min(Math.max(px,12),88)+'%';tip.style.top=py+'%';tip.textContent=fmt(data[i].m)+' · '+vs[i];tip.classList.toggle('below',fys[i]<.32);plot.classList.add('act');}function hide(){plot.classList.remove('act');}function at(cx){var r=plot.getBoundingClientRect();if(!r.width)return;var f=(cx-r.left)/r.width,bi=0,bd=9;for(var i=0;i<n;i++){var dd=Math.abs(fxs[i]-f);if(dd<bd){bd=dd;bi=i;}}show(bi);}plot.addEventListener('pointermove',function(e){at(e.clientX);});plot.addEventListener('pointerdown',function(e){at(e.clientX);});plot.addEventListener('pointerleave',hide);})();
 var delta=vs[n-1]-vs[0],cls,txt;
 if(delta>=6){cls='up';txt='\u2191 Rising interest';}else if(delta<=-6){cls='down';txt='\u2193 Cooling off';}else{cls='flat';txt='\u2192 Holding steady';}
 if(pill){pill.className='trend-pill '+cls;pill.textContent=txt;}
