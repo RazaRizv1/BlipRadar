@@ -730,11 +730,11 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 </style>
 <style id="br-fix9">
 .cmpcard{position:relative}
-.cmp-save{position:absolute;top:18px;left:20px;display:inline-flex;align-items:center;gap:7px;font-family:var(--body);font-size:12.5px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:7px 13px;cursor:pointer;transition:.18s;-webkit-tap-highlight-color:transparent}
+.cmp-save{position:absolute;top:16px;right:60px;display:inline-flex;align-items:center;gap:7px;font-family:var(--body);font-size:12.5px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:7px 13px;cursor:pointer;transition:.18s;-webkit-tap-highlight-color:transparent;z-index:3}
 .cmp-save:hover{color:var(--accent);border-color:var(--accent-soft);transform:translateY(-1px)}
 .cmp-save:disabled{opacity:.6;cursor:default}
 .cmp-save svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:560px){.cmp-save{position:static;margin:0 0 12px}}
+@media(max-width:560px){.cmp-save{right:52px;padding:7px 9px;gap:0}.cmp-save-t{display:none}}
 </style>
 </head>
 <body>
@@ -1052,7 +1052,7 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 <div class="modal" id="cmpModal"><div class="modal-card cmpcard">
   <button class="modal-close" id="cmpClose" aria-label="Close">&times;</button>
   <h2>Head-to-head</h2>
-  <button class="cmp-save" id="cmpSave" type="button" aria-label="Save comparison image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 4 5-4M5 20h14"/></svg>Save image (HQ)</button>
+  <button class="cmp-save" id="cmpSave" type="button" aria-label="Save comparison image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 4 5-4M5 20h14"/></svg><span class="cmp-save-t">Save image (HQ)</span></button>
   <div class="cmp-scroll" id="cmpGrid"></div>
   <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better. The top pick and the leader in each metric are highlighted.</p>
 </div></div>
