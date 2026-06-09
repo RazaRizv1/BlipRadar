@@ -1513,7 +1513,7 @@
       "price": "From $39/mo",
       "domain": "anyword.com",
       "letter": "A",
-      "link": "#",
+      "link": "anyword-writing.html",
       "desc": "Predictive scoring for performance ad and landing copy.",
       "bestFor": "data-driven performance marketing copy.",
       "s": [
@@ -1541,7 +1541,7 @@
       "price": "Free · Premium $20/mo",
       "domain": "hyperwriteai.com",
       "letter": "H",
-      "link": "#",
+      "link": "hyperwrite.html",
       "desc": "Personal writing assistant with research and agents.",
       "bestFor": "an everywhere writing companion.",
       "s": [
@@ -1569,7 +1569,7 @@
       "price": "Free · Plus $10/mo",
       "domain": "hemingwayapp.com",
       "letter": "H",
-      "link": "#",
+      "link": "hemingway-editor.html",
       "desc": "Flags dense, hard-to-read sentences for clarity.",
       "bestFor": "tightening readability.",
       "s": [
@@ -1598,7 +1598,7 @@
       "price": "From $39/mo",
       "domain": "scalenut.com",
       "letter": "S",
-      "link": "#",
+      "link": "scalenut-writing.html",
       "desc": "SERP-driven SEO content from brief to draft.",
       "bestFor": "SEO content planning and writing.",
       "s": [
@@ -1627,7 +1627,7 @@
       "price": "Free · Unlimited $20/mo",
       "domain": "jenni.ai",
       "letter": "J",
-      "link": "#",
+      "link": "jenni-ai.html",
       "desc": "Academic writing with citations and autocomplete.",
       "bestFor": "essays, papers and cited writing.",
       "s": [
