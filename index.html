@@ -388,11 +388,12 @@ html.dark .lb-tag.soon{background:rgba(243,241,250,.08)}
 .lb-ctrls .lb-dots{margin:0;flex-wrap:nowrap}
 </style>
 <style id="br-nl2">
-.nlpop{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:200;padding:0;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+.nlpop{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:200;padding:0;display:none;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -12px 40px rgba(24,21,40,.20);animation:nlup2 .42s cubic-bezier(.2,.7,.2,1)}
+.nlpop::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .nlpop.on{display:block}
-.nlcard{max-width:1060px;width:auto;margin:0 14px;border-radius:18px 18px 0 0;border-bottom:none;box-shadow:0 -16px 46px rgba(24,21,40,.22);padding:14px 22px;text-align:left;display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;animation:nlup2 .4s cubic-bezier(.2,.7,.2,1)}
-@keyframes nlup2{from{transform:translateY(100%);opacity:.3}to{transform:none;opacity:1}}
-.nl-ic{margin:0;width:42px;height:42px;border-radius:12px;flex:0 0 auto}
+.nlcard{max-width:1080px;width:auto;margin:0 auto;border:none;border-radius:0;border-bottom:none;box-shadow:none;background:none;padding:14px 24px;text-align:left;display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;position:relative}
+@keyframes nlup2{from{transform:translateY(100%)}to{transform:none}}
+.nl-ic{margin:0;width:42px;height:42px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(108,92,255,.16),rgba(255,93,143,.12));color:var(--accent)}
 .nl-ic svg{width:22px;height:22px}
 .nl-txt{flex:1 1 240px;min-width:170px}
 .nlcard h3{font-size:17px;margin:0;line-height:1.2}
@@ -401,7 +402,7 @@ html.dark .lb-tag.soon{background:rgba(243,241,250,.08)}
 .nl-form input{flex:1 1 auto;height:44px}
 .nl-form button{flex:0 0 auto;width:auto;padding:0 22px;height:44px}
 .nl-fine{display:none}
-.nl-x{top:8px;right:13px;font-size:22px}
+.nl-x{top:10px;right:16px;font-size:22px}
 .nl-ok{padding:6px 0}
 @media(max-width:680px){
   .nlcard{margin:0;border-radius:0;gap:9px 12px;padding:12px 16px 14px 16px}
@@ -410,6 +411,16 @@ html.dark .lb-tag.soon{background:rgba(243,241,250,.08)}
   .nlcard h3{font-size:15.5px}
   .nl-form{flex-basis:100%;max-width:none;margin-left:0}
 }
+.foot-nl{display:flex;align-items:center;justify-content:space-between;gap:14px 24px;flex-wrap:wrap;padding:2px 0 22px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+.foot-nl .fnl-h{display:block;font-family:var(--display);font-weight:600;font-size:18px}
+.foot-nl .fnl-sub{display:block;font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+.fnl-form{display:flex;gap:9px;flex:1 1 300px;max-width:420px;margin-left:auto}
+.fnl-form input{flex:1 1 auto;height:42px;border-radius:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:0 13px;font-size:14px;outline:none}
+.fnl-form input:focus{border-color:var(--accent)}
+.fnl-form button{flex:0 0 auto;height:42px;padding:0 20px;border:0;border-radius:11px;background:var(--grad);color:#fff;font-weight:700;cursor:pointer;font-size:14px;transition:transform .16s,box-shadow .16s}
+.fnl-form button:hover{transform:translateY(-1px);box-shadow:0 9px 20px rgba(108,92,255,.4)}
+.fnl-ok{flex:1 1 300px;max-width:420px;margin-left:auto;color:var(--accent);font-weight:700;font-size:14px}
+@media(max-width:680px){.foot-nl .fnl-sub{display:none}.fnl-form{flex-basis:100%;max-width:none;margin-left:0}}
 </style>
 <style id="br-fix13">
 /* kill the purple glow pooling under the header on load: fade in + mask the top off */
@@ -433,7 +444,7 @@ html.dark .orb{opacity:.24}
 .btn-primary:hover{box-shadow:0 10px 26px rgba(108,92,255,.32)}
 .tic,.cticon.g,.cpt-ic.g{box-shadow:0 5px 14px rgba(108,92,255,.20)}
 </style>
-</head>
+<style id="br-catprev-all">.cpt.soon{opacity:.56;pointer-events:none}.cpt.soon .cpt-meta,.cpt-meta.soon{color:var(--ink-faint)}</style></head>
 <body>
 <div class="bgfx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span><div class="bgfx-grid"></div></div>
 <header>
@@ -484,14 +495,7 @@ html.dark .orb{opacity:.24}
 
   <section class="sec">
     <div class="sec-head reveal"><span class="eyebrow">20 categories</span><h2>Find the best tool for any job</h2><p>From coding to video to voice &mdash; every category ranked on the same transparent rubric. Five are live now, more land every week.</p></div>
-    <div class="catprev reveal">
-        <a class="cpt live" href="coding.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></span><span class="cpt-nm">Coding</span><span class="cpt-meta">25 tools</span></a>
-        <a class="cpt live" href="writing.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z"/></svg></span><span class="cpt-nm">Writing</span><span class="cpt-meta">25 tools</span></a>
-        <a class="cpt live" href="image.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></span><span class="cpt-nm">Image</span><span class="cpt-meta">25 tools</span></a>
-        <a class="cpt live" href="video.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2v10l-5-2"/></svg></span><span class="cpt-nm">Video</span><span class="cpt-meta">25 tools</span></a>
-        <a class="cpt live" href="voice.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></span><span class="cpt-nm">Voice</span><span class="cpt-meta">25 tools</span></a>
-        <a class="cpt more" href="categories.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span class="cpt-nm">+15 more</span><span class="cpt-meta">View all</span></a>
-    </div>
+    <div class="catprev reveal"><a class="cpt live" href="coding.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></span><span class="cpt-nm">Coding</span><span class="cpt-meta">25 tools</span></a><a class="cpt live" href="writing.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z"/></svg></span><span class="cpt-nm">Writing</span><span class="cpt-meta">25 tools</span></a><a class="cpt live" href="image.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></span><span class="cpt-nm">Image</span><span class="cpt-meta">25 tools</span></a><a class="cpt live" href="video.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2v10l-5-2"/></svg></span><span class="cpt-nm">Video</span><span class="cpt-meta">25 tools</span></a><a class="cpt live" href="voice.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></span><span class="cpt-nm">Voice</span><span class="cpt-meta">25 tools</span></a><a class="cpt live" href="music.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></span><span class="cpt-nm">Music</span><span class="cpt-meta">10 tools</span></a><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></span><span class="cpt-nm">Motion graphics</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M20 20H3"/></svg></span><span class="cpt-nm">Infographics</span><span class="cpt-meta soon">Soon</span></span><a class="cpt live" href="presentations.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/></svg></span><span class="cpt-nm">Presentations</span><span class="cpt-meta">10 tools</span></a><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></span><span class="cpt-nm">Chatbots</span><span class="cpt-meta soon">Soon</span></span><a class="cpt live" href="note-taking.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span><span class="cpt-nm">Note-taking</span><span class="cpt-meta">10 tools</span></a><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg></span><span class="cpt-nm">Meeting notes</span><span class="cpt-meta soon">Soon</span></span><a class="cpt live" href="research.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></svg></span><span class="cpt-nm">Research</span><span class="cpt-meta">10 tools</span></a><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 16l3-4 3 2 4-6"/></svg></span><span class="cpt-nm">Data analysis</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg></span><span class="cpt-nm">App &amp; website builders</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg></span><span class="cpt-nm">AI agents &amp; automation</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M3 11v2l13 5V6L3 11z"/><path d="M16 9a4 4 0 010 6"/></svg></span><span class="cpt-nm">Marketing copy</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M21 7v5h-5"/></svg></span><span class="cpt-nm">SEO</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="17" cy="6" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M8.2 11l6.6-3.6M8.2 13l6.6 3.6"/></svg></span><span class="cpt-nm">Social media</span><span class="cpt-meta soon">Soon</span></span><span class="cpt soon"><span class="cpt-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span><span class="cpt-nm">Translation</span><span class="cpt-meta soon">Soon</span></span><a class="cpt more" href="categories.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span class="cpt-nm">All categories</span><span class="cpt-meta">Browse &rarr;</span></a></div>
     <div class="catprev-cta reveal"><a class="btn btn-primary" href="categories.html">Explore all categories &rarr;</a></div>
   </section>
 
@@ -516,7 +520,11 @@ html.dark .orb{opacity:.24}
 </main>
 <footer>
   <div class="wrap">
-    <div class="foot">
+    <div class="foot-nl">
+        <div class="fnl-txt"><span class="fnl-h">Join the weekly newsletter</span><span class="fnl-sub">What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s worth your time &mdash; one short email a week.</span></div>
+        <div class="fnl-form" id="fnlForm"><input id="fnlEmail" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address"><button id="fnlSub" type="button">Subscribe</button></div>
+      </div>
+      <div class="foot">
       <a class="brand brandlogo" href="/"><svg class="mark" viewBox="20 6 60 94" aria-label="blipradar satellite-dish logo"><g fill="none" stroke="#9b8bff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="#b14dff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)"><circle cx="56" cy="27" r="6" fill="none" stroke="#ff5d8f" stroke-width="3"><animate attributeName="r" values="6;17;17" keyTimes="0;0.6;1" dur="1.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/><animate attributeName="opacity" values="0.85;0;0" keyTimes="0;0.6;1" dur="1.8s" repeatCount="indefinite"/></circle><circle cx="56" cy="27" r="7" fill="#ff5d8f"><animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="1.8s" repeatCount="indefinite"/></circle><circle cx="53.5" cy="24.6" r="1.8" fill="#fff" opacity=".55"/></g></svg><span class="wm">blip<b>radar</b></span></a>
       <div class="foot-links">
         <a href="categories.html">Categories</a>
@@ -669,8 +677,9 @@ html.dark .orb{opacity:.24}
       setTimeout(close,1900);
     }).catch(function(){sub.disabled=false;sub.textContent='Try again';});
   });
-  setTimeout(open,7000);
+  setTimeout(open,2500);
 })();
 </script>
+<script>(function(){var sub=document.getElementById('fnlSub');if(!sub)return;var email=document.getElementById('fnlEmail'),form=document.getElementById('fnlForm'),KEY='f8066e71-05f2-4525-9ce1-c4e6b8ab919e';sub.addEventListener('click',function(){var v=(email.value||'').trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){email.focus();email.style.borderColor='var(--accent2)';return;}sub.disabled=true;sub.textContent='\u2026';var fd=new FormData();fd.append('access_key',KEY);fd.append('subject','\ud83d\udce5 New newsletter subscriber');fd.append('from_name','blipradar newsletter');fd.append('Email',v);fd.append('Source','Footer newsletter');fd.append('Submitted',new Date().toISOString());fetch('https://api.web3forms.com/submit',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(){try{localStorage.setItem('br-nl-sub','1');}catch(e){}var ok=document.createElement('div');ok.className='fnl-ok';ok.innerHTML='You\u2019re in \ud83c\udf89 \u2014 watch your inbox each week.';form.parentNode.replaceChild(ok,form);}).catch(function(){sub.disabled=false;sub.textContent='Try again';});});})();</script>
 </body>
 </html>

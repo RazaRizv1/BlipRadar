@@ -654,7 +654,7 @@ html.dark{--accent:#9b8bff}
 .trend-tip.below::after{top:auto;bottom:100%;border-top-color:transparent;border-bottom-color:#1b1830}
 /* #2 hero: push the Free/Pro price pill to the right to fill the gap */
 .id .tags{align-items:center}
-.id .tags .price{margin-left:auto}
+.id .tags .price{margin-left:0}
 </style>
 <style id="br-fix5">
 /* #1 tool-page tabs on mobile: keep all 3 on ONE line (no per-label wrap), scroll if tight */
@@ -739,11 +739,12 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 @media(max-width:560px){.cmp-save{padding:7px 10px;gap:0}.cmp-save-t{display:none}}
 </style>
 <style id="br-nl2">
-.nlpop{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:200;padding:0;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+.nlpop{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:200;padding:0;display:none;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -12px 40px rgba(24,21,40,.20);animation:nlup2 .42s cubic-bezier(.2,.7,.2,1)}
+.nlpop::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .nlpop.on{display:block}
-.nlcard{max-width:1060px;width:auto;margin:0 14px;border-radius:18px 18px 0 0;border-bottom:none;box-shadow:0 -16px 46px rgba(24,21,40,.22);padding:14px 22px;text-align:left;display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;animation:nlup2 .4s cubic-bezier(.2,.7,.2,1)}
-@keyframes nlup2{from{transform:translateY(100%);opacity:.3}to{transform:none;opacity:1}}
-.nl-ic{margin:0;width:42px;height:42px;border-radius:12px;flex:0 0 auto}
+.nlcard{max-width:1080px;width:auto;margin:0 auto;border:none;border-radius:0;border-bottom:none;box-shadow:none;background:none;padding:14px 24px;text-align:left;display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;position:relative}
+@keyframes nlup2{from{transform:translateY(100%)}to{transform:none}}
+.nl-ic{margin:0;width:42px;height:42px;border-radius:12px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(108,92,255,.16),rgba(255,93,143,.12));color:var(--accent)}
 .nl-ic svg{width:22px;height:22px}
 .nl-txt{flex:1 1 240px;min-width:170px}
 .nlcard h3{font-size:17px;margin:0;line-height:1.2}
@@ -752,7 +753,7 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 .nl-form input{flex:1 1 auto;height:44px}
 .nl-form button{flex:0 0 auto;width:auto;padding:0 22px;height:44px}
 .nl-fine{display:none}
-.nl-x{top:8px;right:13px;font-size:22px}
+.nl-x{top:10px;right:16px;font-size:22px}
 .nl-ok{padding:6px 0}
 @media(max-width:680px){
   .nlcard{margin:0;border-radius:0;gap:9px 12px;padding:12px 16px 14px 16px}
@@ -761,8 +762,23 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
   .nlcard h3{font-size:15.5px}
   .nl-form{flex-basis:100%;max-width:none;margin-left:0}
 }
+.foot-nl{display:flex;align-items:center;justify-content:space-between;gap:14px 24px;flex-wrap:wrap;padding:2px 0 22px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+.foot-nl .fnl-h{display:block;font-family:var(--display);font-weight:600;font-size:18px}
+.foot-nl .fnl-sub{display:block;font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+.fnl-form{display:flex;gap:9px;flex:1 1 300px;max-width:420px;margin-left:auto}
+.fnl-form input{flex:1 1 auto;height:42px;border-radius:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:0 13px;font-size:14px;outline:none}
+.fnl-form input:focus{border-color:var(--accent)}
+.fnl-form button{flex:0 0 auto;height:42px;padding:0 20px;border:0;border-radius:11px;background:var(--grad);color:#fff;font-weight:700;cursor:pointer;font-size:14px;transition:transform .16s,box-shadow .16s}
+.fnl-form button:hover{transform:translateY(-1px);box-shadow:0 9px 20px rgba(108,92,255,.4)}
+.fnl-ok{flex:1 1 300px;max-width:420px;margin-left:auto;color:var(--accent);font-weight:700;font-size:14px}
+@media(max-width:680px){.foot-nl .fnl-sub{display:none}.fnl-form{flex-basis:100%;max-width:none;margin-left:0}}
 </style>
 <style id="br-share">
+.share-m{display:none}
+@media(max-width:1280px){.share-m{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:14px 0 4px}}
+.share-m .sm-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-right:3px}
+.share-m .sr-btn{width:42px;height:42px}
+
 .sharerail{position:fixed;top:50%;left:max(16px,calc(50vw - 626px));transform:translate(0,-50%);z-index:50;display:flex;flex-direction:column;align-items:center;gap:10px;padding:15px 9px;border-radius:100px;background:linear-gradient(180deg,rgba(108,92,255,.12),rgba(177,77,255,.05)),var(--surface);border:1px solid var(--line);box-shadow:0 20px 46px rgba(108,92,255,.22),0 2px 10px rgba(24,21,40,.10);animation:srIn .55s cubic-bezier(.2,.7,.3,1) both}
 @keyframes srIn{from{opacity:0;transform:translate(-16px,-50%)}to{opacity:1;transform:translate(0,-50%)}}
 .sharerail::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(180deg,rgba(108,92,255,.6),rgba(255,93,143,.45));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.55;pointer-events:none}
@@ -824,6 +840,7 @@ html.dark .orb{opacity:.24}
 </div>
 
   <div class="crumb"><a href="/">Home</a> &rsaquo; <a href="coding.html">Best for Coding</a> &rsaquo; <span>OpenAI Codex</span></div>
+  <div class="share-m" aria-label="Share this page"><span class="sm-lbl">Share</span><a class="sr-btn" data-net="x" href="#" target="_blank" rel="noopener" aria-label="Share on X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.244 2H21.5l-7.5 8.57L22.9 22h-6.9l-5.4-7.06L4.34 22H1.08l8.02-9.17L1.1 2h7.07l4.88 6.45L18.244 2zm-1.21 18h1.81L7.04 3.9H5.1L17.034 20z"/></svg></a><a class="sr-btn" data-net="li" href="#" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 102.5 6 2.49 2.49 0 004.98 3.5zM3 8.98h4V21H3zM9 8.98h3.8v1.64h.05a4.17 4.17 0 013.75-2.06c4 0 4.75 2.64 4.75 6.06V21h-4v-5.36c0-1.28 0-2.92-1.78-2.92s-2.05 1.39-2.05 2.83V21H9z"/></svg></a><a class="sr-btn" data-net="fb" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg></a><a class="sr-btn" data-net="wa" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a9.9 9.9 0 00-8.5 15L2.2 21.8l4.93-1.29A9.9 9.9 0 1012 2zm0 1.8a8.1 8.1 0 11-4.13 15.06l-.3-.18-2.92.77.78-2.85-.19-.3A8.1 8.1 0 0112 3.8zm4.6 10.2c-.25-.13-1.47-.72-1.7-.8s-.39-.13-.56.13-.64.8-.79.97-.29.19-.54.06a6.6 6.6 0 01-3.23-2.82c-.24-.42.24-.39.69-1.3a.44.44 0 00-.02-.42c-.06-.13-.56-1.35-.77-1.85s-.41-.42-.56-.43h-.48a.92.92 0 00-.67.31 2.8 2.8 0 00-.87 2.08 4.86 4.86 0 001.02 2.58 11.1 11.1 0 004.27 3.77c1.6.69 1.92.55 2.27.52a2.55 2.55 0 001.68-1.18 2.07 2.07 0 00.14-1.18c-.06-.1-.23-.16-.48-.29z"/></svg></a><button class="sr-btn sr-cp" data-net="copy" type="button" aria-label="Copy link"><svg viewBox="0 0 24 24"><path d="M9 2a1 1 0 00-1 1v1H6a2 2 0 00-2 2v13a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2V3a1 1 0 00-1-1H9zm0 2h6v2H9V4z"/></svg></button></div>
 
   <div class="top">
     <div class="logo big" data-letter="O"><img alt="OpenAI Codex logo" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain=openai.com&sz=128"></div>
@@ -980,7 +997,11 @@ html.dark .orb{opacity:.24}
 
 <footer>
   <div class="wrap">
-    <div class="foot">
+    <div class="foot-nl">
+        <div class="fnl-txt"><span class="fnl-h">Join the weekly newsletter</span><span class="fnl-sub">What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s worth your time &mdash; one short email a week.</span></div>
+        <div class="fnl-form" id="fnlForm"><input id="fnlEmail" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address"><button id="fnlSub" type="button">Subscribe</button></div>
+      </div>
+      <div class="foot">
       <a class="brand brandlogo" href="/"><svg class="mark" viewBox="20 6 60 94" aria-label="blipradar satellite-dish logo"><g fill="none" stroke="#9b8bff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="#b14dff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)"><circle cx="56" cy="27" r="6" fill="none" stroke="#ff5d8f" stroke-width="3"><animate attributeName="r" values="6;17;17" keyTimes="0;0.6;1" dur="1.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.3 1;0 0 1 1"/><animate attributeName="opacity" values="0.85;0;0" keyTimes="0;0.6;1" dur="1.8s" repeatCount="indefinite"/></circle><circle cx="56" cy="27" r="7" fill="#ff5d8f"><animate attributeName="opacity" values="1;0.5;1" keyTimes="0;0.5;1" dur="1.8s" repeatCount="indefinite"/></circle><circle cx="53.5" cy="24.6" r="1.8" fill="#fff" opacity=".55"/></g></svg><span class="wm">blip<b>radar</b></span></a>
       <div class="foot-links">
         <a href="categories.html">Categories</a>
@@ -1327,20 +1348,12 @@ if(pill){pill.className='trend-pill '+cls;pill.textContent=txt;}
       setTimeout(close,1900);
     }).catch(function(){sub.disabled=false;sub.textContent='Try again';});
   });
-  setTimeout(open,7000);
+  setTimeout(open,2500);
 })();
 </script>
 <script>
-(function(){
-  var rail=document.querySelector('.sharerail'); if(!rail)return;
-  var U=encodeURIComponent(location.href), T=encodeURIComponent(document.title.replace(/\s*\|.*$/,''));
-  var map={x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,li:'https://www.linkedin.com/sharing/share-offsite/?url='+U,fb:'https://www.facebook.com/sharer/sharer.php?u='+U,wa:'https://api.whatsapp.com/send?text='+T+'%20'+U};
-  rail.querySelectorAll('a[data-net]').forEach(function(a){var n=a.getAttribute('data-net');if(map[n])a.setAttribute('href',map[n]);});
-  var cp=rail.querySelector('[data-net="copy"]');
-  if(cp)cp.addEventListener('click',function(){var ok=function(){cp.classList.add('ok');setTimeout(function(){cp.classList.remove('ok');},1500);};
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(location.href).then(ok,ok);}
-    else{var t=document.createElement('textarea');t.value=location.href;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');}catch(e){}t.remove();ok();}});
-})();
+(function(){var btns=document.querySelectorAll('.sharerail a[data-net],.share-m a[data-net]');var U=encodeURIComponent(location.href),T=encodeURIComponent(document.title.replace(/\s*\|.*$/,''));var map={x:'https://twitter.com/intent/tweet?url='+U+'&text='+T,li:'https://www.linkedin.com/sharing/share-offsite/?url='+U,fb:'https://www.facebook.com/sharer/sharer.php?u='+U,wa:'https://api.whatsapp.com/send?text='+T+'%20'+U};btns.forEach(function(a){var n=a.getAttribute('data-net');if(map[n])a.setAttribute('href',map[n]);});document.querySelectorAll('.sharerail [data-net="copy"],.share-m [data-net="copy"]').forEach(function(cp){cp.addEventListener('click',function(){var ok=function(){cp.classList.add('ok');setTimeout(function(){cp.classList.remove('ok');},1500);};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(location.href).then(ok,ok);}else{var t=document.createElement('textarea');t.value=location.href;document.body.appendChild(t);t.select();try{document.execCommand('copy');}catch(e){}t.remove();ok();}});});})();
 </script>
+<script>(function(){var sub=document.getElementById('fnlSub');if(!sub)return;var email=document.getElementById('fnlEmail'),form=document.getElementById('fnlForm'),KEY='f8066e71-05f2-4525-9ce1-c4e6b8ab919e';sub.addEventListener('click',function(){var v=(email.value||'').trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){email.focus();email.style.borderColor='var(--accent2)';return;}sub.disabled=true;sub.textContent='\u2026';var fd=new FormData();fd.append('access_key',KEY);fd.append('subject','\ud83d\udce5 New newsletter subscriber');fd.append('from_name','blipradar newsletter');fd.append('Email',v);fd.append('Source','Footer newsletter');fd.append('Submitted',new Date().toISOString());fetch('https://api.web3forms.com/submit',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(){try{localStorage.setItem('br-nl-sub','1');}catch(e){}var ok=document.createElement('div');ok.className='fnl-ok';ok.innerHTML='You\u2019re in \ud83c\udf89 \u2014 watch your inbox each week.';form.parentNode.replaceChild(ok,form);}).catch(function(){sub.disabled=false;sub.textContent='Try again';});});})();</script>
 </body>
 </html>
