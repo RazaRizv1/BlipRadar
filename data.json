@@ -1088,7 +1088,7 @@
       "price": "Free · Plus $20/mo",
       "domain": "chatgpt.com",
       "letter": "C",
-      "link": "#",
+      "link": "chatgpt-writing.html",
       "desc": "The all-round default for drafting, rewriting and ideas.",
       "bestFor": "everyday general-purpose writing.",
       "s": [
@@ -1117,7 +1117,7 @@
       "price": "Pro $20/mo",
       "domain": "claude.ai",
       "letter": "C",
-      "link": "#",
+      "link": "claude-writing.html",
       "desc": "The most natural, human-sounding writer for long-form work.",
       "bestFor": "long-form drafting and editing that doesn't read as AI.",
       "s": [
@@ -1145,7 +1145,7 @@
       "price": "Free · AI Pro $20/mo",
       "domain": "gemini.google.com",
       "letter": "G",
-      "link": "#",
+      "link": "gemini-writing.html",
       "desc": "Google's assistant, strong with long context and Docs.",
       "bestFor": "writing inside the Google ecosystem.",
       "s": [
@@ -1173,7 +1173,7 @@
       "price": "Free · Pro $12/mo",
       "domain": "grammarly.com",
       "letter": "G",
-      "link": "#",
+      "link": "grammarly.html",
       "desc": "The ubiquitous grammar, clarity and tone assistant.",
       "bestFor": "polishing anything you write, everywhere.",
       "s": [
@@ -1201,7 +1201,7 @@
       "price": "Free · Premium $10/mo",
       "domain": "quillbot.com",
       "letter": "Q",
-      "link": "#",
+      "link": "quillbot.html",
       "desc": "Best-in-class paraphrasing, summarizing and grammar.",
       "bestFor": "rewriting and tightening existing text.",
       "s": [

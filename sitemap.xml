@@ -53,4 +53,9 @@
   <url><loc>https://blipradar.com/continue.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://blipradar.com/greptile.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://blipradar.com/tabnine.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/chatgpt-writing.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/claude-writing.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/gemini-writing.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/grammarly.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://blipradar.com/quillbot.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>
