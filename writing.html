@@ -579,7 +579,7 @@ html.dark{--accent:#9b8bff}
     var mo=Math.floor(d/30.4);if(mo<12)return mo+' month'+(mo>1?'s':'')+' ago';
     var y=Math.floor(d/365);return y+' year'+(y>1?'s':'')+' ago';}
   function rowHTML(t,i){
-    var rated=t.score!=null;var whyRise=(t.mom==null)?'Gaining ground.':(t.mom>=9?'Surging — one of the fastest climbers right now.':t.mom>=8?'Climbing fast this cycle.':t.mom>=7?'Steady upward momentum.':'Gaining ground.');
+    var rated=t.score!=null;
     var pct=rated?(t.score*10).toFixed(0):0;
     var medal=(rated&&t.rank<=3)?(' m'+t.rank):'';
     var glow=GLOWS[i%3];
@@ -594,8 +594,8 @@ html.dark{--accent:#9b8bff}
         +'<div class="logo sm" data-letter="'+t.letter+'"><img alt="'+t.name+' logo" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></div>'
         +'<div class="rmain">'
           +'<div class="rname">'+t.name+(rated&&t.rank===1?' <span class="toppick">Top pick</span>':'')+'</div>'
-          +'<div class="rdesc">'+t.desc+'</div>'+(activeSort==='mom'?'<div class="whyrise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2c1 3-1 4.5-2.2 6.2C9.5 10 9 11.3 10 12.6c.8 1 2.3 1 3-.2.6 1 .8 2.2.4 3.3 1.6-.6 2.6-2.2 2.6-4 0-2.6-1.7-3.8-1-6.4-2 .8-3.4 2.2-3.7 4.2C10.8 11 11 8 13 2z"/></svg>'+whyRise+'</div>':'')
-          +'<div class="rtags">'+(activeSort==='mom'?'<span class="chip rising"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2c1 3-1 4.5-2.2 6.2C9.5 10 9 11.3 10 12.6c.8 1 2.3 1 3-.2.6 1 .8 2.2.4 3.3 1.6-.6 2.6-2.2 2.6-4 0-2.6-1.7-3.8-1-6.4-2 .8-3.4 2.2-3.7 4.2C10.8 11 11 8 13 2z"/></svg>Rising · '+(t.mom!=null?t.mom.toFixed(1):'—')+'</span>':'')+(rated?'':'<span class="chip prov">Not yet rated</span>')+'<span class="chip cat">'+t.type+'</span><span class="chip price">'+t.price+'</span><button type="button" class="chip cmpchip" data-ti="'+TOOLS.indexOf(t)+'" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13M14 6l3 3-3 3M20 15H7M10 12l-3 3 3 3"/></svg>Compare</button>'+(activeSort==='new'&&t.added?'<span class="listed">listed '+BR_rel(t.added)+'</span>':'')+'</div>'
+          +'<div class="rdesc">'+t.desc+'</div>'
+          +'<div class="rtags">'+(rated?'':'<span class="chip prov">Not yet rated</span>')+'<span class="chip cat">'+t.type+'</span><span class="chip price">'+t.price+'</span><button type="button" class="chip cmpchip" data-ti="'+TOOLS.indexOf(t)+'" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13M14 6l3 3-3 3M20 15H7M10 12l-3 3 3 3"/></svg>Compare</button>'+(activeSort==='new'&&t.added?'<span class="listed">listed '+BR_rel(t.added)+'</span>':'')+'</div>'
         +'</div>'
         +'<div class="rscore">'
           +(rated?'<span class="sc">'+t.score.toFixed(1)+'</span><span class="scbar"><span style="width:'+pct+'%"></span></span><span class="rstars" role="img" aria-label="'+(t.score/2).toFixed(1)+' out of 5 stars"><span class="rs-bg">\u2605\u2605\u2605\u2605\u2605</span><span class="rs-fg" style="width:'+pct+'%">\u2605\u2605\u2605\u2605\u2605</span></span>':'<span class="sc na">—</span><span class="sclbl-na">Not yet rated</span>')
@@ -768,6 +768,66 @@ html.dark{--accent:#9b8bff}
   listEl.addEventListener('click',function(e){var el=e.target.closest('.sndef'); if(el){e.stopPropagation(); if(cur===el)hide(); else show(el);}},true);
   window.addEventListener('scroll',function(){if(cur)hide();},true);
   document.addEventListener('click',function(e){if(cur&&!e.target.closest('.sndef'))hide();});
+})();
+</script>
+<style id="br-newsletter">
+.nlpop{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(15,16,24,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.nlpop.on{display:flex;animation:nlfade .25s ease}
+@keyframes nlfade{from{opacity:0}to{opacity:1}}
+.nlcard{position:relative;width:100%;max-width:418px;background:var(--surface);border:1px solid var(--line-soft);border-radius:22px;box-shadow:var(--shadow-lg);padding:32px 26px 24px;text-align:center;overflow:hidden;animation:nlup .3s cubic-bezier(.2,.7,.2,1)}
+@keyframes nlup{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+.nlcard::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}
+.nl-x{position:absolute;top:11px;right:14px;background:none;border:none;font-size:25px;line-height:1;color:var(--ink-faint);cursor:pointer;padding:4px}
+.nl-ic{width:54px;height:54px;border-radius:15px;margin:2px auto 15px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(108,92,255,.34)}
+.nl-ic svg{width:27px;height:27px;stroke:#fff;fill:none;stroke-width:1.9}
+.nlcard h3{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.15;margin-bottom:9px}
+.nlcard p{color:var(--ink-soft);font-size:14.5px;line-height:1.55;margin-bottom:18px}
+.nl-form{display:flex;flex-direction:column;gap:10px}
+.nl-form input{width:100%;height:48px;border-radius:100px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;padding:0 18px;outline:none;transition:border-color .2s,box-shadow .2s}
+.nl-form input:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.nl-form button{height:48px;border-radius:100px;border:none;background:var(--grad);color:#fff;font-family:var(--body);font-weight:700;font-size:15.5px;cursor:pointer;box-shadow:var(--shadow);transition:transform .15s}
+.nl-form button:hover{transform:translateY(-1px)}
+.nl-form button:disabled{opacity:.7;cursor:default}
+.nl-fine{font-size:12px;color:var(--ink-faint);margin-top:12px}
+.nl-ok{color:var(--green);font-weight:700;font-size:16px;padding:10px 0}
+</style>
+<div class="nlpop" id="nlPop" role="dialog" aria-modal="true" aria-label="Subscribe to the weekly AI newsletter">
+  <div class="nlcard">
+    <button class="nl-x" id="nlX" aria-label="Close">&times;</button>
+    <div class="nl-ic"><svg viewBox="0 0 24 24"><path d="M3.5 7.5l8.5 5.5 8.5-5.5M4 5.5h16a1 1 0 011 1v11a1 1 0 01-1 1H4a1 1 0 01-1-1v-11a1 1 0 011-1z"/></svg></div>
+    <h3>The weekly AI radar</h3>
+    <p>What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s actually worth your time &mdash; one short email a week.</p>
+    <div class="nl-form" id="nlForm">
+      <input id="nlEmail" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address">
+      <button id="nlSub" type="button">Subscribe &mdash; it&rsquo;s free</button>
+    </div>
+    <div class="nl-fine" id="nlFine">No spam. Unsubscribe anytime.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('nlPop');if(!pop)return;
+  var KEY='f8066e71-05f2-4525-9ce1-c4e6b8ab919e';
+  var x=document.getElementById('nlX'),form=document.getElementById('nlForm'),sub=document.getElementById('nlSub'),email=document.getElementById('nlEmail'),fine=document.getElementById('nlFine');
+  function seen(){try{return sessionStorage.getItem('br-nl-seen')||localStorage.getItem('br-nl-sub');}catch(e){return true;}}
+  function close(){pop.classList.remove('on');}
+  function open(){if(seen())return;pop.classList.add('on');try{sessionStorage.setItem('br-nl-seen','1');}catch(e){}}
+  if(x)x.addEventListener('click',close);
+  pop.addEventListener('click',function(e){if(e.target===pop)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  if(sub)sub.addEventListener('click',function(){
+    var v=(email.value||'').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){email.focus();email.style.borderColor='var(--accent2)';return;}
+    sub.disabled=true;sub.textContent='Subscribing\u2026';
+    var fd=new FormData();fd.append('access_key',KEY);fd.append('subject','\ud83d\udce5 New newsletter subscriber');fd.append('from_name','blipradar newsletter');fd.append('Email',v);fd.append('Source','Newsletter popup');fd.append('Submitted',new Date().toISOString());
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(){
+      try{localStorage.setItem('br-nl-sub','1');}catch(e){}
+      form.style.display='none';if(fine)fine.style.display='none';
+      var ok=document.createElement('div');ok.className='nl-ok';ok.innerHTML='You\u2019re in \ud83c\udf89 \u2014 watch your inbox each week.';form.parentNode.insertBefore(ok,form);
+      setTimeout(close,1900);
+    }).catch(function(){sub.disabled=false;sub.textContent='Try again';});
+  });
+  setTimeout(open,7000);
 })();
 </script>
 </body>

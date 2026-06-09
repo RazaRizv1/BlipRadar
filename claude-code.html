@@ -716,6 +716,18 @@ html.dark .react{background:color-mix(in srgb,var(--c) 18%,var(--surface))}
 .ccol-cta a:last-child{background:var(--grad);color:#fff}
 @media(max-width:560px){.ccol{min-width:78%;flex:0 0 78%}.ccol-score{font-size:34px}}
 </style>
+<style id="br-fix7">
+/* #1 breathing room: verdict <-> strengths/trade-offs, and CTA <-> reactions */
+.pc.pc-tabs{margin-top:42px}
+.reacts{margin-top:16px}
+@media(max-width:560px){.reacts{margin-top:22px}}
+/* #2 reactions bolder/vivid (filled icons, stronger tint, glow) */
+.react{border:1.6px solid color-mix(in srgb,var(--c) 60%,transparent);color:var(--c);background:color-mix(in srgb,var(--c) 16%,transparent);font-weight:800;box-shadow:0 4px 14px color-mix(in srgb,var(--c) 20%,transparent)}
+.react svg{fill:var(--c);stroke:var(--c)}
+.react b{color:var(--c)}
+.react:hover{background:color-mix(in srgb,var(--c) 26%,transparent);border-color:var(--c);transform:translateY(-2px);box-shadow:0 9px 24px color-mix(in srgb,var(--c) 34%,transparent)}
+html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
+</style>
 </head>
 <body>
 
@@ -1133,5 +1145,65 @@ if(pill){pill.className='trend-pill '+cls;pill.textContent=txt;}
 })();
 </script>
 <script>(function(){var tabs=document.querySelectorAll('.pctab');if(!tabs.length)return;function go(t){var id=t.getAttribute('data-pc');tabs.forEach(function(x){x.classList.toggle('on',x===t);});document.querySelectorAll('.pclist').forEach(function(p){p.classList.toggle('on',p.id===id);});}tabs.forEach(function(t){t.addEventListener('click',function(){go(t);});});})();</script>
+<style id="br-newsletter">
+.nlpop{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(15,16,24,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.nlpop.on{display:flex;animation:nlfade .25s ease}
+@keyframes nlfade{from{opacity:0}to{opacity:1}}
+.nlcard{position:relative;width:100%;max-width:418px;background:var(--surface);border:1px solid var(--line-soft);border-radius:22px;box-shadow:var(--shadow-lg);padding:32px 26px 24px;text-align:center;overflow:hidden;animation:nlup .3s cubic-bezier(.2,.7,.2,1)}
+@keyframes nlup{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+.nlcard::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}
+.nl-x{position:absolute;top:11px;right:14px;background:none;border:none;font-size:25px;line-height:1;color:var(--ink-faint);cursor:pointer;padding:4px}
+.nl-ic{width:54px;height:54px;border-radius:15px;margin:2px auto 15px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(108,92,255,.34)}
+.nl-ic svg{width:27px;height:27px;stroke:#fff;fill:none;stroke-width:1.9}
+.nlcard h3{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.15;margin-bottom:9px}
+.nlcard p{color:var(--ink-soft);font-size:14.5px;line-height:1.55;margin-bottom:18px}
+.nl-form{display:flex;flex-direction:column;gap:10px}
+.nl-form input{width:100%;height:48px;border-radius:100px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;padding:0 18px;outline:none;transition:border-color .2s,box-shadow .2s}
+.nl-form input:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.nl-form button{height:48px;border-radius:100px;border:none;background:var(--grad);color:#fff;font-family:var(--body);font-weight:700;font-size:15.5px;cursor:pointer;box-shadow:var(--shadow);transition:transform .15s}
+.nl-form button:hover{transform:translateY(-1px)}
+.nl-form button:disabled{opacity:.7;cursor:default}
+.nl-fine{font-size:12px;color:var(--ink-faint);margin-top:12px}
+.nl-ok{color:var(--green);font-weight:700;font-size:16px;padding:10px 0}
+</style>
+<div class="nlpop" id="nlPop" role="dialog" aria-modal="true" aria-label="Subscribe to the weekly AI newsletter">
+  <div class="nlcard">
+    <button class="nl-x" id="nlX" aria-label="Close">&times;</button>
+    <div class="nl-ic"><svg viewBox="0 0 24 24"><path d="M3.5 7.5l8.5 5.5 8.5-5.5M4 5.5h16a1 1 0 011 1v11a1 1 0 01-1 1H4a1 1 0 01-1-1v-11a1 1 0 011-1z"/></svg></div>
+    <h3>The weekly AI radar</h3>
+    <p>What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s actually worth your time &mdash; one short email a week.</p>
+    <div class="nl-form" id="nlForm">
+      <input id="nlEmail" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address">
+      <button id="nlSub" type="button">Subscribe &mdash; it&rsquo;s free</button>
+    </div>
+    <div class="nl-fine" id="nlFine">No spam. Unsubscribe anytime.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('nlPop');if(!pop)return;
+  var KEY='f8066e71-05f2-4525-9ce1-c4e6b8ab919e';
+  var x=document.getElementById('nlX'),form=document.getElementById('nlForm'),sub=document.getElementById('nlSub'),email=document.getElementById('nlEmail'),fine=document.getElementById('nlFine');
+  function seen(){try{return sessionStorage.getItem('br-nl-seen')||localStorage.getItem('br-nl-sub');}catch(e){return true;}}
+  function close(){pop.classList.remove('on');}
+  function open(){if(seen())return;pop.classList.add('on');try{sessionStorage.setItem('br-nl-seen','1');}catch(e){}}
+  if(x)x.addEventListener('click',close);
+  pop.addEventListener('click',function(e){if(e.target===pop)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  if(sub)sub.addEventListener('click',function(){
+    var v=(email.value||'').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){email.focus();email.style.borderColor='var(--accent2)';return;}
+    sub.disabled=true;sub.textContent='Subscribing\u2026';
+    var fd=new FormData();fd.append('access_key',KEY);fd.append('subject','\ud83d\udce5 New newsletter subscriber');fd.append('from_name','blipradar newsletter');fd.append('Email',v);fd.append('Source','Newsletter popup');fd.append('Submitted',new Date().toISOString());
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(){
+      try{localStorage.setItem('br-nl-sub','1');}catch(e){}
+      form.style.display='none';if(fine)fine.style.display='none';
+      var ok=document.createElement('div');ok.className='nl-ok';ok.innerHTML='You\u2019re in \ud83c\udf89 \u2014 watch your inbox each week.';form.parentNode.insertBefore(ok,form);
+      setTimeout(close,1900);
+    }).catch(function(){sub.disabled=false;sub.textContent='Try again';});
+  });
+  setTimeout(open,7000);
+})();
+</script>
 </body>
 </html>
