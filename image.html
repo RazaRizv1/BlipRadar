@@ -466,11 +466,13 @@ html.dark{--accent:#9b8bff}
 </style>
 <style id="br-fix9">
 .cmpcard{position:relative}
-.cmp-save{position:absolute;top:16px;right:60px;display:inline-flex;align-items:center;gap:7px;font-family:var(--body);font-size:12.5px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:7px 13px;cursor:pointer;transition:.18s;-webkit-tap-highlight-color:transparent;z-index:3}
+.cmp-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-right:34px;margin-bottom:16px}
+.cmp-head h2{margin-bottom:0}
+.cmp-save{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;font-family:var(--body);font-size:12.5px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:7px 13px;cursor:pointer;transition:.18s;-webkit-tap-highlight-color:transparent}
 .cmp-save:hover{color:var(--accent);border-color:var(--accent-soft);transform:translateY(-1px)}
 .cmp-save:disabled{opacity:.6;cursor:default}
 .cmp-save svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:560px){.cmp-save{right:52px;padding:7px 9px;gap:0}.cmp-save-t{display:none}}
+@media(max-width:560px){.cmp-save{padding:7px 10px;gap:0}.cmp-save-t{display:none}}
 </style>
 <style id="br-fix9ctrl">
 .controls{flex-wrap:wrap;gap:12px}
@@ -492,6 +494,30 @@ html.dark{--accent:#9b8bff}
   .controls .filterdrop>label{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint)}
   .controls .sortwrap{grid-column:1 / -1;flex-direction:column;align-items:stretch;gap:8px;width:auto}
   .controls .sortwrap .pricesort,.controls .sortwrap .pricesort select{width:100%}
+}
+</style>
+<style id="br-nl2">
+.nlpop{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:200;padding:0;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+.nlpop.on{display:block}
+.nlcard{max-width:1060px;width:auto;margin:0 14px;border-radius:18px 18px 0 0;border-bottom:none;box-shadow:0 -16px 46px rgba(24,21,40,.22);padding:14px 22px;text-align:left;display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;animation:nlup2 .4s cubic-bezier(.2,.7,.2,1)}
+@keyframes nlup2{from{transform:translateY(100%);opacity:.3}to{transform:none;opacity:1}}
+.nl-ic{margin:0;width:42px;height:42px;border-radius:12px;flex:0 0 auto}
+.nl-ic svg{width:22px;height:22px}
+.nl-txt{flex:1 1 240px;min-width:170px}
+.nlcard h3{font-size:17px;margin:0;line-height:1.2}
+.nlcard p{font-size:12.5px;margin:2px 0 0;line-height:1.4;color:var(--ink-soft)}
+.nl-form{flex:1 1 300px;flex-direction:row;gap:9px;max-width:440px;margin-left:auto}
+.nl-form input{flex:1 1 auto;height:44px}
+.nl-form button{flex:0 0 auto;width:auto;padding:0 22px;height:44px}
+.nl-fine{display:none}
+.nl-x{top:8px;right:13px;font-size:22px}
+.nl-ok{padding:6px 0}
+@media(max-width:680px){
+  .nlcard{margin:0;border-radius:0;gap:9px 12px;padding:12px 16px 14px 16px}
+  .nl-ic{display:none}
+  .nlcard p{display:none}
+  .nlcard h3{font-size:15.5px}
+  .nl-form{flex-basis:100%;max-width:none;margin-left:0}
 }
 </style>
 </head>
@@ -518,8 +544,6 @@ html.dark{--accent:#9b8bff}
     <h1>Best AI Tools for <span class="g">Image</span></h1>
     <p>Every serious AI image tool, ranked on one transparent scorecard &mdash; from artistic and photoreal generators to design, editing and the open-source field.</p>
     <div class="meta">
-      <span class="mtag"><span class="dot"></span>Updated weekly</span>
-      <span class="mtag"><b>25</b>&nbsp;tools ranked</span>
       <span class="mtag link" id="howScore">How we score &rarr;</span>
     </div>
   </section>
@@ -529,7 +553,6 @@ html.dark{--accent:#9b8bff}
       <label for="filterSel">Show</label>
       <span class="fsel"><select id="filterSel" aria-label="Filter tools"><option value="all" selected>All</option><option value="art">Best for Art</option><option value="photoreal">Best for Photorealism</option><option value="design">Best for Design</option><option value="edit">Best for Editing</option><option value="oss">Best for Open source</option></select></span>
     </div>
-    <div class="filterdrop"><label for="priceSel">Price</label><span class="fsel"><select id="priceSel" aria-label="Filter by price"><option value="any" selected>Any price</option><option value="free">Free tier</option><option value="u20">Under $20/mo</option><option value="oss">Open source</option></select></span></div>
     <div class="sortwrap">Sort
       <span class="seg" id="sort">
         <button class="on" data-sort="score"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4zM7 7H4.5v1A2.5 2.5 0 007 10.5M17 7h2.5v1a2.5 2.5 0 01-2.5 2.5"/></svg>Top</button>
@@ -750,8 +773,7 @@ html.dark{--accent:#9b8bff}
 </div></div>
 <div class="modal" id="cmpModal"><div class="modal-card cmpcard">
   <button class="modal-close" id="cmpClose" aria-label="Close">&times;</button>
-  <h2>Head-to-head</h2>
-  <button class="cmp-save" id="cmpSave" type="button" aria-label="Save comparison image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 4 5-4M5 20h14"/></svg><span class="cmp-save-t">Save image (HQ)</span></button>
+  <div class="cmp-head"><h2>Head-to-head</h2><button class="cmp-save" id="cmpSave" type="button" aria-label="Save comparison image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 4 5-4M5 20h14"/></svg><span class="cmp-save-t">Save image (HQ)</span></button></div>
   <div class="cmp-scroll" id="cmpGrid"></div>
   <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better. The top pick and the leader in each metric are highlighted.</p>
 </div></div>
@@ -781,7 +803,7 @@ html.dark{--accent:#9b8bff}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
   function brLoadH2C(cb){if(window.html2canvas)return cb();var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';s.onload=function(){cb();};s.onerror=function(){alert('Could not load the image tool \u2014 please check your connection and try again.');};document.head.appendChild(s);}
   function brIcon(d){return 'https://icons.duckduckgo.com/ip3/'+d+'.ico';}
-  function brFetchIcon(url){return fetch(url,{mode:'cors'}).then(function(r){if(!r.ok)throw 0;return r.blob();}).then(function(b){return new Promise(function(res,rej){var fr=new FileReader();fr.onload=function(){res(fr.result);};fr.onerror=rej;fr.readAsDataURL(b);});}).catch(function(){return null;});}
+  function brFetchIcon(d){var urls=['https://icon.horse/icon/'+d,'https://icons.duckduckgo.com/ip3/'+d+'.ico','https://www.google.com/s2/favicons?domain='+d+'&sz=128'];function at(x){if(x>=urls.length)return Promise.resolve(null);return fetch(urls[x],{mode:'cors'}).then(function(r){if(!r.ok)throw 0;return r.blob();}).then(function(b){if(!b||b.size<64)throw 0;return new Promise(function(res,rej){var fr=new FileReader();fr.onload=function(){res(fr.result);};fr.onerror=rej;fr.readAsDataURL(b);});}).catch(function(){return at(x+1);});}return at(0);}
   var BR_LOGO='<svg width="30" height="30" viewBox="20 6 60 94" fill="none" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/><g transform="rotate(-32 56 50)"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" stroke-width="5"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle cx="56" cy="27" r="7" fill="#8b5cf6" stroke="none"/></g></svg>';
   function brCapNode(ts,icons){
     var COLW=212, fS="Fraunces,Georgia,serif", fB="'Hanken Grotesk',Arial,sans-serif";
@@ -818,7 +840,7 @@ html.dark{--accent:#9b8bff}
     var btn=document.getElementById('cmpSave'),old=btn?btn.textContent:'';
     if(btn){btn.disabled=true;btn.textContent='Rendering\u2026';}
     brLoadH2C(function(){
-      Promise.all(ts.map(function(t){return brFetchIcon(brIcon(t.domain));})).then(function(icons){
+      Promise.all(ts.map(function(t){return brFetchIcon(t.domain);})).then(function(icons){
         var node=brCapNode(ts,icons); document.body.appendChild(node);
         window.html2canvas(node.firstChild,{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false}).then(function(cv){
           node.remove();
@@ -888,8 +910,7 @@ html.dark{--accent:#9b8bff}
   <div class="nlcard">
     <button class="nl-x" id="nlX" aria-label="Close">&times;</button>
     <div class="nl-ic"><svg viewBox="0 0 24 24"><path d="M3.5 7.5l8.5 5.5 8.5-5.5M4 5.5h16a1 1 0 011 1v11a1 1 0 01-1 1H4a1 1 0 01-1-1v-11a1 1 0 011-1z"/></svg></div>
-    <h3>The weekly AI radar</h3>
-    <p>What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s actually worth your time &mdash; one short email a week.</p>
+    <div class="nl-txt"><h3>The weekly AI radar</h3><p>What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s actually worth your time &mdash; one short email a week.</p></div>
     <div class="nl-form" id="nlForm">
       <input id="nlEmail" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address">
       <button id="nlSub" type="button">Subscribe &mdash; it&rsquo;s free</button>

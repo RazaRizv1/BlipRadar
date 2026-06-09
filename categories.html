@@ -276,6 +276,30 @@ html.dark{--accent:#9b8bff}
 .cfchip{position:relative}
 @media(max-width:600px){.catfilter .cfleft{width:100%}}
 </style>
+<style id="br-nl2">
+.nlpop{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:200;padding:0;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+.nlpop.on{display:block}
+.nlcard{max-width:1060px;width:auto;margin:0 14px;border-radius:18px 18px 0 0;border-bottom:none;box-shadow:0 -16px 46px rgba(24,21,40,.22);padding:14px 22px;text-align:left;display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;animation:nlup2 .4s cubic-bezier(.2,.7,.2,1)}
+@keyframes nlup2{from{transform:translateY(100%);opacity:.3}to{transform:none;opacity:1}}
+.nl-ic{margin:0;width:42px;height:42px;border-radius:12px;flex:0 0 auto}
+.nl-ic svg{width:22px;height:22px}
+.nl-txt{flex:1 1 240px;min-width:170px}
+.nlcard h3{font-size:17px;margin:0;line-height:1.2}
+.nlcard p{font-size:12.5px;margin:2px 0 0;line-height:1.4;color:var(--ink-soft)}
+.nl-form{flex:1 1 300px;flex-direction:row;gap:9px;max-width:440px;margin-left:auto}
+.nl-form input{flex:1 1 auto;height:44px}
+.nl-form button{flex:0 0 auto;width:auto;padding:0 22px;height:44px}
+.nl-fine{display:none}
+.nl-x{top:8px;right:13px;font-size:22px}
+.nl-ok{padding:6px 0}
+@media(max-width:680px){
+  .nlcard{margin:0;border-radius:0;gap:9px 12px;padding:12px 16px 14px 16px}
+  .nl-ic{display:none}
+  .nlcard p{display:none}
+  .nlcard h3{font-size:15.5px}
+  .nl-form{flex-basis:100%;max-width:none;margin-left:0}
+}
+</style>
 </head>
 <body>
 <header>
@@ -365,8 +389,7 @@ html.dark{--accent:#9b8bff}
   <div class="nlcard">
     <button class="nl-x" id="nlX" aria-label="Close">&times;</button>
     <div class="nl-ic"><svg viewBox="0 0 24 24"><path d="M3.5 7.5l8.5 5.5 8.5-5.5M4 5.5h16a1 1 0 011 1v11a1 1 0 01-1 1H4a1 1 0 01-1-1v-11a1 1 0 011-1z"/></svg></div>
-    <h3>The weekly AI radar</h3>
-    <p>What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s actually worth your time &mdash; one short email a week.</p>
+    <div class="nl-txt"><h3>The weekly AI radar</h3><p>What&rsquo;s new, what&rsquo;s rising, and what&rsquo;s actually worth your time &mdash; one short email a week.</p></div>
     <div class="nl-form" id="nlForm">
       <input id="nlEmail" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address">
       <button id="nlSub" type="button">Subscribe &mdash; it&rsquo;s free</button>
