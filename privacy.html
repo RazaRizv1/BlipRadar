@@ -167,6 +167,18 @@
   .ractions{display:none;}
 }
 </style>
+<style id="br-polish1">
+/* #7 + #10 mobile header: room for the logo + search pinned as one clean full row */
+@media(max-width:600px){
+  header .nav{padding:12px 18px;row-gap:9px}
+  header .hsearch{order:3;flex:1 0 100%;max-width:none;margin:8px 0 0;min-width:0}
+}
+/* cleaner sticky header over any background (stops bg bleed under the logo) */
+header{background:rgba(244,244,251,.9)}
+html.dark header{background:rgba(15,16,24,.9)}
+/* #8 lift the dull purple in dark mode */
+html.dark{--accent:#9b8bff}
+</style>
 </head>
 <body>
 

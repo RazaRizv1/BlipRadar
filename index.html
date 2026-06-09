@@ -324,6 +324,24 @@
 @media(max-width:640px){.paths{grid-template-columns:1fr}.path{padding:26px}.catprev{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){.cpt.live .cpt-meta::before{animation:none}}
 </style>
+<style id="br-polish1">
+/* #7 + #10 mobile header: room for the logo + search pinned as one clean full row */
+@media(max-width:600px){
+  header .nav{padding:12px 18px;row-gap:9px}
+  header .hsearch{order:3;flex:1 0 100%;max-width:none;margin:8px 0 0;min-width:0}
+}
+/* cleaner sticky header over any background (stops bg bleed under the logo) */
+header{background:rgba(244,244,251,.9)}
+html.dark header{background:rgba(15,16,24,.9)}
+/* #8 lift the dull purple in dark mode */
+html.dark{--accent:#9b8bff}
+</style>
+<style id="br-polish1-idx">
+/* #3 hold the corner glow out from under the header */
+.o1{top:-24vw;left:-18vw;opacity:.42}
+/* #9 center the category tiles on mobile */
+@media(max-width:640px){.catprev .cpt{align-items:center;text-align:center}}
+</style>
 </head>
 <body>
 <div class="bgfx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span><div class="bgfx-grid"></div></div>
@@ -376,7 +394,7 @@
   <section class="sec">
     <div class="sec-head reveal"><span class="eyebrow">20 categories</span><h2>Find the best tool for any job</h2><p>From coding to video to voice &mdash; every category ranked on the same transparent rubric. Five are live now, more land every week.</p></div>
     <div class="catprev reveal">
-        <a class="cpt live" href="coding.html"><span class="cpt-ic g"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></span><span class="cpt-nm">Coding</span><span class="cpt-meta">25 tools</span></a>
+        <a class="cpt live" href="coding.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></span><span class="cpt-nm">Coding</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="writing.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z"/></svg></span><span class="cpt-nm">Writing</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="image.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></span><span class="cpt-nm">Image</span><span class="cpt-meta">25 tools</span></a>
         <a class="cpt live" href="video.html"><span class="cpt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 9l5-2v10l-5-2"/></svg></span><span class="cpt-nm">Video</span><span class="cpt-meta">25 tools</span></a>

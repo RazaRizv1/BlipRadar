@@ -504,14 +504,15 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 .top>.scorebox{animation:heroIn .7s .2s both cubic-bezier(.2,.7,.2,1)}
 .top>.cta{animation:heroIn .7s .26s both cubic-bezier(.2,.7,.2,1)}
 @media(max-width:600px){
-  .top{grid-template-columns:auto 1fr;grid-template-areas:"logo score" "main main" "cta cta";column-gap:16px;row-gap:10px;align-items:center;padding:10px 0 14px}
-  .top>.logo.big{width:56px;height:56px;border-radius:15px;padding:10px;align-self:center}
-  .top>.logo.big .fb{font-size:24px}
-  .top>.scorebox{justify-self:end;text-align:right;align-self:center}
-  .top>.scorebox .big{font-size:38px;line-height:1}
-  .top>.scorebox .stars{font-size:15px;margin:2px 0 1px;letter-spacing:2px}
-  .top>.scorebox .lbl{font-size:10.5px;margin-top:2px}
-  .top>.cta{justify-self:stretch;text-align:center;padding:12px 24px;margin-top:2px}
+  .top{grid-template-columns:auto auto 1fr;grid-template-areas:"logo score ." "main main main" "cta cta cta";column-gap:15px;row-gap:13px;align-items:center;padding:8px 0 14px}
+  .top>.logo.big{grid-area:logo;width:60px;height:60px;border-radius:16px;padding:11px;align-self:center}
+  .top>.logo.big .fb{font-size:25px}
+  .top>.scorebox{grid-area:score;justify-self:start;text-align:left;align-self:center}
+  .top>.scorebox .big{font-size:37px;line-height:1}
+  .top>.scorebox .stars{font-size:15px;margin:3px 0 1px;letter-spacing:2px}
+  .top>.scorebox .lbl{font-size:10.5px;margin-top:1px}
+  .top>.id{grid-area:main}
+  .top>.cta{grid-area:cta;justify-self:stretch;text-align:center;padding:12px 24px;margin-top:2px}
   .id .tags{margin-bottom:8px;gap:8px}
   .id h1{font-size:30px;line-height:1.04}
   .id p{font-size:15px;margin-top:5px;max-width:none}
@@ -589,6 +590,38 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 .trend-x{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-faint);font-weight:600;margin-top:6px}
 .trend-empty{display:flex;align-items:center;gap:13px;padding:22px 18px;border:1.5px dashed var(--line);border-radius:14px;color:var(--ink-soft);font-size:14px;line-height:1.5}
 .trend-empty svg{width:26px;height:26px;flex:none;fill:none;stroke:var(--ink-faint);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+</style>
+<style id="br-polish1">
+/* #7 + #10 mobile header: room for the logo + search pinned as one clean full row */
+@media(max-width:600px){
+  header .nav{padding:12px 18px;row-gap:9px}
+  header .hsearch{order:3;flex:1 0 100%;max-width:none;margin:8px 0 0;min-width:0}
+}
+/* cleaner sticky header over any background (stops bg bleed under the logo) */
+header{background:rgba(244,244,251,.9)}
+html.dark header{background:rgba(15,16,24,.9)}
+/* #8 lift the dull purple in dark mode */
+html.dark{--accent:#9b8bff}
+</style>
+<style id="br-compare3">
+.cmppick-search-wrap{position:relative;display:flex;align-items:center}
+.cmppick-search-wrap svg{position:absolute;left:15px;width:17px;height:17px;stroke:var(--ink-faint);fill:none;stroke-width:2;pointer-events:none}
+.cmppick-search{width:100%;height:44px;border-radius:100px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14.5px;font-weight:500;padding:0 16px 0 42px;outline:none;transition:border-color .2s,box-shadow .2s}
+.cmppick-search:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.cmppick-search::placeholder{color:var(--ink-faint)}
+.cmppick-hint{font-size:12.5px;color:var(--ink-faint);font-weight:600;margin:-4px 0 0}
+.cmppick-empty{font-size:14px;color:var(--ink-faint);font-weight:500;padding:6px 2px}
+.cmppill.cmpnope{animation:cmpnope .3s}
+@keyframes cmpnope{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media(max-width:560px){
+  .cmpcard{max-width:100%;padding:22px 12px 18px}
+  .cmpT{min-width:384px}
+  .cmpT tbody td,.cmpT tfoot td{padding:11px 7px}
+  .cmpv{font-size:14px}
+  .cmphd .nm{font-size:12px;max-width:104px}
+  .cmppick{padding:16px 14px}
+  .cmppick-list{max-height:230px}
+}
 </style>
 </head>
 <body>
@@ -710,7 +743,9 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
   <div class="h reveal">Compare with another tool</div>
   <p class="prose reveal" style="margin:-6px 0 16px">Pick up to two other coding tools to see them head-to-head on the same rubric.</p>
   <div class="cmppick reveal" id="cmpPick">
+    <div class="cmppick-search-wrap"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input class="cmppick-search" id="cmpPickSearch" type="text" autocomplete="off" spellcheck="false" placeholder="Search tools to compare…" aria-label="Search tools to compare"></div>
     <div class="cmppick-list" id="cmpPickList"></div>
+    <div class="cmppick-hint" id="cmpPickHint"></div>
     <button class="cmppick-go" id="cmpPickGo" type="button" disabled>Compare</button>
   </div>
 
@@ -934,18 +969,29 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 <script>var CMP_TOOLS=[{"rank": 1, "name": "Cursor", "score": 8.9, "mom": 9.5, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $20/mo", "domain": "cursor.com", "letter": "C", "link": "cursor.html", "desc": "The most polished agentic IDE and daily-driver favorite.", "s": [9, 8, 9.5, 8.5, 8.5, 9.5], "bestFor": "developers who want the most polished all-round AI editor."}, {"rank": 2, "name": "Claude Code", "score": 8.8, "mom": 9.2, "type": "Terminal agent", "cats": ["terminal", "agent"], "price": "$20–200/mo", "domain": "claude.ai", "letter": "C", "link": "claude-code.html", "desc": "Anthropic's terminal agent — strongest on deep, multi-step reasoning.", "s": [9.7, 8, 8, 8.5, 8, 9.2], "bestFor": "hard, multi-step work driven from the terminal."}, {"rank": 3, "name": "GitHub Copilot", "score": 8.3, "mom": 7, "type": "IDE", "cats": ["ide", "autocomplete"], "price": "Free · Pro $10/mo", "domain": "github.com", "letter": "G", "link": "github-copilot.html", "desc": "The ubiquitous assistant, now agentic and woven deep into GitHub.", "s": [8, 8.5, 9, 8.5, 9.5, 7], "bestFor": "teams already living in GitHub and VS Code."}, {"rank": 4, "name": "OpenAI Codex", "score": 8.1, "mom": 8.5, "type": "Cloud agent", "cats": ["agent", "terminal"], "price": "$20–200/mo", "domain": "openai.com", "letter": "O", "link": "openai-codex.html", "desc": "OpenAI's cloud + CLI agent that ships whole tasks and PRs autonomously.", "s": [8.8, 7.5, 7, 8, 8, 8.5], "bestFor": "handing whole tasks to a cloud agent."}, {"rank": 5, "name": "Windsurf", "score": 8, "mom": 7, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $15/mo", "domain": "windsurf.com", "letter": "W", "link": "#", "desc": "A clean, flow-focused AI IDE (formerly Codeium) with strong multi-file edits.", "s": [8.3, 8, 8.8, 8, 7.5, 7], "bestFor": "a calm, flow-focused editor experience."}, {"rank": 6, "name": "OpenCode", "score": 8, "mom": 9.5, "type": "Open-source CLI", "cats": ["oss", "terminal", "agent"], "price": "Open source · BYO key", "domain": "opencode.ai", "letter": "O", "link": "#", "desc": "Provider-agnostic open-source terminal agent — the runaway community leader.", "s": [7.6, 9.5, 6, 7, 8.5, 9.5], "bestFor": "power users who want any model and zero lock-in."}, {"rank": 7, "name": "Zed", "score": 7.9, "mom": 7.5, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $20/mo", "domain": "zed.dev", "letter": "Z", "link": "#", "desc": "Blazing-fast Rust editor with collaborative AI built in.", "s": [7.5, 9, 8.5, 8.5, 6.5, 7.5], "bestFor": "speed lovers who want a fast, native editor."}, {"rank": 8, "name": "Google Antigravity", "score": 7.8, "mom": 9, "type": "Agentic IDE", "cats": ["ide", "agent"], "price": "Free in preview", "domain": "antigravity.google", "letter": "A", "link": "#", "desc": "Gemini-powered agentic IDE that runs tasks across editor and browser.", "s": [8, 8, 7.5, 6.5, 6.5, 9], "bestFor": "trying Google's agent-first IDE early."}, {"rank": 9, "name": "Cline", "score": 7.8, "mom": 7.5, "type": "Open-source IDE agent", "cats": ["oss", "ide", "agent"], "price": "Open source · BYO key", "domain": "cline.bot", "letter": "C", "link": "#", "desc": "Open-source VS Code agent with approval on every step — the OSS pioneer.", "s": [7.5, 9, 7.5, 7.5, 8, 7.5], "bestFor": "open-source control with human approval on every step."}, {"rank": 10, "name": "JetBrains Junie", "score": 7.8, "mom": 7, "type": "IDE", "cats": ["ide", "agent"], "price": "In JetBrains AI plans", "domain": "jetbrains.com", "letter": "J", "link": "#", "desc": "JetBrains' agent, deeply native to IntelliJ, PyCharm and the rest.", "s": [7.8, 7.5, 8, 8, 8.5, 7], "bestFor": "JetBrains IDE loyalists."}, {"rank": 11, "name": "Kilo Code", "score": 7.8, "mom": 8, "type": "Open-source agent", "cats": ["oss", "agent", "ide"], "price": "Open source · BYO key", "domain": "kilocode.ai", "letter": "K", "link": "#", "desc": "Open-source platform agent: 500+ models, parallel agents, one-click deploy.", "s": [7.5, 9, 7.5, 7, 7.5, 8], "bestFor": "an all-in-one open-source agent platform."}, {"rank": 12, "name": "Devin", "score": 7.7, "mom": 8, "type": "Cloud agent", "cats": ["agent"], "price": "From $20/mo", "domain": "devin.ai", "letter": "D", "link": "#", "desc": "Cognition's autonomous agent that takes whole tickets end-to-end.", "s": [8.2, 6.5, 8.5, 7, 7, 8], "bestFor": "handing off entire tickets autonomously."}, {"rank": 13, "name": "Aider", "score": 7.7, "mom": 7, "type": "Open-source CLI", "cats": ["oss", "terminal"], "price": "Open source · BYO key", "domain": "aider.chat", "letter": "A", "link": "#", "desc": "Git-native open-source pair programmer for the terminal.", "s": [7.6, 9.5, 7, 8, 7.5, 7], "bestFor": "git-native terminal pair programming."}, {"rank": 14, "name": "CodeRabbit", "score": 7.7, "mom": 7.5, "type": "Code review", "cats": ["review"], "price": "Free · Pro $24/mo", "domain": "coderabbit.ai", "letter": "C", "link": "#", "desc": "AI pull-request reviewer that comments like a thorough senior dev.", "s": [7.6, 7.5, 8.5, 8, 7.5, 7.5], "bestFor": "automated, thorough pull-request reviews."}, {"rank": 15, "name": "Replit Agent", "score": 7.7, "mom": 7.5, "type": "Cloud agent", "cats": ["agent", "ide"], "price": "Free · Core $20/mo", "domain": "replit.com", "letter": "R", "link": "#", "desc": "Cloud IDE agent that builds and deploys a working app from a prompt.", "s": [7.5, 7.5, 9, 7, 7.5, 7.5], "bestFor": "building and shipping straight from the browser."}, {"rank": 16, "name": "Amazon Q Developer", "score": 7.6, "mom": 6.5, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $19/mo", "domain": "aws.amazon.com", "letter": "Q", "link": "#", "desc": "AWS-native assistant, strong on cloud workflows and security scanning.", "s": [7.5, 8.5, 7.5, 8, 8, 6.5], "bestFor": "AWS-heavy teams."}, {"rank": 17, "name": "OpenHands", "score": 7.6, "mom": 7.5, "type": "Open-source agent", "cats": ["oss", "agent"], "price": "Open source · cloud option", "domain": "all-hands.dev", "letter": "O", "link": "#", "desc": "Autonomous open-source agent that resolves real GitHub issues.", "s": [7.8, 8.5, 6.5, 7, 7.5, 7.5], "bestFor": "autonomous issue-solving at scale."}, {"rank": 18, "name": "Augment Code", "score": 7.5, "mom": 7, "type": "IDE", "cats": ["ide", "agent"], "price": "From $50/mo", "domain": "augmentcode.com", "letter": "A", "link": "#", "desc": "Enterprise agent tuned for very large, complex codebases.", "s": [8, 6.5, 7.5, 8, 7, 7], "bestFor": "very large, complex enterprise codebases."}, {"rank": 19, "name": "Trae", "score": 7.5, "mom": 7, "type": "IDE", "cats": ["ide"], "price": "Free", "domain": "trae.ai", "letter": "T", "link": "#", "desc": "ByteDance's free AI IDE with frontier models bundled in.", "s": [7.3, 9, 8, 6.5, 6.5, 7], "bestFor": "a genuinely capable free IDE."}, {"rank": 20, "name": "Gemini Code Assist", "score": 7.4, "mom": 6, "type": "IDE", "cats": ["ide", "autocomplete"], "price": "Free tier ending · paid", "domain": "cloud.google.com", "letter": "G", "link": "#", "desc": "Google's IDE assistant across VS Code and JetBrains.", "s": [7.8, 7, 8, 7.5, 7.5, 6], "bestFor": "developers on the Google stack."}, {"rank": 21, "name": "Qodo", "score": 7.4, "mom": 7, "type": "Code review", "cats": ["review"], "price": "Free · Teams $19/mo", "domain": "qodo.ai", "letter": "Q", "link": "#", "desc": "Code-integrity suite: AI test generation and review (formerly CodiumAI).", "s": [7.4, 7.5, 8, 7.5, 7, 7], "bestFor": "test generation and code integrity."}, {"rank": 22, "name": "Goose", "score": 7.4, "mom": 6.5, "type": "Open-source agent", "cats": ["oss", "agent"], "price": "Open source · BYO key", "domain": "github.com", "letter": "G", "link": "#", "desc": "Foundation-backed open-source autonomous agent (by Block).", "s": [7.3, 9, 7, 7, 7.5, 6.5], "bestFor": "a neutral, foundation-backed agent."}, {"rank": 23, "name": "Continue", "score": 7.3, "mom": 6.5, "type": "Open-source assistant", "cats": ["oss", "autocomplete", "ide"], "price": "Open source · BYO key", "domain": "continue.dev", "letter": "C", "link": "#", "desc": "Privacy-first open-source assistant — bring any model you like.", "s": [7, 9.5, 6.5, 7.5, 7.5, 6.5], "bestFor": "privacy-first, bring-your-own-model setups."}, {"rank": 24, "name": "Greptile", "score": 7.3, "mom": 7, "type": "Code review", "cats": ["review"], "price": "From $30/mo", "domain": "greptile.com", "letter": "G", "link": "#", "desc": "AI code review that reasons over your whole repository.", "s": [7.5, 7, 8, 7.5, 6.5, 7], "bestFor": "repo-wide AI code review."}, {"rank": 25, "name": "Tabnine", "score": 7.2, "mom": 6, "type": "Autocomplete", "cats": ["autocomplete"], "price": "Free · Pro $9/mo", "domain": "tabnine.com", "letter": "T", "link": "#", "desc": "Privacy-first autocomplete built for regulated, security-conscious teams.", "s": [7, 7, 8, 8.5, 7.5, 6], "bestFor": "regulated teams that need strict privacy."}];var CMP_SELF="OpenAI Codex";
 (function(){
   if(typeof CMP_TOOLS==='undefined')return;
-  var listEl=document.getElementById('cmpPickList'),goBtn=document.getElementById('cmpPickGo');
+  var listEl=document.getElementById('cmpPickList'),goBtn=document.getElementById('cmpPickGo'),
+      searchEl=document.getElementById('cmpPickSearch'),hintEl=document.getElementById('cmpPickHint');
   if(!listEl||!goBtn)return;
   var selfTool=null,others=[];
   CMP_TOOLS.forEach(function(t){ if(t.name===CMP_SELF)selfTool=t; else others.push(t); });
   if(!selfTool){selfTool=CMP_TOOLS[0];others=CMP_TOOLS.slice(1);}
-  var CAP=2,sel=[];
+  var CAP=2,SHOW=15,sel=[];
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  listEl.innerHTML=others.map(function(t,i){return '<button type="button" class="cmppill" data-i="'+i+'" aria-pressed="false"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=64">'+esc(t.name)+'<span class="cp-sc">'+t.score.toFixed(1)+'</span></button>';}).join('');
-  function sync(){listEl.querySelectorAll('.cmppill').forEach(function(b){b.setAttribute('aria-pressed',sel.indexOf(parseInt(b.dataset.i,10))>-1?'true':'false');});goBtn.disabled=!sel.length;goBtn.textContent=sel.length?('Compare ('+(sel.length+1)+')'):'Compare';}
-  listEl.addEventListener('click',function(e){var b=e.target.closest('.cmppill');if(!b)return;var i=parseInt(b.dataset.i,10);var k=sel.indexOf(i);if(k>-1)sel.splice(k,1);else{if(sel.length>=CAP)return;sel.push(i);}sync();});
-  goBtn.addEventListener('click',function(){if(!sel.length||!window.BR_openCompare)return;window.BR_openCompare([selfTool].concat(sel.map(function(i){return others[i];})));});
-  sync();
+  function find(nm){for(var i=0;i<others.length;i++){if(others[i].name===nm)return others[i];}return null;}
+  function pill(t){var on=sel.indexOf(t.name)>-1;return '<button type="button" class="cmppill" data-n="'+esc(t.name)+'" aria-pressed="'+(on?'true':'false')+'"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=64">'+esc(t.name)+'<span class="cp-sc">'+t.score.toFixed(1)+'</span></button>';}
+  function render(){
+    var q=(searchEl&&searchEl.value||'').trim().toLowerCase();
+    var matches=q?others.filter(function(t){return t.name.toLowerCase().indexOf(q)>-1;}):others;
+    var shown=q?matches.slice():matches.slice(0,SHOW);
+    sel.forEach(function(nm){if(!shown.some(function(t){return t.name===nm;})){var t=find(nm);if(t)shown.unshift(t);}});
+    listEl.innerHTML=shown.length?shown.map(pill).join(''):'<div class="cmppick-empty">No tools match that.</div>';
+    if(hintEl){if(!q&&others.length>SHOW){hintEl.textContent='Showing the top '+SHOW+' \u2014 search to compare any of '+others.length+'.';hintEl.style.display='';}else{hintEl.style.display='none';}}
+    goBtn.disabled=!sel.length;goBtn.textContent=sel.length?('Compare ('+(sel.length+1)+')'):'Compare';
+  }
+  listEl.addEventListener('click',function(e){var b=e.target.closest('.cmppill');if(!b)return;var nm=b.getAttribute('data-n');var k=sel.indexOf(nm);if(k>-1){sel.splice(k,1);}else{if(sel.length>=CAP){b.classList.add('cmpnope');setTimeout(function(){b.classList.remove('cmpnope');},300);return;}sel.push(nm);}render();});
+  if(searchEl)searchEl.addEventListener('input',render);
+  goBtn.addEventListener('click',function(){if(!sel.length||!window.BR_openCompare)return;var picks=[];sel.forEach(function(nm){var t=find(nm);if(t)picks.push(t);});window.BR_openCompare([selfTool].concat(picks));});
+  render();
 })();
 </script>
 <script>

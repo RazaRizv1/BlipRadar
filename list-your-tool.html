@@ -201,6 +201,18 @@
   .ractions{display:none;}
 }
 </style>
+<style id="br-polish1">
+/* #7 + #10 mobile header: room for the logo + search pinned as one clean full row */
+@media(max-width:600px){
+  header .nav{padding:12px 18px;row-gap:9px}
+  header .hsearch{order:3;flex:1 0 100%;max-width:none;margin:8px 0 0;min-width:0}
+}
+/* cleaner sticky header over any background (stops bg bleed under the logo) */
+header{background:rgba(244,244,251,.9)}
+html.dark header{background:rgba(15,16,24,.9)}
+/* #8 lift the dull purple in dark mode */
+html.dark{--accent:#9b8bff}
+</style>
 </head>
 <body>
 
@@ -290,8 +302,10 @@
         <div class="summary" id="invSummary" style="margin-top:22px"></div>
         <button class="cta" id="dlInvoice" style="background:transparent;border:1px solid var(--line-soft);color:var(--ink-soft)">Download invoice</button>
         <div id="cfDone" hidden style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft);text-align:left">
-          <div style="font-weight:700;color:var(--green);font-size:16px;margin-bottom:4px">Confirmation received &#10003;</div>
-          <p class="muted" style="font-size:14px">Thanks &mdash; we have your payment details and will verify and publish shortly. A copy has been emailed to our team.</p>
+          <div style="font-weight:700;color:var(--green);font-size:16px;margin-bottom:4px">Payment received &#10003;</div>
+          <p class="muted" style="font-size:14px">We&rsquo;ll verify it on-chain shortly. <b>One more step</b> &mdash; send us your tool&rsquo;s details so we can build your page.</p>
+          <a class="cta" href="listing-details.html" style="margin-top:8px;display:inline-block">Send your tool details &rarr;</a>
+          <p class="muted" style="font-size:12.5px;margin-top:10px">We build your page from what you send plus public info &mdash; we never invent facts, and you don&rsquo;t set your own score.</p>
         </div>
         <span class="relist" id="relist">List another tool</span>
       </div>
@@ -301,10 +315,10 @@
   <section class="sec reveal">
     <h2>How it works</h2>
     <div class="steps">
-      <div class="step"><span class="num">1</span><div><div class="stt">Submit &amp; pay</div><div class="std">Send your tool details and the one-time $250 in crypto.</div></div></div>
-      <div class="step"><span class="num">2</span><div><div class="stt">We build your page</div><div class="std">We create a clean, consistent tool page from your details &mdash; usually within a few days.</div></div></div>
-      <div class="step"><span class="num">3</span><div><div class="stt">The rubric scores it</div><div class="std">Your tool is evaluated on the same six criteria as every other tool and placed where it earns.</div></div></div>
-      <div class="step"><span class="num">4</span><div><div class="stt">It goes live</div><div class="std">Your page is published and discoverable, and stays up permanently.</div></div></div>
+      <div class="step"><span class="num">1</span><div><div class="stt">Reserve your spot</div><div class="std">Pay the one-time $250 in crypto. That’s all we need up front.</div></div></div>
+      <div class="step"><span class="num">2</span><div><div class="stt">Send your details</div><div class="std">Right after paying, you’ll get a short form (linked from your confirmation) for your tagline, features, pricing and links.</div></div></div>
+      <div class="step"><span class="num">3</span><div><div class="stt">We build your page</div><div class="std">We craft a clean, consistent page from your details plus public info &mdash; we never invent facts or stats.</div></div></div>
+      <div class="step"><span class="num">4</span><div><div class="stt">Scored &amp; live</div><div class="std">The same six-criteria rubric scores it and places it where it earns. You never set your own score.</div></div></div>
     </div>
   </section>
 
