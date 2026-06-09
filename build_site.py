@@ -14,7 +14,7 @@ def rows_for(slug):
         return data[slug]
     return [t for t in data.get("tools", []) if t.get("category") == slug]
 
-FIELDS = ["rank","name","score","mom","type","cats","price","domain","letter","link","desc","s","bestFor"]
+FIELDS = ["rank","name","score","mom","type","cats","price","domain","letter","link","desc","s","bestFor","added"]
 changed = []
 for cat in cats:
     slug = cat["slug"]; page = slug + ".html"
