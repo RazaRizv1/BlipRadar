@@ -442,7 +442,7 @@ html.dark .cmptray-chip button{background:rgba(255,255,255,.14)}
 .cmptray.shake .cmptray-in{animation:cmpshake .4s}
 @keyframes trayup{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
 @keyframes cmpshake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
-.cmpcard{max-width:800px}
+.cmpcard{max-width:1140px}
 .cmpcard h2{margin-bottom:2px}
 .cmp-scroll{overflow-x:auto;margin-top:10px;border:1px solid var(--line-soft);border-radius:16px;-webkit-overflow-scrolling:touch}
 .cmpT{width:100%;border-collapse:separate;border-spacing:0;min-width:430px}
@@ -688,8 +688,8 @@ html.dark .react{background:color-mix(in srgb,var(--c) 18%,var(--surface))}
 /* #5 compare popup redesigned: side-by-side cards with score bars (replaces the table) */
 .cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .cmp-scroll::-webkit-scrollbar{display:none}
-.cmpcards{display:flex;gap:14px;padding:6px 2px 4px;align-items:stretch}
-.ccol{position:relative;flex:1 1 0;min-width:208px;display:flex;flex-direction:column;gap:13px;padding:22px 16px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.cmpcards{display:flex;gap:14px;padding:6px 2px 4px;align-items:stretch;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ccol{position:relative;flex:1 1 0;min-width:168px;display:flex;flex-direction:column;gap:13px;padding:22px 16px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
 .ccol-win{border:1.5px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box;box-shadow:var(--shadow-lg)}
 .ccol-crown{position:absolute;top:-11px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--grad);padding:4px 12px;border-radius:100px;white-space:nowrap;box-shadow:var(--shadow)}
 .ccol-hd{display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
@@ -714,7 +714,7 @@ html.dark .react{background:color-mix(in srgb,var(--c) 18%,var(--surface))}
 .ccol-cta a{flex:1;text-align:center;font-size:12.5px;font-weight:700;padding:9px 8px;border-radius:100px;text-decoration:none;transition:.18s}
 .ccol-cta a:first-child:not(:only-child){background:var(--surface);border:1px solid var(--line);color:var(--ink-soft)}
 .ccol-cta a:last-child{background:var(--grad);color:#fff}
-@media(max-width:560px){.ccol{min-width:78%;flex:0 0 78%}.ccol-score{font-size:34px}}
+@media(max-width:560px){.cmpcards{gap:9px}.ccol{min-width:128px;padding:16px 10px 13px;gap:10px}.ccol-lg{width:40px;height:40px}.ccol-nm{font-size:13.5px}.ccol-score{font-size:27px}.ccol-crits{gap:8px}.ccrit-l{font-size:10.5px}.ccrit-v{font-size:11px}.ccol-meta b{font-size:11.5px}}
 </style>
 <style id="br-fix7">
 /* #1 breathing room: verdict <-> strengths/trade-offs, and CTA <-> reactions */
@@ -1164,7 +1164,7 @@ html.dark .orb{opacity:.24}
   function brFetchIcon(d){var urls=['https://icon.horse/icon/'+d,'https://icons.duckduckgo.com/ip3/'+d+'.ico','https://www.google.com/s2/favicons?domain='+d+'&sz=128'];function at(x){if(x>=urls.length)return Promise.resolve(null);return fetch(urls[x],{mode:'cors'}).then(function(r){if(!r.ok)throw 0;return r.blob();}).then(function(b){if(!b||b.size<64)throw 0;return new Promise(function(res,rej){var fr=new FileReader();fr.onload=function(){res(fr.result);};fr.onerror=rej;fr.readAsDataURL(b);});}).catch(function(){return at(x+1);});}return at(0);}
   var BR_LOGO='<svg width="30" height="30" viewBox="20 6 60 94" fill="none" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/><g transform="rotate(-32 56 50)"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)" stroke-width="5"><path d="M47 22 A 11 11 0 0 1 65 22"/><path d="M43 16 A 17 17 0 0 1 69 16"/></g><g transform="rotate(-32 56 50)"><circle cx="56" cy="27" r="7" fill="#8b5cf6" stroke="none"/></g></svg>';
   function brCapNode(ts,icons){
-    var COLW=212, fS="Fraunces,Georgia,serif", fB="'Hanken Grotesk',Arial,sans-serif";
+    var COLW=292, fS="Fraunces,Georgia,serif", fB="'Hanken Grotesk',Arial,sans-serif";
     var d=new Date(),mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     var date=d.getDate()+' '+mo[d.getMonth()]+' '+d.getFullYear();
     function col(t,i){
@@ -1188,7 +1188,7 @@ html.dark .orb{opacity:.24}
       +'<div style="display:flex;align-items:center;gap:10px;margin-bottom:5px;">'+BR_LOGO
         +'<span style="font-family:'+fS+';font-size:27px;font-weight:600;color:#181528;">blip<span style="color:#6c5cff;">radar</span></span></div>'
       +'<div style="font-size:12.5px;color:#8b88a0;margin-bottom:18px;">AI tool comparison &middot; scored on one public six-criteria rubric &middot; '+date+'</div>'
-      +'<div style="display:flex;gap:14px;align-items:stretch;">'+ts.map(col).join('')+'</div>'
+      +'<div style="display:flex;gap:18px;align-items:stretch;">'+ts.map(col).join('')+'</div>'
       +'<div style="margin-top:16px;font-size:11.5px;color:#9b97b6;">Higher is better. Full reviews and live rankings at <b style="color:#6c5cff;">blipradar.com</b></div>'
       +'</div>';
     return wrap;
