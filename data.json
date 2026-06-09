@@ -29,6 +29,21 @@
    "slug": "presentations",
    "label": "Presentations",
    "live": true
+  },
+  {
+   "slug": "music",
+   "label": "Music",
+   "live": true
+  },
+  {
+   "slug": "research",
+   "label": "Research",
+   "live": true
+  },
+  {
+   "slug": "note-taking",
+   "label": "Note-taking",
+   "live": true
   }
  ],
  "payments": {
@@ -4132,6 +4147,824 @@
    "url": "https://prezi.com",
    "affiliate": false,
    "added": "2026-06-09T08:00:00Z",
+   "rank": 10
+  }
+ ],
+ "music": [
+  {
+   "name": "Suno",
+   "score": 8.9,
+   "mom": 9.5,
+   "type": "Song generator",
+   "cats": [
+    "song"
+   ],
+   "price": "Free · Pro $10/mo",
+   "domain": "suno.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "The most complete AI music platform — full songs with vocals in seconds, plus a Studio DAW.",
+   "bestFor": "complete songs with vocals, start to finish.",
+   "s": [
+    9,
+    8.5,
+    9,
+    8.5,
+    8.5,
+    9.5
+   ],
+   "url": "https://suno.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Udio",
+   "score": 8.3,
+   "mom": 8.5,
+   "type": "Music + stems",
+   "cats": [
+    "song"
+   ],
+   "price": "Free · Standard $10/mo",
+   "domain": "udio.com",
+   "letter": "U",
+   "link": "#",
+   "desc": "Closest rival to Suno — prized for natural vocals and downloadable stems.",
+   "bestFor": "vocal-driven tracks and remixing with stems.",
+   "s": [
+    8.5,
+    8,
+    8.5,
+    8,
+    7.5,
+    8.5
+   ],
+   "url": "https://udio.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 2
+  },
+  {
+   "name": "ElevenLabs Music",
+   "score": 8.2,
+   "mom": 8,
+   "type": "Song generator",
+   "cats": [
+    "song"
+   ],
+   "price": "Free · from $5/mo",
+   "domain": "elevenlabs.io",
+   "letter": "E",
+   "link": "#",
+   "desc": "From the voice-AI leader — studio-quality songs with especially clean audio.",
+   "bestFor": "high-fidelity tracks from a voice-first team.",
+   "s": [
+    8.5,
+    7.5,
+    8.5,
+    8,
+    8.5,
+    8
+   ],
+   "url": "https://elevenlabs.io",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Stable Audio",
+   "score": 7.8,
+   "mom": 7.5,
+   "type": "Audio generator",
+   "cats": [
+    "inst",
+    "dev"
+   ],
+   "price": "Free · from $12/mo",
+   "domain": "stableaudio.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Stability AI's generator, strong on production-ready instrumental audio.",
+   "bestFor": "production-ready instrumental and sound design.",
+   "s": [
+    8,
+    7.5,
+    7.5,
+    8,
+    8,
+    7.5
+   ],
+   "url": "https://stableaudio.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Soundraw",
+   "score": 7.7,
+   "mom": 7,
+   "type": "Royalty-free music",
+   "cats": [
+    "inst"
+   ],
+   "price": "From $17/mo",
+   "domain": "soundraw.io",
+   "letter": "S",
+   "link": "#",
+   "desc": "Royalty-free background music you can shape, made for content creators.",
+   "bestFor": "royalty-free background music for video.",
+   "s": [
+    7.5,
+    8,
+    8.5,
+    8,
+    7,
+    7
+   ],
+   "url": "https://soundraw.io",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 5
+  },
+  {
+   "name": "AIVA",
+   "score": 7.6,
+   "mom": 7,
+   "type": "Composer",
+   "cats": [
+    "inst"
+   ],
+   "price": "Free · from $11/mo",
+   "domain": "aiva.ai",
+   "letter": "A",
+   "link": "#",
+   "desc": "Orchestral and cinematic composer with MIDI export and full copyright options.",
+   "bestFor": "cinematic and orchestral scores you can own.",
+   "s": [
+    8,
+    7.5,
+    7.5,
+    8,
+    7,
+    7
+   ],
+   "url": "https://aiva.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Riffusion",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Music API",
+   "cats": [
+    "dev",
+    "song"
+   ],
+   "price": "Free · API pricing",
+   "domain": "riffusion.com",
+   "letter": "R",
+   "link": "#",
+   "desc": "API-first music generation — the pick for building AI music into products.",
+   "bestFor": "developers building music into their own apps.",
+   "s": [
+    7.5,
+    8,
+    7,
+    7.5,
+    7.5,
+    7.5
+   ],
+   "url": "https://riffusion.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Mureka",
+   "score": 7.4,
+   "mom": 7,
+   "type": "Song generator",
+   "cats": [
+    "song"
+   ],
+   "price": "Free · from $10/mo",
+   "domain": "mureka.ai",
+   "letter": "M",
+   "link": "#",
+   "desc": "Fast, experimental song generation with flexible voice options.",
+   "bestFor": "quick experimentation across voices and styles.",
+   "s": [
+    7.5,
+    7.5,
+    8,
+    7.5,
+    6.5,
+    7
+   ],
+   "url": "https://mureka.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Beatoven.ai",
+   "score": 7.2,
+   "mom": 6.5,
+   "type": "Royalty-free music",
+   "cats": [
+    "inst"
+   ],
+   "price": "Free · from $20/mo",
+   "domain": "beatoven.ai",
+   "letter": "B",
+   "link": "#",
+   "desc": "Royalty-free music with a perpetual license on every download.",
+   "bestFor": "safe, clearly-licensed music for commercial use.",
+   "s": [
+    7,
+    8,
+    8,
+    7.5,
+    6.5,
+    6.5
+   ],
+   "url": "https://beatoven.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Loudly",
+   "score": 7.1,
+   "mom": 6.5,
+   "type": "Music library",
+   "cats": [
+    "inst"
+   ],
+   "price": "Free · from $6/mo",
+   "domain": "loudly.com",
+   "letter": "L",
+   "link": "#",
+   "desc": "Collaborative, royalty-free music library with AI generation.",
+   "bestFor": "team-friendly royalty-free music.",
+   "s": [
+    6.8,
+    7.5,
+    8,
+    7.5,
+    6.5,
+    6.5
+   ],
+   "url": "https://loudly.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 10
+  }
+ ],
+ "research": [
+  {
+   "name": "Perplexity",
+   "score": 8.5,
+   "mom": 9,
+   "type": "Answer engine",
+   "cats": [
+    "web"
+   ],
+   "price": "Free · Pro $20/mo",
+   "domain": "perplexity.ai",
+   "letter": "P",
+   "link": "#",
+   "desc": "The gold standard for fast, cited answers — Deep Research reads dozens of sources per query.",
+   "bestFor": "fast, sourced answers across any topic.",
+   "s": [
+    8.5,
+    8,
+    9,
+    8,
+    8.5,
+    9
+   ],
+   "url": "https://perplexity.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 1
+  },
+  {
+   "name": "NotebookLM",
+   "score": 8.3,
+   "mom": 8.5,
+   "type": "Notebook",
+   "cats": [
+    "web"
+   ],
+   "price": "Free · in Google AI",
+   "domain": "notebooklm.google.com",
+   "letter": "N",
+   "link": "#",
+   "desc": "Google's source-grounded notebook — answers come only from the documents you give it.",
+   "bestFor": "reasoning strictly over your own sources.",
+   "s": [
+    8,
+    8.5,
+    8.5,
+    8,
+    8.5,
+    8.5
+   ],
+   "url": "https://notebooklm.google.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Elicit",
+   "score": 8.1,
+   "mom": 8,
+   "type": "Literature review",
+   "cats": [
+    "acad"
+   ],
+   "price": "Free · Plus $12/mo",
+   "domain": "elicit.com",
+   "letter": "E",
+   "link": "#",
+   "desc": "The leader for structured literature reviews and evidence extraction across many papers.",
+   "bestFor": "systematic literature reviews.",
+   "s": [
+    8.5,
+    8,
+    8,
+    8,
+    7.5,
+    8
+   ],
+   "url": "https://elicit.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Consensus",
+   "score": 8.0,
+   "mom": 8,
+   "type": "Evidence search",
+   "cats": [
+    "acad"
+   ],
+   "price": "Free · from $12/mo",
+   "domain": "consensus.app",
+   "letter": "C",
+   "link": "#",
+   "desc": "Answers questions straight from peer-reviewed papers, with a scientific-agreement meter.",
+   "bestFor": "evidence-backed answers from the literature.",
+   "s": [
+    8,
+    8,
+    8.5,
+    8,
+    7.5,
+    8
+   ],
+   "url": "https://consensus.app",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Semantic Scholar",
+   "score": 7.8,
+   "mom": 6.5,
+   "type": "Discovery",
+   "cats": [
+    "disc"
+   ],
+   "price": "Free",
+   "domain": "semanticscholar.org",
+   "letter": "S",
+   "link": "#",
+   "desc": "Free academic discovery engine with massive coverage and smart paper recommendations.",
+   "bestFor": "free paper discovery and citation maps.",
+   "s": [
+    7.5,
+    9,
+    8,
+    8,
+    8,
+    6.5
+   ],
+   "url": "https://semanticscholar.org",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 5
+  },
+  {
+   "name": "SciSpace",
+   "score": 7.7,
+   "mom": 7.5,
+   "type": "PDF reader",
+   "cats": [
+    "acad"
+   ],
+   "price": "Free · from $12/mo",
+   "domain": "scispace.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Reads and explains papers for you — upload a PDF and ask anything.",
+   "bestFor": "understanding dense papers fast.",
+   "s": [
+    7.5,
+    8,
+    8,
+    7.5,
+    7.5,
+    7.5
+   ],
+   "url": "https://scispace.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 6
+  },
+  {
+   "name": "scite",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Citation analysis",
+   "cats": [
+    "disc"
+   ],
+   "price": "From $20/mo",
+   "domain": "scite.ai",
+   "letter": "S",
+   "link": "#",
+   "desc": "Smart Citations show whether later work supports or contradicts a finding.",
+   "bestFor": "checking how a claim has held up.",
+   "s": [
+    7.5,
+    7.5,
+    7.5,
+    8,
+    7,
+    7.5
+   ],
+   "url": "https://scite.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 7
+  },
+  {
+   "name": "ResearchRabbit",
+   "score": 7.3,
+   "mom": 7,
+   "type": "Citation discovery",
+   "cats": [
+    "disc"
+   ],
+   "price": "Free",
+   "domain": "researchrabbit.ai",
+   "letter": "R",
+   "link": "#",
+   "desc": "Maps citation networks to surface related papers you'd otherwise miss.",
+   "bestFor": "exploring a field's citation network.",
+   "s": [
+    7,
+    8,
+    7.5,
+    7.5,
+    7,
+    7
+   ],
+   "url": "https://researchrabbit.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Undermind",
+   "score": 7.3,
+   "mom": 7.5,
+   "type": "Deep search",
+   "cats": [
+    "disc"
+   ],
+   "price": "Free · paid tiers",
+   "domain": "undermind.ai",
+   "letter": "U",
+   "link": "#",
+   "desc": "Autonomous deep search that hunts down hard-to-find papers.",
+   "bestFor": "exhaustive, hard-to-find literature searches.",
+   "s": [
+    7.8,
+    7,
+    7,
+    7,
+    6.5,
+    7.5
+   ],
+   "url": "https://undermind.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Scholarcy",
+   "score": 7.0,
+   "mom": 6.5,
+   "type": "Summarizer",
+   "cats": [
+    "acad"
+   ],
+   "price": "Free · from $10/mo",
+   "domain": "scholarcy.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Summarizes papers into structured, flashcard-style highlights.",
+   "bestFor": "quick paper summaries and highlights.",
+   "s": [
+    7,
+    7.5,
+    7.5,
+    7,
+    6.5,
+    6.5
+   ],
+   "url": "https://scholarcy.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 10
+  }
+ ],
+ "note-taking": [
+  {
+   "name": "Notion AI",
+   "score": 8.2,
+   "mom": 8,
+   "type": "Workspace",
+   "cats": [
+    "workspace"
+   ],
+   "price": "Free · AI from $10/mo",
+   "domain": "notion.so",
+   "letter": "N",
+   "link": "#",
+   "desc": "AI woven through the workspace millions use — Ask Notion searches everything you've written.",
+   "bestFor": "AI inside a full team workspace.",
+   "s": [
+    8,
+    8,
+    8.5,
+    8.5,
+    9,
+    8
+   ],
+   "url": "https://notion.so",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Obsidian",
+   "score": 7.9,
+   "mom": 7.5,
+   "type": "Local PKM",
+   "cats": [
+    "pkm"
+   ],
+   "price": "Free · Sync $4/mo",
+   "domain": "obsidian.md",
+   "letter": "O",
+   "link": "#",
+   "desc": "Local-first, plain-text knowledge base with a deep plugin and AI ecosystem.",
+   "bestFor": "private, local-first knowledge management.",
+   "s": [
+    7.5,
+    9,
+    7.5,
+    8.5,
+    8,
+    7.5
+   ],
+   "url": "https://obsidian.md",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Mem",
+   "score": 7.8,
+   "mom": 7.5,
+   "type": "AI notes",
+   "cats": [
+    "ainative"
+   ],
+   "price": "Free · Pro $15/mo",
+   "domain": "mem.ai",
+   "letter": "M",
+   "link": "#",
+   "desc": "AI-native notes that organize themselves — just capture and let it link and surface.",
+   "bestFor": "fast capture with zero manual filing.",
+   "s": [
+    8,
+    7.5,
+    8.5,
+    7.5,
+    7,
+    7.5
+   ],
+   "url": "https://mem.ai",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Reflect",
+   "score": 7.7,
+   "mom": 7,
+   "type": "Journaling",
+   "cats": [
+    "ainative"
+   ],
+   "price": "$10/mo",
+   "domain": "reflect.app",
+   "letter": "R",
+   "link": "#",
+   "desc": "Encrypted daily-notes app with AI summaries and calendar-connected journaling.",
+   "bestFor": "private daily journaling with AI.",
+   "s": [
+    7.5,
+    8,
+    8.5,
+    8,
+    7,
+    7
+   ],
+   "url": "https://reflect.app",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Tana",
+   "score": 7.5,
+   "mom": 8,
+   "type": "Structured notes",
+   "cats": [
+    "ainative"
+   ],
+   "price": "Free · Pro $10/mo",
+   "domain": "tana.inc",
+   "letter": "T",
+   "link": "#",
+   "desc": "Structured, AI-powered notes built on supertags and live queries.",
+   "bestFor": "structured notes that double as a database.",
+   "s": [
+    7.5,
+    7.5,
+    7,
+    7.5,
+    7,
+    8
+   ],
+   "url": "https://tana.inc",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Craft",
+   "score": 7.2,
+   "mom": 6.5,
+   "type": "Docs & notes",
+   "cats": [
+    "workspace"
+   ],
+   "price": "Free · Pro $10/mo",
+   "domain": "craft.do",
+   "letter": "C",
+   "link": "#",
+   "desc": "Beautifully designed docs and notes with AI writing built in.",
+   "bestFor": "polished documents and notes.",
+   "s": [
+    7.2,
+    7.5,
+    8,
+    7.5,
+    6.5,
+    6.5
+   ],
+   "url": "https://craft.do",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Capacities",
+   "score": 7.1,
+   "mom": 7,
+   "type": "Object notes",
+   "cats": [
+    "pkm"
+   ],
+   "price": "Free · Pro $12/mo",
+   "domain": "capacities.io",
+   "letter": "C",
+   "link": "#",
+   "desc": "Object-based notes that treat every idea as a typed, connectable thing.",
+   "bestFor": "object-oriented personal knowledge.",
+   "s": [
+    7,
+    7.5,
+    7.5,
+    7.5,
+    6.5,
+    7
+   ],
+   "url": "https://capacities.io",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Logseq",
+   "score": 7.1,
+   "mom": 6.5,
+   "type": "Outliner",
+   "cats": [
+    "pkm"
+   ],
+   "price": "Free · open source",
+   "domain": "logseq.com",
+   "letter": "L",
+   "link": "#",
+   "desc": "Open-source, local-first outliner for networked thought.",
+   "bestFor": "open-source networked note-taking.",
+   "s": [
+    6.8,
+    9,
+    6.5,
+    8,
+    6.5,
+    6.5
+   ],
+   "url": "https://logseq.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Saga",
+   "score": 7.1,
+   "mom": 6.5,
+   "type": "Workspace",
+   "cats": [
+    "workspace"
+   ],
+   "price": "Free · Pro $6/mo",
+   "domain": "saga.so",
+   "letter": "S",
+   "link": "#",
+   "desc": "Clean AI workspace linking notes, tasks and pages.",
+   "bestFor": "a simple connected notes-and-tasks workspace.",
+   "s": [
+    7,
+    7.5,
+    7.5,
+    7.5,
+    6.5,
+    6.5
+   ],
+   "url": "https://saga.so",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Amplenote",
+   "score": 6.9,
+   "mom": 6.5,
+   "type": "Notes & tasks",
+   "cats": [
+    "pkm"
+   ],
+   "price": "Free · from $6/mo",
+   "domain": "amplenote.com",
+   "letter": "A",
+   "link": "#",
+   "desc": "Notes that flow straight into tasks and a daily plan.",
+   "bestFor": "turning notes into actionable tasks.",
+   "s": [
+    6.8,
+    7.5,
+    7,
+    7.5,
+    6,
+    6.5
+   ],
+   "url": "https://amplenote.com",
+   "affiliate": false,
+   "added": "2026-06-09T08:30:00Z",
    "rank": 10
   }
  ]
