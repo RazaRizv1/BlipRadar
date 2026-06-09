@@ -1655,7 +1655,7 @@
       "price": "From $15/mo",
       "domain": "frase.io",
       "letter": "F",
-      "link": "#",
+      "link": "frase-writing.html",
       "desc": "Research-and-write SEO briefs and content.",
       "bestFor": "SEO briefs and optimization.",
       "s": [
@@ -1683,7 +1683,7 @@
       "price": "From $29/mo",
       "domain": "type.ai",
       "letter": "T",
-      "link": "#",
+      "link": "type-ai.html",
       "desc": "An AI-first document editor for fast drafts.",
       "bestFor": "AI-assisted document drafting.",
       "s": [
@@ -1711,7 +1711,7 @@
       "price": "From $10/mo",
       "domain": "novelai.net",
       "letter": "N",
-      "link": "#",
+      "link": "novelai.html",
       "desc": "Subscription storyteller for fiction and roleplay.",
       "bestFor": "open-ended fiction and roleplay.",
       "s": [
@@ -1739,7 +1739,7 @@
       "price": "From $29/mo",
       "domain": "hoppycopy.co",
       "letter": "H",
-      "link": "#",
+      "link": "hoppy-copy-writing.html",
       "desc": "Email and newsletter copy with campaign tools.",
       "bestFor": "email marketing campaigns.",
       "s": [
@@ -1767,7 +1767,7 @@
       "price": "From $19/mo",
       "domain": "copysmith.ai",
       "letter": "C",
-      "link": "#",
+      "link": "copysmith.html",
       "desc": "Bulk product and ecommerce copy generation.",
       "bestFor": "ecommerce and catalog copy at scale.",
       "s": [
