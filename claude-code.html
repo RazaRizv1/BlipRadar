@@ -672,7 +672,7 @@ main.wrap>.h{margin-top:48px}
 .related>.rel{flex:0 0 300px;scroll-snap-align:start}
 @media(max-width:560px){.related>.rel{flex:0 0 82%}}
 </style>
-<style id="br-fix6dark">html.dark{--ink-soft:#c6c2dd;--ink-faint:#9b97b6;--grad:linear-gradient(135deg,#8b7dff 0%,#c66bff 48%,#ff7da6 100%)}</style>
+<style id="br-fix6dark">html.dark{--ink-soft:#d7d4ea;--ink-faint:#b4b0d0;--grad:linear-gradient(135deg,#8b7dff 0%,#c66bff 48%,#ff7da6 100%)}</style>
 <style id="br-fix6">
 /* #2 smaller hero price pill */
 .price{font-size:12.5px}
@@ -728,6 +728,14 @@ html.dark .react{background:color-mix(in srgb,var(--c) 18%,var(--surface))}
 .react:hover{background:color-mix(in srgb,var(--c) 26%,transparent);border-color:var(--c);transform:translateY(-2px);box-shadow:0 9px 24px color-mix(in srgb,var(--c) 34%,transparent)}
 html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 </style>
+<style id="br-fix9">
+.cmpcard{position:relative}
+.cmp-save{position:absolute;top:18px;left:20px;display:inline-flex;align-items:center;gap:7px;font-family:var(--body);font-size:12.5px;font-weight:700;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:7px 13px;cursor:pointer;transition:.18s;-webkit-tap-highlight-color:transparent}
+.cmp-save:hover{color:var(--accent);border-color:var(--accent-soft);transform:translateY(-1px)}
+.cmp-save:disabled{opacity:.6;cursor:default}
+.cmp-save svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:560px){.cmp-save{position:static;margin:0 0 12px}}
+</style>
 </head>
 <body>
 
@@ -780,7 +788,7 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 
   <div class="panel on" id="overview">
     <div class="shots reveal">
-      <div class="shots-head"><h3>Standout features</h3><span class="sct">Claude Code</span></div>
+      <div class="shots-head"><h3>Standout features</h3></div>
       <p class="shots-lead">Claude Code is built for autonomy &mdash; you give it a goal and it works through the steps, with as much or as little supervision as you want.</p>
       <div class="shotwrap">
         <button class="shot-nav prev" aria-label="Previous">&lsaquo;</button>
@@ -1044,6 +1052,7 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
 <div class="modal" id="cmpModal"><div class="modal-card cmpcard">
   <button class="modal-close" id="cmpClose" aria-label="Close">&times;</button>
   <h2>Head-to-head</h2>
+  <button class="cmp-save" id="cmpSave" type="button" aria-label="Save comparison image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 4 5-4M5 20h14"/></svg>Save image (HQ)</button>
   <div class="cmp-scroll" id="cmpGrid"></div>
   <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better. The top pick and the leader in each metric are highlighted.</p>
 </div></div>
@@ -1064,13 +1073,60 @@ html.dark .react{background:color-mix(in srgb,var(--c) 22%,transparent)}
       var rev=(t.link&&t.link!=='#')?'<a href="'+t.link+'"'+(/^https?:/i.test(t.link)?' target="_blank" rel="noopener"':'')+'>Review</a>':'';
       return '<div class="ccol'+(win?' ccol-win':'')+'">'+(win?'<span class="ccol-crown">Top pick</span>':'')+'<div class="ccol-hd"><span class="ccol-lg"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></span><span class="ccol-nm">'+cmpEsc(t.name)+'</span></div><div class="ccol-score">'+t.score.toFixed(1)+'<span class="ccol-sclbl">overall</span></div><div class="ccol-crits">'+crits+'</div><div class="ccol-meta"><div><span>Price</span><b>'+cmpEsc(t.price)+'</b></div><div><span>Type</span><b>'+cmpEsc(t.type)+'</b></div><div><span>Best for</span><b>'+cmpEsc(t.bestFor)+'</b></div></div><div class="ccol-cta">'+rev+'<a href="'+cmpSite(t)+'" target="_blank" rel="noopener">Visit</a></div></div>';
     }).join('')+'</div>';
-    modal.classList.add('on');
+    modal.classList.add('on');window.__brCmpLast=ts;
   };
   var modal=document.getElementById('cmpModal'),closeBtn=document.getElementById('cmpClose');
   function close(){if(modal)modal.classList.remove('on');}
   if(closeBtn)closeBtn.addEventListener('click',close);
   if(modal)modal.addEventListener('click',function(e){if(e.target===modal)close();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  function brLoadH2C(cb){if(window.html2canvas)return cb();var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';s.onload=function(){cb();};s.onerror=function(){alert('Could not load the image tool \u2014 please check your connection and try again.');};document.head.appendChild(s);}
+  function brCapNode(ts){
+    var COLW=212, fS="Fraunces,Georgia,serif", fB="'Hanken Grotesk',Arial,sans-serif";
+    var d=new Date(),mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var date=d.getDate()+' '+mo[d.getMonth()]+' '+d.getFullYear();
+    function col(t){
+      var crits='';
+      for(var j=0;j<6;j++){var v=t.s[j];
+        crits+='<div style="margin-bottom:9px;"><div style="display:flex;justify-content:space-between;font-family:'+fB+';font-size:11px;color:#5c5872;margin-bottom:3px;"><span>'+LB[j]+'</span><span style="font-weight:800;color:#181528;">'+v.toFixed(1)+'</span></div><div style="height:6px;border-radius:4px;background:#efedf6;overflow:hidden;"><div style="height:100%;width:'+(v*10)+'%;background:'+SCO[j]+';border-radius:4px;"></div></div></div>';}
+      return '<div style="flex:0 0 '+COLW+'px;width:'+COLW+'px;box-sizing:border-box;background:#fff;border:1px solid #ece9f5;border-radius:16px;padding:18px 16px;">'
+        +'<div style="display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;margin-bottom:13px;">'
+        +'<div style="position:relative;width:44px;height:44px;border-radius:12px;background:#f6f5fb;border:1px solid #ece9f5;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:'+fS+';font-weight:700;color:#6c5cff;font-size:18px;">'+((t.letter||t.name.charAt(0)))+'<img crossorigin="anonymous" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;" onerror="this.style.display=\'none\'"></div>'
+        +'<div style="font-family:'+fS+';font-weight:600;font-size:16px;color:#181528;line-height:1.2;">'+cmpEsc(t.name)+'</div>'
+        +'<div style="font-family:'+fS+';font-weight:700;font-size:34px;color:#6c5cff;line-height:1;">'+t.score.toFixed(1)+'</div>'
+        +'<div style="font-family:'+fB+';font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#9b97b6;">overall</div></div>'
+        +crits
+        +'<div style="border-top:1px solid #efedf6;margin-top:6px;padding-top:10px;font-family:'+fB+';font-size:11.5px;color:#5c5872;line-height:1.4;"><b style="color:#181528;">Price</b> &middot; '+cmpEsc(t.price)+'</div></div>';
+    }
+    var W=ts.length, cardW=W*COLW+(W-1)*14+52;
+    var wrap=document.createElement('div');
+    wrap.style.cssText='position:fixed;left:-99999px;top:0;z-index:-1;';
+    var wm='';for(var r=0;r<10;r++){wm+='<div>blipradar.com &nbsp; blipradar.com &nbsp; blipradar.com &nbsp; blipradar.com</div>';}
+    wrap.innerHTML='<div style="position:relative;overflow:hidden;background:#fff;padding:26px 26px 22px;border-radius:20px;width:'+cardW+'px;box-sizing:border-box;font-family:'+fB+';">'
+      +'<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;position:relative;z-index:1;">'
+        +'<div style="font-family:'+fS+';font-size:27px;font-weight:600;color:#181528;">blip<span style="color:#6c5cff;">radar</span></div>'
+        +'<div style="display:inline-flex;align-items:center;gap:6px;background:#6c5cff;color:#fff;font-size:12px;font-weight:800;padding:6px 13px;border-radius:100px;">&#9733; blipradar.com</div></div>'
+      +'<div style="font-size:12.5px;color:#8b88a0;margin-bottom:18px;position:relative;z-index:1;">Head-to-head &middot; scored on one public six-criteria rubric &middot; '+date+'</div>'
+      +'<div style="display:flex;gap:14px;align-items:stretch;position:relative;z-index:1;">'+ts.map(col).join('')+'</div>'
+      +'<div style="margin-top:16px;font-size:11.5px;color:#9b97b6;position:relative;z-index:1;">Higher is better. Full reviews and live rankings at <b style="color:#6c5cff;">blipradar.com</b></div>'
+      +'<div style="position:absolute;inset:0;pointer-events:none;z-index:5;opacity:.05;transform:rotate(-24deg) scale(1.5);transform-origin:center;font-size:20px;font-weight:800;color:#6c5cff;line-height:3.1;white-space:nowrap;text-align:center;">'+wm+'</div>'
+      +'</div>';
+    return wrap;
+  }
+  function brSaveImg(){
+    var ts=window.__brCmpLast; if(!ts||!ts.length)return;
+    var btn=document.getElementById('cmpSave'),old=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Rendering\u2026';}
+    brLoadH2C(function(){
+      var node=brCapNode(ts); document.body.appendChild(node);
+      window.html2canvas(node.firstChild,{scale:2,backgroundColor:'#ffffff',useCORS:true,logging:false}).then(function(cv){
+        node.remove();
+        function done(){if(btn){btn.disabled=false;btn.textContent=old;}}
+        try{cv.toBlob(function(b){if(!b){var u=cv.toDataURL('image/png');var a=document.createElement('a');a.href=u;a.download='blipradar-comparison.png';document.body.appendChild(a);a.click();a.remove();done();return;}var u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='blipradar-comparison.png';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},3000);done();},'image/png');}catch(e){var u=cv.toDataURL('image/png');window.open(u,'_blank');done();}
+      }).catch(function(){node.remove();if(btn){btn.disabled=false;btn.textContent=old;}});
+    });
+  }
+  var _sv=document.getElementById('cmpSave'); if(_sv)_sv.addEventListener('click',brSaveImg);
 })();
 </script>
 <script>var CMP_TOOLS=[{"rank": 1, "name": "Cursor", "score": 8.9, "mom": 9.5, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $20/mo", "domain": "cursor.com", "letter": "C", "link": "cursor.html", "desc": "The most polished agentic IDE and daily-driver favorite.", "s": [9, 8, 9.5, 8.5, 8.5, 9.5], "bestFor": "developers who want the most polished all-round AI editor."}, {"rank": 2, "name": "Claude Code", "score": 8.8, "mom": 9.2, "type": "Terminal agent", "cats": ["terminal", "agent"], "price": "$20–200/mo", "domain": "claude.ai", "letter": "C", "link": "claude-code.html", "desc": "Anthropic's terminal agent — strongest on deep, multi-step reasoning.", "s": [9.7, 8, 8, 8.5, 8, 9.2], "bestFor": "hard, multi-step work driven from the terminal."}, {"rank": 3, "name": "GitHub Copilot", "score": 8.3, "mom": 7, "type": "IDE", "cats": ["ide", "autocomplete"], "price": "Free · Pro $10/mo", "domain": "github.com", "letter": "G", "link": "github-copilot.html", "desc": "The ubiquitous assistant, now agentic and woven deep into GitHub.", "s": [8, 8.5, 9, 8.5, 9.5, 7], "bestFor": "teams already living in GitHub and VS Code."}, {"rank": 4, "name": "OpenAI Codex", "score": 8.1, "mom": 8.5, "type": "Cloud agent", "cats": ["agent", "terminal"], "price": "$20–200/mo", "domain": "openai.com", "letter": "O", "link": "openai-codex.html", "desc": "OpenAI's cloud + CLI agent that ships whole tasks and PRs autonomously.", "s": [8.8, 7.5, 7, 8, 8, 8.5], "bestFor": "handing whole tasks to a cloud agent."}, {"rank": 5, "name": "Windsurf", "score": 8, "mom": 7, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $15/mo", "domain": "windsurf.com", "letter": "W", "link": "#", "desc": "A clean, flow-focused AI IDE (formerly Codeium) with strong multi-file edits.", "s": [8.3, 8, 8.8, 8, 7.5, 7], "bestFor": "a calm, flow-focused editor experience."}, {"rank": 6, "name": "OpenCode", "score": 8, "mom": 9.5, "type": "Open-source CLI", "cats": ["oss", "terminal", "agent"], "price": "Open source · BYO key", "domain": "opencode.ai", "letter": "O", "link": "#", "desc": "Provider-agnostic open-source terminal agent — the runaway community leader.", "s": [7.6, 9.5, 6, 7, 8.5, 9.5], "bestFor": "power users who want any model and zero lock-in."}, {"rank": 7, "name": "Zed", "score": 7.9, "mom": 7.5, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $20/mo", "domain": "zed.dev", "letter": "Z", "link": "#", "desc": "Blazing-fast Rust editor with collaborative AI built in.", "s": [7.5, 9, 8.5, 8.5, 6.5, 7.5], "bestFor": "speed lovers who want a fast, native editor."}, {"rank": 8, "name": "Google Antigravity", "score": 7.8, "mom": 9, "type": "Agentic IDE", "cats": ["ide", "agent"], "price": "Free in preview", "domain": "antigravity.google", "letter": "A", "link": "#", "desc": "Gemini-powered agentic IDE that runs tasks across editor and browser.", "s": [8, 8, 7.5, 6.5, 6.5, 9], "bestFor": "trying Google's agent-first IDE early."}, {"rank": 9, "name": "Cline", "score": 7.8, "mom": 7.5, "type": "Open-source IDE agent", "cats": ["oss", "ide", "agent"], "price": "Open source · BYO key", "domain": "cline.bot", "letter": "C", "link": "#", "desc": "Open-source VS Code agent with approval on every step — the OSS pioneer.", "s": [7.5, 9, 7.5, 7.5, 8, 7.5], "bestFor": "open-source control with human approval on every step."}, {"rank": 10, "name": "JetBrains Junie", "score": 7.8, "mom": 7, "type": "IDE", "cats": ["ide", "agent"], "price": "In JetBrains AI plans", "domain": "jetbrains.com", "letter": "J", "link": "#", "desc": "JetBrains' agent, deeply native to IntelliJ, PyCharm and the rest.", "s": [7.8, 7.5, 8, 8, 8.5, 7], "bestFor": "JetBrains IDE loyalists."}, {"rank": 11, "name": "Kilo Code", "score": 7.8, "mom": 8, "type": "Open-source agent", "cats": ["oss", "agent", "ide"], "price": "Open source · BYO key", "domain": "kilocode.ai", "letter": "K", "link": "#", "desc": "Open-source platform agent: 500+ models, parallel agents, one-click deploy.", "s": [7.5, 9, 7.5, 7, 7.5, 8], "bestFor": "an all-in-one open-source agent platform."}, {"rank": 12, "name": "Devin", "score": 7.7, "mom": 8, "type": "Cloud agent", "cats": ["agent"], "price": "From $20/mo", "domain": "devin.ai", "letter": "D", "link": "#", "desc": "Cognition's autonomous agent that takes whole tickets end-to-end.", "s": [8.2, 6.5, 8.5, 7, 7, 8], "bestFor": "handing off entire tickets autonomously."}, {"rank": 13, "name": "Aider", "score": 7.7, "mom": 7, "type": "Open-source CLI", "cats": ["oss", "terminal"], "price": "Open source · BYO key", "domain": "aider.chat", "letter": "A", "link": "#", "desc": "Git-native open-source pair programmer for the terminal.", "s": [7.6, 9.5, 7, 8, 7.5, 7], "bestFor": "git-native terminal pair programming."}, {"rank": 14, "name": "CodeRabbit", "score": 7.7, "mom": 7.5, "type": "Code review", "cats": ["review"], "price": "Free · Pro $24/mo", "domain": "coderabbit.ai", "letter": "C", "link": "#", "desc": "AI pull-request reviewer that comments like a thorough senior dev.", "s": [7.6, 7.5, 8.5, 8, 7.5, 7.5], "bestFor": "automated, thorough pull-request reviews."}, {"rank": 15, "name": "Replit Agent", "score": 7.7, "mom": 7.5, "type": "Cloud agent", "cats": ["agent", "ide"], "price": "Free · Core $20/mo", "domain": "replit.com", "letter": "R", "link": "#", "desc": "Cloud IDE agent that builds and deploys a working app from a prompt.", "s": [7.5, 7.5, 9, 7, 7.5, 7.5], "bestFor": "building and shipping straight from the browser."}, {"rank": 16, "name": "Amazon Q Developer", "score": 7.6, "mom": 6.5, "type": "IDE", "cats": ["ide"], "price": "Free · Pro $19/mo", "domain": "aws.amazon.com", "letter": "Q", "link": "#", "desc": "AWS-native assistant, strong on cloud workflows and security scanning.", "s": [7.5, 8.5, 7.5, 8, 8, 6.5], "bestFor": "AWS-heavy teams."}, {"rank": 17, "name": "OpenHands", "score": 7.6, "mom": 7.5, "type": "Open-source agent", "cats": ["oss", "agent"], "price": "Open source · cloud option", "domain": "all-hands.dev", "letter": "O", "link": "#", "desc": "Autonomous open-source agent that resolves real GitHub issues.", "s": [7.8, 8.5, 6.5, 7, 7.5, 7.5], "bestFor": "autonomous issue-solving at scale."}, {"rank": 18, "name": "Augment Code", "score": 7.5, "mom": 7, "type": "IDE", "cats": ["ide", "agent"], "price": "From $50/mo", "domain": "augmentcode.com", "letter": "A", "link": "#", "desc": "Enterprise agent tuned for very large, complex codebases.", "s": [8, 6.5, 7.5, 8, 7, 7], "bestFor": "very large, complex enterprise codebases."}, {"rank": 19, "name": "Trae", "score": 7.5, "mom": 7, "type": "IDE", "cats": ["ide"], "price": "Free", "domain": "trae.ai", "letter": "T", "link": "#", "desc": "ByteDance's free AI IDE with frontier models bundled in.", "s": [7.3, 9, 8, 6.5, 6.5, 7], "bestFor": "a genuinely capable free IDE."}, {"rank": 20, "name": "Gemini Code Assist", "score": 7.4, "mom": 6, "type": "IDE", "cats": ["ide", "autocomplete"], "price": "Free tier ending · paid", "domain": "cloud.google.com", "letter": "G", "link": "#", "desc": "Google's IDE assistant across VS Code and JetBrains.", "s": [7.8, 7, 8, 7.5, 7.5, 6], "bestFor": "developers on the Google stack."}, {"rank": 21, "name": "Qodo", "score": 7.4, "mom": 7, "type": "Code review", "cats": ["review"], "price": "Free · Teams $19/mo", "domain": "qodo.ai", "letter": "Q", "link": "#", "desc": "Code-integrity suite: AI test generation and review (formerly CodiumAI).", "s": [7.4, 7.5, 8, 7.5, 7, 7], "bestFor": "test generation and code integrity."}, {"rank": 22, "name": "Goose", "score": 7.4, "mom": 6.5, "type": "Open-source agent", "cats": ["oss", "agent"], "price": "Open source · BYO key", "domain": "github.com", "letter": "G", "link": "#", "desc": "Foundation-backed open-source autonomous agent (by Block).", "s": [7.3, 9, 7, 7, 7.5, 6.5], "bestFor": "a neutral, foundation-backed agent."}, {"rank": 23, "name": "Continue", "score": 7.3, "mom": 6.5, "type": "Open-source assistant", "cats": ["oss", "autocomplete", "ide"], "price": "Open source · BYO key", "domain": "continue.dev", "letter": "C", "link": "#", "desc": "Privacy-first open-source assistant — bring any model you like.", "s": [7, 9.5, 6.5, 7.5, 7.5, 6.5], "bestFor": "privacy-first, bring-your-own-model setups."}, {"rank": 24, "name": "Greptile", "score": 7.3, "mom": 7, "type": "Code review", "cats": ["review"], "price": "From $30/mo", "domain": "greptile.com", "letter": "G", "link": "#", "desc": "AI code review that reasons over your whole repository.", "s": [7.5, 7, 8, 7.5, 6.5, 7], "bestFor": "repo-wide AI code review."}, {"rank": 25, "name": "Tabnine", "score": 7.2, "mom": 6, "type": "Autocomplete", "cats": ["autocomplete"], "price": "Free · Pro $9/mo", "domain": "tabnine.com", "letter": "T", "link": "#", "desc": "Privacy-first autocomplete built for regulated, security-conscious teams.", "s": [7, 7, 8, 8.5, 7.5, 6], "bestFor": "regulated teams that need strict privacy."}];var CMP_SELF="Claude Code";
