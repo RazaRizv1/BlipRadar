@@ -44,6 +44,61 @@
    "slug": "note-taking",
    "label": "Note-taking",
    "live": true
+  },
+  {
+   "slug": "motion-graphics",
+   "label": "Motion graphics",
+   "live": true
+  },
+  {
+   "slug": "infographics",
+   "label": "Infographics",
+   "live": true
+  },
+  {
+   "slug": "chatbots",
+   "label": "Chatbots",
+   "live": true
+  },
+  {
+   "slug": "meeting-notes",
+   "label": "Meeting notes",
+   "live": true
+  },
+  {
+   "slug": "data-analysis",
+   "label": "Data analysis",
+   "live": true
+  },
+  {
+   "slug": "app-builders",
+   "label": "App & website builders",
+   "live": true
+  },
+  {
+   "slug": "ai-agents",
+   "label": "AI agents & automation",
+   "live": true
+  },
+  {
+   "slug": "marketing-copy",
+   "label": "Marketing copy",
+   "live": true
+  },
+  {
+   "slug": "seo",
+   "label": "SEO",
+   "live": true
+  },
+  {
+   "slug": "social-media",
+   "label": "Social media",
+   "live": true
+  },
+  {
+   "slug": "translation",
+   "label": "Translation",
+   "live": true
   }
  ],
  "payments": {
@@ -4965,6 +5020,2998 @@
    "url": "https://amplenote.com",
    "affiliate": false,
    "added": "2026-06-09T08:30:00Z",
+   "rank": 10
+  }
+ ],
+ "motion-graphics": [
+  {
+   "name": "Runway",
+   "score": 8.7,
+   "mom": 8.7,
+   "type": "Motion & VFX",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $15/mo",
+   "domain": "runwayml.com",
+   "letter": "R",
+   "link": "#",
+   "desc": "The reference AI motion tool — Gen-4.5 text/image-to-video with motion brush, camera control and a web editor.",
+   "bestFor": "granular creative control over motion.",
+   "s": [
+    8.9,
+    8.4,
+    8.7,
+    8.5,
+    8.6,
+    8.7
+   ],
+   "url": "https://runwayml.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Kling",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "Image-to-video",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $6/mo",
+   "domain": "klingai.com",
+   "letter": "K",
+   "link": "#",
+   "desc": "Photoreal cinematic motion with multi-shot storyboards and strong single-subject motion transfer.",
+   "bestFor": "cinematic, lifelike animated clips.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://klingai.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Pika",
+   "score": 8.1,
+   "mom": 8.1,
+   "type": "Animation",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "pika.art",
+   "letter": "P",
+   "link": "#",
+   "desc": "Fast, playful image-to-video with effects like Pikaframes and object swaps.",
+   "bestFor": "quick creative animations and effects.",
+   "s": [
+    8.3,
+    7.8,
+    8.1,
+    7.9,
+    8.0,
+    8.1
+   ],
+   "url": "https://pika.art",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Luma Dream Machine",
+   "score": 7.9,
+   "mom": 7.9,
+   "type": "Video generator",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "lumalabs.ai",
+   "letter": "L",
+   "link": "#",
+   "desc": "Ray-based model producing smooth, natural motion from text or stills.",
+   "bestFor": "natural motion from a single image.",
+   "s": [
+    8.1,
+    7.6,
+    7.9,
+    7.7,
+    7.8,
+    7.9
+   ],
+   "url": "https://lumalabs.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Hailuo",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "Video generator",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "hailuoai.video",
+   "letter": "H",
+   "link": "#",
+   "desc": "MiniMax's model known for fluid, cinematic motion and generous iteration.",
+   "bestFor": "cinematic quality on a budget.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://hailuoai.video",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Adobe Firefly",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Generative video",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Incl. with Creative Cloud",
+   "domain": "adobe.com",
+   "letter": "A",
+   "link": "#",
+   "desc": "Commercially-safe generative video built into the Adobe ecosystem.",
+   "bestFor": "brand-safe motion inside Creative Cloud.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://adobe.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Kaiber",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Stylized motion",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $5/mo",
+   "domain": "kaiber.ai",
+   "letter": "K",
+   "link": "#",
+   "desc": "Stylized, music-reactive animation popular for social and music videos.",
+   "bestFor": "bold, stylized animated visuals.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://kaiber.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Wonder Dynamics",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Character VFX",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "From $20/mo",
+   "domain": "wonderdynamics.com",
+   "letter": "W",
+   "link": "#",
+   "desc": "Auto-animates and composites CG characters into live footage — studio-grade VFX.",
+   "bestFor": "character animation and VFX at scale.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://wonderdynamics.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Genmo",
+   "score": 7.2,
+   "mom": 7.2,
+   "type": "Video generator",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "genmo.ai",
+   "letter": "G",
+   "link": "#",
+   "desc": "Open, fast generative video for quick motion ideas and prototypes.",
+   "bestFor": "rapid motion prototyping.",
+   "s": [
+    7.4,
+    6.9,
+    7.2,
+    7.0,
+    7.1,
+    7.2
+   ],
+   "url": "https://genmo.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Haiper",
+   "score": 7.1,
+   "mom": 7.1,
+   "type": "Video generator",
+   "cats": [
+    "motion-graphics"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "haiper.ai",
+   "letter": "H",
+   "link": "#",
+   "desc": "Accessible text/image-to-video with steady quality for short clips.",
+   "bestFor": "short social clips, easy to start.",
+   "s": [
+    7.3,
+    6.8,
+    7.1,
+    6.9,
+    7.0,
+    7.1
+   ],
+   "url": "https://haiper.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "infographics": [
+  {
+   "name": "Piktochart",
+   "score": 8.4,
+   "mom": 8.4,
+   "type": "Infographic maker",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $14/mo",
+   "domain": "piktochart.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "Turns prompts, URLs or documents into structured infographics in seconds.",
+   "bestFor": "fast, document-to-infographic workflows.",
+   "s": [
+    8.6,
+    8.1,
+    8.4,
+    8.2,
+    8.3,
+    8.4
+   ],
+   "url": "https://piktochart.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Venngage",
+   "score": 8.2,
+   "mom": 8.2,
+   "type": "Infographic maker",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $19/mo",
+   "domain": "venngage.com",
+   "letter": "V",
+   "link": "#",
+   "desc": "Professional, brand-consistent infographics with strong customization and WCAG checks.",
+   "bestFor": "polished, on-brand business infographics.",
+   "s": [
+    8.4,
+    7.9,
+    8.2,
+    8.0,
+    8.1,
+    8.2
+   ],
+   "url": "https://venngage.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Visme",
+   "score": 8.0,
+   "mom": 8.0,
+   "type": "Visual storytelling",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $13/mo",
+   "domain": "visme.co",
+   "letter": "V",
+   "link": "#",
+   "desc": "Multi-format platform for interactive, animated infographics and reports.",
+   "bestFor": "interactive, web-embedded visuals.",
+   "s": [
+    8.2,
+    7.7,
+    8.0,
+    7.8,
+    7.9,
+    8.0
+   ],
+   "url": "https://visme.co",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Canva",
+   "score": 7.9,
+   "mom": 7.9,
+   "type": "Design suite",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $13/mo",
+   "domain": "canva.com",
+   "letter": "C",
+   "link": "#",
+   "desc": "Huge template library with AI design assist for quick, good-looking infographics.",
+   "bestFor": "quick infographics with some design sense.",
+   "s": [
+    8.1,
+    7.6,
+    7.9,
+    7.7,
+    7.8,
+    7.9
+   ],
+   "url": "https://canva.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Napkin AI",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "Text-to-visual",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "napkin.ai",
+   "letter": "N",
+   "link": "#",
+   "desc": "Paste text and get clean diagrams and visuals — no prompts, minimal effort.",
+   "bestFor": "the simplest text-to-visual workflow.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://napkin.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Infogram",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Data visualization",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $19/mo",
+   "domain": "infogram.com",
+   "letter": "I",
+   "link": "#",
+   "desc": "Data-heavy infographics with robust charts and live data integration.",
+   "bestFor": "chart- and data-rich infographics.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://infogram.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Beautiful.ai",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Design automation",
+   "cats": [
+    "infographics"
+   ],
+   "price": "From $12/mo",
+   "domain": "beautiful.ai",
+   "letter": "B",
+   "link": "#",
+   "desc": "Auto-formatting engine that keeps infographics and decks on-brand.",
+   "bestFor": "brand-compliant, auto-laid-out visuals.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://beautiful.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Adobe Express",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Design suite",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "adobe.com",
+   "letter": "A",
+   "link": "#",
+   "desc": "Generative-AI design with commercial safety inside the Adobe ecosystem.",
+   "bestFor": "brand-safe infographics in Adobe.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://adobe.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Snappa",
+   "score": 7.1,
+   "mom": 7.1,
+   "type": "Graphic maker",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "snappa.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Simple drag-and-drop graphics for non-designers and social posts.",
+   "bestFor": "fast graphics without design skills.",
+   "s": [
+    7.3,
+    6.8,
+    7.1,
+    6.9,
+    7.0,
+    7.1
+   ],
+   "url": "https://snappa.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "DesignCap",
+   "score": 6.9,
+   "mom": 6.9,
+   "type": "Infographic maker",
+   "cats": [
+    "infographics"
+   ],
+   "price": "Free tier · from $5/mo",
+   "domain": "designcap.com",
+   "letter": "D",
+   "link": "#",
+   "desc": "Budget infographic and poster maker with ready templates.",
+   "bestFor": "low-cost, template-driven infographics.",
+   "s": [
+    7.1,
+    6.6,
+    6.9,
+    6.7,
+    6.8,
+    6.9
+   ],
+   "url": "https://designcap.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "chatbots": [
+  {
+   "name": "ChatGPT",
+   "score": 9.0,
+   "mom": 9.0,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · Plus $20/mo",
+   "domain": "chatgpt.com",
+   "letter": "C",
+   "link": "#",
+   "desc": "The most capable all-round assistant — reasoning, voice, image, code and agent mode.",
+   "bestFor": "the broadest, most capable everyday assistant.",
+   "s": [
+    9.2,
+    8.7,
+    9.0,
+    8.8,
+    8.9,
+    9.0
+   ],
+   "url": "https://chatgpt.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Claude",
+   "score": 8.8,
+   "mom": 8.8,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · Pro $20/mo",
+   "domain": "claude.ai",
+   "letter": "C",
+   "link": "#",
+   "desc": "Anthropic's assistant, strongest on long-context reasoning, writing and agentic coding.",
+   "bestFor": "long-form reasoning and writing.",
+   "s": [
+    9.0,
+    8.5,
+    8.8,
+    8.6,
+    8.7,
+    8.8
+   ],
+   "url": "https://claude.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Gemini",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · from $20/mo",
+   "domain": "gemini.google.com",
+   "letter": "G",
+   "link": "#",
+   "desc": "Google's assistant with deep Workspace integration and strong multimodal skills.",
+   "bestFor": "Google-ecosystem and multimodal work.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://gemini.google.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Microsoft Copilot",
+   "score": 8.1,
+   "mom": 8.1,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · from $20/mo",
+   "domain": "copilot.microsoft.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Assistant woven through Windows and Microsoft 365 with action-taking.",
+   "bestFor": "Microsoft 365 and Windows users.",
+   "s": [
+    8.3,
+    7.8,
+    8.1,
+    7.9,
+    8.0,
+    8.1
+   ],
+   "url": "https://copilot.microsoft.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Perplexity",
+   "score": 8.0,
+   "mom": 8.0,
+   "type": "Answer engine",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · Pro $20/mo",
+   "domain": "perplexity.ai",
+   "letter": "P",
+   "link": "#",
+   "desc": "Conversational answer engine with live web citations.",
+   "bestFor": "cited, up-to-date answers.",
+   "s": [
+    8.2,
+    7.7,
+    8.0,
+    7.8,
+    7.9,
+    8.0
+   ],
+   "url": "https://perplexity.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Grok",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · from $30/mo",
+   "domain": "grok.com",
+   "letter": "G",
+   "link": "#",
+   "desc": "xAI's assistant with real-time X data and a candid style.",
+   "bestFor": "real-time, less-filtered answers.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://grok.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "DeepSeek",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · low-cost API",
+   "domain": "deepseek.com",
+   "letter": "D",
+   "link": "#",
+   "desc": "Strong open-weight reasoning models at a very low price.",
+   "bestFor": "capable reasoning on a budget.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://deepseek.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Meta AI",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free",
+   "domain": "meta.ai",
+   "letter": "M",
+   "link": "#",
+   "desc": "Free assistant built into WhatsApp, Instagram and Messenger.",
+   "bestFor": "casual help inside Meta apps.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://meta.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Le Chat",
+   "score": 7.3,
+   "mom": 7.3,
+   "type": "AI assistant",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · paid plans",
+   "domain": "mistral.ai",
+   "letter": "L",
+   "link": "#",
+   "desc": "Mistral's fast assistant with strong European-language support.",
+   "bestFor": "fast, multilingual chat.",
+   "s": [
+    7.5,
+    7.0,
+    7.3,
+    7.1,
+    7.2,
+    7.3
+   ],
+   "url": "https://mistral.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Poe",
+   "score": 7.1,
+   "mom": 7.1,
+   "type": "Multi-model hub",
+   "cats": [
+    "chatbots"
+   ],
+   "price": "Free · from $20/mo",
+   "domain": "poe.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "One app to chat across many models and custom bots.",
+   "bestFor": "comparing many models in one place.",
+   "s": [
+    7.3,
+    6.8,
+    7.1,
+    6.9,
+    7.0,
+    7.1
+   ],
+   "url": "https://poe.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "meeting-notes": [
+  {
+   "name": "Granola",
+   "score": 8.6,
+   "mom": 8.6,
+   "type": "Bot-free notes",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $18/mo",
+   "domain": "granola.ai",
+   "letter": "G",
+   "link": "#",
+   "desc": "Bot-free notepad that captures device audio and enhances your own notes.",
+   "bestFor": "private notes with no bot in the call.",
+   "s": [
+    8.8,
+    8.3,
+    8.6,
+    8.4,
+    8.5,
+    8.6
+   ],
+   "url": "https://granola.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Fathom",
+   "score": 8.4,
+   "mom": 8.4,
+   "type": "Meeting recorder",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free · from $19/mo",
+   "domain": "fathom.video",
+   "letter": "F",
+   "link": "#",
+   "desc": "Generous free recording, fast summaries and clean action items.",
+   "bestFor": "the best free meeting note-taker.",
+   "s": [
+    8.6,
+    8.1,
+    8.4,
+    8.2,
+    8.3,
+    8.4
+   ],
+   "url": "https://fathom.video",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Fireflies",
+   "score": 8.2,
+   "mom": 8.2,
+   "type": "Meeting assistant",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "fireflies.ai",
+   "letter": "F",
+   "link": "#",
+   "desc": "Established assistant with deep CRM sync and analytics.",
+   "bestFor": "sales teams living in a CRM.",
+   "s": [
+    8.4,
+    7.9,
+    8.2,
+    8.0,
+    8.1,
+    8.2
+   ],
+   "url": "https://fireflies.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Otter",
+   "score": 8.0,
+   "mom": 8.0,
+   "type": "Transcription",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $17/mo",
+   "domain": "otter.ai",
+   "letter": "O",
+   "link": "#",
+   "desc": "Real-time transcription with searchable team archives and live chat.",
+   "bestFor": "live captions and searchable archives.",
+   "s": [
+    8.2,
+    7.7,
+    8.0,
+    7.8,
+    7.9,
+    8.0
+   ],
+   "url": "https://otter.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "tl;dv",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "Meeting recorder",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $18/mo",
+   "domain": "tldv.io",
+   "letter": "T",
+   "link": "#",
+   "desc": "Affordable recording with multi-meeting AI and CRM playbooks.",
+   "bestFor": "budget-friendly recording with AI recaps.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://tldv.io",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Fellow",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "Meeting management",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $7/mo",
+   "domain": "fellow.app",
+   "letter": "F",
+   "link": "#",
+   "desc": "Full meeting lifecycle — agendas, notes and action tracking.",
+   "bestFor": "improving overall meeting culture.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://fellow.app",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Avoma",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Conversation intelligence",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "From $19/mo",
+   "domain": "avoma.com",
+   "letter": "A",
+   "link": "#",
+   "desc": "Meeting assistant plus conversation and revenue intelligence.",
+   "bestFor": "sales coaching and deal insights.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://avoma.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Read AI",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Meeting analytics",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $15/mo",
+   "domain": "read.ai",
+   "letter": "R",
+   "link": "#",
+   "desc": "Summaries plus engagement and sentiment analytics for meetings.",
+   "bestFor": "meeting-engagement metrics.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://read.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Krisp",
+   "score": 7.3,
+   "mom": 7.3,
+   "type": "Notes + noise cancel",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $8/mo",
+   "domain": "krisp.ai",
+   "letter": "K",
+   "link": "#",
+   "desc": "Bot-free notes bundled with best-in-class noise cancellation.",
+   "bestFor": "clean audio plus quiet note-taking.",
+   "s": [
+    7.5,
+    7.0,
+    7.3,
+    7.1,
+    7.2,
+    7.3
+   ],
+   "url": "https://krisp.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Sembly",
+   "score": 7.0,
+   "mom": 7.0,
+   "type": "Meeting assistant",
+   "cats": [
+    "meeting-notes"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "sembly.ai",
+   "letter": "S",
+   "link": "#",
+   "desc": "Multilingual transcription with tasks and team workspaces.",
+   "bestFor": "multilingual meetings and tasks.",
+   "s": [
+    7.2,
+    6.7,
+    7.0,
+    6.8,
+    6.9,
+    7.0
+   ],
+   "url": "https://sembly.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "data-analysis": [
+  {
+   "name": "Julius",
+   "score": 8.6,
+   "mom": 8.6,
+   "type": "Chat analyst",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free tier · from $29/mo",
+   "domain": "julius.ai",
+   "letter": "J",
+   "link": "#",
+   "desc": "Upload a CSV and ask in plain English — runs real Python, returns charts and answers.",
+   "bestFor": "ad-hoc analysis on files, code-backed.",
+   "s": [
+    8.8,
+    8.3,
+    8.6,
+    8.4,
+    8.5,
+    8.6
+   ],
+   "url": "https://julius.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "ChatGPT",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "Chat analyst",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free · Plus $20/mo",
+   "domain": "chatgpt.com",
+   "letter": "C",
+   "link": "#",
+   "desc": "Advanced Data Analysis executes Python on your files for versatile analysis.",
+   "bestFor": "versatile, file-based exploration.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://chatgpt.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Hex",
+   "score": 8.3,
+   "mom": 8.3,
+   "type": "Notebook workspace",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "hex.tech",
+   "letter": "H",
+   "link": "#",
+   "desc": "Schema-aware AI plus collaborative SQL/Python notebooks for data teams.",
+   "bestFor": "repeatable team data workflows.",
+   "s": [
+    8.5,
+    8.0,
+    8.3,
+    8.1,
+    8.2,
+    8.3
+   ],
+   "url": "https://hex.tech",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Claude",
+   "score": 8.1,
+   "mom": 8.1,
+   "type": "Chat analyst",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free · Pro $20/mo",
+   "domain": "claude.ai",
+   "letter": "C",
+   "link": "#",
+   "desc": "Strong narrative interpretation and reasoning over mid-sized datasets.",
+   "bestFor": "explaining and framing data.",
+   "s": [
+    8.3,
+    7.8,
+    8.1,
+    7.9,
+    8.0,
+    8.1
+   ],
+   "url": "https://claude.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "ThoughtSpot",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "Search BI",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Enterprise pricing",
+   "domain": "thoughtspot.com",
+   "letter": "T",
+   "link": "#",
+   "desc": "Natural-language search analytics over governed enterprise data.",
+   "bestFor": "self-service BI search at scale.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://thoughtspot.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Tableau Pulse",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "BI copilot",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Incl. with Tableau",
+   "domain": "tableau.com",
+   "letter": "T",
+   "link": "#",
+   "desc": "AI-driven metrics, insights and alerts on top of Tableau.",
+   "bestFor": "automated insights for BI teams.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://tableau.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Power BI Copilot",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "BI copilot",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Incl. with Power BI",
+   "domain": "powerbi.microsoft.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "AI assistant inside Power BI for reports, DAX and summaries.",
+   "bestFor": "Microsoft-stack reporting.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://powerbi.microsoft.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Deepnote",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Notebook workspace",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "deepnote.com",
+   "letter": "D",
+   "link": "#",
+   "desc": "Collaborative AI notebooks with SQL, Python and live data.",
+   "bestFor": "collaborative analyst notebooks.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://deepnote.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Rows",
+   "score": 7.2,
+   "mom": 7.2,
+   "type": "AI spreadsheet",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free tier · from $15/mo",
+   "domain": "rows.com",
+   "letter": "R",
+   "link": "#",
+   "desc": "Spreadsheet with built-in AI and live data connectors.",
+   "bestFor": "spreadsheet-first analysis.",
+   "s": [
+    7.4,
+    6.9,
+    7.2,
+    7.0,
+    7.1,
+    7.2
+   ],
+   "url": "https://rows.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Polymer",
+   "score": 7.0,
+   "mom": 7.0,
+   "type": "Auto dashboards",
+   "cats": [
+    "data-analysis"
+   ],
+   "price": "Free tier · from $25/mo",
+   "domain": "polymersearch.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "Turns spreadsheets into interactive dashboards automatically.",
+   "bestFor": "instant dashboards from a sheet.",
+   "s": [
+    7.2,
+    6.7,
+    7.0,
+    6.8,
+    6.9,
+    7.0
+   ],
+   "url": "https://polymersearch.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "app-builders": [
+  {
+   "name": "Lovable",
+   "score": 8.8,
+   "mom": 8.8,
+   "type": "Full-stack builder",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $25/mo",
+   "domain": "lovable.dev",
+   "letter": "L",
+   "link": "#",
+   "desc": "Prompt-to-product builder that ships polished full-stack apps; best default for non-devs.",
+   "bestFor": "real products from a prompt, no code.",
+   "s": [
+    9.0,
+    8.5,
+    8.8,
+    8.6,
+    8.7,
+    8.8
+   ],
+   "url": "https://lovable.dev",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Bolt",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "Prototyping",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $20/mo",
+   "domain": "bolt.new",
+   "letter": "B",
+   "link": "#",
+   "desc": "Browser-based full-stack prototyping that's fast and multi-framework.",
+   "bestFor": "rapid throwaway prototypes.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://bolt.new",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "v0",
+   "score": 8.3,
+   "mom": 8.3,
+   "type": "UI generation",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $20/mo",
+   "domain": "v0.app",
+   "letter": "V",
+   "link": "#",
+   "desc": "Vercel's tool for clean React/Next.js UI you paste into your codebase.",
+   "bestFor": "UI components for Vercel teams.",
+   "s": [
+    8.5,
+    8.0,
+    8.3,
+    8.1,
+    8.2,
+    8.3
+   ],
+   "url": "https://v0.app",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Replit",
+   "score": 8.1,
+   "mom": 8.1,
+   "type": "Agentic IDE",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $20/mo",
+   "domain": "replit.com",
+   "letter": "R",
+   "link": "#",
+   "desc": "Cloud IDE with an autonomous Agent plus database, hosting and deploy.",
+   "bestFor": "everything in one place, learn-friendly.",
+   "s": [
+    8.3,
+    7.8,
+    8.1,
+    7.9,
+    8.0,
+    8.1
+   ],
+   "url": "https://replit.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Base44",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "All-in-one builder",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "base44.com",
+   "letter": "B",
+   "link": "#",
+   "desc": "Full-stack apps with database, auth, email and SMS built in.",
+   "bestFor": "integrated apps with no external setup.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://base44.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Bubble",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "No-code platform",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $32/mo",
+   "domain": "bubble.io",
+   "letter": "B",
+   "link": "#",
+   "desc": "The most powerful no-code platform for complex apps, now AI-assisted.",
+   "bestFor": "complex apps without code.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://bubble.io",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Framer",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Website builder",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $10/mo",
+   "domain": "framer.com",
+   "letter": "F",
+   "link": "#",
+   "desc": "AI-assisted visual website builder with strong animation and hosting.",
+   "bestFor": "marketing sites with rich motion.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://framer.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Webflow",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Website builder",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $14/mo",
+   "domain": "webflow.com",
+   "letter": "W",
+   "link": "#",
+   "desc": "Visual web builder with best-in-class CMS and AI assistance.",
+   "bestFor": "content-heavy, professional sites.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://webflow.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Mocha",
+   "score": 7.3,
+   "mom": 7.3,
+   "type": "Site/app builder",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Flat pricing",
+   "domain": "getmocha.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Zero-config builder with integrated database, auth and hosting.",
+   "bestFor": "one-platform sites with no config.",
+   "s": [
+    7.5,
+    7.0,
+    7.3,
+    7.1,
+    7.2,
+    7.3
+   ],
+   "url": "https://getmocha.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Softr",
+   "score": 7.1,
+   "mom": 7.1,
+   "type": "No-code apps",
+   "cats": [
+    "app-builders"
+   ],
+   "price": "Free tier · from $24/mo",
+   "domain": "softr.io",
+   "letter": "S",
+   "link": "#",
+   "desc": "Build internal tools and portals on top of your data sources.",
+   "bestFor": "internal tools and client portals.",
+   "s": [
+    7.3,
+    6.8,
+    7.1,
+    6.9,
+    7.0,
+    7.1
+   ],
+   "url": "https://softr.io",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "ai-agents": [
+  {
+   "name": "Lindy",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "No-code agents",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Free tier · from $50/mo",
+   "domain": "lindy.ai",
+   "letter": "L",
+   "link": "#",
+   "desc": "Best overall no-code agent for daily work — email, meetings, follow-ups.",
+   "bestFor": "automating personal daily workflows.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://lindy.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "n8n",
+   "score": 8.4,
+   "mom": 8.4,
+   "type": "Workflow automation",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Free (self-host) · paid cloud",
+   "domain": "n8n.io",
+   "letter": "N",
+   "link": "#",
+   "desc": "Powerful, source-available workflow automation with AI nodes and 400+ integrations.",
+   "bestFor": "flexible, ownable automation.",
+   "s": [
+    8.6,
+    8.1,
+    8.4,
+    8.2,
+    8.3,
+    8.4
+   ],
+   "url": "https://n8n.io",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Zapier",
+   "score": 8.2,
+   "mom": 8.2,
+   "type": "Workflow automation",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Free tier · from $20/mo",
+   "domain": "zapier.com",
+   "letter": "Z",
+   "link": "#",
+   "desc": "The most-connected automation platform, now with AI agents and copilots.",
+   "bestFor": "connecting thousands of apps.",
+   "s": [
+    8.4,
+    7.9,
+    8.2,
+    8.0,
+    8.1,
+    8.2
+   ],
+   "url": "https://zapier.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Manus",
+   "score": 8.0,
+   "mom": 8.0,
+   "type": "Autonomous agent",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Paid plans",
+   "domain": "manus.im",
+   "letter": "M",
+   "link": "#",
+   "desc": "General autonomous agent that plans and executes multi-step tasks.",
+   "bestFor": "hands-off, autonomous task execution.",
+   "s": [
+    8.2,
+    7.7,
+    8.0,
+    7.8,
+    7.9,
+    8.0
+   ],
+   "url": "https://manus.im",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Make",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "Workflow automation",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Free tier · from $9/mo",
+   "domain": "make.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Visual, node-based automation with deep branching and AI steps.",
+   "bestFor": "visual, complex automations.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://make.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Gumloop",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "AI workflows",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "gumloop.com",
+   "letter": "G",
+   "link": "#",
+   "desc": "Drag-and-drop canvas for AI-driven business workflows.",
+   "bestFor": "building AI workflows without code.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://gumloop.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "CrewAI",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Multi-agent framework",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Open source · paid cloud",
+   "domain": "crewai.com",
+   "letter": "C",
+   "link": "#",
+   "desc": "Framework for orchestrating teams of collaborating agents.",
+   "bestFor": "developer multi-agent systems.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://crewai.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Relay",
+   "score": 7.3,
+   "mom": 7.3,
+   "type": "Human-in-loop automation",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "Free tier · from $9/mo",
+   "domain": "relay.app",
+   "letter": "R",
+   "link": "#",
+   "desc": "Automation with built-in approval steps and AI actions.",
+   "bestFor": "automations that need human checks.",
+   "s": [
+    7.5,
+    7.0,
+    7.3,
+    7.1,
+    7.2,
+    7.3
+   ],
+   "url": "https://relay.app",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Dust",
+   "score": 7.2,
+   "mom": 7.2,
+   "type": "Enterprise agents",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "From $29/user/mo",
+   "domain": "dust.tt",
+   "letter": "D",
+   "link": "#",
+   "desc": "Company-wide agents connected to internal data with permissions.",
+   "bestFor": "deploying agents across a team.",
+   "s": [
+    7.4,
+    6.9,
+    7.2,
+    7.0,
+    7.1,
+    7.2
+   ],
+   "url": "https://dust.tt",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Sintra",
+   "score": 7.0,
+   "mom": 7.0,
+   "type": "AI employees",
+   "cats": [
+    "ai-agents"
+   ],
+   "price": "From $39/mo",
+   "domain": "sintra.ai",
+   "letter": "S",
+   "link": "#",
+   "desc": "Pre-built 'AI employee' helpers for common business tasks.",
+   "bestFor": "ready-made assistants for SMBs.",
+   "s": [
+    7.2,
+    6.7,
+    7.0,
+    6.8,
+    6.9,
+    7.0
+   ],
+   "url": "https://sintra.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "marketing-copy": [
+  {
+   "name": "Jasper",
+   "score": 8.6,
+   "mom": 8.6,
+   "type": "Marketing suite",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "From $49/mo",
+   "domain": "jasper.ai",
+   "letter": "J",
+   "link": "#",
+   "desc": "Best all-round marketing copy tool with brand voice, templates and campaigns.",
+   "bestFor": "brand-consistent marketing at scale.",
+   "s": [
+    8.8,
+    8.3,
+    8.6,
+    8.4,
+    8.5,
+    8.6
+   ],
+   "url": "https://jasper.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Copy.ai",
+   "score": 8.3,
+   "mom": 8.3,
+   "type": "Copy + workflows",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "Free tier · from $49/mo",
+   "domain": "copy.ai",
+   "letter": "C",
+   "link": "#",
+   "desc": "Strong short-form and email copy plus GTM workflow automation.",
+   "bestFor": "ad and email copy with workflows.",
+   "s": [
+    8.5,
+    8.0,
+    8.3,
+    8.1,
+    8.2,
+    8.3
+   ],
+   "url": "https://copy.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Writesonic",
+   "score": 8.1,
+   "mom": 8.1,
+   "type": "Copy + SEO",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "Free tier · from $20/mo",
+   "domain": "writesonic.com",
+   "letter": "W",
+   "link": "#",
+   "desc": "Versatile, affordable copy with article writing and an SEO mode.",
+   "bestFor": "budget all-in-one copy + SEO.",
+   "s": [
+    8.3,
+    7.8,
+    8.1,
+    7.9,
+    8.0,
+    8.1
+   ],
+   "url": "https://writesonic.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Anyword",
+   "score": 7.9,
+   "mom": 7.9,
+   "type": "Performance copy",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "From $39/mo",
+   "domain": "anyword.com",
+   "letter": "A",
+   "link": "#",
+   "desc": "Predictive performance scoring and ROI-focused ad generation.",
+   "bestFor": "data-driven, conversion copy.",
+   "s": [
+    8.1,
+    7.6,
+    7.9,
+    7.7,
+    7.8,
+    7.9
+   ],
+   "url": "https://anyword.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Rytr",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Copy assistant",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "Free tier · from $9/mo",
+   "domain": "rytr.me",
+   "letter": "R",
+   "link": "#",
+   "desc": "Lightweight, cheap copy assistant for quick short-form pieces.",
+   "bestFor": "fast, low-cost short copy.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://rytr.me",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Wordtune",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Rewriter",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "Free tier · from $7/mo",
+   "domain": "wordtune.com",
+   "letter": "W",
+   "link": "#",
+   "desc": "Rewrites and refines copy for tone, clarity and concision.",
+   "bestFor": "polishing and rewording copy.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://wordtune.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Hoppy Copy",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Email copy",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "From $29/mo",
+   "domain": "hoppycopy.co",
+   "letter": "H",
+   "link": "#",
+   "desc": "Purpose-built for email campaigns, sequences and newsletters.",
+   "bestFor": "email marketing copy.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://hoppycopy.co",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Scalenut",
+   "score": 7.3,
+   "mom": 7.3,
+   "type": "SEO copy",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "From $39/mo",
+   "domain": "scalenut.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Long-form, SEO-aware content with research and optimization.",
+   "bestFor": "SEO-optimized long-form copy.",
+   "s": [
+    7.5,
+    7.0,
+    7.3,
+    7.1,
+    7.2,
+    7.3
+   ],
+   "url": "https://scalenut.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Simplified",
+   "score": 7.1,
+   "mom": 7.1,
+   "type": "Content suite",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "Free tier · from $18/mo",
+   "domain": "simplified.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "All-in-one copy, design and social content in one workspace.",
+   "bestFor": "copy alongside design and social.",
+   "s": [
+    7.3,
+    6.8,
+    7.1,
+    6.9,
+    7.0,
+    7.1
+   ],
+   "url": "https://simplified.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Hypotenuse AI",
+   "score": 6.9,
+   "mom": 6.9,
+   "type": "Ecommerce copy",
+   "cats": [
+    "marketing-copy"
+   ],
+   "price": "From $29/mo",
+   "domain": "hypotenuse.ai",
+   "letter": "H",
+   "link": "#",
+   "desc": "Bulk product descriptions and ecommerce content generation.",
+   "bestFor": "ecommerce and product copy at scale.",
+   "s": [
+    7.1,
+    6.6,
+    6.9,
+    6.7,
+    6.8,
+    6.9
+   ],
+   "url": "https://hypotenuse.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "seo": [
+  {
+   "name": "Surfer SEO",
+   "score": 8.6,
+   "mom": 8.6,
+   "type": "Content optimization",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $89/mo",
+   "domain": "surferseo.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "The most-recommended on-page tool — scores drafts against top-ranking pages.",
+   "bestFor": "making individual pages rank.",
+   "s": [
+    8.8,
+    8.3,
+    8.6,
+    8.4,
+    8.5,
+    8.6
+   ],
+   "url": "https://surferseo.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Semrush",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "All-in-one platform",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $140/mo",
+   "domain": "semrush.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "The industry Swiss-army platform with AI Copilot and AI-visibility tracking.",
+   "bestFor": "complete SEO data and analysis.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://semrush.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Ahrefs",
+   "score": 8.3,
+   "mom": 8.3,
+   "type": "Research platform",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $129/mo",
+   "domain": "ahrefs.com",
+   "letter": "A",
+   "link": "#",
+   "desc": "Deepest backlink index plus keyword research and Brand Radar AI tracking.",
+   "bestFor": "backlink and keyword research.",
+   "s": [
+    8.5,
+    8.0,
+    8.3,
+    8.1,
+    8.2,
+    8.3
+   ],
+   "url": "https://ahrefs.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Clearscope",
+   "score": 8.2,
+   "mom": 8.2,
+   "type": "Content optimization",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $189/mo",
+   "domain": "clearscope.io",
+   "letter": "C",
+   "link": "#",
+   "desc": "Clean, reliable NLP-driven content optimization loved by enterprise teams.",
+   "bestFor": "enterprise content optimization.",
+   "s": [
+    8.4,
+    7.9,
+    8.2,
+    8.0,
+    8.1,
+    8.2
+   ],
+   "url": "https://clearscope.io",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Frase",
+   "score": 7.8,
+   "mom": 7.8,
+   "type": "Content briefs",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $45/mo",
+   "domain": "frase.io",
+   "letter": "F",
+   "link": "#",
+   "desc": "Best-value research and content briefs for small teams.",
+   "bestFor": "affordable briefs and optimization.",
+   "s": [
+    8.0,
+    7.5,
+    7.8,
+    7.6,
+    7.7,
+    7.8
+   ],
+   "url": "https://frase.io",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "MarketMuse",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Content intelligence",
+   "cats": [
+    "seo"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "marketmuse.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Topic modeling and content-decay management across large sites.",
+   "bestFor": "topical authority at scale.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://marketmuse.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "NeuronWriter",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Content optimization",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $23/mo",
+   "domain": "neuronwriter.com",
+   "letter": "N",
+   "link": "#",
+   "desc": "Budget NLP optimization with similar features to Surfer.",
+   "bestFor": "cheap on-page optimization.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://neuronwriter.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "SE Ranking",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "All-in-one platform",
+   "cats": [
+    "seo"
+   ],
+   "price": "From $65/mo",
+   "domain": "seranking.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Versatile, affordable platform for rank tracking and audits.",
+   "bestFor": "value all-in-one SEO.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://seranking.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "Rankability",
+   "score": 7.2,
+   "mom": 7.2,
+   "type": "Content optimization",
+   "cats": [
+    "seo"
+   ],
+   "price": "Paid plans",
+   "domain": "rankability.com",
+   "letter": "R",
+   "link": "#",
+   "desc": "Content optimization with AI-search tracking, used daily by SEOs.",
+   "bestFor": "day-to-day content scoring.",
+   "s": [
+    7.4,
+    6.9,
+    7.2,
+    7.0,
+    7.1,
+    7.2
+   ],
+   "url": "https://rankability.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Profound",
+   "score": 7.1,
+   "mom": 7.1,
+   "type": "AI-search visibility",
+   "cats": [
+    "seo"
+   ],
+   "price": "Paid plans",
+   "domain": "tryprofound.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "Tracks your brand's presence in ChatGPT, Perplexity and AI Overviews.",
+   "bestFor": "monitoring AI-search visibility.",
+   "s": [
+    7.3,
+    6.8,
+    7.1,
+    6.9,
+    7.0,
+    7.1
+   ],
+   "url": "https://tryprofound.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "social-media": [
+  {
+   "name": "Buffer",
+   "score": 8.4,
+   "mom": 8.4,
+   "type": "Scheduler + AI",
+   "cats": [
+    "social-media"
+   ],
+   "price": "Free tier · from $6/channel",
+   "domain": "buffer.com",
+   "letter": "B",
+   "link": "#",
+   "desc": "Simple, great-value scheduling with an AI Assistant and clean analytics.",
+   "bestFor": "simple, affordable publishing.",
+   "s": [
+    8.6,
+    8.1,
+    8.4,
+    8.2,
+    8.3,
+    8.4
+   ],
+   "url": "https://buffer.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Hootsuite",
+   "score": 8.3,
+   "mom": 8.3,
+   "type": "Management suite",
+   "cats": [
+    "social-media"
+   ],
+   "price": "From $99/mo",
+   "domain": "hootsuite.com",
+   "letter": "H",
+   "link": "#",
+   "desc": "Broadest enterprise management with OwlyWriter AI across 35+ networks.",
+   "bestFor": "large teams at scale.",
+   "s": [
+    8.5,
+    8.0,
+    8.3,
+    8.1,
+    8.2,
+    8.3
+   ],
+   "url": "https://hootsuite.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Sprout Social",
+   "score": 8.2,
+   "mom": 8.2,
+   "type": "Management suite",
+   "cats": [
+    "social-media"
+   ],
+   "price": "From $199/mo",
+   "domain": "sproutsocial.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Deepest analytics, listening and Smart Inbox with AI Assist.",
+   "bestFor": "data-driven brands and agencies.",
+   "s": [
+    8.4,
+    7.9,
+    8.2,
+    8.0,
+    8.1,
+    8.2
+   ],
+   "url": "https://sproutsocial.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "Ocoya",
+   "score": 7.9,
+   "mom": 7.9,
+   "type": "AI content + scheduling",
+   "cats": [
+    "social-media"
+   ],
+   "price": "From $15/mo",
+   "domain": "ocoya.com",
+   "letter": "O",
+   "link": "#",
+   "desc": "AI-first content creation, design and scheduling in one modern app.",
+   "bestFor": "AI-generated posts plus scheduling.",
+   "s": [
+    8.1,
+    7.6,
+    7.9,
+    7.7,
+    7.8,
+    7.9
+   ],
+   "url": "https://ocoya.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Predis.ai",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "AI content",
+   "cats": [
+    "social-media"
+   ],
+   "price": "Free tier · from $32/mo",
+   "domain": "predis.ai",
+   "letter": "P",
+   "link": "#",
+   "desc": "Generates carousels, videos and captions from a single prompt.",
+   "bestFor": "auto-generated visual social content.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://predis.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "SocialBee",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Scheduler",
+   "cats": [
+    "social-media"
+   ],
+   "price": "From $29/mo",
+   "domain": "socialbee.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Category-based scheduling with content recycling, built for agencies.",
+   "bestFor": "organized multi-campaign posting.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://socialbee.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Vista Social",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Management suite",
+   "cats": [
+    "social-media"
+   ],
+   "price": "Free tier · from $39/mo",
+   "domain": "vistasocial.com",
+   "letter": "V",
+   "link": "#",
+   "desc": "Affordable all-in-one with publishing, listening and AI assistant.",
+   "bestFor": "value all-in-one management.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://vistasocial.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Metricool",
+   "score": 7.3,
+   "mom": 7.3,
+   "type": "Analytics + scheduling",
+   "cats": [
+    "social-media"
+   ],
+   "price": "Free tier · from $18/mo",
+   "domain": "metricool.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Strong analytics and reporting alongside scheduling.",
+   "bestFor": "analytics-led social work.",
+   "s": [
+    7.5,
+    7.0,
+    7.3,
+    7.1,
+    7.2,
+    7.3
+   ],
+   "url": "https://metricool.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "FeedHive",
+   "score": 7.2,
+   "mom": 7.2,
+   "type": "Scheduler + AI",
+   "cats": [
+    "social-media"
+   ],
+   "price": "From $19/mo",
+   "domain": "feedhive.com",
+   "letter": "F",
+   "link": "#",
+   "desc": "AI writing, recycling and conditional posting for creators.",
+   "bestFor": "creator scheduling with AI.",
+   "s": [
+    7.4,
+    6.9,
+    7.2,
+    7.0,
+    7.1,
+    7.2
+   ],
+   "url": "https://feedhive.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Publer",
+   "score": 7.0,
+   "mom": 7.0,
+   "type": "Scheduler",
+   "cats": [
+    "social-media"
+   ],
+   "price": "Free tier · from $12/mo",
+   "domain": "publer.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "Reliable, low-cost scheduling with AI assist across many networks.",
+   "bestFor": "budget cross-network scheduling.",
+   "s": [
+    7.2,
+    6.7,
+    7.0,
+    6.8,
+    6.9,
+    7.0
+   ],
+   "url": "https://publer.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 10
+  }
+ ],
+ "translation": [
+  {
+   "name": "DeepL",
+   "score": 8.9,
+   "mom": 8.9,
+   "type": "Translation engine",
+   "cats": [
+    "translation"
+   ],
+   "price": "Free tier · from $9/mo",
+   "domain": "deepl.com",
+   "letter": "D",
+   "link": "#",
+   "desc": "The most natural-sounding engine, especially for European languages, with glossaries.",
+   "bestFor": "the most fluent translations.",
+   "s": [
+    9.1,
+    8.6,
+    8.9,
+    8.7,
+    8.8,
+    8.9
+   ],
+   "url": "https://deepl.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 1
+  },
+  {
+   "name": "Google Translate",
+   "score": 8.5,
+   "mom": 8.5,
+   "type": "Translation engine",
+   "cats": [
+    "translation"
+   ],
+   "price": "Free",
+   "domain": "translate.google.com",
+   "letter": "G",
+   "link": "#",
+   "desc": "Broadest coverage — 130+ languages plus text, image and speech.",
+   "bestFor": "widest language coverage, free.",
+   "s": [
+    8.7,
+    8.2,
+    8.5,
+    8.3,
+    8.4,
+    8.5
+   ],
+   "url": "https://translate.google.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 2
+  },
+  {
+   "name": "Microsoft Translator",
+   "score": 8.1,
+   "mom": 8.1,
+   "type": "Translation engine",
+   "cats": [
+    "translation"
+   ],
+   "price": "Free · API pricing",
+   "domain": "microsoft.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Solid translation with strong Microsoft and business integrations.",
+   "bestFor": "Microsoft-stack and business use.",
+   "s": [
+    8.3,
+    7.8,
+    8.1,
+    7.9,
+    8.0,
+    8.1
+   ],
+   "url": "https://microsoft.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 3
+  },
+  {
+   "name": "ChatGPT",
+   "score": 8.0,
+   "mom": 8.0,
+   "type": "LLM translation",
+   "cats": [
+    "translation"
+   ],
+   "price": "Free · Plus $20/mo",
+   "domain": "chatgpt.com",
+   "letter": "C",
+   "link": "#",
+   "desc": "Context- and tone-aware translation that handles nuance well.",
+   "bestFor": "nuanced, tone-aware translation.",
+   "s": [
+    8.2,
+    7.7,
+    8.0,
+    7.8,
+    7.9,
+    8.0
+   ],
+   "url": "https://chatgpt.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 4
+  },
+  {
+   "name": "Papago",
+   "score": 7.7,
+   "mom": 7.7,
+   "type": "Translation engine",
+   "cats": [
+    "translation"
+   ],
+   "price": "Free",
+   "domain": "papago.naver.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "Naver's engine, the gold standard for Korean, Japanese and Chinese.",
+   "bestFor": "Korean and East-Asian languages.",
+   "s": [
+    7.9,
+    7.4,
+    7.7,
+    7.5,
+    7.6,
+    7.7
+   ],
+   "url": "https://papago.naver.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 5
+  },
+  {
+   "name": "Phrase",
+   "score": 7.6,
+   "mom": 7.6,
+   "type": "Localization platform",
+   "cats": [
+    "translation"
+   ],
+   "price": "Paid plans",
+   "domain": "phrase.com",
+   "letter": "P",
+   "link": "#",
+   "desc": "Mature CAT platform with AI suggestions and translation memory.",
+   "bestFor": "professional localization teams.",
+   "s": [
+    7.8,
+    7.3,
+    7.6,
+    7.4,
+    7.5,
+    7.6
+   ],
+   "url": "https://phrase.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 6
+  },
+  {
+   "name": "Lokalise",
+   "score": 7.5,
+   "mom": 7.5,
+   "type": "Localization platform",
+   "cats": [
+    "translation"
+   ],
+   "price": "From $140/mo",
+   "domain": "lokalise.com",
+   "letter": "L",
+   "link": "#",
+   "desc": "Developer-friendly localization with AI translation and workflows.",
+   "bestFor": "software string localization.",
+   "s": [
+    7.7,
+    7.2,
+    7.5,
+    7.3,
+    7.4,
+    7.5
+   ],
+   "url": "https://lokalise.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 7
+  },
+  {
+   "name": "Smartling",
+   "score": 7.4,
+   "mom": 7.4,
+   "type": "Localization platform",
+   "cats": [
+    "translation"
+   ],
+   "price": "Enterprise pricing",
+   "domain": "smartling.com",
+   "letter": "S",
+   "link": "#",
+   "desc": "Enterprise translation management with AI and human-in-the-loop.",
+   "bestFor": "enterprise translation at scale.",
+   "s": [
+    7.6,
+    7.1,
+    7.4,
+    7.2,
+    7.3,
+    7.4
+   ],
+   "url": "https://smartling.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 8
+  },
+  {
+   "name": "ModernMT",
+   "score": 7.2,
+   "mom": 7.2,
+   "type": "Adaptive MT",
+   "cats": [
+    "translation"
+   ],
+   "price": "API pricing",
+   "domain": "modernmt.com",
+   "letter": "M",
+   "link": "#",
+   "desc": "Adaptive machine translation that learns from your corrections.",
+   "bestFor": "adaptive, self-improving MT.",
+   "s": [
+    7.4,
+    6.9,
+    7.2,
+    7.0,
+    7.1,
+    7.2
+   ],
+   "url": "https://modernmt.com",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
+   "rank": 9
+  },
+  {
+   "name": "Doclingo",
+   "score": 7.0,
+   "mom": 7.0,
+   "type": "Document translation",
+   "cats": [
+    "translation"
+   ],
+   "price": "Free tier · paid plans",
+   "domain": "doclingo.ai",
+   "letter": "D",
+   "link": "#",
+   "desc": "Multi-engine document translation that preserves original formatting.",
+   "bestFor": "translating formatted documents.",
+   "s": [
+    7.2,
+    6.7,
+    7.0,
+    6.8,
+    6.9,
+    7.0
+   ],
+   "url": "https://doclingo.ai",
+   "affiliate": false,
+   "added": "2026-06-09T11:00:00Z",
    "rank": 10
   }
  ]
