@@ -980,9 +980,9 @@ html.dark .orb{opacity:.24}
 var link=document.querySelector('link[rel~="icon"]');
 if(!link){link=document.createElement('link');link.rel='icon';document.head.appendChild(link);}
 var N=24,DUR=1800,cv=document.createElement('canvas');cv.width=cv.height=64;var ctx=cv.getContext('2d');var frames=[],loaded=0;
-function svg(t){var ring='';if(t<0.6){var p=t/0.6,ep=1-(1-p)*(1-p),r=(6+11*ep).toFixed(1),op=(0.85*(1-p)).toFixed(2);ring='<circle cx="56" cy="27" r="'+r+'" fill="none" stroke="#ff5d8f" stroke-width="3" opacity="'+op+'"/>';}
+function svg(t){var ring='';if(t<0.6){var p=t/0.6,ep=1-(1-p)*(1-p),r=(6+11*ep).toFixed(1),op=(0.85*(1-p)).toFixed(2);ring='<circle cx="56" cy="27" r="'+r+'" fill="none" stroke="#ff5d8f" stroke-width="4" opacity="'+op+'"/>';}
 var dop=(0.5+0.5*Math.abs(2*t-1)).toFixed(2);
-return '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="5 5 96 96"><rect x="5" y="5" width="96" height="96" rx="23" fill="#17132b"/><g fill="none" stroke="#9b8bff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="#b14dff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)">'+ring+'<circle cx="56" cy="27" r="7" fill="#ff5d8f" opacity="'+dop+'"/></g></svg>';}
+return '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="6 8 88 88"><g fill="none" stroke="#9b8bff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M64 66 L64 86"/><path d="M51 95 L64 86 L77 95"/><path d="M51 95 L77 95"/></g><g transform="rotate(-32 56 50)" fill="none" stroke="#b14dff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="56" cy="50" rx="26" ry="8"/><path d="M30 50 C 36 74 76 74 82 50"/><path d="M56 46 L56 27"/></g><g transform="rotate(-32 56 50)">'+ring+'<circle cx="56" cy="27" r="9" fill="#ff5d8f" opacity="'+dop+'"/></g></svg>';}
 var k=0,timer=null;
 function tick(){var u=frames[k%N];k++;if(u){try{link.type='image/png';link.href=u;}catch(e){}}}
 function play(){if(!timer)timer=setInterval(tick,Math.round(DUR/N));}
