@@ -423,6 +423,47 @@ html.dark{--accent:#9b8bff}
   .meta .mtag{padding:6px 12px;font-size:12.5px}
 }
 </style>
+<style id="br-fix6dark">html.dark{--ink-soft:#c6c2dd;--ink-faint:#9b97b6;--grad:linear-gradient(135deg,#8b7dff 0%,#c66bff 48%,#ff7da6 100%)}</style>
+<style id="br-fix6">
+/* #1 sort-tab icons */
+#sort button{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+#sort button svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;flex:0 0 auto}
+/* #4 Rising-only flame chip + why-rising line */
+.chip.rising{display:inline-flex;align-items:center;gap:5px;background:linear-gradient(135deg,#ff9f1c,#ff5d8f);color:#fff;border:none;font-weight:800}
+.chip.rising svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2;flex:0 0 auto}
+.whyrise{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--amber);margin-top:8px}
+.whyrise svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;flex:0 0 auto}
+/* #5 compare popup redesigned: side-by-side cards with score bars (replaces the table) */
+.cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cmp-scroll::-webkit-scrollbar{display:none}
+.cmpcards{display:flex;gap:14px;padding:6px 2px 4px;align-items:stretch}
+.ccol{position:relative;flex:1 1 0;min-width:208px;display:flex;flex-direction:column;gap:13px;padding:22px 16px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.ccol-win{border:1.5px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box;box-shadow:var(--shadow-lg)}
+.ccol-crown{position:absolute;top:-11px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--grad);padding:4px 12px;border-radius:100px;white-space:nowrap;box-shadow:var(--shadow)}
+.ccol-hd{display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
+.ccol-lg{width:46px;height:46px;border-radius:13px;background:#fff;border:1px solid var(--line-soft);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:var(--shadow)}
+.ccol-lg img{width:100%;height:100%;object-fit:contain;padding:8px}
+.ccol-nm{font-family:var(--display);font-weight:600;font-size:16px;line-height:1.2}
+.ccol-score{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;text-align:center;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ccol-sclbl{display:block;font-family:var(--body);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);-webkit-text-fill-color:var(--ink-faint);margin-top:5px}
+.ccol-crits{display:flex;flex-direction:column;gap:10px}
+.ccrit{display:grid;grid-template-columns:1fr auto;gap:4px 8px;align-items:center}
+.ccrit-l{font-size:11.5px;font-weight:600;color:var(--ink-soft);grid-column:1;min-width:0}
+.ccrit-v{font-size:12.5px;font-weight:800;color:var(--ink-soft);grid-column:2;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ccrit-bar{grid-column:1/3;height:6px;border-radius:100px;background:var(--line-soft);overflow:hidden}
+.ccrit-bar>span{display:block;height:100%;border-radius:100px}
+.ccrit.lead .ccrit-l,.ccrit.lead .ccrit-v{color:var(--ink)}
+.ccrit.lead .ccrit-v::after{content:" \25B2";font-size:8px;color:var(--green);vertical-align:middle}
+.ccol-meta{display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--line-soft);padding-top:13px;margin-top:auto}
+.ccol-meta>div{display:flex;flex-direction:column;gap:2px}
+.ccol-meta span{font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint)}
+.ccol-meta b{font-size:12.5px;font-weight:600;color:var(--ink-soft);line-height:1.35}
+.ccol-cta{display:flex;gap:8px;margin-top:2px}
+.ccol-cta a{flex:1;text-align:center;font-size:12.5px;font-weight:700;padding:9px 8px;border-radius:100px;text-decoration:none;transition:.18s}
+.ccol-cta a:first-child:not(:only-child){background:var(--surface);border:1px solid var(--line);color:var(--ink-soft)}
+.ccol-cta a:last-child{background:var(--grad);color:#fff}
+@media(max-width:560px){.ccol{min-width:78%;flex:0 0 78%}.ccol-score{font-size:34px}}
+</style>
 </head>
 <body>
 
@@ -460,9 +501,9 @@ html.dark{--accent:#9b8bff}
     </div>
     <div class="sortwrap">Sort
       <span class="seg" id="sort">
-        <button class="on" data-sort="score">Top</button>
-        <button data-sort="mom">Rising</button>
-        <button data-sort="new">New listings</button>
+        <button class="on" data-sort="score"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4zM7 7H4.5v1A2.5 2.5 0 007 10.5M17 7h2.5v1a2.5 2.5 0 01-2.5 2.5"/></svg>Top</button>
+        <button data-sort="mom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2c1 3-1 4.5-2.2 6.2C9.5 10 9 11.3 10 12.6c.8 1 2.3 1 3-.2.6 1 .8 2.2.4 3.3 1.6-.6 2.6-2.2 2.6-4 0-2.6-1.7-3.8-1-6.4-2 .8-3.4 2.2-3.7 4.2C10.8 11 11 8 13 2z"/></svg>Rising</button>
+        <button data-sort="new"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg>New listings</button>
       </span>
     </div>
   </div>
@@ -538,7 +579,7 @@ html.dark{--accent:#9b8bff}
     var mo=Math.floor(d/30.4);if(mo<12)return mo+' month'+(mo>1?'s':'')+' ago';
     var y=Math.floor(d/365);return y+' year'+(y>1?'s':'')+' ago';}
   function rowHTML(t,i){
-    var rated=t.score!=null;
+    var rated=t.score!=null;var whyRise=(t.mom==null)?'Gaining ground.':(t.mom>=9?'Surging — one of the fastest climbers right now.':t.mom>=8?'Climbing fast this cycle.':t.mom>=7?'Steady upward momentum.':'Gaining ground.');
     var pct=rated?(t.score*10).toFixed(0):0;
     var medal=(rated&&t.rank<=3)?(' m'+t.rank):'';
     var glow=GLOWS[i%3];
@@ -553,8 +594,8 @@ html.dark{--accent:#9b8bff}
         +'<div class="logo sm" data-letter="'+t.letter+'"><img alt="'+t.name+' logo" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></div>'
         +'<div class="rmain">'
           +'<div class="rname">'+t.name+(rated&&t.rank===1?' <span class="toppick">Top pick</span>':'')+'</div>'
-          +'<div class="rdesc">'+t.desc+'</div>'
-          +'<div class="rtags">'+(rated?'':'<span class="chip prov">Not yet rated</span>')+'<span class="chip cat">'+t.type+'</span><span class="chip price">'+t.price+'</span><button type="button" class="chip cmpchip" data-ti="'+TOOLS.indexOf(t)+'" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13M14 6l3 3-3 3M20 15H7M10 12l-3 3 3 3"/></svg>Compare</button>'+(activeSort==='new'&&t.added?'<span class="listed">listed '+BR_rel(t.added)+'</span>':'')+'</div>'
+          +'<div class="rdesc">'+t.desc+'</div>'+(activeSort==='mom'?'<div class="whyrise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2c1 3-1 4.5-2.2 6.2C9.5 10 9 11.3 10 12.6c.8 1 2.3 1 3-.2.6 1 .8 2.2.4 3.3 1.6-.6 2.6-2.2 2.6-4 0-2.6-1.7-3.8-1-6.4-2 .8-3.4 2.2-3.7 4.2C10.8 11 11 8 13 2z"/></svg>'+whyRise+'</div>':'')
+          +'<div class="rtags">'+(activeSort==='mom'?'<span class="chip rising"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2c1 3-1 4.5-2.2 6.2C9.5 10 9 11.3 10 12.6c.8 1 2.3 1 3-.2.6 1 .8 2.2.4 3.3 1.6-.6 2.6-2.2 2.6-4 0-2.6-1.7-3.8-1-6.4-2 .8-3.4 2.2-3.7 4.2C10.8 11 11 8 13 2z"/></svg>Rising · '+(t.mom!=null?t.mom.toFixed(1):'—')+'</span>':'')+(rated?'':'<span class="chip prov">Not yet rated</span>')+'<span class="chip cat">'+t.type+'</span><span class="chip price">'+t.price+'</span><button type="button" class="chip cmpchip" data-ti="'+TOOLS.indexOf(t)+'" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13M14 6l3 3-3 3M20 15H7M10 12l-3 3 3 3"/></svg>Compare</button>'+(activeSort==='new'&&t.added?'<span class="listed">listed '+BR_rel(t.added)+'</span>':'')+'</div>'
         +'</div>'
         +'<div class="rscore">'
           +(rated?'<span class="sc">'+t.score.toFixed(1)+'</span><span class="scbar"><span style="width:'+pct+'%"></span></span><span class="rstars" role="img" aria-label="'+(t.score/2).toFixed(1)+' out of 5 stars"><span class="rs-bg">\u2605\u2605\u2605\u2605\u2605</span><span class="rs-fg" style="width:'+pct+'%">\u2605\u2605\u2605\u2605\u2605</span></span>':'<span class="sc na">—</span><span class="sclbl-na">Not yet rated</span>')
@@ -669,7 +710,7 @@ html.dark{--accent:#9b8bff}
   <button class="modal-close" id="cmpClose" aria-label="Close">&times;</button>
   <h2>Head-to-head</h2>
   <div class="cmp-scroll" id="cmpGrid"></div>
-  <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better; the leader in each row is highlighted.</p>
+  <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better. The top pick and the leader in each metric are highlighted.</p>
 </div></div>
 <script>
 (function(){
@@ -680,18 +721,14 @@ html.dark{--accent:#9b8bff}
   window.BR_openCompare=function(ts){
     var grid=document.getElementById('cmpGrid'),modal=document.getElementById('cmpModal');
     if(!grid||!modal||!ts||ts.length<2)return;
-    function cells(vals,color){var max=Math.max.apply(null,vals);return vals.map(function(v){var bar=color?'<span class="cmpbar"><span style="width:'+(v*10)+'%;background:'+color+'"></span></span>':'';return '<td class="'+(v===max?'win':'')+'"><span class="cmpv">'+v.toFixed(1)+'</span>'+bar+'</td>';}).join('');}
-    function txt(l,vals){return '<tr><th>'+l+'</th>'+vals.map(function(v){return '<td><span class="cmptxt">'+cmpEsc(v)+'</span></td>';}).join('')+'</tr>';}
-    var head='<thead><tr><th></th>'+ts.map(function(t){return '<th><span class="cmphd"><span class="lg"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></span><span class="nm">'+cmpEsc(t.name)+'</span><span class="hsc">'+t.score.toFixed(1)+'</span></span></th>';}).join('')+'</tr></thead>';
-    var b='<tbody>';
-    b+='<tr class="cmp-ov"><th>Overall</th>'+cells(ts.map(function(t){return t.score;}),'linear-gradient(90deg,#6c5cff,#b14dff)')+'</tr>';
-    for(var j=0;j<6;j++){(function(j){b+='<tr><th><span class="cmpdot" style="background:'+SCO[j]+'"></span>'+LB[j]+'</th>'+cells(ts.map(function(t){return t.s[j];}),SCO[j])+'</tr>';})(j);}
-    b+=txt('Price',ts.map(function(t){return t.price;}));
-    b+=txt('Type',ts.map(function(t){return t.type;}));
-    b+=txt('Best for',ts.map(function(t){return t.bestFor;}));
-    b+='</tbody>';
-    var foot='<tfoot><tr class="cmpfoot"><th></th>'+ts.map(function(t){var rev=(t.link&&t.link!=='#')?'<a href="'+t.link+'"'+(/^https?:/i.test(t.link)?' target="_blank" rel="noopener"':'')+'>Review</a>':'';return '<td>'+rev+'<a href="'+cmpSite(t)+'" target="_blank" rel="noopener">Visit</a></td>';}).join('')+'</tr></tfoot>';
-    grid.innerHTML='<table class="cmpT">'+head+b+foot+'</table>';
+    var oMax=Math.max.apply(null,ts.map(function(t){return t.score;}));
+    var cMax=[];for(var k=0;k<6;k++){cMax[k]=Math.max.apply(null,ts.map(function(t){return t.s[k];}));}
+    grid.innerHTML='<div class="cmpcards">'+ts.map(function(t){
+      var win=(t.score===oMax),crits='';
+      for(var j=0;j<6;j++){var v=t.s[j],lead=(v===cMax[j]);crits+='<div class="ccrit'+(lead?' lead':'')+'"><span class="ccrit-l">'+LB[j]+'</span><span class="ccrit-v">'+v.toFixed(1)+'</span><span class="ccrit-bar"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span></div>';}
+      var rev=(t.link&&t.link!=='#')?'<a href="'+t.link+'"'+(/^https?:/i.test(t.link)?' target="_blank" rel="noopener"':'')+'>Review</a>':'';
+      return '<div class="ccol'+(win?' ccol-win':'')+'">'+(win?'<span class="ccol-crown">Top pick</span>':'')+'<div class="ccol-hd"><span class="ccol-lg"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></span><span class="ccol-nm">'+cmpEsc(t.name)+'</span></div><div class="ccol-score">'+t.score.toFixed(1)+'<span class="ccol-sclbl">overall</span></div><div class="ccol-crits">'+crits+'</div><div class="ccol-meta"><div><span>Price</span><b>'+cmpEsc(t.price)+'</b></div><div><span>Type</span><b>'+cmpEsc(t.type)+'</b></div><div><span>Best for</span><b>'+cmpEsc(t.bestFor)+'</b></div></div><div class="ccol-cta">'+rev+'<a href="'+cmpSite(t)+'" target="_blank" rel="noopener">Visit</a></div></div>';
+    }).join('')+'</div>';
     modal.classList.add('on');
   };
   var modal=document.getElementById('cmpModal'),closeBtn=document.getElementById('cmpClose');

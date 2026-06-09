@@ -656,6 +656,66 @@ html.dark{--accent:#9b8bff}
 .id .tags{align-items:center}
 .id .tags .price{margin-left:auto}
 </style>
+<style id="br-fix5">
+/* #1 tool-page tabs on mobile: keep all 3 on ONE line (no per-label wrap), scroll if tight */
+@media(max-width:560px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:2px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{white-space:nowrap;font-size:13.5px;padding:12px 10px;flex:0 0 auto}
+}
+/* #2 + #3 breathing room before the two bottom sections (Compare, Others) — these are the only direct .h children of main */
+main.wrap>.h{margin-top:48px}
+@media(max-width:560px){main.wrap>.h{margin-top:36px}}
+/* #4 "Others in …" — horizontal swipe slider instead of a tall vertical stack */
+.related{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 2px 10px;scroll-padding-left:2px}
+.related::-webkit-scrollbar{display:none}
+.related>.rel{flex:0 0 300px;scroll-snap-align:start}
+@media(max-width:560px){.related>.rel{flex:0 0 82%}}
+</style>
+<style id="br-fix6dark">html.dark{--ink-soft:#c6c2dd;--ink-faint:#9b97b6;--grad:linear-gradient(135deg,#8b7dff 0%,#c66bff 48%,#ff7da6 100%)}</style>
+<style id="br-fix6">
+/* #2 smaller hero price pill */
+.price{font-size:12.5px}
+.price .free,.price .pro{padding:7px 12px}
+.price .pro b{font-size:13.5px}
+.price .free::before{width:7px;height:7px;box-shadow:0 0 0 2px rgba(16,185,129,.22)}
+/* #3 reaction buttons colorful by default to invite votes */
+.react{border-color:color-mix(in srgb,var(--c) 45%,transparent);color:var(--c);background:color-mix(in srgb,var(--c) 10%,var(--surface));font-weight:700}
+.react svg{stroke:var(--c)}
+.react b{color:var(--c)}
+.react:hover{background:color-mix(in srgb,var(--c) 18%,var(--surface));border-color:var(--c);transform:translateY(-2px);box-shadow:0 8px 20px color-mix(in srgb,var(--c) 32%,transparent)}
+html.dark .react{background:color-mix(in srgb,var(--c) 18%,var(--surface))}
+/* #5 compare popup redesigned: side-by-side cards with score bars (replaces the table) */
+.cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cmp-scroll::-webkit-scrollbar{display:none}
+.cmpcards{display:flex;gap:14px;padding:6px 2px 4px;align-items:stretch}
+.ccol{position:relative;flex:1 1 0;min-width:208px;display:flex;flex-direction:column;gap:13px;padding:22px 16px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.ccol-win{border:1.5px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box;box-shadow:var(--shadow-lg)}
+.ccol-crown{position:absolute;top:-11px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--grad);padding:4px 12px;border-radius:100px;white-space:nowrap;box-shadow:var(--shadow)}
+.ccol-hd{display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center}
+.ccol-lg{width:46px;height:46px;border-radius:13px;background:#fff;border:1px solid var(--line-soft);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:var(--shadow)}
+.ccol-lg img{width:100%;height:100%;object-fit:contain;padding:8px}
+.ccol-nm{font-family:var(--display);font-weight:600;font-size:16px;line-height:1.2}
+.ccol-score{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;text-align:center;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ccol-sclbl{display:block;font-family:var(--body);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);-webkit-text-fill-color:var(--ink-faint);margin-top:5px}
+.ccol-crits{display:flex;flex-direction:column;gap:10px}
+.ccrit{display:grid;grid-template-columns:1fr auto;gap:4px 8px;align-items:center}
+.ccrit-l{font-size:11.5px;font-weight:600;color:var(--ink-soft);grid-column:1;min-width:0}
+.ccrit-v{font-size:12.5px;font-weight:800;color:var(--ink-soft);grid-column:2;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ccrit-bar{grid-column:1/3;height:6px;border-radius:100px;background:var(--line-soft);overflow:hidden}
+.ccrit-bar>span{display:block;height:100%;border-radius:100px}
+.ccrit.lead .ccrit-l,.ccrit.lead .ccrit-v{color:var(--ink)}
+.ccrit.lead .ccrit-v::after{content:" \25B2";font-size:8px;color:var(--green);vertical-align:middle}
+.ccol-meta{display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--line-soft);padding-top:13px;margin-top:auto}
+.ccol-meta>div{display:flex;flex-direction:column;gap:2px}
+.ccol-meta span{font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint)}
+.ccol-meta b{font-size:12.5px;font-weight:600;color:var(--ink-soft);line-height:1.35}
+.ccol-cta{display:flex;gap:8px;margin-top:2px}
+.ccol-cta a{flex:1;text-align:center;font-size:12.5px;font-weight:700;padding:9px 8px;border-radius:100px;text-decoration:none;transition:.18s}
+.ccol-cta a:first-child:not(:only-child){background:var(--surface);border:1px solid var(--line);color:var(--ink-soft)}
+.ccol-cta a:last-child{background:var(--grad);color:#fff}
+@media(max-width:560px){.ccol{min-width:78%;flex:0 0 78%}.ccol-score{font-size:34px}}
+</style>
 </head>
 <body>
 
@@ -974,7 +1034,7 @@ html.dark{--accent:#9b8bff}
   <button class="modal-close" id="cmpClose" aria-label="Close">&times;</button>
   <h2>Head-to-head</h2>
   <div class="cmp-scroll" id="cmpGrid"></div>
-  <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better; the leader in each row is highlighted.</p>
+  <p class="fineprint">Same weighted rubric as the rankings &mdash; higher is better. The top pick and the leader in each metric are highlighted.</p>
 </div></div>
 <script>
 (function(){
@@ -985,18 +1045,14 @@ html.dark{--accent:#9b8bff}
   window.BR_openCompare=function(ts){
     var grid=document.getElementById('cmpGrid'),modal=document.getElementById('cmpModal');
     if(!grid||!modal||!ts||ts.length<2)return;
-    function cells(vals,color){var max=Math.max.apply(null,vals);return vals.map(function(v){var bar=color?'<span class="cmpbar"><span style="width:'+(v*10)+'%;background:'+color+'"></span></span>':'';return '<td class="'+(v===max?'win':'')+'"><span class="cmpv">'+v.toFixed(1)+'</span>'+bar+'</td>';}).join('');}
-    function txt(l,vals){return '<tr><th>'+l+'</th>'+vals.map(function(v){return '<td><span class="cmptxt">'+cmpEsc(v)+'</span></td>';}).join('')+'</tr>';}
-    var head='<thead><tr><th></th>'+ts.map(function(t){return '<th><span class="cmphd"><span class="lg"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></span><span class="nm">'+cmpEsc(t.name)+'</span><span class="hsc">'+t.score.toFixed(1)+'</span></span></th>';}).join('')+'</tr></thead>';
-    var b='<tbody>';
-    b+='<tr class="cmp-ov"><th>Overall</th>'+cells(ts.map(function(t){return t.score;}),'linear-gradient(90deg,#6c5cff,#b14dff)')+'</tr>';
-    for(var j=0;j<6;j++){(function(j){b+='<tr><th><span class="cmpdot" style="background:'+SCO[j]+'"></span>'+LB[j]+'</th>'+cells(ts.map(function(t){return t.s[j];}),SCO[j])+'</tr>';})(j);}
-    b+=txt('Price',ts.map(function(t){return t.price;}));
-    b+=txt('Type',ts.map(function(t){return t.type;}));
-    b+=txt('Best for',ts.map(function(t){return t.bestFor;}));
-    b+='</tbody>';
-    var foot='<tfoot><tr class="cmpfoot"><th></th>'+ts.map(function(t){var rev=(t.link&&t.link!=='#')?'<a href="'+t.link+'"'+(/^https?:/i.test(t.link)?' target="_blank" rel="noopener"':'')+'>Review</a>':'';return '<td>'+rev+'<a href="'+cmpSite(t)+'" target="_blank" rel="noopener">Visit</a></td>';}).join('')+'</tr></tfoot>';
-    grid.innerHTML='<table class="cmpT">'+head+b+foot+'</table>';
+    var oMax=Math.max.apply(null,ts.map(function(t){return t.score;}));
+    var cMax=[];for(var k=0;k<6;k++){cMax[k]=Math.max.apply(null,ts.map(function(t){return t.s[k];}));}
+    grid.innerHTML='<div class="cmpcards">'+ts.map(function(t){
+      var win=(t.score===oMax),crits='';
+      for(var j=0;j<6;j++){var v=t.s[j],lead=(v===cMax[j]);crits+='<div class="ccrit'+(lead?' lead':'')+'"><span class="ccrit-l">'+LB[j]+'</span><span class="ccrit-v">'+v.toFixed(1)+'</span><span class="ccrit-bar"><span style="width:'+(v*10)+'%;background:'+SCO[j]+'"></span></span></div>';}
+      var rev=(t.link&&t.link!=='#')?'<a href="'+t.link+'"'+(/^https?:/i.test(t.link)?' target="_blank" rel="noopener"':'')+'>Review</a>':'';
+      return '<div class="ccol'+(win?' ccol-win':'')+'">'+(win?'<span class="ccol-crown">Top pick</span>':'')+'<div class="ccol-hd"><span class="ccol-lg"><img alt="" referrerpolicy="no-referrer" src="https://www.google.com/s2/favicons?domain='+t.domain+'&sz=128"></span><span class="ccol-nm">'+cmpEsc(t.name)+'</span></div><div class="ccol-score">'+t.score.toFixed(1)+'<span class="ccol-sclbl">overall</span></div><div class="ccol-crits">'+crits+'</div><div class="ccol-meta"><div><span>Price</span><b>'+cmpEsc(t.price)+'</b></div><div><span>Type</span><b>'+cmpEsc(t.type)+'</b></div><div><span>Best for</span><b>'+cmpEsc(t.bestFor)+'</b></div></div><div class="ccol-cta">'+rev+'<a href="'+cmpSite(t)+'" target="_blank" rel="noopener">Visit</a></div></div>';
+    }).join('')+'</div>';
     modal.classList.add('on');
   };
   var modal=document.getElementById('cmpModal'),closeBtn=document.getElementById('cmpClose');
