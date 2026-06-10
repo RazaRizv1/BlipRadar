@@ -1798,7 +1798,7 @@
       "price": "In ChatGPT $20/mo",
       "domain": "openai.com",
       "letter": "G",
-      "link": "#",
+      "link": "gpt-image.html",
       "desc": "Best prompt adherence and conversational editing.",
       "bestFor": "accurate, easy generation inside chat.",
       "s": [
@@ -1827,7 +1827,7 @@
       "price": "Free · AI Pro $20/mo",
       "domain": "gemini.google.com",
       "letter": "G",
-      "link": "#",
+      "link": "google-imagen.html",
       "desc": "Google's high-fidelity model with strong editing.",
       "bestFor": "photoreal images and natural-language edits.",
       "s": [
@@ -1855,7 +1855,7 @@
       "price": "From $10/mo",
       "domain": "midjourney.com",
       "letter": "M",
-      "link": "#",
+      "link": "midjourney.html",
       "desc": "The aesthetic leader for cinematic, stylized images.",
       "bestFor": "the most beautiful, artistic results.",
       "s": [
@@ -1884,7 +1884,7 @@
       "price": "API · usage",
       "domain": "blackforestlabs.ai",
       "letter": "F",
-      "link": "#",
+      "link": "flux.html",
       "desc": "Open-weight frontier model; the API favorite.",
       "bestFor": "photoreal generation and custom pipelines.",
       "s": [
@@ -1913,7 +1913,7 @@
       "price": "In Creative Cloud",
       "domain": "adobe.com",
       "letter": "A",
-      "link": "#",
+      "link": "adobe-firefly-image.html",
       "desc": "Commercially safe, IP-indemnified, deep in Creative Cloud.",
       "bestFor": "brand-safe commercial work.",
       "s": [
@@ -1941,7 +1941,7 @@
       "price": "Free · from $8/mo",
       "domain": "ideogram.ai",
       "letter": "I",
-      "link": "#",
+      "link": "ideogram.html",
       "desc": "The best in-image text and typography rendering.",
       "bestFor": "posters and designs that depend on words.",
       "s": [
@@ -1969,7 +1969,7 @@
       "price": "Open source · API",
       "domain": "stability.ai",
       "letter": "S",
-      "link": "#",
+      "link": "stable-diffusion.html",
       "desc": "Open-source, endlessly customizable with LoRAs and ControlNet.",
       "bestFor": "full local control and fine-tuning.",
       "s": [
@@ -1997,7 +1997,7 @@
       "price": "Free · from $12/mo",
       "domain": "recraft.ai",
       "letter": "R",
-      "link": "#",
+      "link": "recraft.html",
       "desc": "Designer-focused: vectors, brand sets and legible text.",
       "bestFor": "logos, icons and brand assets.",
       "s": [
@@ -2026,7 +2026,7 @@
       "price": "Free · from $12/mo",
       "domain": "leonardo.ai",
       "letter": "L",
-      "link": "#",
+      "link": "leonardo-ai.html",
       "desc": "Creative generation with fine control and game assets.",
       "bestFor": "game art and controllable creative work.",
       "s": [
@@ -2055,7 +2055,7 @@
       "price": "In X Premium",
       "domain": "x.ai",
       "letter": "G",
-      "link": "#",
+      "link": "grok-imagine-image.html",
       "desc": "xAI's fast generator built into X.",
       "bestFor": "quick generation inside X.",
       "s": [
@@ -2084,7 +2084,7 @@
       "price": "In Canva",
       "domain": "canva.com",
       "letter": "C",
-      "link": "#",
+      "link": "canva-magic-media.html",
       "desc": "Image generation inside the Canva editor.",
       "bestFor": "generating art inside Canva designs.",
       "s": [
@@ -2113,7 +2113,7 @@
       "price": "Free · from $12/mo",
       "domain": "freepik.com",
       "letter": "F",
-      "link": "#",
+      "link": "freepik-ai.html",
       "desc": "Many models plus stock and design assets in one place.",
       "bestFor": "design teams wanting models and stock.",
       "s": [
@@ -2142,7 +2142,7 @@
       "price": "Free · from $10/mo",
       "domain": "krea.ai",
       "letter": "K",
-      "link": "#",
+      "link": "krea-image.html",
       "desc": "Real-time canvas across many image models.",
       "bestFor": "real-time ideation across models.",
       "s": [
@@ -2171,7 +2171,7 @@
       "price": "Free · credits",
       "domain": "reve.art",
       "letter": "R",
-      "link": "#",
+      "link": "reve.html",
       "desc": "Strong prompt adherence and aesthetic balance.",
       "bestFor": "well-rounded creative generation.",
       "s": [
@@ -2199,7 +2199,7 @@
       "price": "Free",
       "domain": "designer.microsoft.com",
       "letter": "M",
-      "link": "#",
+      "link": "microsoft-designer.html",
       "desc": "Free generation and design powered by GPT Image.",
       "bestFor": "quick free designs and graphics.",
       "s": [
@@ -2228,7 +2228,7 @@
       "price": "API · usage",
       "domain": "bytedance.com",
       "letter": "S",
-      "link": "#",
+      "link": "seedream.html",
       "desc": "ByteDance's high-quality model, strong on realism.",
       "bestFor": "photoreal generate-and-edit workflows.",
       "s": [
@@ -2257,7 +2257,7 @@
       "price": "Free · Pro $13/mo",
       "domain": "photoroom.com",
       "letter": "P",
-      "link": "#",
+      "link": "photoroom.html",
       "desc": "Product photos, background removal and edits.",
       "bestFor": "ecommerce product imagery.",
       "s": [
@@ -2286,7 +2286,7 @@
       "price": "Free · from $15/mo",
       "domain": "playground.com",
       "letter": "P",
-      "link": "#",
+      "link": "playground.html",
       "desc": "Graphics and social images with an easy editor.",
       "bestFor": "social graphics and casual design.",
       "s": [
@@ -2314,7 +2314,7 @@
       "price": "Free · credits",
       "domain": "lumalabs.ai",
       "letter": "L",
-      "link": "#",
+      "link": "luma-photon.html",
       "desc": "Luma's well-rounded, efficient image model.",
       "bestFor": "balanced, affordable generation.",
       "s": [
@@ -2342,7 +2342,7 @@
       "price": "From $39/mo",
       "domain": "magnific.ai",
       "letter": "M",
-      "link": "#",
+      "link": "magnific.html",
       "desc": "AI upscaling and enhancement that invents detail.",
       "bestFor": "upscaling and enriching images.",
       "s": [
@@ -2371,7 +2371,7 @@
       "price": "Free · from $5/mo",
       "domain": "picsart.com",
       "letter": "P",
-      "link": "#",
+      "link": "picsart.html",
       "desc": "Mobile-first editing with AI image tools.",
       "bestFor": "mobile image editing and effects.",
       "s": [
@@ -2400,7 +2400,7 @@
       "price": "Free · from $9/mo",
       "domain": "fotor.com",
       "letter": "F",
-      "link": "#",
+      "link": "fotor.html",
       "desc": "Online photo editor with AI generation built in.",
       "bestFor": "casual photo editing plus AI art.",
       "s": [
@@ -2429,7 +2429,7 @@
       "price": "Free · from $12/mo",
       "domain": "getimg.ai",
       "letter": "G",
-      "link": "#",
+      "link": "getimg.html",
       "desc": "Multi-model API and editor for generation.",
       "bestFor": "API access to many image models.",
       "s": [
@@ -2457,7 +2457,7 @@
       "price": "Free · credits",
       "domain": "nightcafe.studio",
       "letter": "N",
-      "link": "#",
+      "link": "nightcafe.html",
       "desc": "Community generator with many models and challenges.",
       "bestFor": "exploring styles in a community.",
       "s": [
@@ -2485,7 +2485,7 @@
       "price": "Free · Premium $10/mo",
       "domain": "dream.ai",
       "letter": "D",
-      "link": "#",
+      "link": "dream-by-wombo.html",
       "desc": "Easy, fun mobile art generation.",
       "bestFor": "playful mobile art.",
       "s": [
@@ -2515,7 +2515,7 @@
       "price": "In Gemini · API",
       "domain": "deepmind.google",
       "letter": "V",
-      "link": "#",
+      "link": "google-veo.html",
       "desc": "The strongest all-round model — realism plus native audio.",
       "bestFor": "best overall quality with sound.",
       "s": [
@@ -2543,7 +2543,7 @@
       "price": "Free · from $10/mo",
       "domain": "klingai.com",
       "letter": "K",
-      "link": "#",
+      "link": "kling-video.html",
       "desc": "Top motion and value, with native audio and lip-sync.",
       "bestFor": "high-quality video on a budget.",
       "s": [
@@ -2571,7 +2571,7 @@
       "price": "API · usage",
       "domain": "bytedance.com",
       "letter": "S",
-      "link": "#",
+      "link": "seedance.html",
       "desc": "ByteDance's hot image-to-video model, tops blind tests.",
       "bestFor": "image-to-video with strong realism.",
       "s": [
@@ -2600,7 +2600,7 @@
       "price": "Free · from $15/mo",
       "domain": "runwayml.com",
       "letter": "R",
-      "link": "#",
+      "link": "runway-video.html",
       "desc": "The pro creative studio for directed, controllable shots.",
       "bestFor": "directing precise, pro-grade shots.",
       "s": [
@@ -2628,7 +2628,7 @@
       "price": "Free · from $29/mo",
       "domain": "heygen.com",
       "letter": "H",
-      "link": "#",
+      "link": "heygen.html",
       "desc": "Lifelike avatars and instant video translation.",
       "bestFor": "talking-head and localized video.",
       "s": [
@@ -2656,7 +2656,7 @@
       "price": "Free · from $10/mo",
       "domain": "hailuoai.com",
       "letter": "H",
-      "link": "#",
+      "link": "hailuo-video.html",
       "desc": "Expressive motion and native 4K at low cost.",
       "bestFor": "the most output per dollar.",
       "s": [
@@ -2684,7 +2684,7 @@
       "price": "From $29/mo",
       "domain": "synthesia.io",
       "letter": "S",
-      "link": "#",
+      "link": "synthesia.html",
       "desc": "Enterprise avatar video for training and L&amp;D.",
       "bestFor": "corporate training and explainers.",
       "s": [
@@ -2713,7 +2713,7 @@
       "price": "Open source · API",
       "domain": "wan.video",
       "letter": "W",
-      "link": "#",
+      "link": "wan.html",
       "desc": "The serious open-weight model for self-hosting.",
       "bestFor": "self-hosted, customizable pipelines.",
       "s": [
@@ -2741,7 +2741,7 @@
       "price": "Free · from $10/mo",
       "domain": "lumalabs.ai",
       "letter": "L",
-      "link": "#",
+      "link": "luma-dream-machine-video.html",
       "desc": "Fast, cinematic image-to-video clips.",
       "bestFor": "quick cinematic shots.",
       "s": [
@@ -2798,7 +2798,7 @@
       "price": "In Creative Cloud",
       "domain": "adobe.com",
       "letter": "A",
-      "link": "#",
+      "link": "adobe-firefly-video.html",
       "desc": "Commercially safe, IP-indemnified video in Premiere.",
       "bestFor": "brand-safe commercial video.",
       "s": [
@@ -2826,7 +2826,7 @@
       "price": "From $10/mo",
       "domain": "midjourney.com",
       "letter": "M",
-      "link": "#",
+      "link": "midjourney-video.html",
       "desc": "Midjourney's signature aesthetic, now in motion.",
       "bestFor": "stylized, artistic motion.",
       "s": [
@@ -2855,7 +2855,7 @@
       "price": "Free · from $10/mo",
       "domain": "pika.art",
       "letter": "P",
-      "link": "#",
+      "link": "pika-video.html",
       "desc": "Playful effects, swaps and real-time streaming.",
       "bestFor": "fast, fun social video.",
       "s": [
@@ -2883,7 +2883,7 @@
       "price": "From $9/mo",
       "domain": "higgsfield.ai",
       "letter": "H",
-      "link": "#",
+      "link": "higgsfield.html",
       "desc": "Cinematic camera controls and a multi-model studio.",
       "bestFor": "stylized camera-driven shots.",
       "s": [
@@ -2912,7 +2912,7 @@
       "price": "Free · from $10/mo",
       "domain": "hedra.com",
       "letter": "H",
-      "link": "#",
+      "link": "hedra.html",
       "desc": "Expressive talking characters from a photo and audio.",
       "bestFor": "character and talking-image video.",
       "s": [
@@ -2940,7 +2940,7 @@
       "price": "In X Premium",
       "domain": "x.ai",
       "letter": "G",
-      "link": "#",
+      "link": "grok-imagine-video.html",
       "desc": "xAI's fast text-and-image-to-video in X.",
       "bestFor": "fast video inside X.",
       "s": [
@@ -2968,7 +2968,7 @@
       "price": "Free · from $10/mo",
       "domain": "pixverse.ai",
       "letter": "P",
-      "link": "#",
+      "link": "pixverse.html",
       "desc": "Fast, affordable social clips with effects.",
       "bestFor": "quick social-ready video.",
       "s": [
@@ -2997,7 +2997,7 @@
       "price": "Free · Pro",
       "domain": "capcut.com",
       "letter": "C",
-      "link": "#",
+      "link": "capcut-dreamina.html",
       "desc": "AI generation inside the popular editor.",
       "bestFor": "editing with AI video built in.",
       "s": [
@@ -3026,7 +3026,7 @@
       "price": "Free · from $10/mo",
       "domain": "krea.ai",
       "letter": "K",
-      "link": "#",
+      "link": "krea-video.html",
       "desc": "One canvas across many video models.",
       "bestFor": "comparing models in one place.",
       "s": [
@@ -3055,7 +3055,7 @@
       "price": "Free · from $15/mo",
       "domain": "ltx.studio",
       "letter": "L",
-      "link": "#",
+      "link": "ltx-studio.html",
       "desc": "Storyboard-to-film studio by Lightricks.",
       "bestFor": "planning multi-shot stories.",
       "s": [
@@ -3083,7 +3083,7 @@
       "price": "Free · from $8/mo",
       "domain": "vidu.com",
       "letter": "V",
-      "link": "#",
+      "link": "vidu.html",
       "desc": "Fast, character-consistent clips from Shengshu.",
       "bestFor": "character-consistent short clips.",
       "s": [
@@ -3112,7 +3112,7 @@
       "price": "Open source · API",
       "domain": "genmo.ai",
       "letter": "G",
-      "link": "#",
+      "link": "genmo-video.html",
       "desc": "Open-weight Mochi model for experimentation.",
       "bestFor": "open-source video generation.",
       "s": [
@@ -3140,7 +3140,7 @@
       "price": "Free · from $20/mo",
       "domain": "invideo.io",
       "letter": "I",
-      "link": "#",
+      "link": "invideo-ai.html",
       "desc": "Prompt-to-video for social and marketing edits.",
       "bestFor": "templated marketing videos.",
       "s": [
@@ -3196,7 +3196,7 @@
       "price": "From $5/mo",
       "domain": "kaiber.ai",
       "letter": "K",
-      "link": "#",
+      "link": "kaiber-video.html",
       "desc": "Music-video and stylized transformation clips.",
       "bestFor": "music videos and stylized motion.",
       "s": [
@@ -3228,7 +3228,7 @@
       "price": "Free · from $5/mo",
       "domain": "elevenlabs.io",
       "letter": "E",
-      "link": "#",
+      "link": "elevenlabs.html",
       "desc": "The realism leader for narration, cloning and dubbing.",
       "bestFor": "the most natural narration and cloning.",
       "s": [
@@ -3257,7 +3257,7 @@
       "price": "API · in ChatGPT",
       "domain": "openai.com",
       "letter": "O",
-      "link": "#",
+      "link": "openai-voice.html",
       "desc": "Realtime and TTS voices with contextual intelligence.",
       "bestFor": "voice agents and app integration.",
       "s": [
@@ -3286,7 +3286,7 @@
       "price": "Free · usage",
       "domain": "cartesia.ai",
       "letter": "C",
-      "link": "#",
+      "link": "cartesia.html",
       "desc": "Sonic's ~90ms latency leads for voice agents.",
       "bestFor": "real-time conversational agents.",
       "s": [
@@ -3315,7 +3315,7 @@
       "price": "Free · usage",
       "domain": "hume.ai",
       "letter": "H",
-      "link": "#",
+      "link": "hume-ai.html",
       "desc": "Octave steers emotion from plain-English instructions.",
       "bestFor": "emotionally expressive speech.",
       "s": [
@@ -3344,7 +3344,7 @@
       "price": "API · usage",
       "domain": "cloud.google.com",
       "letter": "G",
-      "link": "#",
+      "link": "google-cloud-tts.html",
       "desc": "Chirp 3 HD: many styles at low per-character cost.",
       "bestFor": "TTS at scale on a budget.",
       "s": [
