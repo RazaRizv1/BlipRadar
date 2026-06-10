@@ -3372,7 +3372,7 @@
       "price": "Free · from $29/mo",
       "domain": "murf.ai",
       "letter": "M",
-      "link": "#",
+      "link": "murf-ai.html",
       "desc": "The best all-in-one studio for video voiceovers.",
       "bestFor": "polished video voiceovers.",
       "s": [
@@ -3400,7 +3400,7 @@
       "price": "API · usage",
       "domain": "azure.microsoft.com",
       "letter": "A",
-      "link": "#",
+      "link": "microsoft-azure-tts.html",
       "desc": "Neural voices with enterprise governance and SLAs.",
       "bestFor": "enterprise TTS in the cloud.",
       "s": [
@@ -3429,7 +3429,7 @@
       "price": "Free · usage",
       "domain": "resemble.ai",
       "letter": "R",
-      "link": "#",
+      "link": "resemble-ai.html",
       "desc": "Professional cloning, speech-to-speech and dubbing.",
       "bestFor": "brand voice cloning and dubbing.",
       "s": [
@@ -3457,7 +3457,7 @@
       "price": "From $44/mo",
       "domain": "wellsaidlabs.com",
       "letter": "W",
-      "link": "#",
+      "link": "wellsaid-labs.html",
       "desc": "Enterprise-grade, consent-based studio voices.",
       "bestFor": "compliant corporate narration.",
       "s": [
@@ -3485,7 +3485,7 @@
       "price": "Free · Premium $11/mo",
       "domain": "speechify.com",
       "letter": "S",
-      "link": "#",
+      "link": "speechify.html",
       "desc": "Turns articles and docs into natural speech.",
       "bestFor": "listening to text on the go.",
       "s": [
@@ -3514,7 +3514,7 @@
       "price": "Free · usage",
       "domain": "fish.audio",
       "letter": "F",
-      "link": "#",
+      "link": "fish-audio.html",
       "desc": "Fast, low-cost cloning and open-leaning models.",
       "bestFor": "affordable voice cloning.",
       "s": [
@@ -3542,7 +3542,7 @@
       "price": "API · usage",
       "domain": "aws.amazon.com",
       "letter": "A",
-      "link": "#",
+      "link": "amazon-polly.html",
       "desc": "Reliable, cheap TTS deep in the AWS stack.",
       "bestFor": "AWS-native voice at scale.",
       "s": [
@@ -3571,7 +3571,7 @@
       "price": "Free · from $24/mo",
       "domain": "descript.com",
       "letter": "D",
-      "link": "#",
+      "link": "descript.html",
       "desc": "Edit audio like a doc, with voice cloning.",
       "bestFor": "podcast and video voice editing.",
       "s": [
@@ -3600,7 +3600,7 @@
       "price": "API · usage",
       "domain": "minimax.io",
       "letter": "M",
-      "link": "#",
+      "link": "minimax-audio.html",
       "desc": "High-quality multilingual TTS and cloning.",
       "bestFor": "multilingual TTS at low cost.",
       "s": [
@@ -3629,7 +3629,7 @@
       "price": "API · usage",
       "domain": "inworld.ai",
       "letter": "I",
-      "link": "#",
+      "link": "inworld.html",
       "desc": "Low-latency voices for games and agents.",
       "bestFor": "interactive game and agent voice.",
       "s": [
@@ -3657,7 +3657,7 @@
       "price": "Free · from $24/mo",
       "domain": "lovo.ai",
       "letter": "L",
-      "link": "#",
+      "link": "lovo.html",
       "desc": "Genny studio with many voices and editing.",
       "bestFor": "creator voiceovers.",
       "s": [
@@ -3686,7 +3686,7 @@
       "price": "Free · usage",
       "domain": "camb.ai",
       "letter": "C",
-      "link": "#",
+      "link": "cambai.html",
       "desc": "Dubbing and translation across many languages.",
       "bestFor": "video dubbing and localization.",
       "s": [
@@ -3714,7 +3714,7 @@
       "price": "Free · from $10/mo",
       "domain": "typecast.ai",
       "letter": "T",
-      "link": "#",
+      "link": "typecast.html",
       "desc": "Emotive character voices for content.",
       "bestFor": "expressive character voiceovers.",
       "s": [
@@ -3742,7 +3742,7 @@
       "price": "Free · from $10/mo",
       "domain": "naturalreaders.com",
       "letter": "N",
-      "link": "#",
+      "link": "naturalreader.html",
       "desc": "Long-standing read-aloud TTS for documents.",
       "bestFor": "reading documents aloud.",
       "s": [
@@ -3771,7 +3771,7 @@
       "price": "Free · from $12/mo",
       "domain": "podcastle.ai",
       "letter": "P",
-      "link": "#",
+      "link": "podcastle.html",
       "desc": "Recording, editing and AI voices for podcasts.",
       "bestFor": "end-to-end podcast production.",
       "s": [
@@ -3799,7 +3799,7 @@
       "price": "API · usage",
       "domain": "unrealspeech.com",
       "letter": "U",
-      "link": "#",
+      "link": "unreal-speech.html",
       "desc": "Low-cost TTS API built for high volume.",
       "bestFor": "cheap TTS at scale via API.",
       "s": [
@@ -3827,7 +3827,7 @@
       "price": "Free · from $18/mo",
       "domain": "replicastudios.com",
       "letter": "R",
-      "link": "#",
+      "link": "replica-studios.html",
       "desc": "Voices for games and real-time experiences.",
       "bestFor": "game and metaverse voices.",
       "s": [
@@ -3855,7 +3855,7 @@
       "price": "Free · Pro",
       "domain": "voice.ai",
       "letter": "V",
-      "link": "#",
+      "link": "voiceai.html",
       "desc": "Real-time voice changing and TTS.",
       "bestFor": "live voice changing.",
       "s": [
@@ -3883,7 +3883,7 @@
       "price": "From $13/mo",
       "domain": "speechki.org",
       "letter": "S",
-      "link": "#",
+      "link": "speechki.html",
       "desc": "Audiobook production with many voices.",
       "bestFor": "turning text into audiobooks.",
       "s": [
@@ -3911,7 +3911,7 @@
       "price": "Free · from $19/mo",
       "domain": "listnr.ai",
       "letter": "L",
-      "link": "#",
+      "link": "listnr.html",
       "desc": "Voiceovers and podcast hosting in one.",
       "bestFor": "podcast voice and hosting.",
       "s": [
@@ -3941,7 +3941,7 @@
       "price": "Free · Plus $10/mo",
       "domain": "gamma.app",
       "letter": "G",
-      "link": "#",
+      "link": "gamma.html",
       "desc": "The clear leader — turns a prompt or doc into a polished, on-brand deck in seconds.",
       "bestFor": "the fastest path from an idea to a presentable deck.",
       "s": [
@@ -3968,7 +3968,7 @@
       "price": "Free · Pro $15/mo",
       "domain": "canva.com",
       "letter": "C",
-      "link": "#",
+      "link": "canva-presentations.html",
       "desc": "AI inside the design tool millions already use, with a vast template and asset library.",
       "bestFor": "visual, asset-heavy marketing decks.",
       "s": [
@@ -3996,7 +3996,7 @@
       "price": "From $10/mo",
       "domain": "plusai.com",
       "letter": "P",
-      "link": "#",
+      "link": "plus-ai.html",
       "desc": "Native add-in for PowerPoint and Google Slides — generate and restyle without leaving them.",
       "bestFor": "people who want to stay inside PowerPoint or Google Slides.",
       "s": [
@@ -4023,7 +4023,7 @@
       "price": "In Microsoft 365 Copilot",
       "domain": "microsoft.com",
       "letter": "M",
-      "link": "#",
+      "link": "microsoft-copilot-presentations.html",
       "desc": "Built into PowerPoint across Microsoft 365 — drafts and restyles slides where you already work.",
       "bestFor": "teams already living in Microsoft 365.",
       "s": [
@@ -4051,7 +4051,7 @@
       "price": "From $12/mo",
       "domain": "beautiful.ai",
       "letter": "B",
-      "link": "#",
+      "link": "beautifulai-presentations.html",
       "desc": "Design-first generator whose smart templates keep every slide looking sharp.",
       "bestFor": "good-looking decks without a designer.",
       "s": [
@@ -4079,7 +4079,7 @@
       "price": "Free · Pro $20/mo",
       "domain": "presentations.ai",
       "letter": "P",
-      "link": "#",
+      "link": "presentationsai.html",
       "desc": "Fast drafting with strict design guardrails that keep slides on-brand.",
       "bestFor": "rapid internal drafting that stays tidy.",
       "s": [
@@ -4106,7 +4106,7 @@
       "price": "Free · Pro $20/mo",
       "domain": "pitch.com",
       "letter": "P",
-      "link": "#",
+      "link": "pitch.html",
       "desc": "Polished, collaborative decks with strong analytics for what happens after you send them.",
       "bestFor": "sales and team decks you share and track.",
       "s": [
@@ -4134,7 +4134,7 @@
       "price": "Free · Pro $10/mo",
       "domain": "slidesai.io",
       "letter": "S",
-      "link": "#",
+      "link": "slidesai.html",
       "desc": "Google Slides add-on that turns text into slides inside the editor you already use.",
       "bestFor": "Google Slides users who want AI in place.",
       "s": [
@@ -4161,7 +4161,7 @@
       "price": "From $10/mo",
       "domain": "decktopus.com",
       "letter": "D",
-      "link": "#",
+      "link": "decktopus.html",
       "desc": "Prompt-to-deck generator with built-in forms, voiceover and quick exports.",
       "bestFor": "quick decks with extras like forms and voiceover.",
       "s": [
@@ -4188,7 +4188,7 @@
       "price": "Free · from $5/mo",
       "domain": "prezi.com",
       "letter": "P",
-      "link": "#",
+      "link": "prezi-ai.html",
       "desc": "Adds AI to Prezi's signature zoomable, non-linear presentation canvas.",
       "bestFor": "dynamic, non-linear presentations.",
       "s": [
@@ -4217,7 +4217,7 @@
       "price": "Free · Pro $10/mo",
       "domain": "suno.com",
       "letter": "S",
-      "link": "#",
+      "link": "suno.html",
       "desc": "The most complete AI music platform — full songs with vocals in seconds, plus a Studio DAW.",
       "bestFor": "complete songs with vocals, start to finish.",
       "s": [
@@ -4244,7 +4244,7 @@
       "price": "Free · Standard $10/mo",
       "domain": "udio.com",
       "letter": "U",
-      "link": "#",
+      "link": "udio.html",
       "desc": "Closest rival to Suno — prized for natural vocals and downloadable stems.",
       "bestFor": "vocal-driven tracks and remixing with stems.",
       "s": [
@@ -4271,7 +4271,7 @@
       "price": "Free · from $5/mo",
       "domain": "elevenlabs.io",
       "letter": "E",
-      "link": "#",
+      "link": "elevenlabs-music.html",
       "desc": "From the voice-AI leader — studio-quality songs with especially clean audio.",
       "bestFor": "high-fidelity tracks from a voice-first team.",
       "s": [
@@ -4299,7 +4299,7 @@
       "price": "Free · from $12/mo",
       "domain": "stableaudio.com",
       "letter": "S",
-      "link": "#",
+      "link": "stable-audio.html",
       "desc": "Stability AI's generator, strong on production-ready instrumental audio.",
       "bestFor": "production-ready instrumental and sound design.",
       "s": [
@@ -4326,7 +4326,7 @@
       "price": "From $17/mo",
       "domain": "soundraw.io",
       "letter": "S",
-      "link": "#",
+      "link": "soundraw.html",
       "desc": "Royalty-free background music you can shape, made for content creators.",
       "bestFor": "royalty-free background music for video.",
       "s": [
@@ -4353,7 +4353,7 @@
       "price": "Free · from $11/mo",
       "domain": "aiva.ai",
       "letter": "A",
-      "link": "#",
+      "link": "aiva.html",
       "desc": "Orchestral and cinematic composer with MIDI export and full copyright options.",
       "bestFor": "cinematic and orchestral scores you can own.",
       "s": [
@@ -4381,7 +4381,7 @@
       "price": "Free · API pricing",
       "domain": "riffusion.com",
       "letter": "R",
-      "link": "#",
+      "link": "riffusion.html",
       "desc": "API-first music generation — the pick for building AI music into products.",
       "bestFor": "developers building music into their own apps.",
       "s": [
@@ -4408,7 +4408,7 @@
       "price": "Free · from $10/mo",
       "domain": "mureka.ai",
       "letter": "M",
-      "link": "#",
+      "link": "mureka.html",
       "desc": "Fast, experimental song generation with flexible voice options.",
       "bestFor": "quick experimentation across voices and styles.",
       "s": [
@@ -4435,7 +4435,7 @@
       "price": "Free · from $20/mo",
       "domain": "beatoven.ai",
       "letter": "B",
-      "link": "#",
+      "link": "beatovenai.html",
       "desc": "Royalty-free music with a perpetual license on every download.",
       "bestFor": "safe, clearly-licensed music for commercial use.",
       "s": [
@@ -4462,7 +4462,7 @@
       "price": "Free · from $6/mo",
       "domain": "loudly.com",
       "letter": "L",
-      "link": "#",
+      "link": "loudly.html",
       "desc": "Collaborative, royalty-free music library with AI generation.",
       "bestFor": "team-friendly royalty-free music.",
       "s": [
@@ -4491,7 +4491,7 @@
       "price": "Free · Pro $20/mo",
       "domain": "perplexity.ai",
       "letter": "P",
-      "link": "#",
+      "link": "perplexity-research.html",
       "desc": "The gold standard for fast, cited answers — Deep Research reads dozens of sources per query.",
       "bestFor": "fast, sourced answers across any topic.",
       "s": [
@@ -4518,7 +4518,7 @@
       "price": "Free · in Google AI",
       "domain": "notebooklm.google.com",
       "letter": "N",
-      "link": "#",
+      "link": "notebooklm.html",
       "desc": "Google's source-grounded notebook — answers come only from the documents you give it.",
       "bestFor": "reasoning strictly over your own sources.",
       "s": [
@@ -4545,7 +4545,7 @@
       "price": "Free · Plus $12/mo",
       "domain": "elicit.com",
       "letter": "E",
-      "link": "#",
+      "link": "elicit.html",
       "desc": "The leader for structured literature reviews and evidence extraction across many papers.",
       "bestFor": "systematic literature reviews.",
       "s": [
@@ -4572,7 +4572,7 @@
       "price": "Free · from $12/mo",
       "domain": "consensus.app",
       "letter": "C",
-      "link": "#",
+      "link": "consensus.html",
       "desc": "Answers questions straight from peer-reviewed papers, with a scientific-agreement meter.",
       "bestFor": "evidence-backed answers from the literature.",
       "s": [
@@ -4599,7 +4599,7 @@
       "price": "Free",
       "domain": "semanticscholar.org",
       "letter": "S",
-      "link": "#",
+      "link": "semantic-scholar.html",
       "desc": "Free academic discovery engine with massive coverage and smart paper recommendations.",
       "bestFor": "free paper discovery and citation maps.",
       "s": [
@@ -4626,7 +4626,7 @@
       "price": "Free · from $12/mo",
       "domain": "scispace.com",
       "letter": "S",
-      "link": "#",
+      "link": "scispace.html",
       "desc": "Reads and explains papers for you — upload a PDF and ask anything.",
       "bestFor": "understanding dense papers fast.",
       "s": [
@@ -4653,7 +4653,7 @@
       "price": "From $20/mo",
       "domain": "scite.ai",
       "letter": "S",
-      "link": "#",
+      "link": "scite.html",
       "desc": "Smart Citations show whether later work supports or contradicts a finding.",
       "bestFor": "checking how a claim has held up.",
       "s": [
@@ -4680,7 +4680,7 @@
       "price": "Free",
       "domain": "researchrabbit.ai",
       "letter": "R",
-      "link": "#",
+      "link": "researchrabbit.html",
       "desc": "Maps citation networks to surface related papers you'd otherwise miss.",
       "bestFor": "exploring a field's citation network.",
       "s": [
@@ -4707,7 +4707,7 @@
       "price": "Free · paid tiers",
       "domain": "undermind.ai",
       "letter": "U",
-      "link": "#",
+      "link": "undermind.html",
       "desc": "Autonomous deep search that hunts down hard-to-find papers.",
       "bestFor": "exhaustive, hard-to-find literature searches.",
       "s": [
@@ -4734,7 +4734,7 @@
       "price": "Free · from $10/mo",
       "domain": "scholarcy.com",
       "letter": "S",
-      "link": "#",
+      "link": "scholarcy.html",
       "desc": "Summarizes papers into structured, flashcard-style highlights.",
       "bestFor": "quick paper summaries and highlights.",
       "s": [
@@ -4763,7 +4763,7 @@
       "price": "Free · AI from $10/mo",
       "domain": "notion.so",
       "letter": "N",
-      "link": "#",
+      "link": "notion-ai-note-taking.html",
       "desc": "AI woven through the workspace millions use — Ask Notion searches everything you've written.",
       "bestFor": "AI inside a full team workspace.",
       "s": [
@@ -4790,7 +4790,7 @@
       "price": "Free · Sync $4/mo",
       "domain": "obsidian.md",
       "letter": "O",
-      "link": "#",
+      "link": "obsidian.html",
       "desc": "Local-first, plain-text knowledge base with a deep plugin and AI ecosystem.",
       "bestFor": "private, local-first knowledge management.",
       "s": [
@@ -4817,7 +4817,7 @@
       "price": "Free · Pro $15/mo",
       "domain": "mem.ai",
       "letter": "M",
-      "link": "#",
+      "link": "mem.html",
       "desc": "AI-native notes that organize themselves — just capture and let it link and surface.",
       "bestFor": "fast capture with zero manual filing.",
       "s": [
@@ -4844,7 +4844,7 @@
       "price": "$10/mo",
       "domain": "reflect.app",
       "letter": "R",
-      "link": "#",
+      "link": "reflect.html",
       "desc": "Encrypted daily-notes app with AI summaries and calendar-connected journaling.",
       "bestFor": "private daily journaling with AI.",
       "s": [
@@ -4871,7 +4871,7 @@
       "price": "Free · Pro $10/mo",
       "domain": "tana.inc",
       "letter": "T",
-      "link": "#",
+      "link": "tana.html",
       "desc": "Structured, AI-powered notes built on supertags and live queries.",
       "bestFor": "structured notes that double as a database.",
       "s": [
@@ -4898,7 +4898,7 @@
       "price": "Free · Pro $10/mo",
       "domain": "craft.do",
       "letter": "C",
-      "link": "#",
+      "link": "craft.html",
       "desc": "Beautifully designed docs and notes with AI writing built in.",
       "bestFor": "polished documents and notes.",
       "s": [
@@ -4925,7 +4925,7 @@
       "price": "Free · Pro $12/mo",
       "domain": "capacities.io",
       "letter": "C",
-      "link": "#",
+      "link": "capacities.html",
       "desc": "Object-based notes that treat every idea as a typed, connectable thing.",
       "bestFor": "object-oriented personal knowledge.",
       "s": [
@@ -4952,7 +4952,7 @@
       "price": "Free · open source",
       "domain": "logseq.com",
       "letter": "L",
-      "link": "#",
+      "link": "logseq.html",
       "desc": "Open-source, local-first outliner for networked thought.",
       "bestFor": "open-source networked note-taking.",
       "s": [
@@ -4979,7 +4979,7 @@
       "price": "Free · Pro $6/mo",
       "domain": "saga.so",
       "letter": "S",
-      "link": "#",
+      "link": "saga.html",
       "desc": "Clean AI workspace linking notes, tasks and pages.",
       "bestFor": "a simple connected notes-and-tasks workspace.",
       "s": [
@@ -5006,7 +5006,7 @@
       "price": "Free · from $6/mo",
       "domain": "amplenote.com",
       "letter": "A",
-      "link": "#",
+      "link": "amplenote.html",
       "desc": "Notes that flow straight into tasks and a daily plan.",
       "bestFor": "turning notes into actionable tasks.",
       "s": [
@@ -5035,7 +5035,7 @@
       "price": "Free tier · from $15/mo",
       "domain": "runwayml.com",
       "letter": "R",
-      "link": "#",
+      "link": "runway-motion-graphics.html",
       "desc": "The reference AI motion tool — Gen-4.5 text/image-to-video with motion brush, camera control and a web editor.",
       "bestFor": "granular creative control over motion.",
       "s": [
@@ -5062,7 +5062,7 @@
       "price": "Free tier · from $6/mo",
       "domain": "klingai.com",
       "letter": "K",
-      "link": "#",
+      "link": "kling-motion-graphics.html",
       "desc": "Photoreal cinematic motion with multi-shot storyboards and strong single-subject motion transfer.",
       "bestFor": "cinematic, lifelike animated clips.",
       "s": [
@@ -5089,7 +5089,7 @@
       "price": "Free tier · from $10/mo",
       "domain": "pika.art",
       "letter": "P",
-      "link": "#",
+      "link": "pika-motion-graphics.html",
       "desc": "Fast, playful image-to-video with effects like Pikaframes and object swaps.",
       "bestFor": "quick creative animations and effects.",
       "s": [
@@ -5116,7 +5116,7 @@
       "price": "Free tier · from $10/mo",
       "domain": "lumalabs.ai",
       "letter": "L",
-      "link": "#",
+      "link": "luma-dream-machine-motion-graphics.html",
       "desc": "Ray-based model producing smooth, natural motion from text or stills.",
       "bestFor": "natural motion from a single image.",
       "s": [
@@ -5143,7 +5143,7 @@
       "price": "Free tier · from $10/mo",
       "domain": "hailuoai.video",
       "letter": "H",
-      "link": "#",
+      "link": "hailuo-motion-graphics.html",
       "desc": "MiniMax's model known for fluid, cinematic motion and generous iteration.",
       "bestFor": "cinematic quality on a budget.",
       "s": [
@@ -5170,7 +5170,7 @@
       "price": "Incl. with Creative Cloud",
       "domain": "adobe.com",
       "letter": "A",
-      "link": "#",
+      "link": "adobe-firefly-motion-graphics.html",
       "desc": "Commercially-safe generative video built into the Adobe ecosystem.",
       "bestFor": "brand-safe motion inside Creative Cloud.",
       "s": [
@@ -5197,7 +5197,7 @@
       "price": "Free tier · from $5/mo",
       "domain": "kaiber.ai",
       "letter": "K",
-      "link": "#",
+      "link": "kaiber-motion-graphics.html",
       "desc": "Stylized, music-reactive animation popular for social and music videos.",
       "bestFor": "bold, stylized animated visuals.",
       "s": [
@@ -5224,7 +5224,7 @@
       "price": "From $20/mo",
       "domain": "wonderdynamics.com",
       "letter": "W",
-      "link": "#",
+      "link": "wonder-dynamics.html",
       "desc": "Auto-animates and composites CG characters into live footage — studio-grade VFX.",
       "bestFor": "character animation and VFX at scale.",
       "s": [
@@ -5251,7 +5251,7 @@
       "price": "Free tier · paid plans",
       "domain": "genmo.ai",
       "letter": "G",
-      "link": "#",
+      "link": "genmo-motion-graphics.html",
       "desc": "Open, fast generative video for quick motion ideas and prototypes.",
       "bestFor": "rapid motion prototyping.",
       "s": [
