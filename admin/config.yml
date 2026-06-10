@@ -150,3 +150,348 @@ collections:
               - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
               - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
               - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Presentations tools'
+            name: presentations
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Music tools'
+            name: music
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Research tools'
+            name: research
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Note-taking tools'
+            name: note-taking
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Motion graphics tools'
+            name: motion-graphics
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Infographics tools'
+            name: infographics
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Chatbots tools'
+            name: chatbots
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Meeting notes tools'
+            name: meeting-notes
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Data analysis tools'
+            name: data-analysis
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'App & website builders tools'
+            name: app-builders
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'AI agents & automation tools'
+            name: ai-agents
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Marketing copy tools'
+            name: marketing-copy
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'SEO tools'
+            name: seo
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Social media tools'
+            name: social-media
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
+          - label: 'Translation tools'
+            name: translation
+            widget: list
+            collapsed: true
+            summary: '{{fields.name}}  ·  {{fields.score}}'
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: 'Affiliate / visit URL  (the link behind the button)', name: url, widget: string}
+              - {label: 'Is this an affiliate link?', name: affiliate, widget: boolean, default: false}
+              - {label: 'Score (leave blank = Not yet rated)', name: score, widget: number, value_type: float, step: 0.1, min: 0, max: 10, required: false}
+              - {label: Rank, name: rank, widget: number, value_type: int, required: false}
+              - {label: Momentum, name: mom, widget: number, value_type: float, step: 0.1, required: false}
+              - {label: 'Subscores (Output, Value, Ease, Reliability, Ecosystem, Momentum) — leave a value blank/omit for Not-yet-known', name: s, widget: list, required: false, field: {label: value, name: v, widget: number, value_type: float, step: 0.1}}
+              - {label: Description, name: desc, widget: text}
+              - {label: Best for, name: bestFor, widget: string, required: false}
+              - {label: Price, name: price, widget: string, required: false}
+              - {label: Type, name: type, widget: string, required: false}
+              - {label: 'Domain (for the logo)', name: domain, widget: string}
+              - {label: Tags, name: cats, widget: list, required: false, field: {label: tag, name: t, widget: string}}
+              - {label: 'Letter (logo fallback)', name: letter, widget: string, required: false}
+              - {label: 'Internal page link', name: link, widget: string, required: false, default: '#'}
+              - {label: 'Listed on (drives the New listings sort)', name: added, widget: datetime, required: false, time_format: false, date_format: 'YYYY-MM-DD'}
+              - {label: 'Interest trend (monthly points, 0-100)', name: trend, widget: list, required: false, fields: [{label: 'Month (YYYY-MM)', name: m, widget: string}, {label: 'Value 0-100', name: v, widget: number, value_type: float}]}
