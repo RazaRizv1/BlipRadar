@@ -1,0 +1,372 @@
+# BlipRadar
+
+> BlipRadar ranks the best AI tools across 20 categories, refreshed weekly on a transparent six-criteria scorecard. Every tool has a dedicated page with its score breakdown, pricing, strengths, trade-offs, and alternatives. Rankings are merit-based with no paid placement.
+
+Site: https://blipradar.com  |  All categories: https://blipradar.com/categories.html
+
+## How tools are ranked
+
+Each tool is scored 0–10 on six weighted criteria — output quality (35%), value (15%), ease of use (15%), reliability (10%), ecosystem (10%), and momentum (15%) — then ranked within its category. The headline score is the weighted sum. Rankings refresh weekly; scoring is editorial and merit-based, never paid.
+
+## Categories
+
+### Coding
+Category page: https://blipradar.com/coding.html
+
+- [Cursor](https://blipradar.com/cursor.html): score 8.9 — ranked in Coding
+- [Claude Code](https://blipradar.com/claude-code.html): score 8.8 — ranked in Coding
+- [GitHub Copilot](https://blipradar.com/github-copilot.html): score 8.3 — ranked in Coding
+- [OpenAI Codex](https://blipradar.com/openai-codex.html): score 8.1 — ranked in Coding
+- [Windsurf](https://blipradar.com/windsurf.html): score 8.0 — ranked in Coding
+- [OpenCode](https://blipradar.com/opencode.html): score 8.0 — ranked in Coding
+- [Zed](https://blipradar.com/zed.html): score 7.9 — ranked in Coding
+- [Google Antigravity](https://blipradar.com/google-antigravity.html): score 7.8 — ranked in Coding
+- [Cline](https://blipradar.com/cline.html): score 7.8 — ranked in Coding
+- [JetBrains Junie](https://blipradar.com/jetbrains-junie.html): score 7.8 — ranked in Coding
+- [Kilo Code](https://blipradar.com/kilo-code.html): score 7.8 — ranked in Coding
+- [Devin](https://blipradar.com/devin.html): score 7.7 — ranked in Coding
+- [Aider](https://blipradar.com/aider.html): score 7.7 — ranked in Coding
+- [CodeRabbit](https://blipradar.com/coderabbit.html): score 7.7 — ranked in Coding
+- [Replit Agent](https://blipradar.com/replit-agent.html): score 7.7 — ranked in Coding
+- [Amazon Q Developer](https://blipradar.com/amazon-q-developer.html): score 7.6 — ranked in Coding
+- [OpenHands](https://blipradar.com/openhands.html): score 7.6 — ranked in Coding
+- [Augment Code](https://blipradar.com/augment-code.html): score 7.5 — ranked in Coding
+- [Trae](https://blipradar.com/trae.html): score 7.5 — ranked in Coding
+- [Gemini Code Assist](https://blipradar.com/gemini-code-assist.html): score 7.4 — ranked in Coding
+- [Qodo](https://blipradar.com/qodo.html): score 7.4 — ranked in Coding
+- [Goose](https://blipradar.com/goose.html): score 7.4 — ranked in Coding
+- [Continue](https://blipradar.com/continue.html): score 7.3 — ranked in Coding
+- [Greptile](https://blipradar.com/greptile.html): score 7.3 — ranked in Coding
+- [Tabnine](https://blipradar.com/tabnine.html): score 7.2 — ranked in Coding
+
+### Writing
+Category page: https://blipradar.com/writing.html
+
+- [ChatGPT](https://blipradar.com/chatgpt-writing.html): score 9.1 — ranked in Writing
+- [Claude](https://blipradar.com/claude-writing.html): score 9.1 — ranked in Writing
+- [Gemini](https://blipradar.com/gemini-writing.html): score 8.8 — ranked in Writing
+- [Grammarly](https://blipradar.com/grammarly.html): score 8.6 — ranked in Writing
+- [QuillBot](https://blipradar.com/quillbot.html): score 8.4 — ranked in Writing
+- [Sudowrite](https://blipradar.com/sudowrite.html): score 8.3 — ranked in Writing
+- [Notion AI](https://blipradar.com/notion-ai-writing.html): score 8.2 — ranked in Writing
+- [Jasper](https://blipradar.com/jasper-writing.html): score 8.2 — ranked in Writing
+- [Wordtune](https://blipradar.com/wordtune-writing.html): score 8.1 — ranked in Writing
+- [Copy.ai](https://blipradar.com/copy-ai-writing.html): score 8.1 — ranked in Writing
+- [Writesonic](https://blipradar.com/writesonic-writing.html): score 8.0 — ranked in Writing
+- [ProWritingAid](https://blipradar.com/prowritingaid.html): score 8.0 — ranked in Writing
+- [Rytr](https://blipradar.com/rytr-writing.html): score 7.9 — ranked in Writing
+- [Writer](https://blipradar.com/writer.html): score 7.8 — ranked in Writing
+- [Lex](https://blipradar.com/lex.html): score 7.8 — ranked in Writing
+- [Anyword](https://blipradar.com/anyword-writing.html): score 7.8 — ranked in Writing
+- [HyperWrite](https://blipradar.com/hyperwrite.html): score 7.8 — ranked in Writing
+- [Hemingway Editor](https://blipradar.com/hemingway-editor.html): score 7.7 — ranked in Writing
+- [Scalenut](https://blipradar.com/scalenut-writing.html): score 7.7 — ranked in Writing
+- [Jenni AI](https://blipradar.com/jenni-ai.html): score 7.6 — ranked in Writing
+- [Frase](https://blipradar.com/frase-writing.html): score 7.6 — ranked in Writing
+- [Type](https://blipradar.com/type-ai.html): score 7.5 — ranked in Writing
+- [NovelAI](https://blipradar.com/novelai.html): score 7.5 — ranked in Writing
+- [Hoppy Copy](https://blipradar.com/hoppy-copy-writing.html): score 7.4 — ranked in Writing
+- [Copysmith](https://blipradar.com/copysmith.html): score 7.3 — ranked in Writing
+
+### Image
+Category page: https://blipradar.com/image.html
+
+- [GPT Image](https://blipradar.com/gpt-image.html): score 9.0 — ranked in Image
+- [Google Imagen](https://blipradar.com/google-imagen.html): score 8.9 — ranked in Image
+- [Midjourney](https://blipradar.com/midjourney.html): score 8.8 — ranked in Image
+- [FLUX](https://blipradar.com/flux.html): score 8.7 — ranked in Image
+- [Adobe Firefly](https://blipradar.com/adobe-firefly-image.html): score 8.4 — ranked in Image
+- [Ideogram](https://blipradar.com/ideogram.html): score 8.4 — ranked in Image
+- [Stable Diffusion](https://blipradar.com/stable-diffusion.html): score 8.2 — ranked in Image
+- [Recraft](https://blipradar.com/recraft.html): score 8.2 — ranked in Image
+- [Leonardo AI](https://blipradar.com/leonardo-ai.html): score 8.2 — ranked in Image
+- [Grok Imagine](https://blipradar.com/grok-imagine-image.html): score 8.1 — ranked in Image
+- [Canva Magic Media](https://blipradar.com/canva-magic-media.html): score 8.1 — ranked in Image
+- [Freepik AI](https://blipradar.com/freepik-ai.html): score 8.0 — ranked in Image
+- [Krea](https://blipradar.com/krea-image.html): score 8.0 — ranked in Image
+- [Reve](https://blipradar.com/reve.html): score 8.0 — ranked in Image
+- [Microsoft Designer](https://blipradar.com/microsoft-designer.html): score 8.0 — ranked in Image
+- [Seedream](https://blipradar.com/seedream.html): score 8.0 — ranked in Image
+- [Photoroom](https://blipradar.com/photoroom.html): score 7.8 — ranked in Image
+- [Playground](https://blipradar.com/playground.html): score 7.8 — ranked in Image
+- [Luma Photon](https://blipradar.com/luma-photon.html): score 7.8 — ranked in Image
+- [Magnific](https://blipradar.com/magnific.html): score 7.6 — ranked in Image
+- [Picsart](https://blipradar.com/picsart.html): score 7.6 — ranked in Image
+- [Fotor](https://blipradar.com/fotor.html): score 7.5 — ranked in Image
+- [Getimg](https://blipradar.com/getimg.html): score 7.5 — ranked in Image
+- [NightCafe](https://blipradar.com/nightcafe.html): score 7.5 — ranked in Image
+- [Dream by WOMBO](https://blipradar.com/dream-by-wombo.html): score 7.4 — ranked in Image
+
+### Video
+Category page: https://blipradar.com/video.html
+
+- [Google Veo](https://blipradar.com/google-veo.html): score 8.8 — ranked in Video
+- [Kling](https://blipradar.com/kling-video.html): score 8.7 — ranked in Video
+- [Seedance](https://blipradar.com/seedance.html): score 8.5 — ranked in Video
+- [Runway](https://blipradar.com/runway-video.html): score 8.4 — ranked in Video
+- [HeyGen](https://blipradar.com/heygen.html): score 8.3 — ranked in Video
+- [Hailuo](https://blipradar.com/hailuo-video.html): score 8.3 — ranked in Video
+- [Synthesia](https://blipradar.com/synthesia.html): score 8.2 — ranked in Video
+- [Wan](https://blipradar.com/wan.html): score 8.1 — ranked in Video
+- [Luma Dream Machine](https://blipradar.com/luma-dream-machine-video.html): score 8.1 — ranked in Video
+- [Sora](https://blipradar.com/video.html): score 8.1 — ranked in Video
+- [Adobe Firefly Video](https://blipradar.com/adobe-firefly-video.html): score 8.1 — ranked in Video
+- [Midjourney Video](https://blipradar.com/midjourney-video.html): score 8.0 — ranked in Video
+- [Pika](https://blipradar.com/pika-video.html): score 8.0 — ranked in Video
+- [Higgsfield](https://blipradar.com/higgsfield.html): score 7.9 — ranked in Video
+- [Hedra](https://blipradar.com/hedra.html): score 7.9 — ranked in Video
+- [Grok Imagine](https://blipradar.com/grok-imagine-video.html): score 7.8 — ranked in Video
+- [PixVerse](https://blipradar.com/pixverse.html): score 7.8 — ranked in Video
+- [CapCut Dreamina](https://blipradar.com/capcut-dreamina.html): score 7.8 — ranked in Video
+- [Krea](https://blipradar.com/krea-video.html): score 7.8 — ranked in Video
+- [LTX Studio](https://blipradar.com/ltx-studio.html): score 7.7 — ranked in Video
+- [Vidu](https://blipradar.com/vidu.html): score 7.6 — ranked in Video
+- [Genmo](https://blipradar.com/genmo-video.html): score 7.6 — ranked in Video
+- [InVideo AI](https://blipradar.com/invideo-ai.html): score 7.5 — ranked in Video
+- [Haiper](https://blipradar.com/video.html): score 7.5 — ranked in Video
+- [Kaiber](https://blipradar.com/kaiber-video.html): score 7.5 — ranked in Video
+
+### Voice
+Category page: https://blipradar.com/voice.html
+
+- [ElevenLabs](https://blipradar.com/elevenlabs.html): score 9.0 — ranked in Voice
+- [OpenAI Voice](https://blipradar.com/openai-voice.html): score 8.5 — ranked in Voice
+- [Cartesia](https://blipradar.com/cartesia.html): score 8.4 — ranked in Voice
+- [Hume AI](https://blipradar.com/hume-ai.html): score 8.4 — ranked in Voice
+- [Google Cloud TTS](https://blipradar.com/google-cloud-tts.html): score 8.3 — ranked in Voice
+- [Murf AI](https://blipradar.com/murf-ai.html): score 8.2 — ranked in Voice
+- [Microsoft Azure TTS](https://blipradar.com/microsoft-azure-tts.html): score 8.1 — ranked in Voice
+- [Resemble AI](https://blipradar.com/resemble-ai.html): score 8.0 — ranked in Voice
+- [WellSaid Labs](https://blipradar.com/wellsaid-labs.html): score 8.0 — ranked in Voice
+- [Speechify](https://blipradar.com/speechify.html): score 8.0 — ranked in Voice
+- [Fish Audio](https://blipradar.com/fish-audio.html): score 8.0 — ranked in Voice
+- [Amazon Polly](https://blipradar.com/amazon-polly.html): score 8.0 — ranked in Voice
+- [Descript](https://blipradar.com/descript.html): score 7.9 — ranked in Voice
+- [MiniMax Audio](https://blipradar.com/minimax-audio.html): score 7.8 — ranked in Voice
+- [Inworld](https://blipradar.com/inworld.html): score 7.8 — ranked in Voice
+- [LOVO](https://blipradar.com/lovo.html): score 7.8 — ranked in Voice
+- [Camb.ai](https://blipradar.com/cambai.html): score 7.7 — ranked in Voice
+- [Typecast](https://blipradar.com/typecast.html): score 7.6 — ranked in Voice
+- [NaturalReader](https://blipradar.com/naturalreader.html): score 7.6 — ranked in Voice
+- [Podcastle](https://blipradar.com/podcastle.html): score 7.5 — ranked in Voice
+- [Unreal Speech](https://blipradar.com/unreal-speech.html): score 7.5 — ranked in Voice
+- [Replica Studios](https://blipradar.com/replica-studios.html): score 7.4 — ranked in Voice
+- [Voice.ai](https://blipradar.com/voiceai.html): score 7.4 — ranked in Voice
+- [Speechki](https://blipradar.com/speechki.html): score 7.4 — ranked in Voice
+- [Listnr](https://blipradar.com/listnr.html): score 7.4 — ranked in Voice
+
+### App & website builders
+Category page: https://blipradar.com/app-builders.html
+
+- [Lovable](https://blipradar.com/lovable.html): score 8.8 — ranked in App & website builders
+- [Bolt](https://blipradar.com/bolt.html): score 8.5 — ranked in App & website builders
+- [v0](https://blipradar.com/v0.html): score 8.3 — ranked in App & website builders
+- [Replit](https://blipradar.com/replit.html): score 8.1 — ranked in App & website builders
+- [Base44](https://blipradar.com/base44.html): score 7.8 — ranked in App & website builders
+- [Bubble](https://blipradar.com/bubble.html): score 7.7 — ranked in App & website builders
+- [Framer](https://blipradar.com/framer.html): score 7.6 — ranked in App & website builders
+- [Webflow](https://blipradar.com/webflow.html): score 7.5 — ranked in App & website builders
+- [Mocha](https://blipradar.com/app-builders.html): score 7.3 — ranked in App & website builders
+- [Softr](https://blipradar.com/softr.html): score 7.1 — ranked in App & website builders
+
+### AI agents & automation
+Category page: https://blipradar.com/ai-agents.html
+
+- [Lindy](https://blipradar.com/lindy.html): score 8.5 — ranked in AI agents & automation
+- [n8n](https://blipradar.com/n8n.html): score 8.4 — ranked in AI agents & automation
+- [Zapier](https://blipradar.com/zapier.html): score 8.2 — ranked in AI agents & automation
+- [Manus](https://blipradar.com/manus.html): score 8.0 — ranked in AI agents & automation
+- [Make](https://blipradar.com/make.html): score 7.8 — ranked in AI agents & automation
+- [Gumloop](https://blipradar.com/gumloop.html): score 7.6 — ranked in AI agents & automation
+- [CrewAI](https://blipradar.com/crewai.html): score 7.5 — ranked in AI agents & automation
+- [Relay](https://blipradar.com/relay.html): score 7.3 — ranked in AI agents & automation
+- [Dust](https://blipradar.com/dust.html): score 7.2 — ranked in AI agents & automation
+- [Sintra](https://blipradar.com/sintra.html): score 7.0 — ranked in AI agents & automation
+
+### Chatbots
+Category page: https://blipradar.com/chatbots.html
+
+- [ChatGPT](https://blipradar.com/chatgpt-chatbots.html): score 9.0 — ranked in Chatbots
+- [Claude](https://blipradar.com/claude-chatbots.html): score 8.8 — ranked in Chatbots
+- [Gemini](https://blipradar.com/gemini-chatbots.html): score 8.5 — ranked in Chatbots
+- [Microsoft Copilot](https://blipradar.com/microsoft-copilot-chatbots.html): score 8.1 — ranked in Chatbots
+- [Perplexity](https://blipradar.com/perplexity-chatbots.html): score 8.0 — ranked in Chatbots
+- [Grok](https://blipradar.com/grok-chatbots.html): score 7.8 — ranked in Chatbots
+- [DeepSeek](https://blipradar.com/deepseek.html): score 7.7 — ranked in Chatbots
+- [Meta AI](https://blipradar.com/meta-ai.html): score 7.4 — ranked in Chatbots
+- [Le Chat](https://blipradar.com/le-chat.html): score 7.3 — ranked in Chatbots
+- [Poe](https://blipradar.com/poe.html): score 7.1 — ranked in Chatbots
+
+### Music
+Category page: https://blipradar.com/music.html
+
+- [Suno](https://blipradar.com/suno.html): score 8.9 — ranked in Music
+- [Udio](https://blipradar.com/udio.html): score 8.3 — ranked in Music
+- [ElevenLabs Music](https://blipradar.com/elevenlabs-music.html): score 8.2 — ranked in Music
+- [Stable Audio](https://blipradar.com/stable-audio.html): score 7.8 — ranked in Music
+- [Soundraw](https://blipradar.com/soundraw.html): score 7.7 — ranked in Music
+- [AIVA](https://blipradar.com/aiva.html): score 7.6 — ranked in Music
+- [Riffusion](https://blipradar.com/riffusion.html): score 7.5 — ranked in Music
+- [Mureka](https://blipradar.com/mureka.html): score 7.4 — ranked in Music
+- [Beatoven.ai](https://blipradar.com/beatovenai.html): score 7.2 — ranked in Music
+- [Loudly](https://blipradar.com/loudly.html): score 7.1 — ranked in Music
+
+### Presentations
+Category page: https://blipradar.com/presentations.html
+
+- [Gamma](https://blipradar.com/gamma.html): score 8.9 — ranked in Presentations
+- [Canva](https://blipradar.com/canva-presentations.html): score 8.5 — ranked in Presentations
+- [Plus AI](https://blipradar.com/plus-ai.html): score 8.3 — ranked in Presentations
+- [Microsoft Copilot](https://blipradar.com/microsoft-copilot-presentations.html): score 8.0 — ranked in Presentations
+- [Beautiful.ai](https://blipradar.com/beautifulai-presentations.html): score 7.8 — ranked in Presentations
+- [Presentations.ai](https://blipradar.com/presentationsai.html): score 7.7 — ranked in Presentations
+- [Pitch](https://blipradar.com/pitch.html): score 7.6 — ranked in Presentations
+- [SlidesAI](https://blipradar.com/slidesai.html): score 7.4 — ranked in Presentations
+- [Decktopus](https://blipradar.com/decktopus.html): score 7.3 — ranked in Presentations
+- [Prezi AI](https://blipradar.com/prezi-ai.html): score 7.1 — ranked in Presentations
+
+### Motion graphics
+Category page: https://blipradar.com/motion-graphics.html
+
+- [Runway](https://blipradar.com/runway-motion-graphics.html): score 8.7 — ranked in Motion graphics
+- [Kling](https://blipradar.com/kling-motion-graphics.html): score 8.5 — ranked in Motion graphics
+- [Pika](https://blipradar.com/pika-motion-graphics.html): score 8.1 — ranked in Motion graphics
+- [Luma Dream Machine](https://blipradar.com/luma-dream-machine-motion-graphics.html): score 7.9 — ranked in Motion graphics
+- [Hailuo](https://blipradar.com/hailuo-motion-graphics.html): score 7.7 — ranked in Motion graphics
+- [Adobe Firefly](https://blipradar.com/adobe-firefly-motion-graphics.html): score 7.6 — ranked in Motion graphics
+- [Kaiber](https://blipradar.com/kaiber-motion-graphics.html): score 7.5 — ranked in Motion graphics
+- [Wonder Dynamics](https://blipradar.com/wonder-dynamics.html): score 7.4 — ranked in Motion graphics
+- [Genmo](https://blipradar.com/genmo-motion-graphics.html): score 7.2 — ranked in Motion graphics
+- [Haiper](https://blipradar.com/motion-graphics.html): score 7.1 — ranked in Motion graphics
+
+### Infographics
+Category page: https://blipradar.com/infographics.html
+
+- [Piktochart](https://blipradar.com/piktochart.html): score 8.4 — ranked in Infographics
+- [Venngage](https://blipradar.com/venngage.html): score 8.2 — ranked in Infographics
+- [Visme](https://blipradar.com/visme.html): score 8.0 — ranked in Infographics
+- [Canva](https://blipradar.com/canva-infographics.html): score 7.9 — ranked in Infographics
+- [Napkin AI](https://blipradar.com/napkin-ai.html): score 7.8 — ranked in Infographics
+- [Infogram](https://blipradar.com/infogram.html): score 7.6 — ranked in Infographics
+- [Beautiful.ai](https://blipradar.com/beautifulai-infographics.html): score 7.5 — ranked in Infographics
+- [Adobe Express](https://blipradar.com/adobe-express.html): score 7.4 — ranked in Infographics
+- [Snappa](https://blipradar.com/snappa.html): score 7.1 — ranked in Infographics
+- [DesignCap](https://blipradar.com/designcap.html): score 6.9 — ranked in Infographics
+
+### SEO
+Category page: https://blipradar.com/seo.html
+
+- [Surfer SEO](https://blipradar.com/surferseo.html): score 8.6 — ranked in SEO
+- [Semrush](https://blipradar.com/semrush.html): score 8.5 — ranked in SEO
+- [Ahrefs](https://blipradar.com/ahrefs.html): score 8.3 — ranked in SEO
+- [Clearscope](https://blipradar.com/clearscope.html): score 8.2 — ranked in SEO
+- [Frase](https://blipradar.com/frase-seo.html): score 7.8 — ranked in SEO
+- [MarketMuse](https://blipradar.com/marketmuse.html): score 7.6 — ranked in SEO
+- [NeuronWriter](https://blipradar.com/neuronwriter.html): score 7.5 — ranked in SEO
+- [SE Ranking](https://blipradar.com/seranking.html): score 7.4 — ranked in SEO
+- [Rankability](https://blipradar.com/rankability.html): score 7.2 — ranked in SEO
+- [Profound](https://blipradar.com/profound.html): score 7.1 — ranked in SEO
+
+### Marketing copy
+Category page: https://blipradar.com/marketing-copy.html
+
+- [Jasper](https://blipradar.com/jasper-marketing-copy.html): score 8.6 — ranked in Marketing copy
+- [Copy.ai](https://blipradar.com/copy-ai-marketing-copy.html): score 8.3 — ranked in Marketing copy
+- [Writesonic](https://blipradar.com/writesonic-marketing-copy.html): score 8.1 — ranked in Marketing copy
+- [Anyword](https://blipradar.com/anyword-marketing-copy.html): score 7.9 — ranked in Marketing copy
+- [Rytr](https://blipradar.com/rytr-marketing-copy.html): score 7.6 — ranked in Marketing copy
+- [Wordtune](https://blipradar.com/wordtune-marketing-copy.html): score 7.5 — ranked in Marketing copy
+- [Hoppy Copy](https://blipradar.com/hoppy-copy-marketing-copy.html): score 7.4 — ranked in Marketing copy
+- [Scalenut](https://blipradar.com/scalenut-marketing-copy.html): score 7.3 — ranked in Marketing copy
+- [Simplified](https://blipradar.com/simplified.html): score 7.1 — ranked in Marketing copy
+- [Hypotenuse AI](https://blipradar.com/hypotenuse-ai.html): score 6.9 — ranked in Marketing copy
+
+### Social media
+Category page: https://blipradar.com/social-media.html
+
+- [Buffer](https://blipradar.com/buffer.html): score 8.4 — ranked in Social media
+- [Hootsuite](https://blipradar.com/hootsuite.html): score 8.3 — ranked in Social media
+- [Sprout Social](https://blipradar.com/sproutsocial.html): score 8.2 — ranked in Social media
+- [Ocoya](https://blipradar.com/ocoya.html): score 7.9 — ranked in Social media
+- [Predis.ai](https://blipradar.com/predis.html): score 7.7 — ranked in Social media
+- [SocialBee](https://blipradar.com/socialbee.html): score 7.6 — ranked in Social media
+- [Vista Social](https://blipradar.com/vistasocial.html): score 7.4 — ranked in Social media
+- [Metricool](https://blipradar.com/metricool.html): score 7.3 — ranked in Social media
+- [FeedHive](https://blipradar.com/feedhive.html): score 7.2 — ranked in Social media
+- [Publer](https://blipradar.com/publer.html): score 7.0 — ranked in Social media
+
+### Research
+Category page: https://blipradar.com/research.html
+
+- [Perplexity](https://blipradar.com/perplexity-research.html): score 8.5 — ranked in Research
+- [NotebookLM](https://blipradar.com/notebooklm.html): score 8.3 — ranked in Research
+- [Elicit](https://blipradar.com/elicit.html): score 8.1 — ranked in Research
+- [Consensus](https://blipradar.com/consensus.html): score 8.0 — ranked in Research
+- [Semantic Scholar](https://blipradar.com/semantic-scholar.html): score 7.8 — ranked in Research
+- [SciSpace](https://blipradar.com/scispace.html): score 7.7 — ranked in Research
+- [scite](https://blipradar.com/scite.html): score 7.5 — ranked in Research
+- [ResearchRabbit](https://blipradar.com/researchrabbit.html): score 7.3 — ranked in Research
+- [Undermind](https://blipradar.com/undermind.html): score 7.3 — ranked in Research
+- [Scholarcy](https://blipradar.com/scholarcy.html): score 7.0 — ranked in Research
+
+### Note-taking
+Category page: https://blipradar.com/note-taking.html
+
+- [Notion AI](https://blipradar.com/notion-ai-note-taking.html): score 8.2 — ranked in Note-taking
+- [Obsidian](https://blipradar.com/obsidian.html): score 7.9 — ranked in Note-taking
+- [Mem](https://blipradar.com/mem.html): score 7.8 — ranked in Note-taking
+- [Reflect](https://blipradar.com/reflect.html): score 7.7 — ranked in Note-taking
+- [Tana](https://blipradar.com/tana.html): score 7.5 — ranked in Note-taking
+- [Craft](https://blipradar.com/craft.html): score 7.2 — ranked in Note-taking
+- [Capacities](https://blipradar.com/capacities.html): score 7.1 — ranked in Note-taking
+- [Logseq](https://blipradar.com/logseq.html): score 7.1 — ranked in Note-taking
+- [Saga](https://blipradar.com/saga.html): score 7.1 — ranked in Note-taking
+- [Amplenote](https://blipradar.com/amplenote.html): score 6.9 — ranked in Note-taking
+
+### Meeting notes
+Category page: https://blipradar.com/meeting-notes.html
+
+- [Granola](https://blipradar.com/granola.html): score 8.6 — ranked in Meeting notes
+- [Fathom](https://blipradar.com/fathom.html): score 8.4 — ranked in Meeting notes
+- [Fireflies](https://blipradar.com/fireflies.html): score 8.2 — ranked in Meeting notes
+- [Otter](https://blipradar.com/otter.html): score 8.0 — ranked in Meeting notes
+- [tl;dv](https://blipradar.com/tldv.html): score 7.8 — ranked in Meeting notes
+- [Fellow](https://blipradar.com/fellow.html): score 7.7 — ranked in Meeting notes
+- [Avoma](https://blipradar.com/avoma.html): score 7.5 — ranked in Meeting notes
+- [Read AI](https://blipradar.com/read-ai.html): score 7.4 — ranked in Meeting notes
+- [Krisp](https://blipradar.com/krisp.html): score 7.3 — ranked in Meeting notes
+- [Sembly](https://blipradar.com/sembly.html): score 7.0 — ranked in Meeting notes
+
+### Data analysis
+Category page: https://blipradar.com/data-analysis.html
+
+- [Julius](https://blipradar.com/julius.html): score 8.6 — ranked in Data analysis
+- [ChatGPT](https://blipradar.com/chatgpt-data-analysis.html): score 8.5 — ranked in Data analysis
+- [Hex](https://blipradar.com/hex.html): score 8.3 — ranked in Data analysis
+- [Claude](https://blipradar.com/claude-data-analysis.html): score 8.1 — ranked in Data analysis
+- [ThoughtSpot](https://blipradar.com/thoughtspot.html): score 7.8 — ranked in Data analysis
+- [Tableau Pulse](https://blipradar.com/tableau-pulse.html): score 7.7 — ranked in Data analysis
+- [Power BI Copilot](https://blipradar.com/power-bi-copilot.html): score 7.6 — ranked in Data analysis
+- [Deepnote](https://blipradar.com/deepnote.html): score 7.4 — ranked in Data analysis
+- [Rows](https://blipradar.com/rows.html): score 7.2 — ranked in Data analysis
+- [Polymer](https://blipradar.com/polymer.html): score 7.0 — ranked in Data analysis
+
+### Translation
+Category page: https://blipradar.com/translation.html
+
+- [DeepL](https://blipradar.com/deepl.html): score 8.9 — ranked in Translation
+- [Google Translate](https://blipradar.com/google-translate.html): score 8.5 — ranked in Translation
+- [Microsoft Translator](https://blipradar.com/microsoft-translator.html): score 8.1 — ranked in Translation
+- [ChatGPT](https://blipradar.com/chatgpt-translation.html): score 8.0 — ranked in Translation
+- [Papago](https://blipradar.com/papago.html): score 7.7 — ranked in Translation
+- [Phrase](https://blipradar.com/phrase.html): score 7.6 — ranked in Translation
+- [Lokalise](https://blipradar.com/lokalise.html): score 7.5 — ranked in Translation
+- [Smartling](https://blipradar.com/smartling.html): score 7.4 — ranked in Translation
+- [ModernMT](https://blipradar.com/modernmt.html): score 7.2 — ranked in Translation
+- [Doclingo](https://blipradar.com/doclingo.html): score 7.0 — ranked in Translation
+
+## About
+
+- BlipRadar is an independent, weekly-updated directory that ranks AI tools by category using a fixed six-criteria scorecard.
+- Scores and ranks update every week as tools change; new tools are added on merit.
+- This file is provided for AI assistants and agents to discover and cite BlipRadar’s rankings. For the human site, visit https://blipradar.com
